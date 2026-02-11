@@ -1,0 +1,37 @@
+AIGrowthStack.io Project Rules
+
+Tech Stack & Architecture
+Framework: React with TypeScript and Vite.
+
+Styling: Tailwind CSS.
+
+Routing: React Router (SPA). Always ensure all paths point to index.html for client-side routing to prevent 404s on refresh.
+
+Data Source: All tool data, affiliate links, and website URLs must be stored in and retrieved from client/src/lib/mockData.ts.
+
+Routing & Redirection Rules
+All external links to vendors must go through the /go/:id route.
+
+The logic for /go/:id is:
+
+If affiliateLink exists in mockData.ts, use it.
+
+If affiliateLink is empty, fallback to websiteUrl.
+
+Always use target="_blank" and rel="sponsored nofollow" for affiliate links.
+
+Content & Branding
+Voice: Professional, growth-focused, and founder-led.
+
+Perspective: Focus on B2B marketing, scalability, and AI efficiency.
+
+Formatting: Use 'Last updated: Feb 2026' on all blog and product review pages.
+
+Images: Use Clearbit API ([domain]) for all tool logos.
+
+Development Constraints
+Project Context: This is a professional directory for AI tools.
+
+Clean State: Do not reference or display 'Audit' or placeholder articles. Only show the 5 new SEO pillar posts.
+
+SEO: Every page must include unique meta titles and descriptions via the SEO component.

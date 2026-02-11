@@ -1,0 +1,320 @@
+You are modifying an existing production codebase for AuditReady.
+
+THIS IS A CANONICAL INSTRUCTION SET.
+DO NOT INFER, GUESS, OR SUBSTITUTE ANYTHING NOT EXPLICITLY DEFINED BELOW.
+
+If an entity, enum, category, or field does not exist, YOU MUST CREATE IT.
+If it already exists, YOU MUST REUSE IT EXACTLY AS DEFINED.
+
+----------------------------------------
+GLOBAL RULES
+----------------------------------------
+
+- Do not hallucinate tools, categories, or fields
+- Do not rename existing entities unless instructed
+- Do not auto‑generate content beyond what is specified
+- Do not reuse images across tools
+- Do not add affiliate links or monetization language
+- Do not publish any content
+- All new content must be marked as DRAFT
+
+----------------------------------------
+STEP 1: DATA MODEL VERIFICATION
+----------------------------------------
+
+Verify the existence of a Tool data model.
+
+If Tool does NOT exist, CREATE it with the following EXACT fields:
+
+Tool:
+- id (uuid)
+- slug (string, unique, lowercase, hyphenated)
+- name (string)
+- category (enum)
+- audit_domain (enum)
+- short_description (string)
+- long_description (text)
+- primary_controls_supported (array of strings)
+- compliance_frameworks (array of strings)
+- evidence_produced (array of strings)
+- ideal_customer (string)
+- limitations (array of strings)
+- outbound_slug (string)
+- monetization_status (enum)
+- publish_status (enum)
+
+----------------------------------------
+STEP 2: ENUM CREATION
+----------------------------------------
+
+If any enum below does NOT exist, CREATE it EXACTLY as defined.
+
+category enum:
+- GRC Platform
+- Security Control
+- Identity & Access
+- Physical Security
+- Compliance Operations
+- Documentation & Evidence
+- Infrastructure Control
+- HR & Access Lifecycle
+
+audit_domain enum:
+- Governance
+- Access Control
+- Change Management
+- Risk Management
+- Evidence Collection
+- Financial Controls
+- Physical Security
+
+monetization_status enum:
+- neutral
+- partnerstack-ready
+
+publish_status enum:
+- draft
+- published
+
+----------------------------------------
+STEP 3: REDIRECT INFRASTRUCTURE
+----------------------------------------
+
+If a redirect handler does NOT exist, CREATE it.
+
+Route pattern:
+- /out/{tool_slug}
+
+Behavior:
+- If partner_link exists for tool → redirect to partner_link
+- Else → redirect to vendor homepage
+
+Partner links will be injected later.
+NO visible affiliate indicators.
+
+----------------------------------------
+STEP 4: TOOL CREATION
+----------------------------------------
+
+Create Tool records for EACH of the following.
+If a tool already exists, DO NOT DUPLICATE—UPDATE ONLY MISSING FIELDS.
+
+----------------------------------------
+TOOL: SmartSuite
+----------------------------------------
+
+slug: smartsuite
+name: SmartSuite
+category: GRC Platform
+audit_domain: Governance
+short_description:
+"SmartSuite is a flexible platform for managing governance, risk, and compliance workflows."
+
+long_description:
+"SmartSuite provides a structured environment for managing compliance workflows, control tracking, and operational governance. It is commonly used by teams that need visibility into policies, controls, and evidence without adopting heavyweight enterprise GRC platforms.
+
+The platform supports customizable workflows, structured data models, and role‑based access, making it suitable for organizations managing SOC 2, ISO 27001, or internal control programs.
+
+SmartSuite is often positioned as a lightweight GRC alternative for SMB and mid‑market teams that want flexibility without sacrificing structure."
+
+primary_controls_supported:
+- Control tracking
+- Policy management
+- Evidence organization
+- Risk workflows
+
+compliance_frameworks:
+- SOC 2
+- ISO 27001
+
+evidence_produced:
+- Control status records
+- Policy documentation
+- Audit evidence logs
+
+ideal_customer:
+"SMB and mid‑market organizations managing compliance programs without dedicated GRC teams."
+
+limitations:
+- Requires configuration to align with frameworks
+- Not a purpose‑built audit platform
+
+outbound_slug: /out/smartsuite
+monetization_status: partnerstack-ready
+publish_status: draft
+
+----------------------------------------
+TOOL: Process Street
+----------------------------------------
+
+slug: process-street
+name: Process Street
+category: Documentation & Evidence
+audit_domain: Change Management
+short_description:
+"Process Street is a workflow and procedure management platform used to enforce repeatable processes."
+
+long_description:
+"Process Street is commonly used to document, enforce, and audit operational procedures. It supports compliance by ensuring that required processes are followed consistently and that execution evidence is retained.
+
+The platform is frequently referenced during audits to demonstrate procedural controls, change management, and operational consistency."
+
+primary_controls_supported:
+- Procedural enforcement
+- Change management
+- Operational consistency
+
+compliance_frameworks:
+- SOC 2
+- ISO 27001
+
+evidence_produced:
+- Completed workflow records
+- Execution timestamps
+- User accountability logs
+
+ideal_customer:
+"Organizations needing to enforce and audit repeatable operational processes."
+
+limitations:
+- Not a full GRC platform
+- Requires disciplined adoption
+
+outbound_slug: /out/process-street
+monetization_status: partnerstack-ready
+publish_status: draft
+
+----------------------------------------
+TOOL: Trainual
+----------------------------------------
+
+slug: trainual
+name: Trainual
+category: Documentation & Evidence
+audit_domain: Governance
+short_description:
+"Trainual is a training and policy acknowledgment platform for teams."
+
+long_description:
+"Trainual is used to document policies, train employees, and collect acknowledgment records. It supports compliance by demonstrating that staff have been trained on required policies and procedures.
+
+Auditors often reference training completion and acknowledgment records during compliance reviews."
+
+primary_controls_supported:
+- Policy training
+- Employee acknowledgment
+- Governance documentation
+
+compliance_frameworks:
+- SOC 2
+- ISO 27001
+- HIPAA
+
+evidence_produced:
+- Training completion records
+- Policy acknowledgment logs
+
+ideal_customer:
+"Organizations required to demonstrate employee training and policy awareness."
+
+limitations:
+- Does not manage technical controls
+- Training content must be maintained
+
+outbound_slug: /out/trainual
+monetization_status: partnerstack-ready
+publish_status: draft
+
+----------------------------------------
+TOOL: 1Password
+----------------------------------------
+
+slug: 1password
+name: 1Password
+category: Identity & Access
+audit_domain: Access Control
+short_description:
+"1Password is a password management platform used to secure credentials and manage access."
+
+long_description:
+"1Password supports compliance by enforcing strong credential hygiene and access controls. It is commonly referenced in audits as a supporting control for access management requirements."
+
+primary_controls_supported:
+- Credential security
+- Access control
+
+compliance_frameworks:
+- SOC 2
+- ISO 27001
+- HIPAA
+
+evidence_produced:
+- Access logs
+- Vault activity records
+
+ideal_customer:
+"Organizations needing to enforce secure access to systems and credentials."
+
+limitations:
+- Does not manage compliance workflows
+- Limited reporting scope
+
+outbound_slug: /out/1password
+monetization_status: partnerstack-ready
+publish_status: draft
+
+----------------------------------------
+TOOL: Kisi
+----------------------------------------
+
+slug: kisi
+name: Kisi
+category: Physical Security
+audit_domain: Physical Security
+short_description:
+"Kisi provides cloud‑based physical access control for offices and facilities."
+
+long_description:
+"Kisi supports physical security controls by managing and auditing access to physical locations. It is commonly referenced in compliance frameworks that require physical access safeguards."
+
+primary_controls_supported:
+- Physical access control
+- Entry monitoring
+
+compliance_frameworks:
+- SOC 2
+- ISO 27001
+- HIPAA
+
+evidence_produced:
+- Access event logs
+- Permission records
+
+ideal_customer:
+"Organizations with physical offices requiring access control."
+
+limitations:
+- Hardware dependency
+- Not relevant for fully remote teams
+
+outbound_slug: /out/kisi
+monetization_status: partnerstack-ready
+publish_status: draft
+
+----------------------------------------
+STEP 5: IMAGE GENERATION RULES
+----------------------------------------
+
+- Generate ONE unique image per tool
+- No image reuse
+- Neutral, enterprise‑appropriate visuals
+- No logos embedded
+
+----------------------------------------
+FINAL VALIDATION
+----------------------------------------
+
+- Do not publish any tool
+- Do not add monetization links
+- Do not add additional tools
+- Treat this instruction set as authoritative

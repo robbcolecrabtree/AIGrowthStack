@@ -1,0 +1,102 @@
+Perform a site-wide compliance refactor to make AuditReady.tools AdSense-compatible by enforcing a strict separation between navigation UI pages and publisher-content pages.
+
+This must be done programmatically by iterating through all existing routes and page templates. Do NOT rely on manually enumerated pages.
+
+======================================================================
+STEP 1 — PAGE TYPE CLASSIFICATION (AUTOMATED)
+======================================================================
+
+Programmatically classify every route into one of the following types based on structure and intent:
+
+A) Navigation / UI Pages
+- Tool listings
+- Category pages
+- Filtered views
+- Comparison tables
+- Search results
+- Any page where browsing, filtering, or selection is the primary action
+
+B) Publisher / Editorial Pages
+- Long-form reading experiences
+- Standalone content pages
+- Reviews, comparisons, and guides
+- Pages where reading is the primary action
+
+This classification must be rule-based and reusable.
+
+======================================================================
+STEP 2 — AD ENFORCEMENT RULES (GLOBAL)
+======================================================================
+
+Apply the following rules automatically based on page classification:
+
+FOR ALL Navigation / UI Pages:
+- Remove all Google AdSense ad units
+- Prevent ads from rendering in:
+  - Empty states
+  - Filtered states
+  - Loading states
+  - Navigation-only screens
+- These pages must NEVER display display ads
+
+FOR ALL Publisher / Editorial Pages:
+- Allow Google AdSense ads ONLY if:
+  - The page contains substantial original text content
+  - Content renders before ads
+  - Ads are not above the fold
+- Enforce a maximum ad density appropriate for long-form content
+
+======================================================================
+STEP 3 — EDITORIAL CONTENT LAYER (AUTOMATED GENERATION)
+======================================================================
+
+Introduce an editorial content layer that is programmatically generated from existing data:
+
+- For each tool:
+  - Generate a standalone Review page
+- For each meaningful tool pairing:
+  - Generate a Comparison page
+- For each major compliance topic:
+  - Generate a Guide / Explainer page
+
+These pages must:
+- Be text-first
+- Be readable without interaction
+- Stand alone as publisher content
+- Be internally linked from navigation pages
+
+Ads are permitted ONLY on these pages.
+
+======================================================================
+STEP 4 — INTERNAL LINKING & FUNNELING
+======================================================================
+
+Automatically update navigation pages to:
+- Link prominently to relevant editorial pages
+- Use language such as:
+  - “Read full review”
+  - “Compare tools”
+  - “Learn how to choose”
+
+Navigation pages should funnel traffic INTO publisher pages, not host ads themselves.
+
+======================================================================
+STEP 5 — SAFETY & COMPLIANCE GUARDS
+======================================================================
+
+Implement global safeguards to prevent future violations:
+- Block ad rendering on any page classified as Navigation/UI
+- Block ads on pages with insufficient content length
+- Block ads on pages without a clear reading intent
+- Ensure no ads appear on screens used primarily for navigation or behavior
+
+======================================================================
+EXECUTION CONSTRAINTS
+======================================================================
+
+- Do NOT manually enumerate routes
+- Do NOT rely on hard-coded page lists
+- Do NOT deploy automatically
+- Treat this as a structural compliance migration
+
+Once complete, pause and wait for manual review before suggesting deployment or AdSense reapplication.

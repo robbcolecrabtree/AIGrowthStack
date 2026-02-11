@@ -1,0 +1,124 @@
+Clone‑Safe SEO Template – Final Punchlist
+Please implement the following to harden this first site so it can be cloned safely at scale with zero manual overhead.
+
+1. Global Clone Config
+Create a single config file controlling all clone‑specific values:
+
+siteName
+
+siteUrl
+
+defaultIndustry
+
+brandColor
+
+logoPath
+
+affiliateDisclosureText
+
+analyticsId
+
+All pages and components must reference this config only.
+
+2. Indexing Kill Switch
+Add a global flag:
+
+ENABLE_INDEXING = true | false
+
+When false:
+
+Inject <meta name="robots" content="noindex,nofollow">
+
+Disable sitemap generation
+
+3. Deterministic Seed Versioning
+Lock AI determinism with:
+
+SEED_VERSION constant
+
+Seed = hash(slug + SEED_VERSION)
+
+Changing SEED_VERSION should intentionally regenerate content.
+
+4. Slug Collision Guard
+At build time:
+
+Fail build if duplicate slugs exist
+
+Fail build if a slug changes unexpectedly
+
+5. Hard 404 Enforcement
+Ensure notFound() is triggered for:
+
+Invalid product slugs
+
+Invalid compare pairs
+
+Invalid category paths
+
+No soft 404s.
+
+6. Sitemap Generator
+Auto‑generate sitemap.xml including:
+
+Homepage
+
+Category pages
+
+Product pages
+
+Compare pages
+
+7. Internal Linking Engine
+Automatically link:
+
+Product pages → related comparisons
+
+Product pages → relevant best‑for pages
+
+Category pages → top products
+
+8. Schema Validation Mode
+Add a dev‑only validation flag that:
+
+Logs JSON‑LD schema errors
+
+Ensures required fields always exist
+
+Validates ratings and pricing formats
+
+9. Build‑Time Data Freeze
+All AI content must be generated at build time.
+No runtime generation or mutation.
+
+10. Affiliate Link Abstraction
+Centralize all affiliate URLs in config.
+No hard‑coded links in components.
+
+11. Analytics Toggle
+Analytics must be:
+
+Config‑driven
+
+Disable‑able per clone
+
+12. Clone Dry‑Run Script
+Add a script that:
+
+Copies the repo
+
+Updates config values
+
+Builds locally
+
+Verifies:
+
+Canonicals are unique
+
+Sitemap exists
+
+Indexing flag respected
+
+Slugs unchanged
+
+Goal: This repo should be safely cloneable by changing config values only, with no SEO risk or manual cleanup.

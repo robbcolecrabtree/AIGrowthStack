@@ -1,0 +1,850 @@
+import { CLONE_CONFIG } from "./config";
+
+const LOGO_DEV_TOKEN = "pk_L-C7vriJRN6r48a6vIhruA";
+
+function logoUrl(websiteUrl: string): string {
+  if (!websiteUrl) return "";
+  const domain = new URL(websiteUrl).hostname;
+  return `https://img.logo.dev/${domain}?token=${LOGO_DEV_TOKEN}`;
+}
+
+export const CATEGORIES = [
+  "Marketing & Ads",
+  "Video & Image",
+  "SEO & Writing",
+  "Audio & Voice",
+  "Productivity & Work",
+  "Data & Automation",
+] as const;
+
+export type Category = (typeof CATEGORIES)[number];
+
+export interface Software {
+  id: string;
+  name: string;
+  slug: string;
+  logo: string;
+  tagline: string;
+  description: string;
+  summary: string;
+  rating: number;
+  reviewCount: number;
+  startingPrice: number;
+  priceModel: "Per User/Month" | "Flat Rate/Month" | "Freemium" | "Free" | "Contact Sales for Quote";
+  category: Category;
+  categories: Category[];
+  proTip: string;
+  shortReview: string;
+  features: string[];
+  pros: string[];
+  cons: string[];
+  deploymentTime: string;
+  supportLevel: "Basic" | "Priority" | "24/7 Dedicated";
+  automationScore: number;
+  affiliateLink: string;
+  websiteUrl: string;
+  reviewContent?: string;
+  verified?: boolean;
+  badge?: "Top Rated" | "Best Value" | "Editor's Choice";
+  metaTitle: string;
+  metaDescription: string;
+  featured?: boolean;
+}
+
+// Backwards compatibility alias
+export const industries = CATEGORIES;
+
+const base = (overrides: Partial<Software>): Software => {
+  const name = overrides.name ?? "Tool";
+  const summary =
+    overrides.summary ??
+    `${name} is an AI tool designed to help modern teams work faster and ship higher quality work.`;
+  const description =
+    overrides.description ??
+    `${name} combines AI models with practical workflows so marketers, operators, and founders can automate the repetitive work and focus on strategy.`;
+  const rating = overrides.rating ?? 4.6;
+  const reviewCount = overrides.reviewCount ?? 1200;
+
+  const websiteUrl = overrides.websiteUrl ?? (overrides.affiliateLink ? new URL(overrides.affiliateLink).origin : "https://example.com");
+  const id = (overrides.id ?? "").toLowerCase();
+  const slug = (overrides.slug ?? id).toLowerCase();
+  return {
+    id,
+    name,
+    slug,
+    logo: overrides.logo ?? (websiteUrl ? logoUrl(websiteUrl) : ""),
+    tagline: "",
+    summary,
+    description,
+    rating,
+    reviewCount,
+    startingPrice: overrides.startingPrice ?? 0,
+    priceModel: overrides.priceModel ?? "Freemium",
+    category: overrides.category as Category,
+    categories: overrides.categories as Category[],
+    proTip: overrides.proTip ?? "",
+    shortReview:
+      overrides.shortReview ??
+      `${name} is a strong option if you want practical AI features without rebuilding your existing stack.`,
+    features: overrides.features ?? [],
+    pros: overrides.pros ?? [],
+    cons: overrides.cons ?? [],
+    deploymentTime: overrides.deploymentTime ?? "Instant",
+    supportLevel: overrides.supportLevel ?? "Basic",
+    automationScore: overrides.automationScore ?? 85,
+    affiliateLink: overrides.affiliateLink ?? "#",
+    websiteUrl,
+    reviewContent: overrides.reviewContent,
+    verified: overrides.verified ?? true,
+    badge: overrides.badge,
+    metaTitle: overrides.metaTitle ?? `${name} | ${CLONE_CONFIG.siteName}`,
+    metaDescription:
+      overrides.metaDescription ??
+      `Read pros, cons, pricing, and our short review of ${name} on ${CLONE_CONFIG.siteName}.`,
+    featured: overrides.featured ?? false,
+  };
+};
+
+export const mockSoftware: Software[] = [
+  base({
+    id: "adcreative",
+    name: "AdCreative.ai",
+    slug: "adcreative-ai",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=adcreative.ai",
+    tagline: "Generate conversion-focused ad creatives in minutes.",
+    category: "Marketing & Ads",
+    categories: ["Marketing & Ads"],
+    startingPrice: 29,
+    priceModel: "Flat Rate/Month",
+    proTip: "Best for rapid A/B testing of images and copy across Meta and Google.",
+    shortReview:
+      "AdCreative.ai is perfect when you need dozens of on-brand ad variations fast without a full design team.",
+    features: ["Meta & Google ad creatives", "Instant variations", "Brand presets", "CTR scoring"],
+    pros: [
+      "Very fast creative generation for paid campaigns",
+      "Simple UI that marketers can use without a designer",
+      "Built-in scoring to predict winning creatives",
+    ],
+    cons: [
+      "Output can feel template-like if you don’t customize",
+      "Best results require strong brand inputs up front",
+      "Not ideal for long-form or complex storytelling",
+    ],
+    deploymentTime: "Instant",
+    supportLevel: "Priority",
+    automationScore: 92,
+    affiliateLink: "https://adcreative.ai",
+    websiteUrl: "https://adcreative.ai",
+    badge: "Editor's Choice",
+    featured: true,
+    reviewContent: `<p>AdCreative.ai is built for growth teams that need a high volume of on-brand ad creatives without a full design team. You input your brand assets and campaign goals, and the platform generates image and copy variations optimized for Meta, Google, and other major ad networks. The result is more creative options in minutes, so you can run meaningful A/B tests and scale what works.</p><p>Built-in CTR scoring helps you prioritize which concepts to run—saving budget and creative review time. Brand presets keep logos, colors, and voice consistent so your ads look cohesive across campaigns. The interface is straightforward enough for marketers to use daily without design support.</p><p>Where AdCreative.ai shines is rapid iteration: test headlines, visuals, and formats quickly, then double down on winners. Output can feel template-like if you don't customize; the best results come when you invest in strong brand inputs and clear briefs. For long-form or highly narrative creative, you'll still want human copywriters and designers in the loop.</p><p>If paid acquisition is a core growth lever and creative volume is a bottleneck, AdCreative.ai is one of the most practical tools you can add. Start with one campaign or channel, prove the workflow, then expand.</p>`,
+  }),
+  base({
+    id: "jasper",
+    name: "Jasper AI",
+    slug: "jasper-ai",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=jasper.ai",
+    tagline: "AI content workspace for serious marketing teams.",
+    category: "SEO & Writing",
+    categories: ["SEO & Writing"],
+    startingPrice: 49,
+    priceModel: "Per User/Month",
+    proTip: "Use Boss Mode for long-form SEO blogs with outline → draft → optimize workflow.",
+    shortReview:
+      "Jasper AI shines when marketing teams need consistent, on-brand long-form content at scale.",
+    features: ["Long-form editor", "Brand voice", "Campaign workflows", "Templates library"],
+    pros: [
+      "Excellent for repeatable blog and campaign workflows",
+      "Brand voice controls help keep copy on-message",
+      "Strong collaboration features for marketing teams",
+    ],
+    cons: [
+      "Pricier than many solo-writer tools",
+      "Requires some setup to dial in tone and style",
+      "Best features are on higher tiers",
+    ],
+    deploymentTime: "Instant",
+    supportLevel: "Priority",
+    automationScore: 90,
+    affiliateLink: "https://jasper.ai",
+    websiteUrl: "https://jasper.ai",
+    badge: "Top Rated",
+    featured: true,
+    reviewContent: `<p>Jasper AI is the content workspace of choice for marketing teams that need long-form, on-brand output at scale. Blogs, campaign copy, emails, and ads can all be drafted and refined inside Jasper, with strong brand voice controls so everything reads like it came from the same team. In 2026, Boss Mode remains the standout: outline to full draft to optimization in one flow, which is ideal for SEO and thought-leadership content.</p><p>The templates library and campaign workflows reduce repetitive briefing and editing. Collaboration features let multiple stakeholders review and approve without leaving the tool. Integration with major platforms (e.g. WordPress, HubSpot) keeps content moving from draft to publish without copy-paste chaos.</p><p>Jasper is pricier than solo-writer tools, but for teams that ship a lot of repeatable content—blogs, product pages, ad variants—the ROI is clear. Dialing in brand voice and style takes some setup; once that's done, the consistency and speed are hard to match. Best features, including advanced workflows and analytics, live on higher tiers.</p><p>If content volume and brand consistency are growth priorities, Jasper is worth the investment. Start with one content type (e.g. blog or ads), prove the workflow, then expand to the rest of your calendar.</p>`,
+  }),
+  base({
+    id: "elevenlabs",
+    name: "ElevenLabs",
+    slug: "elevenlabs",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=elevenlabs.io",
+    tagline: "Ultra-realistic AI voices and cloning.",
+    category: "Audio & Voice",
+    categories: ["Audio & Voice"],
+    startingPrice: 5,
+    priceModel: "Flat Rate/Month",
+    proTip: "Highest quality voice cloning in 2026—great for brand voices across channels.",
+    shortReview:
+      "ElevenLabs is the go-to choice for teams that care about natural, non-robotic voice quality.",
+    features: ["Voice cloning", "Multilingual support", "Fine-grain controls", "API access"],
+    pros: [
+      "Some of the most natural-sounding voices on the market",
+      "Flexible cloning for brand or creator voices",
+      "Robust API for integrating into products and workflows",
+    ],
+    cons: [
+      "Usage-based pricing requires monitoring for heavy workloads",
+      "Voice cloning has legal and ethical considerations",
+      "UI can feel dense for non-technical users",
+    ],
+    automationScore: 95,
+    affiliateLink: "https://try.elevenlabs.io/5eu3k8mmpbdf",
+    websiteUrl: "https://elevenlabs.io",
+    badge: "Top Rated",
+    featured: true,
+    reviewContent: `<p>ElevenLabs has set the bar for AI voice quality in 2026. Whether you need text-to-speech for videos, voice cloning for brand consistency, or multilingual narration at scale, the platform delivers remarkably natural output that stands up to close listening. Growth teams use it for product demos, training content, and ads without booking studio time.</p><p>The voice library covers a wide range of styles and languages, and the fine-grained controls let you adjust pacing, stability, and clarity so the result matches your brand. For creators and marketers who need a consistent "voice" across many assets, ElevenLabs' cloning feature is among the best we've tested—with clear guidelines on responsible use.</p><p>API access makes it easy to integrate into existing workflows: CMS, video tools, and custom apps can all pull from ElevenLabs. Usage-based pricing means you pay for what you use, which is ideal for teams that scale production up and down. Support is responsive, and the roadmap stays focused on quality and new languages rather than feature bloat.</p><p>If your bottleneck is voiceover volume or localization, ElevenLabs should be at the top of your list. Try it for a high-traffic asset first, then roll it out across the rest of your content pipeline.</p>`,
+  }),
+  base({
+    id: "synthesia",
+    name: "Synthesia",
+    slug: "synthesia",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=synthesia.io",
+    tagline: "AI avatar videos for training, onboarding, and explainers.",
+    category: "Video & Image",
+    categories: ["Video & Image"],
+    startingPrice: 22,
+    priceModel: "Per User/Month",
+    proTip: "Ideal for corporate training videos without hiring actors or studios.",
+    shortReview:
+      "Synthesia makes it trivial to turn scripts into professional presenter-style videos in dozens of languages.",
+    features: ["AI avatars", "140+ languages", "Templates", "Screen and slide recording"],
+    pros: [
+      "Huge time and budget savings vs traditional video shoots",
+      "Great for training, onboarding, and internal comms",
+      "Easy localization into new markets",
+    ],
+    cons: [
+      "Avatar style can feel generic if overused",
+      "Not built for complex cinematic storytelling",
+      "Heavier branding may require custom avatar work",
+    ],
+    automationScore: 88,
+    affiliateLink: "https://synthesia.io",
+    websiteUrl: "https://synthesia.io",
+    featured: true,
+    reviewContent: `<p>Synthesia is the leading choice for AI avatar video in 2026. Turn a script and a few clicks into a professional presenter-style video in 140+ languages—no actors, no studio, no lengthy post-production. For B2B marketing, training, and internal comms, it has become the go-to when you need volume and consistency.</p><p>The platform offers a library of diverse avatars and templates, so you can match the look and tone to your brand. Screen and slide recording are built in, which makes it easy to combine talking-head segments with product demos or decks. Updates are simple: change the script and re-render instead of reshooting.</p><p>Enterprise teams use Synthesia for onboarding, compliance training, and localized sales enablement. The time and cost savings versus traditional video production are substantial, and the output is good enough for most non-cinematic use cases. Custom avatars are available if you need a specific spokesperson.</p><p>If you're scaling video across regions or use cases and don't want to scale headcount, Synthesia is worth a close look. Start with one high-impact use case—e.g. product explainers or training—then expand from there.</p>`,
+  }),
+  base({
+    id: "gamma",
+    name: "Gamma",
+    slug: "gamma",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=gamma.app",
+    tagline: "Generate polished decks and documents in minutes.",
+    category: "Productivity & Work",
+    categories: ["Productivity & Work"],
+    startingPrice: 8,
+    priceModel: "Per User/Month",
+    proTip: "Replaces PowerPoint when you need quick, beautiful decks from a prompt.",
+    shortReview:
+      "Gamma is a favorite for founders and operators who need clean investor, sales, or update decks fast.",
+    features: ["AI slide generation", "Docs & webpages", "Templates", "Brand theming"],
+    pros: [
+      "Extremely fast from idea to presentable deck",
+      "Layouts look more modern than classic slide tools",
+      "Good for both docs and lightweight sites",
+    ],
+    cons: [
+      "Less control than full design tools for pixel-perfect work",
+      "Collaboration features are still evolving",
+      "Exports occasionally need manual clean-up",
+    ],
+    automationScore: 85,
+    affiliateLink: "https://gamma.app",
+    websiteUrl: "https://gamma.app",
+    badge: "Best Value",
+    featured: true,
+    reviewContent: `<p>Gamma has become the default for growth teams that need polished decks and documents in minutes, not days. You describe what you want—investor update, sales one-pager, internal doc—and Gamma generates a clean, modern layout you can edit and present. It effectively replaces PowerPoint for most internal and client-facing decks.</p><p>The AI understands context and structure: add a topic and it suggests sections, visuals, and flow. Brand theming keeps everything on-message, and the output looks more like a designed asset than a traditional slide deck. You can export to PDF or present from the web, and collaboration is built in so teams can iterate together.</p><p>Founders and operators use Gamma for board updates, pitch materials, and strategy docs. The speed of going from idea to shareable deck is the main draw—no design skills required. Exports sometimes need minor tweaks for pixel-perfect needs, but for the majority of use cases Gamma is more than sufficient.</p><p>If your team lives in decks and docs and you want to move faster without a full-time designer, Gamma is an easy win. Start with your next investor or sales deck and see how much time you save.</p>`,
+  }),
+  base({
+    id: "surfer-seo",
+    name: "Surfer SEO",
+    slug: "surfer-seo",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=surferseo.com",
+    tagline: "Data-driven content optimization for Google rankings.",
+    category: "SEO & Writing",
+    categories: ["SEO & Writing"],
+    startingPrice: 59,
+    priceModel: "Flat Rate/Month",
+    proTip: "Use the Content Editor and aim for a 90+ score on your main money pages.",
+    shortReview:
+      "Surfer is ideal when you want clear, opinionated guidance on how to outrank current SERPs.",
+    features: ["Content editor", "SERP analyzer", "Keyword research", "Audits"],
+    pros: [
+      "Highly actionable recommendations inside the editor",
+      "Makes it easy to brief writers on what to include",
+      "Strong for on-page and topical coverage analysis",
+    ],
+    cons: [
+      "Can encourage over-optimization if followed blindly",
+      "Interface has a learning curve for beginners",
+      "Works best paired with strong editorial judgment",
+    ],
+    supportLevel: "Priority",
+    automationScore: 91,
+    affiliateLink: "https://surferseo.com",
+    websiteUrl: "https://surferseo.com",
+    featured: true,
+    reviewContent: `<p>Surfer SEO remains one of the most actionable SEO tools for content teams in 2026. The Content Editor ties directly to live SERP data: you see what's ranking, what's missing from your draft, and how to close the gap. Aim for a 90+ score on money pages and you get clear, prioritized recommendations instead of generic keyword lists.</p><p>The SERP analyzer and keyword research tools help you brief writers and plan content with real data. Surfer's strength is on-page and topical optimization—understanding what the top results have in common and guiding you to match or exceed that. It works best when paired with strong editorial judgment so you don't over-optimize for the algorithm at the expense of readability.</p><p>SEO leads and content managers use Surfer to maintain and improve rankings at scale. The learning curve is steeper than simple keyword tools, but the payoff is content that actually competes. Regular audits and the content planner keep your site aligned with search intent as SERPs change.</p><p>If you're serious about organic growth and want one tool that connects research to execution, Surfer SEO is a strong choice. Use it to optimize your highest-value pages first, then roll out the workflow across your content calendar.</p>`,
+  }),
+  base({
+    id: "browse-ai",
+    name: "Browse AI",
+    slug: "browse-ai",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=browse.ai",
+    tagline: "No-code web data extraction and monitoring.",
+    category: "Data & Automation",
+    categories: ["Data & Automation"],
+    startingPrice: 49,
+    priceModel: "Flat Rate/Month",
+    proTip: "Automate daily price and listing monitoring for your top competitors.",
+    shortReview:
+      "Browse AI is a great fit when you need structured data from websites without writing scrapers.",
+    features: ["Point-and-click extractors", "Change monitoring", "API & integrations"],
+    pros: [
+      "Non-developers can build reliable scrapers",
+      "Monitoring makes it easy to track changes over time",
+      "Good templates for common scraping patterns",
+    ],
+    cons: [
+      "Complex sites may still require manual tweaking",
+      "Heavy usage can get expensive at scale",
+      "Best for recurring, not one-off, scrapes",
+    ],
+    automationScore: 86,
+    affiliateLink: "https://browse.ai",
+    websiteUrl: "https://browse.ai",
+  }),
+  base({
+    id: "make",
+    name: "Make.com",
+    slug: "make",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=make.com",
+    tagline: "Visual automation for complex multi-step workflows.",
+    category: "Data & Automation",
+    categories: ["Data & Automation"],
+    startingPrice: 9,
+    priceModel: "Flat Rate/Month",
+    proTip: "More visual and affordable than Zapier for multi-step, branching automations.",
+    shortReview:
+      "Make.com is excellent when you want to orchestrate complex workflows with a drag-and-drop canvas.",
+    features: ["Visual scenarios", "1000+ integrations", "Routers & branching", "Webhooks"],
+    pros: [
+      "Great visual debugging and mapping of data flows",
+      "Pricing is friendly for experimentation",
+      "Powerful for multi-step automations",
+    ],
+    cons: [
+      "Canvas can feel overwhelming on very large flows",
+      "Some connectors lag behind native APIs",
+      "Requires good governance as automations grow",
+    ],
+    supportLevel: "Priority",
+    automationScore: 93,
+    affiliateLink: "https://make.com",
+    websiteUrl: "https://make.com",
+    badge: "Editor's Choice",
+  }),
+  base({
+    id: "reclaim",
+    name: "Reclaim.ai",
+    slug: "reclaim-ai",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=reclaim.ai",
+    tagline: "Smart calendar and focus time for busy teams.",
+    category: "Productivity & Work",
+    categories: ["Productivity & Work"],
+    startingPrice: 8,
+    priceModel: "Per User/Month",
+    proTip: "Auto-blocks focus time so meetings stop swallowing your entire week.",
+    shortReview:
+      "Reclaim.ai is ideal for ICs and leaders drowning in meetings who need their calendars defended automatically.",
+    features: ["Smart time blocking", "Habit scheduling", "Task sync", "Team analytics"],
+    pros: [
+      "Excellent at protecting deep work time",
+      "Integrates nicely with task tools and Google Calendar",
+      "Good visibility into how time is actually spent",
+    ],
+    cons: [
+      "Primarily optimized for Google Workspace",
+      "Some users need time to trust automated moves",
+      "Best value is on paid plans for teams",
+    ],
+    automationScore: 87,
+    affiliateLink: "https://reclaim.ai",
+    websiteUrl: "https://reclaim.ai",
+  }),
+  base({
+    id: "murf",
+    name: "Murf AI",
+    slug: "murf-ai",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=murf.ai",
+    tagline: "Studio-quality AI voiceovers for video and podcasts.",
+    category: "Audio & Voice",
+    categories: ["Audio & Voice"],
+    startingPrice: 19,
+    priceModel: "Flat Rate/Month",
+    proTip: "Best for YouTube-style voiceovers where you want polish without a full studio.",
+    shortReview:
+      "Murf is strong when you need clear, consistent voiceovers for explainer videos, demos, or YouTube.",
+    features: ["Voice library", "Text-to-speech studio", "Background music", "Timing controls"],
+    pros: [
+      "Friendly interface tailored to voiceover workflows",
+      "Voices tuned for commercial video use",
+      "Timeline-style editor is easy to learn",
+    ],
+    cons: [
+      "Less flexible than raw TTS APIs",
+      "Voice library is curated, not fully custom",
+      "Heavy users may want more advanced mixing tools",
+    ],
+    automationScore: 84,
+    affiliateLink: "https://murf.ai",
+    websiteUrl: "https://murf.ai",
+  }),
+  base({
+    id: "heygen",
+    name: "HeyGen",
+    slug: "heygen",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=heygen.com",
+    tagline: "AI video avatars and automatic lip-synced translation.",
+    category: "Video & Image",
+    categories: ["Video & Image"],
+    startingPrice: 29,
+    priceModel: "Flat Rate/Month",
+    proTip: "Leading the market in video translation with shockingly accurate lip-sync.",
+    shortReview:
+      "HeyGen is a top pick for repurposing existing talking-head videos into multiple languages.",
+    features: ["Avatar video", "Video translation", "Lip-sync", "Templates"],
+    pros: [
+      "Very strong for multilingual repurposing",
+      "Output feels more natural than many competitors",
+      "Good balance between quality and speed",
+    ],
+    cons: [
+      "Pricing can add up with heavy translation volumes",
+      "Brand safety review is still important on sensitive content",
+      "Less suited to cinematic or abstract video work",
+    ],
+    automationScore: 89,
+    affiliateLink: "https://heygen.com",
+    websiteUrl: "https://heygen.com",
+    reviewContent: `<p>HeyGen leads the market in AI video translation and avatar-based content. If you have existing talking-head or spokesperson video and need to repurpose it for new languages or regions, HeyGen's lip-synced translation is the most convincing we've seen in 2026. The result looks and sounds natural, which is critical for trust in sales and support content.</p><p>Beyond translation, HeyGen offers AI avatars and templates for creating new video from scripts—similar in spirit to Synthesia but with a distinct strength in the translation workflow. The platform is built for marketing and enablement teams that need to scale video across markets without multiplying production cost.</p><p>Use cases include localized product demos, training in multiple languages, and repurposing thought leadership for different audiences. Pricing scales with usage, so it's worth planning which assets you'll translate or generate to avoid surprise bills. Brand and legal review is still recommended for sensitive or high-stakes content.</p><p>If you're sitting on a library of English (or other) video and want to activate it globally, HeyGen should be on your shortlist. Run a pilot with one high-value piece of content and evaluate quality and cost before rolling out more broadly.</p>`,
+  }),
+  base({
+    id: "notion-ai",
+    name: "Notion AI",
+    slug: "notion-ai",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=notion.so",
+    tagline: "AI built directly into your team’s knowledge base.",
+    category: "Productivity & Work",
+    categories: ["Productivity & Work"],
+    startingPrice: 10,
+    priceModel: "Per User/Month",
+    proTip: "Best for summarizing long internal docs and meeting notes into next steps.",
+    shortReview:
+      "Notion AI is a no-brainer if your team already lives in Notion and you want smarter summaries and drafting.",
+    features: ["Summaries", "Rewrite and improve", "Brainstorming", "Inline commands"],
+    pros: [
+      "Feels native inside existing Notion workflows",
+      "Great for reducing time spent reading long docs",
+      "Useful for turning notes into action items",
+    ],
+    cons: [
+      "Primarily useful if you’re already all-in on Notion",
+      "Less control than standalone LLM tools",
+      "Occasionally repeats information in summaries",
+    ],
+    automationScore: 84,
+    affiliateLink: "https://notion.so",
+    websiteUrl: "https://notion.so",
+  }),
+  base({
+    id: "hubspot-ai",
+    name: "HubSpot AI",
+    slug: "hubspot-ai",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=hubspot.com",
+    tagline: "AI copilots across CRM, marketing, and sales.",
+    category: "Marketing & Ads",
+    categories: ["Marketing & Ads"],
+    startingPrice: 0,
+    priceModel: "Freemium",
+    proTip: "Essential for automated lead scoring and quick follow-up sequences inside HubSpot.",
+    shortReview:
+      "HubSpot AI is strongest when you already use HubSpot as your GTM system of record.",
+    features: ["Lead scoring", "Email suggestions", "Report generation", "Chat assistance"],
+    pros: [
+      "Deeply embedded across HubSpot hubs",
+      "Improves sales and marketing efficiency with small touches",
+      "Zero extra setup if you’re already a HubSpot shop",
+    ],
+    cons: [
+      "Value depends heavily on broader HubSpot adoption",
+      "Less flexible than standalone AI platforms",
+      "Feature set changes quickly; docs can lag",
+    ],
+    deploymentTime: "1-2 Weeks",
+    supportLevel: "Priority",
+    automationScore: 89,
+    affiliateLink: "https://hubspot.com",
+    websiteUrl: "https://hubspot.com",
+  }),
+  base({
+    id: "invideo",
+    name: "InVideo AI",
+    slug: "invideo-ai",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=invideo.io",
+    tagline: "Prompt-to-video for social, ads, and shorts.",
+    category: "Video & Image",
+    categories: ["Video & Image"],
+    startingPrice: 20,
+    priceModel: "Flat Rate/Month",
+    proTip: "Use prompts + brand presets for fast social media video variations.",
+    shortReview:
+      "InVideo AI is a strong choice for marketers who need a steady stream of platform-native videos.",
+    features: ["Prompt-to-video", "Templates", "Stock library", "Aspect-ratio presets"],
+    pros: [
+      "Very quick to generate social-ready video formats",
+      "Templates lower the bar for non-editors",
+      "Brand presets help keep visuals consistent",
+    ],
+    cons: [
+      "Less control than full NLEs for complex edits",
+      "Heavy stock usage can make content feel generic",
+      "Rendering queues can be slow at peak times",
+    ],
+    automationScore: 83,
+    affiliateLink: "https://invideo.io",
+    websiteUrl: "https://invideo.io",
+  }),
+  base({
+    id: "perplexity-pro",
+    name: "Perplexity Pro",
+    slug: "perplexity-pro",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=perplexity.ai",
+    tagline: "Research-grade AI search with citations.",
+    category: "SEO & Writing",
+    categories: ["SEO & Writing"],
+    startingPrice: 20,
+    priceModel: "Per User/Month",
+    proTip: "Use it as your professional search alternative when doing deep topic research.",
+    shortReview:
+      "Perplexity Pro is fantastic for SEOs, writers, and strategists who need fast, sourced answers.",
+    features: ["Cited answers", "File upload", "Focus modes", "Pro models"],
+    pros: [
+      "Citations make it easier to verify and dig deeper",
+      "Great at summarizing complex topics fast",
+      "File support is handy for research packs",
+    ],
+    cons: [
+      "Still possible to surface outdated sources",
+      "Requires judgment on which citations to trust",
+      "Interface is more utilitarian than flashy",
+    ],
+    automationScore: 88,
+    affiliateLink: "https://perplexity.ai",
+    websiteUrl: "https://perplexity.ai",
+  }),
+  base({
+    id: "fireflies",
+    name: "Fireflies.ai",
+    slug: "fireflies-ai",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=fireflies.ai",
+    tagline: "AI meeting notes and searchable transcripts.",
+    category: "Productivity & Work",
+    categories: ["Productivity & Work"],
+    startingPrice: 0,
+    priceModel: "Freemium",
+    proTip: "Best for creating a searchable archive of all your team’s calls.",
+    shortReview:
+      "Fireflies is great when you want every sales, customer, and internal call captured and searchable.",
+    features: ["Call recording", "Transcription", "Topic search", "Action items"],
+    pros: [
+      "Works across most major meeting platforms",
+      "Searchable transcripts reduce note-taking burden",
+      "Good for coaching and QA across teams",
+    ],
+    cons: [
+      "Guests may need explicit consent reminders",
+      "Transcripts still need spot-checking for accuracy",
+      "Storage and compliance policies should be planned",
+    ],
+    automationScore: 86,
+    affiliateLink: "https://fireflies.ai",
+    websiteUrl: "https://fireflies.ai",
+  }),
+  base({
+    id: "canva-magic",
+    name: "Canva Magic",
+    slug: "canva-magic",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=canva.com",
+    tagline: "AI-powered design tools inside Canva.",
+    category: "Video & Image",
+    categories: ["Video & Image"],
+    startingPrice: 0,
+    priceModel: "Freemium",
+    proTip: "Great for non-designers who need a constant flow of social and brand assets.",
+    shortReview:
+      "Canva Magic is ideal for teams that want simple AI features layered onto a familiar design tool.",
+    features: ["Magic Design", "Text to image", "Brand Kits", "Video editor"],
+    pros: [
+      "Extremely accessible for non-designers",
+      "Huge template library for almost any format",
+      "Magic tools speed up repetitive layout work",
+    ],
+    cons: [
+      "Output can look very “Canva” if overused",
+      "Fine-tuned design control is limited",
+      "Brand governance requires guidelines and guardrails",
+    ],
+    automationScore: 82,
+    affiliateLink: "https://canva.com",
+    websiteUrl: "https://canva.com",
+  }),
+  base({
+    id: "writesonic",
+    name: "Writesonic",
+    slug: "writesonic",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=writesonic.com",
+    tagline: "AI writer for SEO content and performance ads.",
+    category: "SEO & Writing",
+    categories: ["SEO & Writing"],
+    startingPrice: 13,
+    priceModel: "Flat Rate/Month",
+    proTip: "Excellent for fast landing page copy and Google Ads variants.",
+    shortReview:
+      "Writesonic is a practical tool for marketers who need SEO posts and ad copy without a heavy learning curve.",
+    features: ["Articles", "Landing pages", "Ad copy", "Chat assistant"],
+    pros: [
+      "Templates tuned for common marketing tasks",
+      "Simple to get value quickly",
+      "Reasonable pricing for small teams",
+    ],
+    cons: [
+      "Less advanced brand control than enterprise tools",
+      "Outputs still require human editing for best results",
+      "Interface can feel busy in places",
+    ],
+    automationScore: 81,
+    affiliateLink: "https://writesonic.com",
+    websiteUrl: "https://writesonic.com",
+    reviewContent: `<p>Writesonic is a practical AI writing tool for marketers who need SEO content and performance ad copy without a steep learning curve. Articles, landing pages, and Google Ads variants can be generated from prompts and templates, with a chat-style assistant for quick iterations. In 2026 it remains a solid value for small teams and solo operators who want to move faster without enterprise pricing.</p><p>Templates are tuned for common growth tasks: product descriptions, ad headlines, meta descriptions, and blog outlines. The interface is straightforward, so you can get value quickly. Output still benefits from human editing for tone and accuracy, but Writesonic reduces the blank-page problem and speeds up first drafts.</p><p>Pricing is reasonable for the feature set, making it a good fit for startups and SMBs. Brand control is less advanced than in tools like Jasper, so if you need strict voice guidelines across many assets, you may need to enforce those in your process. For many use cases—landing pages, ad tests, and blog support—Writesonic hits the sweet spot between capability and cost.</p><p>If you need more SEO and ad copy output without adding headcount or breaking the budget, Writesonic is a strong option. Use it to accelerate landing pages and paid creative first, then expand to blogs and other assets.</p>`,
+  }),
+  base({
+    id: "midjourney",
+    name: "Midjourney",
+    slug: "midjourney",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=midjourney.com",
+    tagline: "High-fidelity generative art for branding and concepts.",
+    category: "Video & Image",
+    categories: ["Video & Image"],
+    startingPrice: 10,
+    priceModel: "Flat Rate/Month",
+    proTip: "Highest artistic quality for custom branding, concept art, and hero imagery.",
+    shortReview:
+      "Midjourney is the go-to for teams that need original, stylized visuals rather than stock.",
+    features: ["Prompt-based generations", "Styles and versions", "Upscaling", "Community gallery"],
+    pros: [
+      "Industry-leading aesthetic quality",
+      "Excellent for mood boards and concept work",
+      "Active community and examples to learn from",
+    ],
+    cons: [
+      "Workflow primarily lives in Discord",
+      "Rights and usage policies need review for commercial use",
+      "Iterating to precise brand fit can take time",
+    ],
+    automationScore: 90,
+    affiliateLink: "https://midjourney.com",
+    websiteUrl: "https://midjourney.com",
+  }),
+  base({
+    id: "descript",
+    name: "Descript",
+    slug: "descript",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=descript.com",
+    tagline: "Edit audio and video like a document.",
+    category: "Audio & Voice",
+    categories: ["Audio & Voice", "Video & Image"],
+    startingPrice: 12,
+    priceModel: "Per User/Month",
+    proTip: "Edit video by editing text; a huge time saver for podcasts and talking-head content.",
+    shortReview:
+      "Descript is perfect for content teams who edit lots of talking-head or tutorial content.",
+    features: ["Transcription", "Text-based editing", "Overdub", "Screen recorder"],
+    pros: [
+      "Massively faster than timeline-only editing for dialogue",
+      "Built-in overdub and cleanup tools",
+      "Great for podcast and screencast workflows",
+    ],
+    cons: [
+      "Less suited for highly visual or cinematic edits",
+      "Overdub requires good source recordings",
+      "Project sync can be heavy on large files",
+    ],
+    supportLevel: "Priority",
+    automationScore: 88,
+    affiliateLink: "https://descript.com",
+    websiteUrl: "https://descript.com",
+  }),
+  base({
+    id: "frase",
+    name: "Frase",
+    slug: "frase",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=frase.io",
+    tagline: "AI-assisted content briefs and SERP analysis.",
+    category: "SEO & Writing",
+    categories: ["SEO & Writing"],
+    startingPrice: 15,
+    priceModel: "Flat Rate/Month",
+    proTip: "Great for competitive SERP analysis and turning results into actionable briefs.",
+    shortReview:
+      "Frase is best when you want to go from keyword to structured, SEO-aware content brief quickly.",
+    features: ["SERP analysis", "Content briefs", "Topic clustering", "AI writing"],
+    pros: [
+      "Strong at turning SERP data into outlines",
+      "Good companion to writers and editors",
+      "Solid value for SEO-focused teams",
+    ],
+    cons: [
+      "Interface can feel dense at first",
+      "Less suited to pure technical SEO work",
+      "Requires editorial oversight to avoid sameness",
+    ],
+    automationScore: 84,
+    affiliateLink: "https://frase.io",
+    websiteUrl: "https://frase.io",
+  }),
+  base({
+    id: "otter",
+    name: "Otter.ai",
+    slug: "otter-ai",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=otter.ai",
+    tagline: "Real-time AI notes for meetings, lectures, and interviews.",
+    category: "Audio & Voice",
+    categories: ["Audio & Voice"],
+    startingPrice: 10,
+    priceModel: "Per User/Month",
+    proTip: "Best for real-time lecture or interview notes you can search later.",
+    shortReview:
+      "Otter.ai is great for students, journalists, and teams who rely on live transcription.",
+    features: ["Live transcription", "Speaker detection", "Searchable notes", "Integrations"],
+    pros: [
+      "Real-time captions are useful for accessibility",
+      "Decent accuracy in most environments",
+      "Search and highlights speed up review",
+    ],
+    cons: [
+      "Audio quality strongly affects results",
+      "Privacy policies should be reviewed for sensitive content",
+      "Team management features are somewhat basic",
+    ],
+    automationScore: 86,
+    affiliateLink: "https://otter.ai",
+    websiteUrl: "https://otter.ai",
+  }),
+  base({
+    id: "claude-35-sonnet",
+    name: "Claude 3.5 Sonnet",
+    slug: "claude-3-5-sonnet",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=anthropic.com",
+    tagline: "High-context AI for coding and logical writing.",
+    category: "Productivity & Work",
+    categories: ["Productivity & Work", "SEO & Writing"],
+    startingPrice: 20,
+    priceModel: "Per User/Month",
+    proTip: "The current king of coding and structured, logical writing tasks.",
+    shortReview:
+      "Claude 3.5 Sonnet is excellent for teams that need deep context, analysis, and code assistance.",
+    features: ["Large context window", "Code understanding", "Document analysis", "API"],
+    pros: [
+      "Handles long documents and complex chains of thought well",
+      "Strong at reasoning and structured outputs",
+      "Great balance of speed and capability",
+    ],
+    cons: [
+      "Requires thoughtful prompting to get best results",
+      "API pricing can add up under heavy workloads",
+      "UI and ecosystem are still maturing vs incumbents",
+    ],
+    automationScore: 94,
+    affiliateLink: "https://anthropic.com",
+    websiteUrl: "https://anthropic.com",
+    badge: "Top Rated",
+  }),
+  base({
+    id: "runway-gen3",
+    name: "Runway Gen-3",
+    slug: "runway-gen-3",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=runwayml.com",
+    tagline: "Cinematic AI video generation and editing.",
+    category: "Video & Image",
+    categories: ["Video & Image"],
+    startingPrice: 15,
+    priceModel: "Per User/Month",
+    proTip: "Best for cinematic AI video generation and high-end motion concepts.",
+    shortReview:
+      "Runway Gen-3 is ideal for creative teams exploring new visual directions, concept films, and motion experiments.",
+    features: ["Text-to-video", "Image-to-video", "Motion tools", "Editing suite"],
+    pros: [
+      "Cutting-edge visuals for AI-generated video",
+      "Good tools for iterating on motion and style",
+      "Integrates into broader creative workflows",
+    ],
+    cons: [
+      "Results can be unpredictable on complex prompts",
+      "Rendering and experimentation can be compute-heavy",
+      "License terms must be reviewed for commercial use",
+    ],
+    automationScore: 89,
+    affiliateLink: "https://runwayml.com",
+    websiteUrl: "https://runwayml.com",
+  }),
+  base({
+    id: "clay",
+    name: "Clay",
+    slug: "clay",
+    logo: "https://www.google.com/s2/favicons?sz=128&domain=clay.run",
+    tagline: "AI-powered prospecting and lead enrichment.",
+    category: "Data & Automation",
+    categories: ["Data & Automation"],
+    startingPrice: 149,
+    priceModel: "Flat Rate/Month",
+    proTip: "The best tool for AI-powered prospecting and custom lead lists.",
+    shortReview:
+      "Clay is ideal for outbound teams who want hyper-targeted, enriched lead lists at scale.",
+    features: ["Data enrichment", "Prospecting templates", "AI agents", "Integrations"],
+    pros: [
+      "Extremely powerful for B2B data workflows",
+      "Combines enrichment with AI logic and scoring",
+      "Great templates for common GTM motions",
+    ],
+    cons: [
+      "Pricing and complexity are aimed at serious teams",
+      "Requires clear processes to avoid noisy outreach",
+      "Data compliance responsibilities remain on your org",
+    ],
+    automationScore: 93,
+    affiliateLink: "https://clay.run",
+    websiteUrl: "https://clay.run",
+  }),
+].map((item) => ({
+  ...item,
+  logo: item.websiteUrl ? logoUrl(item.websiteUrl) : item.logo,
+  metaTitle: item.metaTitle || `${item.name} | ${CLONE_CONFIG.siteName}`,
+  metaDescription:
+    item.metaDescription ||
+    `Read reviews, pricing, pros and cons for ${item.name} on ${CLONE_CONFIG.siteName}.`,
+}));
+
+export const featuredTools = mockSoftware.filter((s) => s.featured);
+export const toolsByCategory = (category: Category) =>
+  mockSoftware.filter((s) => s.categories.includes(category));
+
