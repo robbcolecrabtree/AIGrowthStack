@@ -298,36 +298,6 @@ export default function Comparison() {
                       </TableCell>
                     ))}
                   </TableRow>
-                  <TableRow>
-                     <TableCell className="font-semibold bg-slate-50/50 text-slate-700 sticky left-0 border-r">AI Risk Analysis</TableCell>
-                     {selectedSoftware.map(s => (
-                      <TableCell key={s.id} className="text-center">
-                        {s.features.some(f => f.includes("AI") || f.includes("Risk")) ? (
-                          <div className="bg-primary/5 text-primary text-[10px] font-bold py-1 px-2 rounded-full inline-flex items-center gap-1 border border-primary/10">
-                            <Check className="w-3 h-3" /> ADVANCED
-                          </div>
-                        ) : (
-                          <div className="bg-slate-50 text-slate-400 text-[10px] font-bold py-1 px-2 rounded-full inline-flex items-center gap-1">
-                            <X className="w-3 h-3" /> NOT FOUND
-                          </div>
-                        )}
-                      </TableCell>
-                    ))}
-                  </TableRow>
-                  <TableRow>
-                     <TableCell className="font-semibold bg-slate-50/50 text-slate-700 sticky left-0 border-r">Mobile Support</TableCell>
-                     {selectedSoftware.map(s => (
-                      <TableCell key={s.id} className="text-center">
-                        {s.features.some(f => f.includes("Mobile") || f.includes("Offline")) ? (
-                          <div className="bg-blue-50 text-blue-700 text-[10px] font-bold py-1 px-2 rounded-full inline-flex items-center gap-1">
-                            <Check className="w-3 h-3" /> NATIVE
-                          </div>
-                        ) : (
-                          <X className="w-4 h-4 text-slate-200 mx-auto" />
-                        )}
-                      </TableCell>
-                    ))}
-                  </TableRow>
                 </TableBody>
               </Table>
             </div>

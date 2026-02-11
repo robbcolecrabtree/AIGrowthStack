@@ -29,8 +29,8 @@ export default function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">3. Affiliate Disclosure</h2>
-              <p>This website is a for-profit directory. We may receive compensation from companies whose products we review or link to. This compensation may impact how and where products appear on the site, including the order in which they appear.</p>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">3. Affiliate & Partnership Policy</h2>
+              <p>Our goal is to provide objective AI analysis. To support this mission, some of the links on AIGrowthStack.io are affiliate links. While we may receive compensation from these providers, our reviews are based on technical performance and growth ROI, not partnership status.</p>
             </section>
 
             <section>

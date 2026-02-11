@@ -29,12 +29,12 @@ export default function PrivacyPolicy() {
 
             <section>
               <h2 className="text-2xl font-bold text-slate-900 mb-4">3. Tracking & Cookies</h2>
-              <p>We use 30-day tracking cookies from affiliate networks (Impact, PartnerStack, etc.) to ensure we receive credit for referrals. These do not store your name or financial details.</p>
+              <p>We use 30-day tracking cookies from affiliate networks to ensure we receive credit for referrals. These do not store your name or financial details.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">4. Impact.com & Affiliate Tracking</h2>
-              <p>We participate in affiliate marketing programs, including those managed by Impact.com. These programs use cookies to track clicks and attribution for sales. No personally identifiable information is stored by us during this process.</p>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">4. Affiliate Tracking</h2>
+              <p>We participate in affiliate marketing programs. These programs use cookies to track clicks and attribution for sales. No personally identifiable information is stored by us during this process.</p>
             </section>
 
             <section>
