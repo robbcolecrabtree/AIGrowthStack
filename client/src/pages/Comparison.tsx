@@ -209,7 +209,7 @@ export default function Comparison() {
                             <Link href={`/product/${software.id}`} className="w-full">
                               <Button size="sm" variant="outline" className="w-full text-xs h-9">Review</Button>
                             </Link>
-                            <a href={`/go/${software.id}`}>
+                            <a href={`/go/${software.id}`} target="_blank" rel="noopener sponsored">
                               <Button size="sm" className="w-full text-xs h-9 shadow-sm">Visit Tool</Button>
                             </a>
                           </div>

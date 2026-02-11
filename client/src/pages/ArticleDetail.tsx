@@ -79,6 +79,9 @@ export default function ArticleDetail() {
               <h1 className="font-heading font-bold text-3xl md:text-5xl text-foreground mb-6 leading-tight">
                 {article.title}
               </h1>
+              <p className="text-sm italic text-muted-foreground mb-6">
+                Disclosure: This post contains affiliate links. If you click and make a purchase, I may earn a small commission at no extra cost to you.
+              </p>
               <p className="text-xl text-muted-foreground leading-relaxed font-medium">
                 {article.excerpt}
               </p>
@@ -123,7 +126,7 @@ export default function ArticleDetail() {
                             <Link href={`/product/${software.id}`} className="flex-1">
                               <Button size="sm" variant="outline" className="w-full text-xs">View Profile</Button>
                             </Link>
-                            <a href={`/go/${software.id}`}>
+                            <a href={`/go/${software.id}`} target="_blank" rel="noopener sponsored">
                               <Button size="sm" className="text-xs">Visit</Button>
                             </a>
                           </div>

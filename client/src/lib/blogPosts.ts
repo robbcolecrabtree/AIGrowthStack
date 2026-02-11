@@ -53,7 +53,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
 
       <h3>3. Automation Without the Headache</h3>
-      <p><a href="/go/make" rel="sponsored nofollow">Make.com</a> is our pick for complex, multi-step automations. It’s more visual and often more affordable than alternatives, with a drag-and-drop canvas that makes it clear how data flows between your CRM, ads, and content tools. Use it to connect your growth stack so leads, content, and reporting stay in sync.</p>
+      <p><a href="https://www.make.com/en/register?pc=aigrowthstack" target="_blank" rel="noopener sponsored">Make.com</a> is our pick for complex, multi-step automations. It’s more visual and often more affordable than alternatives, with a drag-and-drop canvas that makes it clear how data flows between your CRM, ads, and content tools. Use it to connect your growth stack so leads, content, and reporting stay in sync.</p>
       <ul>
         <li>1000+ integrations and flexible routing logic</li>
         <li>Transparent pricing for scaling teams</li>
@@ -65,7 +65,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h3>Start With One, Then Layer In</h3>
       <p>Don’t try to implement everything at once. Pick the bottleneck that hurts most—creative volume, content throughput, or manual handoffs—and add the matching tool first. Once that’s embedded, add the next. The seven tools we’ve highlighted are built to work together and scale with you.</p>
-      <p><strong>Ready to build your stack?</strong> Compare <a href="/go/adcreative" rel="sponsored nofollow">AdCreative.ai</a>, <a href="/go/jasper" rel="sponsored nofollow">Jasper</a>, and <a href="/go/make" rel="sponsored nofollow">Make.com</a> in our directory and start with the one that fits your biggest growth lever.</p>
+      <p><strong>Ready to build your stack?</strong> Compare <a href="/go/adcreative" rel="sponsored nofollow">AdCreative.ai</a>, <a href="/go/jasper" rel="sponsored nofollow">Jasper</a>, and <a href="https://www.make.com/en/register?pc=aigrowthstack" target="_blank" rel="noopener sponsored">Make.com</a> in our directory and start with the one that fits your biggest growth lever.</p>
     `,
   },
   {
@@ -88,7 +88,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Traditional B2B video—training, product demos, thought leadership—has always been expensive and slow. AI-generated video changes the equation: same quality bar for many use cases, at a fraction of the cost and time. For growth teams, that means more touchpoints, faster iteration, and real localization.</p>
 
       <h3>Training and Onboarding Without a Film Crew</h3>
-      <p><a href="/go/synthesia" rel="sponsored nofollow">Synthesia</a> is the go-to when you need professional presenter-style videos without hiring actors or booking a studio. Script in, video out—in 140+ languages. Ideal for compliance training, onboarding, and internal comms where consistency and speed matter more than a single “hero” spokesperson.</p>
+      <p><a href="https://www.synthesia.io/?via=aigrowthstack" target="_blank" rel="noopener sponsored">Synthesia</a> is the go-to when you need professional presenter-style videos without hiring actors or booking a studio. Script in, video out—in 140+ languages. Ideal for compliance training, onboarding, and internal comms where consistency and speed matter more than a single “hero” spokesperson.</p>
       <ul>
         <li>AI avatars that look and sound natural</li>
         <li>Screen and slide recording built in</li>
@@ -115,7 +115,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>AI video shines for: training, onboarding, localized demos, and high-volume social. It’s less ideal when you need a specific executive or celebrity on camera, or when the message is highly sensitive and demands a human face. For most B2B use cases—especially internal and mid-funnel—AI-generated video is already the new standard.</p>
 
       <h3>Get Started With the Right Tool</h3>
-      <p>Choose by use case: <a href="/go/synthesia" rel="sponsored nofollow">Synthesia</a> for training and explainers, <a href="/go/heygen" rel="sponsored nofollow">HeyGen</a> for translation and repurposing, <a href="/go/invideo" rel="sponsored nofollow">InVideo AI</a> for social and ads. Compare all three in our directory and try the one that matches your biggest video bottleneck.</p>
+      <p>Choose by use case: <a href="https://www.synthesia.io/?via=aigrowthstack" target="_blank" rel="noopener sponsored">Synthesia</a> for training and explainers, <a href="/go/heygen" rel="sponsored nofollow">HeyGen</a> for translation and repurposing, <a href="/go/invideo" rel="sponsored nofollow">InVideo AI</a> for social and ads. Compare all three in our directory and try the one that matches your biggest video bottleneck.</p>
     `,
   },
   {

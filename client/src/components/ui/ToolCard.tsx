@@ -81,7 +81,7 @@ export function ToolCard({ tool }: ToolCardProps) {
         >
           Review <ArrowRight className="w-3 h-3" />
         </Link>
-        <a href={goUrl}>
+        <a href={goUrl} target="_blank" rel="noopener sponsored">
           <Button size="sm" className="h-7 px-3 text-[11px]">
             Visit Tool
           </Button>

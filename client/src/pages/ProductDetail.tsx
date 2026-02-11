@@ -109,7 +109,7 @@ export default function ProductDetail() {
 
                   <div className="flex flex-wrap gap-3">
                     <p className="w-full text-xs italic text-muted-foreground mb-1">As an affiliate, we may earn a commission if you purchase through this link at no extra cost to you.</p>
-                    <a href={`/go/${software.id}`}>
+                    <a href={`/go/${software.id}`} target="_blank" rel="noopener sponsored">
                       <Button size="lg" className="gap-2 shadow-md hover:shadow-lg transition-all">
                         Visit Website <ExternalLink className="w-4 h-4" />
                       </Button>
@@ -204,7 +204,7 @@ export default function ProductDetail() {
                    <div className="text-sm text-muted-foreground uppercase tracking-wider font-semibold mb-1">Pricing Model</div>
                    <div className="font-medium text-foreground">{software.priceModel}</div>
                 </div>
-                <a href={`/go/${software.id}`}><Button variant="secondary">View Pricing</Button></a>
+                <a href={`/go/${software.id}`} target="_blank" rel="noopener sponsored"><Button variant="secondary">View Pricing</Button></a>
               </div>
             </div>
 
@@ -272,7 +272,7 @@ export default function ProductDetail() {
               </div>
 
               <div className="mt-8">
-                 <a href={`/go/${software.id}`}>
+                 <a href={`/go/${software.id}`} target="_blank" rel="noopener sponsored">
                     <Button className="w-full">Visit Website</Button>
                  </a>
               </div>

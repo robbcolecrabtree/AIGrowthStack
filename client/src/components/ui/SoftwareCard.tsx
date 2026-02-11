@@ -107,7 +107,7 @@ export function SoftwareCard({ software }: SoftwareCardProps) {
               + Compare
             </Button>
           </Link>
-          <a href={goUrl}>
+          <a href={goUrl} target="_blank" rel="noopener sponsored">
             <Button size="sm" className="w-full sm:w-auto h-9 gap-2 shadow-sm font-bold bg-primary hover:bg-primary/90">
               Visit Tool <ChevronRight className="w-3.5 h-3.5" />
             </Button>

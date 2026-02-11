@@ -69,6 +69,9 @@ export default function BlogPost() {
               <h1 className="font-heading font-bold text-3xl md:text-5xl text-foreground mb-6 leading-tight">
                 {post.title}
               </h1>
+              <p className="text-sm italic text-muted-foreground mb-6">
+                Disclosure: This post contains affiliate links. If you click and make a purchase, I may earn a small commission at no extra cost to you.
+              </p>
               <p className="text-xl text-muted-foreground leading-relaxed font-medium">
                 {post.excerpt}
               </p>
@@ -126,7 +129,7 @@ export default function BlogPost() {
                                 View Profile
                               </Button>
                             </Link>
-                            <a href={`/go/${tool.id}`} rel="sponsored nofollow">
+                            <a href={`/go/${tool.id}`} target="_blank" rel="noopener sponsored">
                               <Button size="sm" className="text-xs">
                                 Visit
                               </Button>
