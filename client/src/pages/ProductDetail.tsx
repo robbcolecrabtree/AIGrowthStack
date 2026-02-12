@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { mockSoftware } from "@/lib/mockData";
+import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Star, Check, X, Building2, Wallet, Users, BadgeCheck } from "lucide-react";
@@ -71,17 +72,30 @@ export default function ProductDetail() {
           <div className="lg:col-span-2 space-y-8">
             
             {/* Header Card */}
-            <div className="bg-card rounded-xl border border-border p-6 shadow-sm">
+            <div
+              className={`rounded-xl p-6 shadow-sm ${!software.cardAccent ? "bg-card border border-border" : "text-zinc-100 [&_.text-muted-foreground]:text-zinc-400"}`}
+              style={
+                software.cardAccent
+                  ? {
+                      background: `linear-gradient(180deg, ${hexToRgba(software.cardAccent, getAccentTintOpacity(software.id))} 0%, transparent 100%), hsl(0 0% 6%)`,
+                      border: "1px solid hsl(var(--border))",
+                      borderTop: `2px solid ${software.cardAccent}`,
+                    }
+                  : undefined
+              }
+            >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-24 h-24 bg-white rounded-lg border border-border flex items-center justify-center p-2 flex-shrink-0 overflow-hidden">
+                <div className={`w-24 h-24 rounded-lg border border-border flex items-center justify-center p-2 flex-shrink-0 overflow-hidden ${software.cardAccent ? "bg-secondary/50" : "bg-white"}`}>
                   <img
                   src={software.logo}
                   alt={`${software.name} logo`}
-                  className="max-w-full max-h-full object-contain"
-                  onError={(e) => {
+                  className={`max-w-full max-h-full object-contain ${software.cardAccent === "#000000" ? "invert" : ""}`}
+                    onError={(e) => {
                     const t = e.target as HTMLImageElement;
                     if (t.src && !t.src.includes("ui-avatars.com")) {
-                      t.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(software.name)}&background=random`;
+                      t.src = software.id === "v0"
+                        ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        : `https://ui-avatars.com/api/?name=${encodeURIComponent(software.name)}&background=random`;
                     }
                   }}
                 />

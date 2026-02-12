@@ -6,7 +6,7 @@ import NotFound from "./not-found";
 export default function GoRedirect() {
   const [match, params] = useRoute("/go/:id");
 
-  const tool = match && params?.id ? mockSoftware.find((s) => s.id === params.id) : null;
+  const tool = match && params?.id ? mockSoftware.find((s) => s.id === (params.id ?? "").toLowerCase()) : null;
   const redirectUrl = tool && (tool.affiliateLink?.trim() || tool.websiteUrl);
 
   useEffect(() => {

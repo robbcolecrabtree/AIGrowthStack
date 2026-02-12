@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { articles } from "@/lib/articles";
 import { mockSoftware } from "@/lib/mockData";
+import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
 import { Link, useRoute } from "wouter";
 import NotFound from "./not-found";
 import { SEO } from "@/components/layout/SEO";
@@ -104,16 +105,30 @@ export default function ArticleDetail() {
                     </h3>
                     <div className="space-y-4">
                       {relatedSoftware.map(software => (
-                        <div key={software.id} className="bg-card p-4 rounded-lg border border-border flex flex-col gap-3">
+                        <div
+                          key={software.id}
+                          className={`p-4 rounded-lg flex flex-col gap-3 ${!software.cardAccent ? "bg-card border border-border" : "text-zinc-100 [&_.text-muted-foreground]:text-zinc-400"}`}
+                          style={
+                            software.cardAccent
+                              ? {
+                                  background: `linear-gradient(180deg, ${hexToRgba(software.cardAccent, getAccentTintOpacity(software.id))} 0%, transparent 100%), hsl(0 0% 6%)`,
+                                  border: "1px solid hsl(var(--border))",
+                                  borderTop: `2px solid ${software.cardAccent}`,
+                                }
+                              : undefined
+                          }
+                        >
                           <div className="flex items-center gap-3">
                             <img
                               src={software.logo}
                               alt={software.name}
-                              className="w-10 h-10 object-contain"
-                              onError={(e) => {
+                              className={`w-10 h-10 object-contain ${software.cardAccent === "#000000" ? "invert" : ""}`}
+                                onError={(e) => {
                                 const t = e.target as HTMLImageElement;
                                 if (t.src && !t.src.includes("ui-avatars.com")) {
-                                  t.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(software.name)}&background=random`;
+                                  t.src = software.id === "v0"
+                                    ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                    : `https://ui-avatars.com/api/?name=${encodeURIComponent(software.name)}&background=random`;
                                 }
                               }}
                             />

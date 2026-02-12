@@ -1,4 +1,5 @@
 import { Software } from "@/lib/mockData";
+import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
 import { Star, Check, ChevronRight, ArrowRight, BadgeCheck } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -10,9 +11,23 @@ interface SoftwareCardProps {
 
 export function SoftwareCard({ software }: SoftwareCardProps) {
   const goUrl = `/go/${software.id}`;
+  const isAccentCard = !!software.cardAccent;
 
   return (
-    <div className="group relative bg-card rounded-xl border border-border/50 shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300 overflow-hidden">
+    <div
+      className={`group relative rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden ${
+        !isAccentCard ? "bg-card border border-border/50 hover:border-primary/30" : "text-zinc-100 [&_.text-muted-foreground]:text-zinc-400 [&_.text-primary]:text-white"
+      }`}
+      style={
+        isAccentCard && software.cardAccent
+          ? {
+              background: `linear-gradient(180deg, ${hexToRgba(software.cardAccent, getAccentTintOpacity(software.id))} 0%, transparent 100%), hsl(0 0% 6%)`,
+              border: "1px solid hsl(var(--border))",
+              borderTop: `2px solid ${software.cardAccent}`,
+            }
+          : undefined
+      }
+    >
       {software.badge && (
         <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-bl-lg z-10">
           {software.badge}
@@ -26,11 +41,13 @@ export function SoftwareCard({ software }: SoftwareCardProps) {
               <img
                 src={software.logo}
                 alt={`${software.name} Logo`}
-                className="max-w-full max-h-full object-contain"
+                className={`max-w-full max-h-full object-contain ${isAccentCard && software.cardAccent === "#000000" ? "invert" : ""}`}
                 onError={(e) => {
                   const t = e.target as HTMLImageElement;
                   if (t.src && !t.src.includes("ui-avatars.com")) {
-                    t.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(software.name)}&background=random`;
+                    t.src = software.id === "v0"
+                      ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                      : `https://ui-avatars.com/api/?name=${encodeURIComponent(software.name)}&background=random`;
                   }
                 }}
               />

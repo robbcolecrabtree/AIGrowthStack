@@ -1,4 +1,5 @@
 import { Software } from "@/lib/mockData";
+import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
 import { Star, BadgeCheck, ArrowRight, Lightbulb } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -10,9 +11,23 @@ interface ToolCardProps {
 
 export function ToolCard({ tool }: ToolCardProps) {
   const goUrl = `/go/${tool.id}`;
+  const isAccentCard = !!tool.cardAccent;
 
   return (
-    <div className="group relative bg-card rounded-xl border border-border/60 shadow-sm hover:shadow-lg hover:border-primary/40 transition-all duration-300 overflow-hidden flex flex-col">
+    <div
+      className={`group relative rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col ${
+        !isAccentCard ? "bg-card border border-border/60 hover:border-primary/40" : "text-zinc-100 [&_.text-muted-foreground]:text-zinc-400"
+      }`}
+      style={
+        isAccentCard && tool.cardAccent
+          ? {
+              background: `linear-gradient(180deg, ${hexToRgba(tool.cardAccent, getAccentTintOpacity(tool.id))} 0%, transparent 100%), hsl(0 0% 6%)`,
+              border: "1px solid hsl(var(--border))",
+              borderTop: `2px solid ${tool.cardAccent}`,
+            }
+          : undefined
+      }
+    >
       {tool.badge && (
         <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-[10px] font-bold px-3 py-1 rounded-bl-lg z-10 uppercase tracking-wide">
           {tool.badge}
@@ -25,11 +40,13 @@ export function ToolCard({ tool }: ToolCardProps) {
             <img
               src={tool.logo}
               alt={`${tool.name} Logo`}
-              className="max-w-full max-h-full object-contain"
+              className={`max-w-full max-h-full object-contain ${isAccentCard && tool.cardAccent === "#000000" ? "invert" : ""}`}
               onError={(e) => {
                 const t = e.target as HTMLImageElement;
                 if (t.src && !t.src.includes("ui-avatars.com")) {
-                  t.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(tool.name)}&background=random`;
+                  t.src = tool.id === "v0"
+                    ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    : `https://ui-avatars.com/api/?name=${encodeURIComponent(tool.name)}&background=random`;
                 }
               }}
             />

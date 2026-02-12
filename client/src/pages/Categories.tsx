@@ -8,6 +8,8 @@ import {
   Mic,
   Briefcase,
   Workflow,
+  Code2,
+  MessageCircle,
   ArrowRight,
 } from "lucide-react";
 import { Link } from "wouter";
@@ -21,6 +23,8 @@ const categoryIcons: Record<string, React.ReactNode> = {
   "Audio & Voice": <Mic className="w-6 h-6" />,
   "Productivity & Work": <Briefcase className="w-6 h-6" />,
   "Data & Automation": <Workflow className="w-6 h-6" />,
+  "Development": <Code2 className="w-6 h-6" />,
+  "Customer Support": <MessageCircle className="w-6 h-6" />,
 };
 
 export default function Categories() {
@@ -39,7 +43,7 @@ export default function Categories() {
             Browse by Category
           </h1>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl">
-            Find the best AI tools for your use case. We've grouped our directory into six categories so you can compare options that fit your stack.
+            Find the best AI tools for your use case. We've grouped our directory into categories so you can compare options that fit your stack.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

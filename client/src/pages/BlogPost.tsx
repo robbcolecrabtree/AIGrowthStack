@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { getBlogPostBySlug } from "@/lib/blogPosts";
 import { mockSoftware } from "@/lib/mockData";
+import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
 import { Link, useRoute } from "wouter";
 import NotFound from "./not-found";
 import { SEO } from "@/components/layout/SEO";
@@ -96,17 +97,28 @@ export default function BlogPost() {
                       {featuredTools.map((tool) => (
                         <div
                           key={tool.id}
-                          className="bg-card p-4 rounded-lg border border-border flex flex-col gap-3"
+                          className={`p-4 rounded-lg flex flex-col gap-3 ${!tool.cardAccent ? "bg-card border border-border" : "text-zinc-100 [&_.text-muted-foreground]:text-zinc-400"}`}
+                          style={
+                            tool.cardAccent
+                              ? {
+                                  background: `linear-gradient(180deg, ${hexToRgba(tool.cardAccent, getAccentTintOpacity(tool.id))} 0%, transparent 100%), hsl(0 0% 6%)`,
+                                  border: "1px solid hsl(var(--border))",
+                                  borderTop: `2px solid ${tool.cardAccent}`,
+                                }
+                              : undefined
+                          }
                         >
                           <div className="flex items-center gap-3">
                             <img
                               src={tool.logo}
                               alt={tool.name}
-                              className="w-10 h-10 object-contain"
+                              className={`w-10 h-10 object-contain ${tool.cardAccent === "#000000" ? "invert" : ""}`}
                               onError={(e) => {
                                 const t = e.target as HTMLImageElement;
                                 if (t.src && !t.src.includes("ui-avatars.com")) {
-                                  t.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(tool.name)}&background=random`;
+                                  t.src = tool.id === "v0"
+                                    ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                    : `https://ui-avatars.com/api/?name=${encodeURIComponent(tool.name)}&background=random`;
                                 }
                               }}
                             />

@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { mockSoftware, Software } from "@/lib/mockData";
+import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Check, X, ArrowLeft, Plus, Search, Trash2 } from "lucide-react";
 import { Link } from "wouter";
@@ -176,10 +177,21 @@ export default function Comparison() {
                   <TableRow className="hover:bg-transparent">
                     <TableHead className="w-[200px] bg-slate-50/80 font-bold text-slate-900 sticky left-0 z-10 border-r">Feature</TableHead>
                     {selectedSoftware.map(software => (
-                      <TableHead key={software.id} className="min-w-[220px] text-center bg-slate-50/30 group relative">
+                      <TableHead
+                        key={software.id}
+                        className={`min-w-[220px] text-center group relative ${!software.cardAccent ? "bg-slate-50/30" : "text-zinc-100 [&_.text-muted-foreground]:text-zinc-400"}`}
+                        style={
+                          software.cardAccent
+                            ? {
+                                background: `linear-gradient(180deg, ${hexToRgba(software.cardAccent, getAccentTintOpacity(software.id))} 0%, transparent 100%), hsl(0 0% 6%)`,
+                                borderTop: `2px solid ${software.cardAccent}`,
+                              }
+                            : undefined
+                        }
+                      >
                         <button 
                           onClick={() => handleRemove(software.id)}
-                          className="absolute top-2 right-2 p-1 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-md transition-all opacity-0 group-hover:opacity-100"
+                          className={`absolute top-2 right-2 p-1 rounded-md transition-all opacity-0 group-hover:opacity-100 ${software.cardAccent ? "text-slate-300 hover:text-red-400 hover:bg-white/10" : "text-slate-400 hover:text-red-500 hover:bg-red-50"}`}
                           title="Remove from comparison"
                         >
                           <Trash2 className="w-4 h-4" />
@@ -189,11 +201,13 @@ export default function Comparison() {
                             <img
                             src={software.logo}
                             alt={software.name}
-                            className="max-w-full max-h-full object-contain"
+                            className={`max-w-full max-h-full object-contain ${software.cardAccent === "#000000" ? "invert" : ""}`}
                             onError={(e) => {
                               const t = e.target as HTMLImageElement;
                               if (t.src && !t.src.includes("ui-avatars.com")) {
-                                t.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(software.name)}&background=random`;
+                                t.src = software.id === "v0"
+                                  ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                  : `https://ui-avatars.com/api/?name=${encodeURIComponent(software.name)}&background=random`;
                               }
                             }}
                           />

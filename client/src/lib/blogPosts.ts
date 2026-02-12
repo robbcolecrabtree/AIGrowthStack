@@ -146,7 +146,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
 
       <h3>Murf AI: Studio-Quality Voiceovers for Video</h3>
-      <p><a href="/go/murf" rel="sponsored nofollow">Murf AI</a> is tuned for video and YouTube-style voiceovers. You get a clear, consistent read without booking a studio. The interface is built around voiceover workflows—timing, music, and export—so non-audio people can produce professional results. Ideal for explainers, product demos, and ad scripts.</p>
+      <p><a href="https://get.murf.ai/3pgqoi4aiz8w" target="_blank" rel="noopener sponsored">Murf AI</a> is tuned for video and YouTube-style voiceovers. You get a clear, consistent read without booking a studio. The interface is built around voiceover workflows—timing, music, and export—so non-audio people can produce professional results. Ideal for explainers, product demos, and ad scripts.</p>
       <ul>
         <li>Curated voice library suited to commercial use</li>
         <li>Timeline editor and background music options</li>
@@ -157,10 +157,10 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Where AI voice already wins: scalable narration, localization, accessibility, and rapid iteration. Where you should still use human talent: when a specific person’s identity is part of the product (e.g. a host), when legal or union rules apply, or when the content is highly sensitive. For most marketing, training, and support audio, AI voice is not just acceptable—it’s expected.</p>
 
       <h3>Responsible Use and Best Practices</h3>
-      <p>Voice cloning raises real ethical and legal questions. Use it with clear disclosure where appropriate, respect rights of likeness, and follow platform and regional rules. Both <a href="/go/elevenlabs" rel="sponsored nofollow">ElevenLabs</a> and <a href="/go/murf" rel="sponsored nofollow">Murf AI</a> provide usage guidelines; your brand should have a policy too.</p>
+      <p>Voice cloning raises real ethical and legal questions. Use it with clear disclosure where appropriate, respect rights of likeness, and follow platform and regional rules. Both <a href="/go/elevenlabs" rel="sponsored nofollow">ElevenLabs</a> and <a href="https://get.murf.ai/3pgqoi4aiz8w" target="_blank" rel="noopener sponsored">Murf AI</a> provide usage guidelines; your brand should have a policy too.</p>
 
       <h3>Try the Tools That Fit Your Workflow</h3>
-      <p>For the best possible quality and flexibility, start with <a href="/go/elevenlabs" rel="sponsored nofollow">ElevenLabs</a>. For a voiceover-focused, video-ready workflow, try <a href="/go/murf" rel="sponsored nofollow">Murf AI</a>. Compare pricing and features in our directory and pick the one that matches how you create audio today.</p>
+      <p>For the best possible quality and flexibility, start with <a href="/go/elevenlabs" rel="sponsored nofollow">ElevenLabs</a>. For a voiceover-focused, video-ready workflow, try <a href="https://get.murf.ai/3pgqoi4aiz8w" target="_blank" rel="noopener sponsored">Murf AI</a>. Compare pricing and features in our directory and pick the one that matches how you create audio today.</p>
     `,
   },
   {
