@@ -14,7 +14,7 @@ import Disclosure from "@/pages/Disclosure";
 import ScrollToTop from "@/components/layout/ScrollToTop";
 
 import Resources from "@/pages/Resources";
-import ArticleDetail from "@/pages/ArticleDetail";
+import ResourceDetail from "@/pages/ResourceDetail";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import GoRedirect from "@/pages/GoRedirect";
@@ -32,7 +32,7 @@ function Router() {
         <Route path="/blog" component={Blog} />
         <Route path="/blog/:slug" component={BlogPost} />
         <Route path="/resources" component={Resources} />
-        <Route path="/resources/:slug" component={ArticleDetail} />
+        <Route path="/resources/:slug" component={ResourceDetail} />
         <Route path="/privacy" component={PrivacyPolicy} />
         <Route path="/terms" component={TermsOfService} />
         <Route path="/disclosure" component={Disclosure} />

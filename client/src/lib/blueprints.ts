@@ -1,0 +1,113 @@
+import { Database, Presentation, CalendarCheck } from "lucide-react";
+
+export type BlueprintType = "Blueprint / JSON Config" | "Template / Prompt Guide" | "Guide / Checklist";
+
+export interface HowToUseStep {
+  step: number;
+  title: string;
+  body: string;
+}
+
+export interface Blueprint {
+  id: string;
+  slug: string;
+  title: string;
+  type: BlueprintType;
+  description: string;
+  ctaLabel: string;
+  ctaHref: string;
+  affiliateUrl: string;
+  toolName: string;
+  icon: typeof Database;
+  copyableContent: string;
+  copyableLabel: string;
+  howToUseSteps: HowToUseStep[];
+}
+
+export const blueprints: Blueprint[] = [
+  {
+    id: "browse-ai-lead-scraper",
+    slug: "browse-ai-recipe",
+    title: "The Browse AI Lead Scraper Recipe",
+    type: "Blueprint / JSON Config",
+    description: "A pre-configured robot setup to monitor niche directories and auto-export to CSV.",
+    ctaLabel: "Download Config",
+    ctaHref: "/resources/browse-ai-recipe",
+    affiliateUrl: "/go/browse-ai",
+    toolName: "Browse AI",
+    icon: Database,
+    copyableLabel: "Copy Config",
+    copyableContent: `{
+  "robot": "directory-monitor",
+  "targets": ["niche-directory-url"],
+  "extract": ["company", "contact", "listing_url"],
+  "schedule": "daily",
+  "export": "csv",
+  "notify": true
+}`,
+    howToUseSteps: [
+      { step: 1, title: "Create a new robot in Browse AI", body: "Log into Browse AI and create a new robot. Select the 'List Extractor' template for directory-style pages." },
+      { step: 2, title: "Paste the config", body: "Replace the placeholder URL in the config with your target directory. Adjust the extract fields to match the columns you need." },
+      { step: 3, title: "Set your schedule", body: "Configure daily or weekly runs. Enable CSV export and optional email alerts when new listings appear." },
+      { step: 4, title: "Export and use", body: "Download your CSV or connect to Zapier/Make for automated pipelines into your CRM or enrichment tools." },
+    ],
+  },
+  {
+    id: "gamma-gtm-slide-master",
+    slug: "gamma-gtm-slide-master",
+    title: "The Gamma GTM Slide Master",
+    type: "Template / Prompt Guide",
+    description: "A master-list of AI prompts to generate high-converting sales decks in Gamma.",
+    ctaLabel: "Get the Prompts",
+    ctaHref: "/resources/gamma-gtm-slide-master",
+    affiliateUrl: "/go/gamma",
+    toolName: "Gamma",
+    icon: Presentation,
+    copyableLabel: "Copy Prompts",
+    copyableContent: `PROMPT 1 - GTM Strategy Deck
+Create a 12-slide GTM strategy deck for [PRODUCT] targeting [ICP]. Include: problem, solution, market size, competitive positioning, go-to-market motion, channels, pricing, and 90-day timeline.
+
+PROMPT 2 - Sales One-Pager
+Generate a one-page sales overview for [PRODUCT] with: headline, 3 key benefits, social proof, pricing tier, and clear CTA. Use a modern, minimal layout.
+
+PROMPT 3 - Investor Update
+Create a monthly investor update template with: metrics dashboard, key wins, challenges, learnings, and next 30-day priorities. Use data visualization placeholders.`,
+    howToUseSteps: [
+      { step: 1, title: "Open Gamma", body: "Log into Gamma and start a new presentation. Choose 'Generate with AI' to use the prompt workflow." },
+      { step: 2, title: "Paste the prompt", body: "Copy one of the prompts above and paste it into Gamma's prompt field. Replace [PRODUCT], [ICP], and other placeholders with your specifics." },
+      { step: 3, title: "Generate and refine", body: "Let Gamma generate the deck. Use the editor to tweak visuals, add your own data, and apply brand theming." },
+      { step: 4, title: "Export or present", body: "Present directly from Gamma or export to PDF for distribution. Share the link for interactive, mobile-responsive viewing." },
+    ],
+  },
+  {
+    id: "founders-time-blocking-protocol",
+    slug: "founders-time-blocking-protocol",
+    title: "The Founder's Time-Blocking Protocol",
+    type: "Guide / Checklist",
+    description: "A step-by-step setup for Reclaim.ai to automate your work-life balance and project tasks.",
+    ctaLabel: "Open Guide",
+    ctaHref: "/resources/founders-time-blocking-protocol",
+    affiliateUrl: "/go/reclaim",
+    toolName: "Reclaim.ai",
+    icon: CalendarCheck,
+    copyableLabel: "Copy Checklist",
+    copyableContent: `□ Connect Google Calendar
+□ Add 2–3 focus blocks (90 min each) per week
+□ Add 1 weekly review block (60 min)
+□ Sync tasks from Asana/Linear/Jira/Notion
+□ Set habit: "Deep Work" (recurring)
+□ Set habit: "Email" (30 min daily)
+□ Enable "Defend" mode for focus blocks
+□ Configure team visibility (optional)`,
+    howToUseSteps: [
+      { step: 1, title: "Connect your calendar", body: "Link Reclaim.ai to your Google Calendar. Enable task sync from your project tool (Asana, Linear, Jira, or Notion)." },
+      { step: 2, title: "Add your blocks", body: "Create 2–3 focus blocks (90 min) and one weekly review block. Reclaim will find the best slots and defend them from meetings." },
+      { step: 3, title: "Set your habits", body: "Add recurring habits like 'Deep Work' and 'Email' so Reclaim schedules them consistently. Use Defend mode so blocks move instead of being deleted." },
+      { step: 4, title: "Let it run", body: "Reclaim will auto-schedule and reschedule as your calendar changes. Review the analytics to see how your time is actually spent." },
+    ],
+  },
+];
+
+export function getBlueprintBySlug(slug: string): Blueprint | undefined {
+  return blueprints.find((b) => b.slug === slug);
+}

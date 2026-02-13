@@ -38,6 +38,9 @@ const articleSlugs = [
   "how-to-scale-your-ad-creative-with-ai",
   "the-2026-guide-to-ai-seo",
   "why-ai-voiceovers-are-replacing-traditional-studios",
+  "browse-ai-recipe",
+  "gamma-gtm-slide-master",
+  "founders-time-blocking-protocol",
 ];
 
 const blogSlugs = [
@@ -50,6 +53,11 @@ const blogSlugs = [
   "marketing-agents-2026",
   "geo-seo-guide",
   "zero-cac-stack",
+  "growth-engineer-stack-2026",
+  "apollo-data-layer-guide",
+  "browse-ai-no-code-scraping",
+  "gamma-ai-presentation-revolution",
+  "reclaim-ai-productivity-ops",
 ];
 
 function escapeXml(s) {

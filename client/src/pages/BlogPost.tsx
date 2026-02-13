@@ -44,7 +44,7 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans">
-      <div className="fixed top-0 left-0 right-0 h-1 z-[60] bg-transparent overflow-hidden">
+      <div className="fixed top-16 left-0 right-0 h-1 z-[110] bg-transparent overflow-hidden">
         <motion.div
           className="h-full w-full origin-left"
           style={{ scaleX: clampedProgress, backgroundColor: PROGRESS_BAR_COLOR }}

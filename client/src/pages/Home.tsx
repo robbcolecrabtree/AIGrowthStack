@@ -10,14 +10,36 @@ import {
   toolsByCategory,
 } from "@/lib/mockData";
 import { Button } from "@/components/ui/button";
-import { ArrowUpDown, Sparkles, LayoutGrid, BookOpen, ArrowRight } from "lucide-react";
+import { ArrowUpDown, Sparkles, LayoutGrid, BookOpen, ArrowRight, FileText } from "lucide-react";
 import { Link, useSearchParams } from "wouter";
 import { SEO } from "@/components/layout/SEO";
 import { CLONE_CONFIG } from "@/lib/config";
 import { BLOG_POSTS } from "@/lib/blogPosts";
 import { BlogCard } from "@/components/ui/BlogCard";
+import type { BlogPost } from "@/lib/blogPosts";
 
 const categorySlug = (c: string) => encodeURIComponent(c);
+
+const latestInsights = BLOG_POSTS.slice(-5);
+
+function LatestInsightCard({ post }: { post: BlogPost }) {
+  return (
+    <Link
+      href={`/blog/${post.slug}`}
+      className="group flex-shrink-0 w-[280px] md:w-auto snap-center md:snap-align-none flex flex-col bg-card border border-border rounded-xl overflow-hidden transition-all duration-200 hover:border-[#A855F7]/60 hover:shadow-[0_0_20px_-5px_rgba(168,85,247,0.2)] no-underline"
+    >
+      <div className="h-20 flex-shrink-0 bg-gradient-to-br from-primary/20 via-secondary to-primary/10" />
+      <div className="p-4 flex flex-col flex-grow">
+        <h3 className="font-heading font-bold text-sm text-foreground line-clamp-2 leading-tight mb-3 group-hover:text-primary transition-colors">
+          {post.title}
+        </h3>
+        <span className="mt-auto inline-flex items-center gap-1.5 w-fit h-8 px-3 rounded-md text-xs font-semibold border border-primary/40 text-primary group-hover:bg-primary/10 transition-colors">
+          Read <ArrowRight className="w-3 h-3" />
+        </span>
+      </div>
+    </Link>
+  );
+}
 
 export default function Home() {
   const [searchParams] = useSearchParams();
@@ -80,6 +102,23 @@ export default function Home() {
                   {tag}
                 </span>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Insights */}
+      <section className="border-b border-border py-8 md:py-10">
+        <div className="container mx-auto px-4 mb-4">
+          <div className="flex items-center gap-2">
+            <FileText className="w-5 h-5 text-primary" />
+            <h2 className="font-heading font-bold text-xl md:text-2xl text-foreground">Latest Insights</h2>
+          </div>
+        </div>
+        <div className="md:container md:mx-auto md:px-4">
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pl-4 pr-8 pb-4 md:pl-0 md:pr-0 md:grid md:grid-cols-3 md:overflow-visible md:snap-none md:gap-6 md:pb-0 scrollbar-none [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+            {latestInsights.map((post) => (
+              <LatestInsightCard key={post.id} post={post} />
             ))}
           </div>
         </div>
@@ -183,7 +222,7 @@ export default function Home() {
         </div>
         <div className="text-center">
           <Link href="/blog">
-            <Button variant="outline" className="gap-2">
+            <Button variant="outline" className="gap-2 border-primary text-primary hover:bg-primary/10 hover:border-primary">
               View all articles <ArrowRight className="w-4 h-4" />
             </Button>
           </Link>

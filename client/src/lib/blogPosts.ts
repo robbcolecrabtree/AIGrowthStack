@@ -61,7 +61,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
 
       <h3>Rounding Out the Stack</h3>
-      <p>Beyond these three, a complete growth stack in 2026 typically includes: a data enrichment or scraping tool (e.g. <a href="/go/browse-ai" rel="sponsored nofollow">Browse AI</a> for competitive monitoring), a calendar and focus-time tool like <a href="/go/reclaim" rel="sponsored nofollow">Reclaim.ai</a>, and a meeting intelligence layer such as <a href="/go/fireflies" rel="sponsored nofollow">Fireflies.ai</a>. The goal is to automate the repetitive work so your team can focus on strategy and creativity.</p>
+      <p>Beyond these three, a complete growth stack in 2026 typically includes: a data enrichment or scraping tool (e.g. <a href="/go/browse-ai" target="_blank" rel="noopener sponsored">Browse AI</a> for competitive monitoring), a calendar and focus-time tool like <a href="/go/reclaim" target="_blank" rel="noopener sponsored">Reclaim.ai</a>, and a meeting intelligence layer such as <a href="/go/fireflies" rel="sponsored nofollow">Fireflies.ai</a>. The goal is to automate the repetitive work so your team can focus on strategy and creativity.</p>
 
       <h3>Start With One, Then Layer In</h3>
       <p>Don’t try to implement everything at once. Pick the bottleneck that hurts most—creative volume, content throughput, or manual handoffs—and add the matching tool first. Once that’s embedded, add the next. The seven tools we’ve highlighted are built to work together and scale with you.</p>
@@ -174,7 +174,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishDate: "February 10, 2026",
     lastUpdated: "Feb 2026",
     readTime: "8 min read",
-    featuredToolIds: ["surfer-seo", "perplexity-pro", "frase"],
+    featuredToolIds: ["surfer-seo", "perplexity-pro", "frase", "gamma"],
     metaTitle: "Smarter SEO: Moving Beyond Keywords with AI Content Audits | AI Growth Stack",
     metaDescription:
       "Use Surfer SEO, Perplexity Pro, and Frase for AI-driven content audits and SERP analysis. A growth-focused SEO workflow for 2026.",
@@ -211,6 +211,9 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h3>Level Up Your SEO Stack</h3>
       <p>Combine <a href="/go/surfer-seo" rel="sponsored nofollow">Surfer SEO</a> for optimization, <a href="/go/perplexity-pro" rel="sponsored nofollow">Perplexity Pro</a> for research, and <a href="/go/frase" rel="sponsored nofollow">Frase</a> for briefs and SERP analysis. Compare all three in our directory and implement the one that addresses your biggest SEO bottleneck first.</p>
+
+      <h3>Presenting Your Findings</h3>
+      <p>Once you've run your audits, you need to share them effectively. Gamma is the best way to turn AI audits into interactive presentations—turn your findings into polished decks and docs in minutes. <a href="/go/gamma" target="_blank" rel="noopener sponsored">Try Gamma for free</a>.</p>
     `,
   },
   {
@@ -233,7 +236,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Small teams don’t have spare capacity for repetitive work. Every hour spent on manual scheduling, competitor checks, or meeting notes is an hour not spent on product, customers, or strategy. The right “AI agents” aren’t sci-fi—they’re tools that run in the background: defending your calendar, pulling data from the web, and turning calls into searchable notes. Three we recommend: Reclaim.ai, Browse AI, and Fireflies.ai.</p>
 
       <h3>Reclaim.ai: Your Calendar’s Bodyguard</h3>
-      <p><a href="/go/reclaim" rel="sponsored nofollow">Reclaim.ai</a> automatically blocks focus time, habits, and tasks on your calendar so meetings don’t swallow the week. It syncs with Google Calendar and task tools, then finds and defends time for deep work. For small teams, that means fewer “no time to think” weeks and less manual calendar Tetris.</p>
+      <p><a href="/go/reclaim" target="_blank" rel="noopener sponsored">Reclaim.ai</a> automatically blocks focus time, habits, and tasks on your calendar so meetings don’t swallow the week. It syncs with Google Calendar and task tools, then finds and defends time for deep work. For small teams, that means fewer “no time to think” weeks and less manual calendar Tetris.</p>
       <ul>
         <li>Smart scheduling that respects priorities and habits</li>
         <li>Integrations with task apps and Google Calendar</li>
@@ -241,7 +244,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
 
       <h3>Browse AI: Data From the Web Without Code</h3>
-      <p><a href="/go/browse-ai" rel="sponsored nofollow">Browse AI</a> lets you extract and monitor web data without writing scrapers. Set up a flow for competitor pricing, job postings, or any public list; run it daily or on a schedule. You get structured data (e.g. CSV or API) so you can alert on changes or feed other tools. Ideal for small teams that need market intel but don’t have a data engineer.</p>
+      <p><a href="/go/browse-ai" target="_blank" rel="noopener sponsored">Browse AI</a> lets you extract and monitor web data without writing scrapers. Set up a flow for competitor pricing, job postings, or any public list; run it daily or on a schedule. You get structured data (e.g. CSV or API) so you can alert on changes or feed other tools. Ideal for small teams that need market intel but don’t have a data engineer.</p>
       <ul>
         <li>Point-and-click extractors and monitors</li>
         <li>Runs on a schedule so you always have fresh data</li>
@@ -260,7 +263,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Don’t automate everything at once. Pick the biggest time sink: calendar chaos → Reclaim; competitor or market data → Browse AI; call follow-ups and search → Fireflies. Roll out one tool, get the team using it, then add the next. Small teams see ROI fastest when automation is focused.</p>
 
       <h3>Get Your First Agent in Place</h3>
-      <p>Compare <a href="/go/reclaim" rel="sponsored nofollow">Reclaim.ai</a>, <a href="/go/browse-ai" rel="sponsored nofollow">Browse AI</a>, and <a href="/go/fireflies" rel="sponsored nofollow">Fireflies.ai</a> in our directory. Each has a free or trial tier—start with the one that addresses your most painful manual process and build from there.</p>
+      <p>Compare <a href="/go/reclaim" target="_blank" rel="noopener sponsored">Reclaim.ai</a>, <a href="/go/browse-ai" target="_blank" rel="noopener sponsored">Browse AI</a>, and <a href="/go/fireflies" rel="sponsored nofollow">Fireflies.ai</a> in our directory. Each has a free or trial tier—start with the one that addresses your most painful manual process and build from there.</p>
     `,
   },
   {
@@ -283,7 +286,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>For years, GTM teams have argued: one platform to rule them all, or a modular stack you orchestrate yourself? In 2026, the answer is both. Apollo delivers unmatched scale and an AI assistant that handles 80% of prospecting. Clay delivers data points Apollo simply can't reach—live LinkedIn posts, news, and waterfall enrichment across dozens of providers. The best teams don't choose. They pipeline.</p>
 
       <h3>Apollo's 2026 Edge: Scale and the AI Research Assistant</h3>
-      <p><a href="/go/apollo" rel="sponsored nofollow">Apollo</a> owns the sheer scale game. With 275M+ contacts and a unified database, you can map Total Addressable Market (TAM) in minutes, not weeks. The 2026 differentiator is the <strong>AI Research Assistant</strong>: it automates complex search logic and writes highly personalized outreach sequences based on 250+ data points per lead. For bulk discovery and initial qualification, nothing touches it.</p>
+      <p><a href="/go/apollo" target="_blank" rel="noopener sponsored">Apollo</a> owns the sheer scale game. With 275M+ contacts and a unified database, you can map Total Addressable Market (TAM) in minutes, not weeks. The 2026 differentiator is the <strong>AI Research Assistant</strong>: it automates complex search logic and writes highly personalized outreach sequences based on 250+ data points per lead. For bulk discovery and initial qualification, nothing touches it.</p>
       <ul>
         <li>275M+ contacts for rapid TAM mapping and list building</li>
         <li>AI Research Assistant handles ~80% of prospecting workflows</li>
@@ -307,7 +310,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ol>
 
       <h3>Pricing Breakdown</h3>
-      <p><a href="/go/apollo" rel="sponsored nofollow">Apollo</a> wins on accessibility: free tier available, paid plans from $49/mo (annual). Great for founders and SDRs who need to move fast without a big wallet. <a href="/go/clay" rel="sponsored nofollow">Clay</a> starts at $149/mo for the "Builder" plan—a real investment, but justified when you're doing high-touch outbound at scale. The hybrid workflow makes sense when your deal size or volume justifies both.</p>
+      <p><a href="/go/apollo" target="_blank" rel="noopener sponsored">Apollo</a> wins on accessibility: free tier available, paid plans from $49/mo (annual). Great for founders and SDRs who need to move fast without a big wallet. <a href="/go/clay" rel="sponsored nofollow">Clay</a> starts at $149/mo for the "Builder" plan—a real investment, but justified when you're doing high-touch outbound at scale. The hybrid workflow makes sense when your deal size or volume justifies both.</p>
 
       <h3>2026 GTM Feature Matrix</h3>
       <table class="w-full border-collapse border border-border rounded-lg overflow-hidden my-6">
@@ -331,7 +334,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h3>Stack Recommendation by Company Size</h3>
       <p><strong>Solo founders & early-stage:</strong> Start with Apollo. Free tier + $49/mo gets you to market. Add Clay when you're closing deals large enough to justify 1:1 personalization.</p>
       <p><strong>Scale-up & Enterprise:</strong> Run both. Apollo for bulk discovery and TAM; Clay for high-intent enrichment and personalization. Pipe into <a href="/go/activecampaign" rel="sponsored nofollow">ActiveCampaign</a> for nurture. The best GTM teams in 2026 aren't picking one—they're orchestrating all three.</p>
-      <p><strong>Ready to build your stack?</strong> Compare <a href="/go/apollo" rel="sponsored nofollow">Apollo</a>, <a href="/go/clay" rel="sponsored nofollow">Clay</a>, and <a href="/go/activecampaign" rel="sponsored nofollow">ActiveCampaign</a> in our directory and start with the tool that fits your biggest GTM lever.</p>
+      <p><strong>Ready to build your stack?</strong> Compare <a href="/go/apollo" target="_blank" rel="noopener sponsored">Apollo</a>, <a href="/go/clay" rel="sponsored nofollow">Clay</a>, and <a href="/go/activecampaign" rel="sponsored nofollow">ActiveCampaign</a> in our directory and start with the tool that fits your biggest GTM lever.</p>
     `,
   },
   {
@@ -486,7 +489,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p><strong>Waterfall Enrichment</strong> is the antidote. Instead of paying for every lead, you build your own pipeline: discover leads via a massive database (Apollo), enrich them with cheap-then-premium providers (Clay), and execute personalized outreach (ActiveCampaign). CAC approaches zero because you're not bidding on clicks. You're investing in data and automation.</p>
 
       <h3>The Discovery Layer: Apollo's 275M+ Database for the "Who"</h3>
-      <p>The first question in outbound is always: <em>Who?</em> <a href="/go/apollo" rel="sponsored nofollow">Apollo</a> answers it at scale. With 275M+ contacts and company data, you can define your ideal customer profile (ICP), build lists by job title, company size, industry, and geography—without a single ad dollar. Apollo's AI Research Assistant automates complex search logic so you get qualified "Who" lists in minutes.</p>
+      <p>The first question in outbound is always: <em>Who?</em> <a href="/go/apollo" target="_blank" rel="noopener sponsored">Apollo</a> answers it at scale. With 275M+ contacts and company data, you can define your ideal customer profile (ICP), build lists by job title, company size, industry, and geography—without a single ad dollar. Apollo's AI Research Assistant automates complex search logic so you get qualified "Who" lists in minutes.</p>
       <ul>
         <li><strong>275M+ contacts</strong> — The largest B2B database for list building</li>
         <li><strong>AI-assisted search</strong> — Natural language queries turn into targeted lists</li>
@@ -533,7 +536,235 @@ export const BLOG_POSTS: BlogPost[] = [
         <li><strong>Execution</strong> — Push enriched leads into ActiveCampaign. Let Active Intelligence segment, personalize, and nurture. Your team focuses on closing.</li>
       </ol>
 
-      <p><strong>Ready to build your $0 CAC stack?</strong> Compare <a href="/go/apollo" rel="sponsored nofollow">Apollo</a>, <a href="/go/clay" rel="sponsored nofollow">Clay</a>, and <a href="/go/activecampaign" rel="sponsored nofollow">ActiveCampaign</a> in our directory and start with the layer that fits your biggest bottleneck.</p>
+      <p><strong>Ready to build your $0 CAC stack?</strong> Compare <a href="/go/apollo" target="_blank" rel="noopener sponsored">Apollo</a>, <a href="/go/clay" rel="sponsored nofollow">Clay</a>, and <a href="/go/activecampaign" rel="sponsored nofollow">ActiveCampaign</a> in our directory and start with the layer that fits your biggest bottleneck.</p>
+    `,
+  },
+  {
+    id: "growth-engineer-stack-2026",
+    slug: "growth-engineer-stack-2026",
+    title: "The 2026 Growth Engineer Stack",
+    excerpt:
+      "A full-cycle workflow for growth engineers: Browse AI for data extraction, Apollo for lead enrichment, Gamma for presentation generation, and Reclaim.ai for calendar ops. The master stack that connects data to delivery.",
+    category: "Growth",
+    author: "AI Growth Stack Team",
+    publishDate: "February 15, 2026",
+    lastUpdated: "Feb 2026",
+    readTime: "10 min read",
+    featuredToolIds: ["browse-ai", "apollo", "gamma", "reclaim"],
+    metaTitle: "The 2026 Growth Engineer Stack | AI Growth Stack",
+    metaDescription:
+      "Build the full-cycle growth workflow: Browse AI, Apollo, Gamma, and Reclaim.ai. Data extraction, lead enrichment, presentation generation, and calendar ops in one stack.",
+    content: `
+      <h2>The Full-Cycle Growth Workflow</h2>
+      <p>Growth engineering in 2026 isn't about single tools—it's about pipelines. Data flows in, gets enriched, becomes presentations, and the calendar protects the time to execute. We've mapped the master workflow that top GTM teams run: four tools, one integrated stack.</p>
+
+      <h3>Layer 1: Data Extraction with Browse AI</h3>
+      <p>The pipeline starts with raw data. <a href="/go/browse-ai" target="_blank" rel="noopener sponsored">Browse AI</a> extracts structured data from any public web source without code. Competitor pricing, directory listings, job postings, LinkedIn signals—turn unstructured web content into CSV or API feeds. Growth engineers use it to fuel the next layer.</p>
+      <ul>
+        <li>Point-and-click extractors for non-technical operators</li>
+        <li>Scheduled monitoring so data stays fresh</li>
+        <li>Export to spreadsheets, APIs, or automation tools</li>
+      </ul>
+
+      <h3>Layer 2: Lead Enrichment with Apollo</h3>
+      <p>Raw data becomes actionable leads. <a href="/go/apollo" target="_blank" rel="noopener sponsored">Apollo</a> delivers 275M+ contacts, waterfall enrichment, and verified emails. Define your ICP, run AI-assisted search, and export high-intent lists. The foundational data layer for outbound and ABM.</p>
+      <ul>
+        <li>AI Research Assistant for complex search logic</li>
+        <li>Waterfall enrichment for &lt;3% bounce on verified emails</li>
+        <li>CRM and outreach integrations built in</li>
+      </ul>
+
+      <h3>Layer 3: Presentation Generation with Gamma</h3>
+      <p>Insights become decks. <a href="/go/gamma" target="_blank" rel="noopener sponsored">Gamma</a> turns prompts into polished, interactive presentations in minutes. Feed it your audit findings, GTM strategy, or quarterly review—get client-ready output without design overhead. The end of static PDFs.</p>
+      <ul>
+        <li>AI-generated decks from a single prompt</li>
+        <li>Interactive, mobile-responsive output</li>
+        <li>Brand theming and collaboration built in</li>
+      </ul>
+
+      <h3>Layer 4: Calendar and Ops with Reclaim.ai</h3>
+      <p>Execution requires protected time. <a href="/go/reclaim" target="_blank" rel="noopener sponsored">Reclaim.ai</a> auto-blocks focus time, habits, and tasks on your calendar. It syncs with Google Calendar and project management tools so "Growth Engineering" time doesn't get swallowed by meetings. The ops layer that defends deep work.</p>
+      <ul>
+        <li>Smart time blocking and habit scheduling</li>
+        <li>Task sync from Asana, Linear, Jira, and more</li>
+        <li>Team analytics for visibility into time allocation</li>
+      </ul>
+
+      <h3>Wiring the Stack Together</h3>
+      <p>Run Browse AI for competitive and market data. Pipe high-value signals into Apollo for enrichment. Use Gamma to turn findings into stakeholder-ready presentations. Let Reclaim.ai protect the blocks where you actually execute. The 2026 Growth Engineer Stack is a closed loop: data in, insights out, time defended.</p>
+      <p><strong>Ready to build your stack?</strong> Start with <a href="/go/browse-ai" target="_blank" rel="noopener sponsored">Browse AI</a>, <a href="/go/apollo" target="_blank" rel="noopener sponsored">Apollo</a>, <a href="/go/gamma" target="_blank" rel="noopener sponsored">Gamma</a>, and <a href="/go/reclaim" target="_blank" rel="noopener sponsored">Reclaim.ai</a>—compare all four in our directory.</p>
+    `,
+  },
+  {
+    id: "apollo-data-layer-guide",
+    slug: "apollo-data-layer-guide",
+    title: "Apollo.io: The Foundational Data Layer",
+    excerpt:
+      "Credit arbitrage, verified emails, and CRM integration: how to maximize lead discovery and export quality with Apollo in 2026. The definitive guide to the prospecting data layer.",
+    category: "Sales",
+    author: "AI Growth Stack Team",
+    publishDate: "February 16, 2026",
+    lastUpdated: "Feb 2026",
+    readTime: "8 min read",
+    featuredToolIds: ["apollo"],
+    metaTitle: "Apollo.io: The Foundational Data Layer | AI Growth Stack",
+    metaDescription:
+      "Master credit arbitrage and verified email exports with Apollo. CRM integration, enrichment workflows, and lead discovery at scale. The 2026 prospecting guide.",
+    content: `
+      <h2>Why Apollo Is the Data Layer</h2>
+      <p>Prospecting in 2026 runs on data quality. Bounce rates kill deliverability. Stale contacts waste sequences. <a href="/go/apollo" target="_blank" rel="noopener sponsored">Apollo</a> has become the foundational layer for teams that need volume, verification, and integration in one place. Here's how to extract maximum value.</p>
+
+      <h3>Credit Arbitrage: Maximizing Lead Discovery</h3>
+      <p><strong>Credit arbitrage</strong> means using cheap or free data sources first, then escalating to premium providers only when needed. Apollo's waterfall enrichment cross-references multiple providers—you pay for premium credits only when cheap sources fail. The result: more leads per dollar, fewer bounces, and verified emails that actually deliver.</p>
+      <ul>
+        <li>Cheap-first enrichment reduces cost per lead</li>
+        <li>Premium escalation only when necessary</li>
+        <li>Verified emails with &lt;3% bounce rates</li>
+      </ul>
+
+      <h3>Verified Email Exports in 2026</h3>
+      <p>Apollo's "Verified" badge means the email has been cross-checked across providers. Export lists with confidence: these contacts are deliverable. For high-volume outbound, verified exports are non-negotiable. Apollo's AI Research Assistant also automates complex search logic—define your ICP in natural language and get qualified lists in minutes.</p>
+
+      <h3>CRM and Enrichment Integration</h3>
+      <p>Apollo plugs into HubSpot, Salesforce, Clay, ActiveCampaign, and dozens of outreach tools. Push enriched leads directly into your CRM or sequences. The data layer doesn't exist in isolation—it feeds the rest of your GTM stack. Sync contacts, log activities, and keep enrichment flowing into execution.</p>
+      <ul>
+        <li>Native CRM sync for contact and activity logging</li>
+        <li>Export to Clay, Make, Zapier for custom workflows</li>
+        <li>Sequences and email built in for all-in-one teams</li>
+      </ul>
+
+      <h3>Building Your Apollo Workflow</h3>
+      <p>Start with ICP definition. Use AI search to build your "Who" list. Run enrichment, filter for verified emails, and export or sync to your CRM. Layer in sequences if you're running outreach from Apollo, or pipe to Clay/ActiveCampaign for advanced workflows. The foundational data layer scales with your volume.</p>
+      <p><strong>Ready to optimize your prospecting?</strong> <a href="/go/apollo" target="_blank" rel="noopener sponsored">Try Apollo</a> and build your verified lead pipeline.</p>
+    `,
+  },
+  {
+    id: "browse-ai-no-code-scraping",
+    slug: "browse-ai-no-code-scraping",
+    title: "Browse AI: Scraping the Unscrapable",
+    excerpt:
+      "Three high-value use cases for no-code web data extraction: competitor pricing monitoring, niche directory tracking, and LinkedIn signal extraction. Turn the unscrapable into structured data.",
+    category: "Data & Automation",
+    author: "AI Growth Stack Team",
+    publishDate: "February 17, 2026",
+    lastUpdated: "Feb 2026",
+    readTime: "7 min read",
+    featuredToolIds: ["browse-ai"],
+    metaTitle: "Browse AI: Scraping the Unscrapable | AI Growth Stack",
+    metaDescription:
+      "No-code web scraping with Browse AI. Competitor pricing, directory listings, and LinkedIn signals—three high-value use cases for growth teams in 2026.",
+    content: `
+      <h2>When Traditional Scraping Fails</h2>
+      <p>JavaScript-heavy sites, login walls, and anti-bot measures make traditional scraping expensive or impossible. <a href="/go/browse-ai" target="_blank" rel="noopener sponsored">Browse AI</a> uses a different approach: point-and-click extractors that run in a browser context. No code, no infrastructure, no maintenance. Here are three use cases that deliver immediate ROI.</p>
+
+      <h3>Use Case 1: Competitor Pricing Monitoring</h3>
+      <p>Pricing pages change constantly. Manual checks don't scale. Build a Browse AI flow that visits your top competitors' pricing pages on a schedule—daily or weekly—and extracts plan names, prices, and feature lists. Export to a spreadsheet or feed an alert when prices drop or new tiers appear. Competitive intel without a data engineer.</p>
+      <ul>
+        <li>Schedule runs for continuous monitoring</li>
+        <li>Structured output (CSV, API) for dashboards and alerts</li>
+        <li>Track changes over time with historical data</li>
+      </ul>
+
+      <h3>Use Case 2: Niche Directory Listings</h3>
+      <p>Industry directories, job boards, and listing sites hold high-intent leads. Extract company names, contacts, and metadata from niche directories relevant to your ICP. Run weekly to catch new listings. Pipe the data into Apollo for enrichment or into your CRM for outreach. Directory scraping turns static lists into living pipelines.</p>
+
+      <h3>Use Case 3: LinkedIn Signals Without Code</h3>
+      <p>LinkedIn's API is restrictive. Browse AI can extract public profile data, job postings, and company updates—within platform terms—for intent and hiring signals. Track when target accounts post jobs, share content, or announce funding. Feed these signals into your ABM or outbound workflow. No LinkedIn API, no developer required.</p>
+      <ul>
+        <li>Extract public job postings and company updates</li>
+        <li>Monitor hiring and growth signals for target accounts</li>
+        <li>Integrate with enrichment and outreach tools</li>
+      </ul>
+
+      <h3>From Extraction to Action</h3>
+      <p>Browse AI outputs structured data. The value comes from what you do next: enrich with Apollo, alert on changes, or feed a CRM. Start with one high-value use case—pricing, directories, or LinkedIn—and expand from there. The unscrapable becomes routine.</p>
+      <p><strong>Ready to extract without code?</strong> <a href="/go/browse-ai" target="_blank" rel="noopener sponsored">Try Browse AI</a> and build your first flow.</p>
+    `,
+  },
+  {
+    id: "gamma-ai-presentation-revolution",
+    slug: "gamma-ai-presentation-revolution",
+    title: "Gamma: The End of Static Pitch Decks",
+    excerpt:
+      "Move from PDFs to interactive, mobile-responsive presentations. How to turn a simple prompt into a client-ready GTM strategy deck. The AI presentation revolution for growth teams.",
+    category: "Productivity",
+    author: "AI Growth Stack Team",
+    publishDate: "February 18, 2026",
+    lastUpdated: "Feb 2026",
+    readTime: "6 min read",
+    featuredToolIds: ["gamma"],
+    metaTitle: "Gamma: The End of Static Pitch Decks | AI Growth Stack",
+    metaDescription:
+      "Turn prompts into interactive presentations with Gamma. Mobile-responsive decks, GTM strategy from a single input, and the end of static PDFs. The 2026 presentation standard.",
+    content: `
+      <h2>Beyond the Static Deck</h2>
+      <p>Pitch decks and strategy docs have been static for decades. PDFs don't adapt. Slides don't respond. <a href="/go/gamma" target="_blank" rel="noopener sponsored">Gamma</a> changes that: describe what you need, and get an interactive, mobile-responsive presentation in minutes. For growth teams, it's the end of the design bottleneck.</p>
+
+      <h3>Interactive "Aha!" Moments</h3>
+      <p>Gamma outputs aren't slide dumps. They're navigable, responsive experiences. Viewers can drill into sections, expand details, and consume content on any device. For client presentations and internal strategy docs, that means engagement—not passive scrolling. The "Aha!" moment lands because the format supports exploration.</p>
+      <ul>
+        <li>Mobile-responsive layouts that adapt to any screen</li>
+        <li>Interactive navigation and expandable sections</li>
+        <li>Export to PDF when you need a static artifact</li>
+      </ul>
+
+      <h3>Prompt to GTM Strategy</h3>
+      <p>Start with a prompt: "Create a GTM strategy deck for a B2B SaaS entering the SMB market." Gamma generates structure, sections, and placeholder content. Edit and refine—the AI understands context and suggests visuals, flow, and messaging. What used to take days takes hours. Client-ready output from a single input.</p>
+      <ul>
+        <li>AI-generated structure from natural language</li>
+        <li>Brand theming keeps decks on-message</li>
+        <li>Collaboration for team iteration</li>
+      </ul>
+
+      <h3>From Audit to Presentation</h3>
+      <p>Growth engineers run audits—SEO, competitive, GTM. The output is usually a spreadsheet or a wall of text. Gamma turns that into a presentation. Paste findings, add a prompt, and get a deck stakeholders can actually use. AI audits become interactive presentations. Data becomes narrative.</p>
+
+      <h3>When to Use Gamma</h3>
+      <p>Use Gamma for investor updates, sales one-pagers, internal strategy docs, and client deliverables. It replaces PowerPoint for most internal and client-facing decks. Less control than full design tools, but for the majority of use cases, speed and polish win. The 2026 standard for growth presentations.</p>
+      <p><strong>Ready to end the static deck?</strong> <a href="/go/gamma" target="_blank" rel="noopener sponsored">Try Gamma</a> and turn your next prompt into a presentation.</p>
+    `,
+  },
+  {
+    id: "reclaim-ai-productivity-ops",
+    slug: "reclaim-ai-productivity-ops",
+    title: "Reclaim.ai: Defending Deep Work",
+    excerpt:
+      "AI-driven scheduling that protects Growth Engineering time. Auto-sync tasks from project management tools to Google Calendar. How to defend deep work when meetings never stop.",
+    category: "Productivity",
+    author: "AI Growth Stack Team",
+    publishDate: "February 19, 2026",
+    lastUpdated: "Feb 2026",
+    readTime: "7 min read",
+    featuredToolIds: ["reclaim"],
+    metaTitle: "Reclaim.ai: Defending Deep Work | AI Growth Stack",
+    metaDescription:
+      "Protect Growth Engineering time with Reclaim.ai. AI-driven scheduling, task sync from Asana/Linear/Jira, and calendar defense. The productivity ops layer for 2026.",
+    content: `
+      <h2>The Meeting Tax on Growth Engineering</h2>
+      <p>Growth engineers need blocks for strategy, analysis, and execution. Meetings fill the calendar first. <a href="/go/reclaim" target="_blank" rel="noopener sponsored">Reclaim.ai</a> flips the script: it defends focus time, habits, and tasks before meetings can claim them. Your calendar works for you, not the other way around.</p>
+
+      <h3>AI-Driven Scheduling</h3>
+      <p>Reclaim doesn't just block time—it finds it. Tell it you need 2 hours of deep work daily, a weekly review block, and recurring habits. It scans your calendar, finds gaps, and places blocks where they fit. When new meetings appear, it moves blocks instead of deleting them. The AI adapts to reality instead of rigid templates.</p>
+      <ul>
+        <li>Smart time blocking that finds and defends slots</li>
+        <li>Habit scheduling for recurring work</li>
+        <li>Automatic rescheduling when meetings shift</li>
+      </ul>
+
+      <h3>Task Sync from Project Management</h3>
+      <p>Tasks live in Asana, Linear, Jira, or Notion. Reclaim syncs them to Google Calendar. Create a task, assign a duration, and it appears as a block. No manual calendar entry. No "I'll do it later" drift. Project management and calendar stay aligned so Growth Engineering time is visible and protected.</p>
+      <ul>
+        <li>Native integrations with Asana, Linear, Jira, Notion</li>
+        <li>Task duration becomes calendar blocks</li>
+        <li>Team visibility into planned vs. actual time</li>
+      </ul>
+
+      <h3>Protecting Growth Engineering Time</h3>
+      <p>Growth Engineering isn't a single meeting—it's strategy, data analysis, content planning, and execution. Reclaim defends blocks for each. Name them clearly: "GTM Strategy," "Competitive Audit," "Content Briefing." When someone tries to book over them, the block is there. When it moves, you get a new slot. Deep work survives the meeting avalanche.</p>
+
+      <h3>Building the Habit</h3>
+      <p>Start with one block: 90 minutes of focus time, three times a week. Add task sync from your project tool. Expand to habits and team analytics. Reclaim works best when it's the default—when the team expects blocks to exist and respects them. The productivity ops layer that makes Growth Engineering sustainable.</p>
+      <p><strong>Ready to defend your calendar?</strong> <a href="/go/reclaim" target="_blank" rel="noopener sponsored">Try Reclaim.ai</a> and protect your deep work.</p>
     `,
   },
 ];

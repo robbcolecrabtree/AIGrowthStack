@@ -22,7 +22,7 @@ export default function GoRedirect() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground p-4">
       <p className="text-muted-foreground">Redirecting to {tool.name}…</p>
       <p className="text-sm mt-2">
-        <a href={redirectUrl} rel="noopener noreferrer" className="text-primary underline">
+        <a href={redirectUrl} target="_blank" rel="noopener sponsored" className="text-primary underline">
           Click here if you are not redirected
         </a>
       </p>
