@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { getBlogPostBySlug } from "@/lib/blogPosts";
@@ -8,6 +10,8 @@ import NotFound from "./not-found";
 import { SEO } from "@/components/layout/SEO";
 import { ArrowLeft, User, Calendar, Tag, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const PROGRESS_BAR_COLOR = "#E4FE65";
 
 export default function BlogPost() {
   const [match, params] = useRoute("/blog/:slug");
@@ -21,6 +25,13 @@ export default function BlogPost() {
     .map((id) => mockSoftware.find((s) => s.id === id))
     .filter(Boolean);
 
+  const articleRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: articleRef,
+    offset: ["start start", "end end"],
+  });
+  const clampedProgress = useTransform(scrollYProgress, (v) => Math.min(1, Math.max(0, v)));
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -33,6 +44,12 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans">
+      <div className="fixed top-0 left-0 right-0 h-1 z-[60] bg-transparent overflow-hidden">
+        <motion.div
+          className="h-full w-full origin-left"
+          style={{ scaleX: clampedProgress, backgroundColor: PROGRESS_BAR_COLOR }}
+        />
+      </div>
       <SEO
         title={post.metaTitle}
         description={post.metaDescription}
@@ -51,7 +68,7 @@ export default function BlogPost() {
             <ArrowLeft className="w-4 h-4 mr-1 group-hover:-translate-x-1 transition-transform" /> Back to Blog
           </Link>
 
-          <article className="bg-card rounded-2xl border border-border shadow-sm overflow-hidden">
+          <article ref={articleRef} className="bg-card rounded-2xl border border-border shadow-sm overflow-hidden">
             <header className="p-8 md:p-12 border-b border-border bg-secondary/30">
               <div className="flex flex-wrap items-center gap-4 mb-6 text-sm">
                 <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-bold uppercase tracking-wide flex items-center gap-1">
@@ -67,7 +84,7 @@ export default function BlogPost() {
                   Last updated: {post.lastUpdated}
                 </span>
               </div>
-              <h1 className="font-heading font-bold text-3xl md:text-5xl text-foreground mb-6 leading-tight">
+              <h1 className="font-heading font-bold text-5xl text-foreground mb-12 leading-tight tracking-tight">
                 {post.title}
               </h1>
               <p className="text-sm italic text-muted-foreground mb-6">
@@ -81,14 +98,14 @@ export default function BlogPost() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 p-8 md:p-12">
               <div className="lg:col-span-2">
                 <div
-                  className="prose prose-invert prose-lg max-w-none prose-headings:font-heading prose-headings:font-bold prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-ul:list-disc prose-li:text-muted-foreground prose-img:rounded-xl"
+                  className="prose prose-invert prose-lg max-w-3xl mx-auto leading-relaxed prose-headings:font-heading prose-headings:font-bold prose-headings:text-foreground prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-6 prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-ul:list-disc prose-li:text-muted-foreground prose-li:leading-relaxed prose-li:my-3 prose-li:marker:text-[#E4FE65] prose-h2:mt-16 prose-h2:mb-6 prose-h2:pl-4 prose-h2:border-l-4 prose-h2:border-l-[#E4FE65] prose-h3:mt-10 prose-h3:mb-4 prose-img:rounded-xl prose-img:my-12 [&>p:first-of-type]:text-xl [&>p:first-of-type]:font-normal [&>p:first-of-type]:mb-8 [&_table]:bg-white/5 [&_table]:backdrop-blur-sm [&_table]:rounded-xl [&_table]:border [&_table]:border-white/10 [&_table]:overflow-hidden [&_pre]:bg-white/5 [&_pre]:backdrop-blur-sm [&_pre]:rounded-xl [&_pre]:border [&_pre]:border-white/10 [&_pre]:overflow-hidden [&_code]:bg-white/5 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded-md [&_code]:border [&_code]:border-white/10"
                   dangerouslySetInnerHTML={{ __html: post.content }}
                 />
               </div>
 
-              <aside className="space-y-8">
+              <aside className="space-y-8 lg:block">
                 {featuredTools.length > 0 && (
-                  <div className="bg-secondary/30 rounded-xl border border-border p-6 sticky top-24">
+                  <div className="rounded-xl border border-white/20 p-6 backdrop-blur-md bg-white/10 lg:sticky lg:top-24">
                     <h3 className="font-heading font-bold text-lg mb-4 flex items-center gap-2 text-foreground">
                       <Sparkles className="w-5 h-5 text-primary" />
                       Featured Tools
@@ -104,6 +121,9 @@ export default function BlogPost() {
                                   background: `linear-gradient(180deg, ${hexToRgba(tool.cardAccent, getAccentTintOpacity(tool.id))} 0%, transparent 100%), hsl(0 0% 6%)`,
                                   border: "1px solid hsl(var(--border))",
                                   borderTop: `2px solid ${tool.cardAccent}`,
+                                  ...(tool.cardAccentSecondary && {
+                                    boxShadow: `inset 0 2px 0 0 ${tool.cardAccentSecondary}`,
+                                  }),
                                 }
                               : undefined
                           }
@@ -112,7 +132,7 @@ export default function BlogPost() {
                             <img
                               src={tool.logo}
                               alt={tool.name}
-                              className={`w-10 h-10 object-contain ${tool.cardAccent === "#000000" ? "invert" : ""}`}
+                              className={`w-10 h-10 object-contain ${["#000000", "#00002C", "#1B2F4A"].includes(tool.cardAccent ?? "") ? "invert" : ""}`}
                               onError={(e) => {
                                 const t = e.target as HTMLImageElement;
                                 if (t.src && !t.src.includes("ui-avatars.com")) {

@@ -11,6 +11,8 @@ import {
   Code2,
   MessageCircle,
   ArrowRight,
+  Building2,
+  TrendingUp,
 } from "lucide-react";
 import { Link } from "wouter";
 import { SEO } from "@/components/layout/SEO";
@@ -18,6 +20,7 @@ import { CLONE_CONFIG } from "@/lib/config";
 
 const categoryIcons: Record<string, React.ReactNode> = {
   "Marketing & Ads": <Megaphone className="w-6 h-6" />,
+  "Sales": <TrendingUp className="w-6 h-6" />,
   "SEO & Writing": <FileText className="w-6 h-6" />,
   "Video & Image": <Video className="w-6 h-6" />,
   "Audio & Voice": <Mic className="w-6 h-6" />,
@@ -25,6 +28,7 @@ const categoryIcons: Record<string, React.ReactNode> = {
   "Data & Automation": <Workflow className="w-6 h-6" />,
   "Development": <Code2 className="w-6 h-6" />,
   "Customer Support": <MessageCircle className="w-6 h-6" />,
+  "Enterprise": <Building2 className="w-6 h-6" />,
 };
 
 export default function Categories() {

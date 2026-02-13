@@ -185,6 +185,9 @@ export default function Comparison() {
                             ? {
                                 background: `linear-gradient(180deg, ${hexToRgba(software.cardAccent, getAccentTintOpacity(software.id))} 0%, transparent 100%), hsl(0 0% 6%)`,
                                 borderTop: `2px solid ${software.cardAccent}`,
+                                ...(software.cardAccentSecondary && {
+                                  boxShadow: `inset 0 2px 0 0 ${software.cardAccentSecondary}`,
+                                }),
                               }
                             : undefined
                         }
@@ -201,7 +204,7 @@ export default function Comparison() {
                             <img
                             src={software.logo}
                             alt={software.name}
-                            className={`max-w-full max-h-full object-contain ${software.cardAccent === "#000000" ? "invert" : ""}`}
+                            className={`max-w-full max-h-full object-contain ${["#000000", "#00002C", "#1B2F4A"].includes(software.cardAccent ?? "") ? "invert" : ""}`}
                             onError={(e) => {
                               const t = e.target as HTMLImageElement;
                               if (t.src && !t.src.includes("ui-avatars.com")) {

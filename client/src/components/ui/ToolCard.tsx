@@ -24,6 +24,9 @@ export function ToolCard({ tool }: ToolCardProps) {
               background: `linear-gradient(180deg, ${hexToRgba(tool.cardAccent, getAccentTintOpacity(tool.id))} 0%, transparent 100%), hsl(0 0% 6%)`,
               border: "1px solid hsl(var(--border))",
               borderTop: `2px solid ${tool.cardAccent}`,
+              ...(tool.cardAccentSecondary && {
+                boxShadow: `inset 0 2px 0 0 ${tool.cardAccentSecondary}`,
+              }),
             }
           : undefined
       }
@@ -40,7 +43,7 @@ export function ToolCard({ tool }: ToolCardProps) {
             <img
               src={tool.logo}
               alt={`${tool.name} Logo`}
-              className={`max-w-full max-h-full object-contain ${isAccentCard && tool.cardAccent === "#000000" ? "invert" : ""}`}
+              className={`max-w-full max-h-full object-contain ${isAccentCard && ["#000000", "#00002C", "#1B2F4A"].includes(tool.cardAccent ?? "") ? "invert" : ""}`}
               onError={(e) => {
                 const t = e.target as HTMLImageElement;
                 if (t.src && !t.src.includes("ui-avatars.com")) {

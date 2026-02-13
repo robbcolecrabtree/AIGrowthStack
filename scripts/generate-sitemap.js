@@ -46,6 +46,10 @@ const blogSlugs = [
   "voice-cloning-audio-how-elevenlabs-is-disrupting-the-creator-economy",
   "smarter-seo-moving-beyond-keywords-with-ai-content-audits",
   "automating-the-boring-stuff-a-guide-to-ai-agents-for-small-teams",
+  "apollo-vs-clay-2026",
+  "marketing-agents-2026",
+  "geo-seo-guide",
+  "zero-cac-stack",
 ];
 
 function escapeXml(s) {

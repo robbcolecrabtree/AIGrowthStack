@@ -263,6 +263,279 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Compare <a href="/go/reclaim" rel="sponsored nofollow">Reclaim.ai</a>, <a href="/go/browse-ai" rel="sponsored nofollow">Browse AI</a>, and <a href="/go/fireflies" rel="sponsored nofollow">Fireflies.ai</a> in our directory. Each has a free or trial tier—start with the one that addresses your most painful manual process and build from there.</p>
     `,
   },
+  {
+    id: "apollo-vs-clay-2026",
+    slug: "apollo-vs-clay-2026",
+    title: "Apollo vs. Clay in 2026: Why the Best GTM Teams are Using Both",
+    excerpt:
+      "The all-in-one vs. modular debate is over. Top GTM teams run Apollo for bulk discovery and Clay for 1:1 personalization. Here's the hybrid workflow that actually scales.",
+    category: "Marketing",
+    author: "AI Growth Stack Team",
+    publishDate: "February 11, 2026",
+    lastUpdated: "Feb 2026",
+    readTime: "10 min read",
+    featuredToolIds: ["apollo", "clay", "activecampaign"],
+    metaTitle: "Apollo vs. Clay in 2026: Why the Best GTM Teams are Using Both | AI Growth Stack",
+    metaDescription:
+      "Apollo vs. Clay in 2026: Compare 275M+ database and AI Research Assistant vs. waterfall enrichment and Claygent. The hybrid workflow for power users—with pricing breakdown.",
+    content: `
+      <h2>The Great 2026 Debate: All-in-One (Apollo) vs. Modular Orchestration (Clay)</h2>
+      <p>For years, GTM teams have argued: one platform to rule them all, or a modular stack you orchestrate yourself? In 2026, the answer is both. Apollo delivers unmatched scale and an AI assistant that handles 80% of prospecting. Clay delivers data points Apollo simply can't reach—live LinkedIn posts, news, and waterfall enrichment across dozens of providers. The best teams don't choose. They pipeline.</p>
+
+      <h3>Apollo's 2026 Edge: Scale and the AI Research Assistant</h3>
+      <p><a href="/go/apollo" rel="sponsored nofollow">Apollo</a> owns the sheer scale game. With 275M+ contacts and a unified database, you can map Total Addressable Market (TAM) in minutes, not weeks. The 2026 differentiator is the <strong>AI Research Assistant</strong>: it automates complex search logic and writes highly personalized outreach sequences based on 250+ data points per lead. For bulk discovery and initial qualification, nothing touches it.</p>
+      <ul>
+        <li>275M+ contacts for rapid TAM mapping and list building</li>
+        <li>AI Research Assistant handles ~80% of prospecting workflows</li>
+        <li>Built-in outreach and sequencing—no need to stitch tools together</li>
+      </ul>
+
+      <h3>Clay's 2026 Edge: Waterfall Enrichment and Claygent</h3>
+      <p><a href="/go/clay" rel="sponsored nofollow">Clay</a> finds data Apollo misses. <strong>Waterfall enrichment</strong> cross-references multiple providers so you get the freshest, most accurate contact info. <strong>Claygent</strong> is the AI agent that scrapes live LinkedIn posts, news, and web sources to surface intent signals and personalization angles you won't find in any static database. For high-value accounts where 1:1 matters, Clay is the unlock.</p>
+      <ul>
+        <li>Waterfall enrichment across 50+ data providers for accuracy</li>
+        <li>Claygent scrapes live LinkedIn, news, and web for intent signals</li>
+        <li>Data points Apollo can't reach—perfect for personalization at scale</li>
+      </ul>
+
+      <h3>The Power User Hybrid Workflow</h3>
+      <p>Here's how top GTM teams run both in 2026:</p>
+      <ol>
+        <li><strong>Step 1: Use Apollo for bulk discovery and TAM mapping.</strong> Build your list, run AI-assisted search, and qualify at volume. Export or push high-intent leads to the next stage.</li>
+        <li><strong>Step 2: Pipe high-intent leads into Clay for 1:1 personalization.</strong> Run waterfall enrichment, trigger Claygent for LinkedIn and news signals, and build hyper-personalized outreach angles.</li>
+        <li><strong>Step 3: Push enriched leads into ActiveCampaign's Active Intelligence for autonomous nurturing.</strong> <a href="/go/activecampaign" rel="sponsored nofollow">ActiveCampaign</a> handles the nurture loop—segmentation, predictive sending, and triggered actions—so your SDRs focus on the hottest prospects.</li>
+      </ol>
+
+      <h3>Pricing Breakdown</h3>
+      <p><a href="/go/apollo" rel="sponsored nofollow">Apollo</a> wins on accessibility: free tier available, paid plans from $49/mo (annual). Great for founders and SDRs who need to move fast without a big wallet. <a href="/go/clay" rel="sponsored nofollow">Clay</a> starts at $149/mo for the "Builder" plan—a real investment, but justified when you're doing high-touch outbound at scale. The hybrid workflow makes sense when your deal size or volume justifies both.</p>
+
+      <h3>2026 GTM Feature Matrix</h3>
+      <table class="w-full border-collapse border border-border rounded-lg overflow-hidden my-6">
+        <thead>
+          <tr class="bg-secondary/50">
+            <th class="border border-border px-4 py-3 text-left font-bold text-foreground">Feature</th>
+            <th class="border border-border px-4 py-3 text-left font-bold text-foreground">Apollo</th>
+            <th class="border border-border px-4 py-3 text-left font-bold text-foreground">Clay</th>
+          </tr>
+        </thead>
+        <tbody class="text-muted-foreground">
+          <tr><td class="border border-border px-4 py-3">Contact Database</td><td class="border border-border px-4 py-3">275M+</td><td class="border border-border px-4 py-3">Orchestrated (50+ providers)</td></tr>
+          <tr class="bg-secondary/20"><td class="border border-border px-4 py-3">AI Assistant</td><td class="border border-border px-4 py-3">AI Research Assistant</td><td class="border border-border px-4 py-3">Claygent (web scrape)</td></tr>
+          <tr><td class="border border-border px-4 py-3">Enrichment</td><td class="border border-border px-4 py-3">Built-in waterfall</td><td class="border border-border px-4 py-3">Waterfall + custom tables</td></tr>
+          <tr class="bg-secondary/20"><td class="border border-border px-4 py-3">LinkedIn/News Scraping</td><td class="border border-border px-4 py-3">—</td><td class="border border-border px-4 py-3">✓ Claygent</td></tr>
+          <tr><td class="border border-border px-4 py-3">Outreach & Sequencing</td><td class="border border-border px-4 py-3">✓ Native</td><td class="border border-border px-4 py-3">Integrations</td></tr>
+          <tr class="bg-secondary/20"><td class="border border-border px-4 py-3">Starting Price</td><td class="border border-border px-4 py-3">Free / $49/mo</td><td class="border border-border px-4 py-3">$149/mo (Builder)</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Stack Recommendation by Company Size</h3>
+      <p><strong>Solo founders & early-stage:</strong> Start with Apollo. Free tier + $49/mo gets you to market. Add Clay when you're closing deals large enough to justify 1:1 personalization.</p>
+      <p><strong>Scale-up & Enterprise:</strong> Run both. Apollo for bulk discovery and TAM; Clay for high-intent enrichment and personalization. Pipe into <a href="/go/activecampaign" rel="sponsored nofollow">ActiveCampaign</a> for nurture. The best GTM teams in 2026 aren't picking one—they're orchestrating all three.</p>
+      <p><strong>Ready to build your stack?</strong> Compare <a href="/go/apollo" rel="sponsored nofollow">Apollo</a>, <a href="/go/clay" rel="sponsored nofollow">Clay</a>, and <a href="/go/activecampaign" rel="sponsored nofollow">ActiveCampaign</a> in our directory and start with the tool that fits your biggest GTM lever.</p>
+    `,
+  },
+  {
+    id: "marketing-agents-2026",
+    slug: "marketing-agents-2026",
+    title: "Forget Automation: Why 2026 is the Year of the Marketing Agent",
+    excerpt:
+      "Traditional 'if-then' automation has hit a ceiling. In 2026, the teams that win deploy AI agents that plan, execute, and learn—without human filtering at every step.",
+    category: "Marketing",
+    author: "AI Growth Stack Team",
+    publishDate: "February 12, 2026",
+    lastUpdated: "Feb 2026",
+    readTime: "8 min read",
+    featuredToolIds: ["activecampaign", "lindy", "zapier-central"],
+    metaTitle: "Forget Automation: Why 2026 is the Year of the Marketing Agent | AI Growth Stack",
+    metaDescription:
+      "Why if-then automation fails in 2026. ActiveCampaign's Agentic Triad, AI-Suggested Segments, and the ROI of autonomy—13 hours saved weekly, 3x faster campaign builds.",
+    content: `
+      <h2>The Automation Ceiling: Why "If-Then" Logic is Failing</h2>
+      <p>Zaps and workflow builders have served us well. But they're built for a world of structured data and predictable triggers. When your inputs are unstructured—support tickets, social mentions, intent signals from a dozen sources—if-then logic breaks. You end up with hundreds of branches, edge-case bugs, and a maintenance nightmare. The automation ceiling isn't a tool limit. It's an architectural one.</p>
+      <ul>
+        <li><strong>Structured triggers fail</strong> when data comes from PDFs, emails, or messy CRM fields</li>
+        <li><strong>Manual filtering</strong> becomes the bottleneck—humans reviewing every segment before it goes live</li>
+        <li><strong>Multi-step workflows</strong> multiply complexity; one change cascades into dozens of fixes</li>
+      </ul>
+
+      <h3>Enter the Agentic Triad: ActiveCampaign's 2026 Framework</h3>
+      <p><a href="/go/activecampaign" rel="sponsored nofollow">ActiveCampaign</a>'s 2026 repositioning isn't a rebrand—it's a new operating model. The <strong>Agentic Triad</strong> reframes marketing automation around three loops:</p>
+      <p><strong>Imagine (Planning)</strong> — AI agents analyze your audience, suggest segments, and propose campaign structures. No more guessing which cohorts to target; the agent recommends based on engagement, intent, and predictive signals.</p>
+      <p><strong>Activate (Execution)</strong> — Campaigns go live with AI handling multilingual copy generation, send-time optimization, and channel routing. The agent doesn't wait for approval on every step; it executes within guardrails you define.</p>
+      <p><strong>Validate (Learning)</strong> — Post-campaign, the agent ingests performance data, identifies what worked, and feeds that back into the next Imagine cycle. The loop closes without a human in the middle.</p>
+
+      <h3>The Autonomous Workflow: Beyond Human Filtering</h3>
+      <p>In 2026, the best marketing stacks run <strong>AI-Suggested Segments</strong> without human filtering. The agent identifies micro-cohorts—e.g., "recent product page visitors who opened last email but didn't convert"—and spins up nurture flows automatically. Multilingual campaign generation is now table stakes: one brief, 12 languages, minimal review.</p>
+      <ul>
+        <li><strong>AI-Suggested Segments</strong> — Agents propose and activate segments based on behavioral and intent data</li>
+        <li><strong>Multilingual at scale</strong> — One creative brief → 12+ language variants, generated and localized by AI</li>
+        <li><strong>No human gate</strong> — Campaigns activate within guardrails; humans set strategy, agents handle execution</li>
+      </ul>
+
+      <h3>ROI of Autonomy: What the Data Shows</h3>
+      <p>2026 benchmarks from teams running agentic stacks tell a clear story:</p>
+      <ul>
+        <li><strong>13 hours saved weekly</strong> — Time previously spent on manual segment building, A/B setup, and reporting</li>
+        <li><strong>3x faster campaign builds</strong> — From brief to live in days instead of weeks</li>
+        <li><strong>Higher relevance</strong> — AI-suggested segments outperform hand-built ones in most engagement metrics</li>
+      </ul>
+      <p>The ROI isn't just efficiency. It's relevance. When agents handle the grunt work, marketers focus on strategy and creative—and the campaigns perform better.</p>
+
+      <h3>Key Takeaways</h3>
+      <ul>
+        <li><strong>If-then automation has hit a ceiling</strong> — Unstructured data and complex triggers break traditional workflow tools</li>
+        <li><strong>The Agentic Triad</strong> — Imagine (planning), Activate (execution), Validate (learning) replaces linear automation</li>
+        <li><strong>AI-Suggested Segments</strong> — Agents propose and activate segments without human filtering at every step</li>
+        <li><strong>13 hours/week and 3x faster builds</strong> — 2026 data supports the ROI of agentic stacks</li>
+        <li><strong>Choose by use case</strong> — ActiveCampaign for marketing hubs, Lindy for task agents, Zapier Central for app orchestration</li>
+      </ul>
+
+      <h3>2026 Marketing Agent Comparison Table</h3>
+      <table class="w-full border-collapse border border-border rounded-lg overflow-hidden my-6">
+        <thead>
+          <tr class="bg-secondary/50">
+            <th class="border border-border px-4 py-3 text-left font-bold text-foreground">Feature</th>
+            <th class="border border-border px-4 py-3 text-left font-bold text-foreground">ActiveCampaign</th>
+            <th class="border border-border px-4 py-3 text-left font-bold text-foreground">Lindy.ai</th>
+            <th class="border border-border px-4 py-3 text-left font-bold text-foreground">Zapier Central</th>
+          </tr>
+        </thead>
+        <tbody class="text-muted-foreground">
+          <tr><td class="border border-border px-4 py-3">Primary Use</td><td class="border border-border px-4 py-3">Marketing hub & nurture</td><td class="border border-border px-4 py-3">Task-level AI agents</td><td class="border border-border px-4 py-3">App orchestration with AI</td></tr>
+          <tr class="bg-secondary/20"><td class="border border-border px-4 py-3">Agent Model</td><td class="border border-border px-4 py-3">Imagine → Activate → Validate</td><td class="border border-border px-4 py-3">Autonomous task agents</td><td class="border border-border px-4 py-3">Natural language Zaps</td></tr>
+          <tr><td class="border border-border px-4 py-3">Best For</td><td class="border border-border px-4 py-3">Campaigns, segments, nurture</td><td class="border border-border px-4 py-3">Email, calendar, research</td><td class="border border-border px-4 py-3">6000+ app workflows</td></tr>
+          <tr class="bg-secondary/20"><td class="border border-border px-4 py-3">Multilingual</td><td class="border border-border px-4 py-3">✓ Native</td><td class="border border-border px-4 py-3">Via integrations</td><td class="border border-border px-4 py-3">Via integrations</td></tr>
+          <tr><td class="border border-border px-4 py-3">AI-Suggested Segments</td><td class="border border-border px-4 py-3">✓</td><td class="border border-border px-4 py-3">—</td><td class="border border-border px-4 py-3">—</td></tr>
+          <tr class="bg-secondary/20"><td class="border border-border px-4 py-3">Starting Price</td><td class="border border-border px-4 py-3">$15/mo</td><td class="border border-border px-4 py-3">$19/mo</td><td class="border border-border px-4 py-3">Free</td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>Ready to go agentic?</strong> Compare <a href="/go/activecampaign" rel="sponsored nofollow">ActiveCampaign</a>, <a href="/go/lindy" rel="sponsored nofollow">Lindy.ai</a>, and <a href="/go/zapier-central" rel="sponsored nofollow">Zapier Central</a> in our directory and start with the tool that fits your biggest automation bottleneck.</p>
+    `,
+  },
+  {
+    id: "geo-seo-guide",
+    slug: "geo-seo-guide",
+    title: "GEO is the New SEO: How to Get Your Brand Cited by Perplexity and ChatGPT Search",
+    excerpt:
+      "Traditional search volume is declining. In 2026, the brands that win optimize for generative engines—where the goal isn't ranking pages. It's powering answers.",
+    category: "SEO",
+    author: "AI Growth Stack Team",
+    publishDate: "February 13, 2026",
+    lastUpdated: "Feb 2026",
+    readTime: "6 min read",
+    featuredToolIds: ["perplexity-pro", "search-atlas", "claude-35-sonnet"],
+    metaTitle: "GEO is the New SEO: Get Cited by Perplexity and ChatGPT Search in 2026 | AI Growth Stack",
+    metaDescription:
+      "GEO vs SEO: The 3 pillars—Semantic Footprint, Fact-Density, Structured Data. Why earned media and Reddit matter more than backlinks for AI citations in 2026.",
+    content: `
+      <h2>The 25% Decline: Traditional Search Volume in 2026</h2>
+      <p>Gartner predicts that traditional search volume will drop significantly as AI search takes over in 2026. Users aren't typing queries into Google the same way anymore. They're asking <a href="/go/perplexity-pro" rel="sponsored nofollow">Perplexity</a>, ChatGPT, and <a href="/go/claude-35-sonnet" rel="sponsored nofollow">Claude</a>—and expecting cited, synthesized answers. If your brand isn't in those answers, you're invisible. The 25% decline isn't a theory. It's already happening. The question is: how do you show up when the answer engine decides what to cite?</p>
+
+      <h3>SEO vs. GEO: Ranking Pages vs. Powering Answers</h3>
+      <p>SEO optimized for page rank. GEO (Generative Engine Optimization) optimizes for <em>citations</em>. The goal shifts: you're not trying to land on page one of a results list. You're trying to be one of the sources an AI model chooses when it synthesizes an answer. That means different tactics. Different metrics. Different tools.</p>
+      <ul>
+        <li><strong>SEO</strong> = Rank pages in SERPs</li>
+        <li><strong>GEO</strong> = Get cited in AI-generated answers</li>
+      </ul>
+
+      <h3>The 3 Pillars of GEO</h3>
+      <p><strong>Semantic Footprint (Topic Clusters)</strong> — AI models map topics semantically. They look for authority across a <em>cluster</em> of related content—not just one page. Build topic clusters that cover your domain deeply. A single pillar page isn't enough. You need supporting content that signals comprehensive coverage.</p>
+      <p><strong>Fact-Density (Information Gain)</strong> — Models prefer sources that add <em>information gain</em>—concrete data, stats, definitions, and specifics. Fluffy thought leadership gets skipped. Dense, factual content gets cited. Prioritize data-rich pages: benchmarks, research, case studies.</p>
+      <p><strong>Structured Data (Schema.org)</strong> — Schema.org markup helps AI models parse and trust your content. Product, Organization, Article, FAQ—structured data signals what your page is about and how it should be used in answers. It's not just for rich snippets anymore.</p>
+
+      <h3>How to Win Citations: Earned Media and Brand Mentions</h3>
+      <p>Old-school backlinks still matter for SEO. But for 2026 AI models, <strong>earned media</strong> and <strong>brand mentions</strong> on Reddit, forums, and trusted communities matter more. Why? AI models ingest Reddit, Hacker News, and niche forums as signals of real-world relevance. A mention in a high-quality discussion is often worth more than a nofollow link from a thin blog.</p>
+      <ul>
+        <li><strong>Reddit and forums</strong> — Authentic discussions where your brand is recommended or discussed</li>
+        <li><strong>Expert roundups</strong> — Being cited as an authority in third-party content</li>
+        <li><strong>PR and earned media</strong> — Press mentions, analyst citations, and industry recognition</li>
+      </ul>
+
+      <h3>GEO Checklist for 2026 Founders</h3>
+      <ul>
+        <li>Audit topic clusters—do you have 5+ pages covering your core domain?</li>
+        <li>Add Schema.org markup (Organization, Product, Article) to key pages</li>
+        <li>Prioritize fact-dense content: benchmarks, research, case studies</li>
+        <li>Monitor citations in Perplexity and ChatGPT for your brand</li>
+        <li>Build earned media: Reddit, forums, expert roundups, PR</li>
+        <li>Use tools like <a href="/go/search-atlas" rel="sponsored nofollow">Search Atlas</a> for LLM Visibility tracking</li>
+      </ul>
+
+      <p><strong>Ready to optimize for AI search?</strong> Compare <a href="/go/perplexity-pro" rel="sponsored nofollow">Perplexity</a>, <a href="/go/search-atlas" rel="sponsored nofollow">Search Atlas</a>, and <a href="/go/claude-35-sonnet" rel="sponsored nofollow">Claude</a> in our directory and start measuring your GEO footprint.</p>
+    `,
+  },
+  {
+    id: "zero-cac-stack",
+    slug: "zero-cac-stack",
+    title: "The $0 CAC Stack: Using 'Waterfall Enrichment' to Fuel Outbound at Scale",
+    excerpt:
+      "Paid social CAC has spiked. The antidote in 2026 isn't more ads—it's a three-layer stack: Apollo for discovery, Clay for enrichment, ActiveCampaign for execution.",
+    category: "Marketing",
+    author: "AI Growth Stack Team",
+    publishDate: "February 14, 2026",
+    lastUpdated: "Feb 2026",
+    readTime: "8 min read",
+    featuredToolIds: ["apollo", "clay", "activecampaign"],
+    metaTitle: "The $0 CAC Stack: Waterfall Enrichment for Outbound at Scale | AI Growth Stack",
+    metaDescription:
+      "Apollo + Clay + ActiveCampaign: The blueprint for $0 CAC outbound. Waterfall enrichment, credit arbitrage, and 1:1 personalization at scale. ROI table inside.",
+    content: `
+      <h2>The Death of the Ad-Lead: Why Paid Social CAC Has Spiked</h2>
+      <p>LinkedIn Ads, Meta, and Google have turned lead gen into a cost race. CPMs are up. Conversion rates are down. A single qualified B2B lead from LinkedIn can cost $50–$200+ depending on targeting. At scale, that math kills unit economics. The ad-lead model worked when budgets were flush and competition was low. In 2026, it's a trap.</p>
+      <p><strong>Waterfall Enrichment</strong> is the antidote. Instead of paying for every lead, you build your own pipeline: discover leads via a massive database (Apollo), enrich them with cheap-then-premium providers (Clay), and execute personalized outreach (ActiveCampaign). CAC approaches zero because you're not bidding on clicks. You're investing in data and automation.</p>
+
+      <h3>The Discovery Layer: Apollo's 275M+ Database for the "Who"</h3>
+      <p>The first question in outbound is always: <em>Who?</em> <a href="/go/apollo" rel="sponsored nofollow">Apollo</a> answers it at scale. With 275M+ contacts and company data, you can define your ideal customer profile (ICP), build lists by job title, company size, industry, and geography—without a single ad dollar. Apollo's AI Research Assistant automates complex search logic so you get qualified "Who" lists in minutes.</p>
+      <ul>
+        <li><strong>275M+ contacts</strong> — The largest B2B database for list building</li>
+        <li><strong>AI-assisted search</strong> — Natural language queries turn into targeted lists</li>
+        <li><strong>Export or pipe</strong> — Push high-intent leads straight into the next layer</li>
+      </ul>
+
+      <h3>The Enrichment Layer: Claygent and "Credit Arbitrage"</h3>
+      <p>Raw names and companies aren't enough. You need emails, phone numbers, and intent signals. That's where <a href="/go/clay" rel="sponsored nofollow">Clay</a> excels. <strong>Waterfall enrichment</strong> in Clay means checking cheap providers first (e.g., free or low-cost APIs), then escalating to premium providers (Clearbit, ZoomInfo) only when needed. You pay for premium credits only when the cheap sources fail—<strong>credit arbitrage</strong>.</p>
+      <p><strong>Claygent</strong> adds another dimension: it scrapes live LinkedIn posts, news, and web sources to surface intent and personalization angles. So you're not just enriching with contact data—you're enriching with <em>relevance</em>.</p>
+      <ul>
+        <li><strong>Cheap-first waterfall</strong> — Minimize cost per enriched lead</li>
+        <li><strong>Claygent for intent</strong> — LinkedIn, news, and web scraping for personalization</li>
+        <li><strong>&lt;3% bounce</strong> — Cross-referenced data ensures deliverability</li>
+      </ul>
+
+      <h3>The Execution Layer: ActiveCampaign's Active Intelligence</h3>
+      <p>Once you have enriched leads, you need to execute. <a href="/go/activecampaign" rel="sponsored nofollow">ActiveCampaign</a>'s Active Intelligence handles the nurture loop: segmentation, predictive sending, and AI-triggered actions. Push your Clay-enriched list into ActiveCampaign, and the platform personalizes outreach at scale. Your SDRs focus on the hottest prospects; the rest are nurtured autonomously.</p>
+      <ul>
+        <li><strong>AI-powered segmentation</strong> — Automatically identify high-intent vs. nurture</li>
+        <li><strong>Predictive sending</strong> — Send when contacts are most likely to engage</li>
+        <li><strong>1:1 at scale</strong> — Personalized sequences without manual templating</li>
+      </ul>
+
+      <h3>ROI Table: 1,000 Leads via LinkedIn Ads vs. the $0 CAC Stack</h3>
+      <table class="w-full border-collapse border border-border rounded-lg overflow-hidden my-6">
+        <thead>
+          <tr class="bg-secondary/50">
+            <th class="border border-border px-4 py-3 text-left font-bold text-foreground">Approach</th>
+            <th class="border border-border px-4 py-3 text-left font-bold text-foreground">Cost for 1,000 Qualified Leads</th>
+            <th class="border border-border px-4 py-3 text-left font-bold text-foreground">Notes</th>
+          </tr>
+        </thead>
+        <tbody class="text-muted-foreground">
+          <tr><td class="border border-border px-4 py-3">LinkedIn Ads</td><td class="border border-border px-4 py-3">$25,000–$80,000+</td><td class="border border-border px-4 py-3">$25–$80+ per lead depending on ICP, targeting, and competition</td></tr>
+          <tr class="bg-secondary/20"><td class="border border-border px-4 py-3">$0 CAC Stack</td><td class="border border-border px-4 py-3">~$200–$400/mo (tools)</td><td class="border border-border px-4 py-3">Apollo ($49+) + Clay ($149+) + ActiveCampaign ($15+) + enrichment credits. One-time setup; scale with volume.</td></tr>
+        </tbody>
+      </table>
+      <p>The math is clear. At 1,000 leads, the ad route costs 50–200x more than the stack. The stack's "CAC" is effectively your tool subscription and enrichment credits—amortized across thousands of leads. As volume grows, cost per lead drops.</p>
+
+      <h3>The Blueprint in 3 Steps</h3>
+      <ol>
+        <li><strong>Discovery</strong> — Use Apollo to build your "Who" list. Define ICP, run AI search, export or sync high-intent leads.</li>
+        <li><strong>Enrichment</strong> — Pipe leads into Clay. Run waterfall enrichment (cheap first, premium when needed). Trigger Claygent for intent signals.</li>
+        <li><strong>Execution</strong> — Push enriched leads into ActiveCampaign. Let Active Intelligence segment, personalize, and nurture. Your team focuses on closing.</li>
+      </ol>
+
+      <p><strong>Ready to build your $0 CAC stack?</strong> Compare <a href="/go/apollo" rel="sponsored nofollow">Apollo</a>, <a href="/go/clay" rel="sponsored nofollow">Clay</a>, and <a href="/go/activecampaign" rel="sponsored nofollow">ActiveCampaign</a> in our directory and start with the layer that fits your biggest bottleneck.</p>
+    `,
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
