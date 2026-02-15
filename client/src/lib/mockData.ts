@@ -1181,3 +1181,52 @@ export const featuredTools = mockSoftware.filter((s) => s.featured);
 export const toolsByCategory = (category: Category) =>
   mockSoftware.filter((s) => s.categories.includes(category));
 
+export interface ContentRelation {
+  id: string;
+  title: string;
+  type: "blog" | "blueprint";
+  slug: string;
+  relatedToolIds: string[];
+}
+
+export const contentRelations: ContentRelation[] = [
+  { id: "elevenlabs-voice-cloning-review", title: "ElevenLabs Review: The 'Voice' of the Actionable AI Stack", type: "blog", slug: "elevenlabs-voice-cloning-the-emotional-layer", relatedToolIds: ["elevenlabs", "heygen"] },
+  { id: "ai-growth-stack-7-tools-2026", title: "The AI Growth Stack: 7 Tools to Scale Your Business in 2026", type: "blog", slug: "the-ai-growth-stack-7-tools-to-scale-your-business-in-2026", relatedToolIds: ["adcreative", "jasper", "make"] },
+  { id: "ai-video-b2b-marketing", title: "Why AI-Generated Video is the New Standard for B2B Marketing", type: "blog", slug: "why-ai-generated-video-is-the-new-standard-for-b2b-marketing", relatedToolIds: ["synthesia", "heygen", "invideo"] },
+  { id: "voice-cloning-elevenlabs-creator-economy", title: "Voice Cloning: How ElevenLabs is Disrupting the Creator Economy", type: "blog", slug: "voice-cloning-audio-how-elevenlabs-is-disrupting-the-creator-economy", relatedToolIds: ["elevenlabs", "murf"] },
+  { id: "smarter-seo-ai-content-audits", title: "Smarter SEO: Moving Beyond Keywords with AI Content Audits", type: "blog", slug: "smarter-seo-moving-beyond-keywords-with-ai-content-audits", relatedToolIds: ["surfer-seo", "perplexity-pro", "frase", "gamma"] },
+  { id: "automating-boring-stuff-ai-agents-small-teams", title: "Automating the Boring Stuff: A Guide to AI Agents for Small Teams", type: "blog", slug: "automating-the-boring-stuff-a-guide-to-ai-agents-for-small-teams", relatedToolIds: ["reclaim", "browse-ai", "fireflies"] },
+  { id: "apollo-vs-clay-2026", title: "Apollo vs. Clay in 2026: Why the Best GTM Teams are Using Both", type: "blog", slug: "apollo-vs-clay-2026", relatedToolIds: ["apollo", "clay", "activecampaign"] },
+  { id: "marketing-agents-2026", title: "Forget Automation: Why 2026 is the Year of the Marketing Agent", type: "blog", slug: "marketing-agents-2026", relatedToolIds: ["activecampaign", "lindy", "zapier-central"] },
+  { id: "geo-seo-guide", title: "GEO & AI Search: The 2026 Visibility Playbook", type: "blog", slug: "geo-seo-guide", relatedToolIds: ["perplexity-pro", "search-atlas", "claude-35-sonnet"] },
+  { id: "zero-cac-stack", title: "The $0 CAC Stack: Using Waterfall Enrichment to Fuel Outbound", type: "blog", slug: "zero-cac-stack", relatedToolIds: ["apollo", "clay", "activecampaign"] },
+  { id: "growth-engineer-stack-2026", title: "The 2026 Growth Engineer Stack", type: "blog", slug: "growth-engineer-stack-2026", relatedToolIds: ["browse-ai", "apollo", "gamma", "reclaim"] },
+  { id: "apollo-data-layer-guide", title: "Apollo.io: The Foundational Data Layer", type: "blog", slug: "apollo-data-layer-guide", relatedToolIds: ["apollo"] },
+  { id: "browse-ai-no-code-scraping", title: "Browse AI: Scraping the Unscrapable", type: "blog", slug: "browse-ai-no-code-scraping", relatedToolIds: ["browse-ai"] },
+  { id: "gamma-ai-presentation-revolution", title: "Gamma: The End of Static Pitch Decks", type: "blog", slug: "gamma-ai-presentation-revolution", relatedToolIds: ["gamma"] },
+  { id: "reclaim-ai-productivity-ops", title: "Reclaim.ai: Defending Deep Work", type: "blog", slug: "reclaim-ai-productivity-ops", relatedToolIds: ["reclaim"] },
+  { id: "browse-ai-lead-scraper", title: "The Browse AI Lead Scraper Recipe", type: "blueprint", slug: "browse-ai-recipe", relatedToolIds: ["browse-ai"] },
+  { id: "gamma-gtm-slide-master", title: "The Gamma GTM Slide Master", type: "blueprint", slug: "gamma-gtm-slide-master", relatedToolIds: ["gamma"] },
+  { id: "founders-time-blocking-protocol", title: "The Founder's Time-Blocking Protocol", type: "blueprint", slug: "founders-time-blocking-protocol", relatedToolIds: ["reclaim"] },
+];
+
+export function getRelatedContentForTool(toolId: string): ContentRelation[] {
+  return contentRelations.filter((c) => c.relatedToolIds.includes(toolId));
+}
+
+export function getContentRelationBySlug(slug: string): ContentRelation | undefined {
+  return contentRelations.find((c) => c.slug === slug);
+}
+
+export function getRelatedContentForTools(
+  toolIds: string[],
+  excludeIds: string[] = []
+): ContentRelation[] {
+  const excludeSet = new Set(excludeIds);
+  return contentRelations.filter(
+    (c) =>
+      !excludeSet.has(c.id) &&
+      c.relatedToolIds.some((tid) => toolIds.includes(tid))
+  );
+}
+

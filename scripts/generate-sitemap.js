@@ -44,6 +44,7 @@ const articleSlugs = [
 ];
 
 const blogSlugs = [
+  "elevenlabs-voice-cloning-the-emotional-layer",
   "the-ai-growth-stack-7-tools-to-scale-your-business-in-2026",
   "why-ai-generated-video-is-the-new-standard-for-b2b-marketing",
   "voice-cloning-audio-how-elevenlabs-is-disrupting-the-creator-economy",

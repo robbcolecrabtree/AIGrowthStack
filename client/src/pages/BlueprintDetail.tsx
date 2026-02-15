@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { getBlueprintBySlug } from "@/lib/blueprints";
+import { getContentRelationBySlug } from "@/lib/mockData";
+import { RelatedTools } from "@/components/ui/RelatedTools";
+import { RelatedContent } from "@/components/ui/RelatedContent";
 import { Link, useRoute } from "wouter";
 import NotFound from "./not-found";
 import { SEO } from "@/components/layout/SEO";
@@ -144,6 +147,20 @@ export default function BlueprintDetail() {
                   As an affiliate, we may earn a commission if you purchase through this link at no extra cost to you.
                 </p>
               </section>
+
+              {(() => {
+                const relation = getContentRelationBySlug(blueprint.slug);
+                const toolIds = relation?.relatedToolIds ?? [];
+                return (
+                  <>
+                    <RelatedTools relatedToolIds={toolIds} />
+                    <RelatedContent
+                      relatedToolIds={toolIds}
+                      excludeId={blueprint.id}
+                    />
+                  </>
+                );
+              })()}
             </div>
           </article>
         </div>

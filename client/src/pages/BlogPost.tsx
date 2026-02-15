@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { getBlogPostBySlug } from "@/lib/blogPosts";
 import { mockSoftware } from "@/lib/mockData";
+import { RelatedContent } from "@/components/ui/RelatedContent";
 import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
 import { Link, useRoute } from "wouter";
 import NotFound from "./not-found";
@@ -100,6 +101,10 @@ export default function BlogPost() {
                 <div
                   className="prose prose-invert prose-lg max-w-3xl mx-auto leading-relaxed prose-headings:font-heading prose-headings:font-bold prose-headings:text-foreground prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-6 prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-ul:list-disc prose-li:text-muted-foreground prose-li:leading-relaxed prose-li:my-3 prose-li:marker:text-[#E4FE65] prose-h2:mt-16 prose-h2:mb-6 prose-h2:pl-4 prose-h2:border-l-4 prose-h2:border-l-[#E4FE65] prose-h3:mt-10 prose-h3:mb-4 prose-img:rounded-xl prose-img:my-12 [&>p:first-of-type]:text-xl [&>p:first-of-type]:font-normal [&>p:first-of-type]:mb-8 [&_table]:bg-white/5 [&_table]:backdrop-blur-sm [&_table]:rounded-xl [&_table]:border [&_table]:border-white/10 [&_table]:overflow-hidden [&_pre]:bg-white/5 [&_pre]:backdrop-blur-sm [&_pre]:rounded-xl [&_pre]:border [&_pre]:border-white/10 [&_pre]:overflow-hidden [&_code]:bg-white/5 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded-md [&_code]:border [&_code]:border-white/10"
                   dangerouslySetInnerHTML={{ __html: post.content }}
+                />
+                <RelatedContent
+                  relatedToolIds={post.featuredToolIds}
+                  excludeId={post.id}
                 />
               </div>
 

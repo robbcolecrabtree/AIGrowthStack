@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { mockSoftware } from "@/lib/mockData";
+import { RelatedContent } from "@/components/ui/RelatedContent";
 import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -256,6 +257,8 @@ export default function ProductDetail() {
                 ))}
               </div>
             </div>
+
+            <RelatedContent currentToolId={software.id} />
           </div>
 
           {/* Sidebar */}
