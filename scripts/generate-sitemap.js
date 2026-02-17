@@ -11,7 +11,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const BASE_URL = "https://aigrowthstack.io";
-const LAST_MOD = "2026-02-09";
+const LAST_MOD = "2026-02-19";
 
 const staticPaths = [
   { path: "/", priority: "1.0" },
@@ -44,6 +44,10 @@ const articleSlugs = [
 ];
 
 const blogSlugs = [
+  "the-top-10-ai-tools-for-business-growth-in-2026-beyond-chatgpt",
+  "ai-web-scraping-for-b2b-how-browse-ai-is-revolutionizing-lead-gen",
+  "gohighlevel-vs-activecampaign-why-the-ai-os-is-winning-in-2026",
+  "automating-the-boring-stuff-a-growth-engineers-guide-to-zapier-ai-agents",
   "elevenlabs-voice-cloning-the-emotional-layer",
   "the-ai-growth-stack-7-tools-to-scale-your-business-in-2026",
   "why-ai-generated-video-is-the-new-standard-for-b2b-marketing",
@@ -59,6 +63,13 @@ const blogSlugs = [
   "browse-ai-no-code-scraping",
   "gamma-ai-presentation-revolution",
   "reclaim-ai-productivity-ops",
+  "heygen-vs-sora-vs-kling-which-ai-video-tool-is-actually-actionable",
+  "elevenlabs-pricing-2026-is-the-pro-plan-worth-the-roi-for-marketers",
+  "best-ai-video-tools-for-international-growth-heygen-elevenlabs-deepseek",
+  "why-surfer-seo-jasper-is-still-the-gold-standard-for-content-automation",
+  "geo-generative-engine-optimization-the-2026-playbook-for-ai-visibility",
+  "how-to-get-cited-by-perplexity-and-chatgpt-search-fact-density-for-marketers",
+  "ai-seo-workflows-moving-from-keyword-stuffing-to-entity-authority",
 ];
 
 function escapeXml(s) {

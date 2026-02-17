@@ -26,11 +26,26 @@ export default function Blog() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {BLOG_POSTS.map((post) => (
-              <BlogCard key={post.id} post={post} />
-            ))}
-          </div>
+          {BLOG_POSTS.some((p) => p.featured) && (
+            <section className="mb-12">
+              <h2 className="font-heading font-bold text-2xl text-foreground mb-6">Featured</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {BLOG_POSTS.filter((p) => p.featured).map((post) => (
+                  <BlogCard key={post.id} post={post} />
+                ))}
+              </div>
+            </section>
+          )}
+          <section>
+            {BLOG_POSTS.some((p) => p.featured) && BLOG_POSTS.some((p) => !p.featured) && (
+              <h2 className="font-heading font-bold text-2xl text-foreground mb-6 mt-4">All Articles</h2>
+            )}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {(BLOG_POSTS.some((p) => p.featured) ? BLOG_POSTS.filter((p) => !p.featured) : BLOG_POSTS).map((post) => (
+                <BlogCard key={post.id} post={post} />
+              ))}
+            </div>
+          </section>
         </div>
       </main>
 
