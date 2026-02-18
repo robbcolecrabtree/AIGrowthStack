@@ -17,6 +17,7 @@ import Resources from "@/pages/Resources";
 import ResourceDetail from "@/pages/ResourceDetail";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
+import UltimateGeoSeoGuide from "@/pages/blog/ultimate-geo-seo-guide";
 import GoRedirect from "@/pages/GoRedirect";
 
 function Router() {
@@ -30,6 +31,7 @@ function Router() {
         <Route path="/compare" component={Comparison} />
         <Route path="/categories" component={Categories} />
         <Route path="/blog" component={Blog} />
+        <Route path="/blog/ultimate-geo-seo-guide" component={UltimateGeoSeoGuide} />
         <Route path="/blog/:slug" component={BlogPost} />
         <Route path="/resources" component={Resources} />
         <Route path="/resources/:slug" component={ResourceDetail} />

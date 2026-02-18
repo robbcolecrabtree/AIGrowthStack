@@ -46,7 +46,7 @@ export default function BlueprintDetail() {
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans">
       <SEO
-        title={`${blueprint.title} | ${CLONE_CONFIG.siteName}`}
+        title={blueprint.title}
         description={blueprint.description}
         canonical={`/resources/${blueprint.slug}`}
       />

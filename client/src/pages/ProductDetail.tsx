@@ -42,8 +42,8 @@ export default function ProductDetail() {
   return (
     <div key={id} className="min-h-screen flex flex-col bg-background font-sans">
       <SEO 
-        title={`${software.name} - Features, Pricing & Reviews | ${CLONE_CONFIG.siteName}`}
-        description={(software.summary || software.description || "").trim()}
+        title={software.metaTitle}
+        description={software.metaDescription}
         canonical={`/product/${software.id}`}
         ogType="product"
         schema={productSchema}

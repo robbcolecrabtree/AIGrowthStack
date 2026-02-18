@@ -11,8 +11,8 @@ export default function Resources() {
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans">
       <SEO 
-        title={`Resources & Blog | ${CLONE_CONFIG.siteName}`}
-        description="Guides and articles on AI tools for marketing, SEO, video, voice, productivity, and automation. Stay ahead with the 2026 AI Growth Stack."
+        title="Resources & Blueprints 2026"
+        description="Actionable blueprints for Browse AI, Gamma, Reclaim. Pricing, workflows, ROI. Download configs and start automating today."
         canonical="/resources"
       />
       <Navbar />

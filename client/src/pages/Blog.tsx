@@ -9,8 +9,8 @@ export default function Blog() {
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans">
       <SEO
-        title={`Blog & Resources | ${CLONE_CONFIG.siteName}`}
-        description="High-authority guides on the AI growth stack: scaling with AI tools, video, voice, SEO, and automation. Expert, growth-focused articles for 2026."
+        title="Blog & Resources 2026"
+        description="Actionable AI guides: pricing, vs. comparisons, tool reviews. Scale with HeyGen, ElevenLabs, Surfer. Compare and build your stack today."
         canonical="/blog"
       />
       <Navbar />
@@ -26,22 +26,32 @@ export default function Blog() {
             </p>
           </div>
 
-          {BLOG_POSTS.some((p) => p.featured) && (
+          {BLOG_POSTS.some((p) => p.pillar) && (
+            <section className="mb-12">
+              <h2 className="font-heading font-bold text-2xl text-foreground mb-6">Pillar</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {BLOG_POSTS.filter((p) => p.pillar).map((post) => (
+                  <BlogCard key={post.id} post={post} />
+                ))}
+              </div>
+            </section>
+          )}
+          {BLOG_POSTS.some((p) => p.featured && !p.pillar) && (
             <section className="mb-12">
               <h2 className="font-heading font-bold text-2xl text-foreground mb-6">Featured</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {BLOG_POSTS.filter((p) => p.featured).map((post) => (
+                {BLOG_POSTS.filter((p) => p.featured && !p.pillar).map((post) => (
                   <BlogCard key={post.id} post={post} />
                 ))}
               </div>
             </section>
           )}
           <section>
-            {BLOG_POSTS.some((p) => p.featured) && BLOG_POSTS.some((p) => !p.featured) && (
+            {(BLOG_POSTS.some((p) => p.featured) || BLOG_POSTS.some((p) => p.pillar)) && BLOG_POSTS.some((p) => !p.featured && !p.pillar) && (
               <h2 className="font-heading font-bold text-2xl text-foreground mb-6 mt-4">All Articles</h2>
             )}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {(BLOG_POSTS.some((p) => p.featured) ? BLOG_POSTS.filter((p) => !p.featured) : BLOG_POSTS).map((post) => (
+              {BLOG_POSTS.filter((p) => !p.featured && !p.pillar).map((post) => (
                 <BlogCard key={post.id} post={post} />
               ))}
             </div>

@@ -35,8 +35,8 @@ export default function Categories() {
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans">
       <SEO
-        title={`AI Tool Categories | ${CLONE_CONFIG.siteName}`}
-        description="Browse AI tools by category: Marketing & Ads, Video & Image, SEO & Writing, Audio & Voice, Productivity & Work, and Data & Automation."
+        title="AI Tool Categories 2026"
+        description="Browse by use case: Marketing, Video, SEO, Voice, Automation. Compare pricing and actionable tools. Find your stack today."
         canonical="/categories"
       />
       <Navbar />

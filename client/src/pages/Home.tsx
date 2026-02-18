@@ -64,10 +64,10 @@ export default function Home() {
   }
 
   const metaTitle = categoryParam
-    ? `Best ${categoryParam} AI Tools 2026 | ${CLONE_CONFIG.siteName}`
-    : `Best AI Tools for Business 2026 | B2B AI Growth Stack | ${CLONE_CONFIG.siteName}`;
+    ? `Best ${categoryParam} AI Tools 2026`
+    : "Best AI Tools for Business 2026: Pricing & Reviews";
   const metaDescription =
-    "Discover and compare the best AI tools for business in 2026. Expert AI analysis for B2B growth—marketing, SEO, video, voice, productivity, and automation.";
+    "Compare actionable AI tools: pricing, vs. reviews, ROI. HeyGen, ElevenLabs, Surfer, Jasper. Vetted for B2B growth—start comparing today.";
 
   const blogPreview = BLOG_POSTS.slice(0, 3);
 

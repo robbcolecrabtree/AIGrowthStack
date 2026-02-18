@@ -44,6 +44,7 @@ const articleSlugs = [
 ];
 
 const blogSlugs = [
+  "ultimate-geo-seo-guide",
   "the-top-10-ai-tools-for-business-growth-in-2026-beyond-chatgpt",
   "ai-web-scraping-for-b2b-how-browse-ai-is-revolutionizing-lead-gen",
   "gohighlevel-vs-activecampaign-why-the-ai-os-is-winning-in-2026",

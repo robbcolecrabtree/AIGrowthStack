@@ -149,6 +149,8 @@ export const mockSoftware: Software[] = [
     cardAccent: "#F32D51",
     badge: "Editor's Choice",
     featured: true,
+    metaTitle: "AdCreative.ai Review 2026: Pricing & ROI",
+    metaDescription: "Ship ad creative in minutes. Pricing from $29/mo, CTR scoring, actionable A/B tests. Compare and start scaling creatives today.",
     reviewContent: `<p>AdCreative.ai is built for growth teams that need a high volume of on-brand ad creatives without a full design team. You input your brand assets and campaign goals, and the platform generates image and copy variations optimized for Meta, Google, and other major ad networks. The result is more creative options in minutes, so you can run meaningful A/B tests and scale what works.</p><p>Built-in CTR scoring helps you prioritize which concepts to run—saving budget and creative review time. Brand presets keep logos, colors, and voice consistent so your ads look cohesive across campaigns. The interface is straightforward enough for marketers to use daily without design support.</p><p>Where AdCreative.ai shines is rapid iteration: test headlines, visuals, and formats quickly, then double down on winners. Output can feel template-like if you don't customize; the best results come when you invest in strong brand inputs and clear briefs. For long-form or highly narrative creative, you'll still want human copywriters and designers in the loop.</p><p>If paid acquisition is a core growth lever and creative volume is a bottleneck, AdCreative.ai is one of the most practical tools you can add. Start with one campaign or channel, prove the workflow, then expand.</p>`,
   }),
   base({
@@ -185,6 +187,8 @@ export const mockSoftware: Software[] = [
     cardAccent: "#811BFF",
     badge: "Top Rated",
     featured: true,
+    metaTitle: "Jasper Review 2026: Pricing & Boss Mode",
+    metaDescription: "Long-form content that ranks. Pricing, brand voice, actionable workflows. Compare Jasper vs. alternatives—start free.",
     reviewContent: `<p>Jasper AI is the content workspace of choice for marketing teams that need long-form, on-brand output at scale. Blogs, campaign copy, emails, and ads can all be drafted and refined inside Jasper, with strong brand voice controls so everything reads like it came from the same team. In 2026, Boss Mode remains the standout: outline to full draft to optimization in one flow, which is ideal for SEO and thought-leadership content.</p><p>The templates library and campaign workflows reduce repetitive briefing and editing. Collaboration features let multiple stakeholders review and approve without leaving the tool. Integration with major platforms (e.g. WordPress, HubSpot) keeps content moving from draft to publish without copy-paste chaos.</p><p>Jasper is pricier than solo-writer tools, but for teams that ship a lot of repeatable content—blogs, product pages, ad variants—the ROI is clear. Dialing in brand voice and style takes some setup; once that's done, the consistency and speed are hard to match. Best features, including advanced workflows and analytics, live on higher tiers.</p><p>If content volume and brand consistency are growth priorities, Jasper is worth the investment. Start with one content type (e.g. blog or ads), prove the workflow, then expand to the rest of your calendar.</p>`,
   }),
   base({
@@ -219,6 +223,8 @@ export const mockSoftware: Software[] = [
     cardAccent: "#CF6BFF",
     badge: "Top Rated",
     featured: true,
+    metaTitle: "ElevenLabs Review 2026: Pricing & Voice Cloning",
+    metaDescription: "Voice that converts. Creator vs. Pro pricing, HeyGen pairing, 90% localization savings. Actionable AI voice—compare and start.",
     reviewContent: `<p>ElevenLabs has set the bar for AI voice quality in 2026. Whether you need text-to-speech for videos, voice cloning for brand consistency, or multilingual narration at scale, the platform delivers remarkably natural output that stands up to close listening. Growth teams use it for product demos, training content, and ads without booking studio time.</p><p>The voice library covers a wide range of styles and languages, and the fine-grained controls let you adjust pacing, stability, and clarity so the result matches your brand. For creators and marketers who need a consistent "voice" across many assets, ElevenLabs' cloning feature is among the best we've tested—with clear guidelines on responsible use.</p><p>API access makes it easy to integrate into existing workflows: CMS, video tools, and custom apps can all pull from ElevenLabs. Usage-based pricing means you pay for what you use, which is ideal for teams that scale production up and down. Support is responsive, and the roadmap stays focused on quality and new languages rather than feature bloat.</p><p>If your bottleneck is voiceover volume or localization, ElevenLabs should be at the top of your list. Try it for a high-traffic asset first, then roll it out across the rest of your content pipeline.</p>`,
   }),
   base({
@@ -320,6 +326,8 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://surferseo.com",
     cardAccent: "#00D27B",
     featured: true,
+    metaTitle: "Surfer SEO Review 2026: Pricing & Content Editor",
+    metaDescription: "Data-backed optimization, 90+ scores. Pricing from $59/mo, actionable briefs. Compare Surfer vs. Frase—start optimizing today.",
     reviewContent: `<p>Surfer SEO remains one of the most actionable SEO tools for content teams in 2026. The Content Editor ties directly to live SERP data: you see what's ranking, what's missing from your draft, and how to close the gap. Aim for a 90+ score on money pages and you get clear, prioritized recommendations instead of generic keyword lists.</p><p>The SERP analyzer and keyword research tools help you brief writers and plan content with real data. Surfer's strength is on-page and topical optimization—understanding what the top results have in common and guiding you to match or exceed that. It works best when paired with strong editorial judgment so you don't over-optimize for the algorithm at the expense of readability.</p><p>SEO leads and content managers use Surfer to maintain and improve rankings at scale. The learning curve is steeper than simple keyword tools, but the payoff is content that actually competes. Regular audits and the content planner keep your site aligned with search intent as SERPs change.</p><p>If you're serious about organic growth and want one tool that connects research to execution, Surfer SEO is a strong choice. Use it to optimize your highest-value pages first, then roll out the workflow across your content calendar.</p>`,
   }),
   base({
@@ -352,6 +360,8 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://partners.browse.ai/ftse4imh6kkl",
     websiteUrl: "https://browse.ai",
     cardAccent: "#5B21B6",
+    metaTitle: "Browse AI Review 2026: Pricing & No-Code Scraping",
+    metaDescription: "Extract competitor pricing and leads without code. Pricing from $49/mo, actionable ROI. Compare Browse AI—start free.",
   }),
   base({
     id: "airtable",
@@ -520,6 +530,8 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://heygen.com",
     websiteUrl: "https://heygen.com",
     cardAccent: "#6366F1",
+    metaTitle: "HeyGen Review 2026: Pricing & Lip-Sync Video",
+    metaDescription: "40+ languages, avatars, lip-sync. Pricing from $29/mo, actionable localization. Compare HeyGen vs. Synthesia—start today.",
     reviewContent: `<p>HeyGen leads the market in AI video translation and avatar-based content. If you have existing talking-head or spokesperson video and need to repurpose it for new languages or regions, HeyGen's lip-synced translation is the most convincing we've seen in 2026. The result looks and sounds natural, which is critical for trust in sales and support content.</p><p>Beyond translation, HeyGen offers AI avatars and templates for creating new video from scripts—similar in spirit to Synthesia but with a distinct strength in the translation workflow. The platform is built for marketing and enablement teams that need to scale video across markets without multiplying production cost.</p><p>Use cases include localized product demos, training in multiple languages, and repurposing thought leadership for different audiences. Pricing scales with usage, so it's worth planning which assets you'll translate or generate to avoid surprise bills. Brand and legal review is still recommended for sensitive or high-stakes content.</p><p>If you're sitting on a library of English (or other) video and want to activate it globally, HeyGen should be on your shortlist. Run a pilot with one high-value piece of content and evaluate quality and cost before rolling out more broadly.</p>`,
   }),
   base({
@@ -1075,6 +1087,8 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://activecampaign.com",
     cardAccent: "#00002C",
     cardAccentSecondary: "#E4FE65",
+    metaTitle: "ActiveCampaign Review 2026: Pricing & AI Agents",
+    metaDescription: "AI-Suggested Segments, 13 hrs saved weekly. Pricing from $15/mo, actionable nurture. Compare vs. GoHighLevel—start today.",
     reviewContent: `<p>ActiveCampaign has evolved beyond email into a full-scale "Active Intelligence" hub. It uses autonomous AI Agents to manage campaign optimization, predictive sending, and 1:1 content personalization at scale. Professional builders and GTM teams who need a central nervous system for their marketing stack will find it ideal.</p><p>The key feature is AI-powered autonomous workflows that identify customer segments and trigger actions without manual intervention. Campaign optimization, predictive sending, and personalized content at scale run with minimal manual setup once configured.</p><p>From $15/mo, ActiveCampaign fits growing teams that need sophisticated automation without enterprise pricing. The platform integrates with major CRMs, e-commerce, and ad platforms so it can sit at the center of your marketing stack.</p><p>If you're scaling GTM and want a single hub for automation, segmentation, and personalized outreach, ActiveCampaign is worth a close look. Start with one high-impact workflow—e.g. lead scoring and nurture—then expand from there.</p>`,
   }),
   base({
@@ -1107,6 +1121,8 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://apollo.io",
     cardAccent: "#1B2F4A",
     cardAccentSecondary: "#FF8C00",
+    metaTitle: "Apollo Review 2026: Pricing & 275M Contacts",
+    metaDescription: "Verified emails, AI search, $0 CAC outbound. Pricing from $49/mo, actionable prospecting. Compare vs. Clay—start free.",
     reviewContent: `<p>The gold standard for all-in-one prospecting. In 2026, Apollo's AI assistant now automates complex search logic and writes highly personalized outreach sequences based on 250+ data points per lead. Early-stage founders and high-volume SDR teams who want list-building and outreach in a single dashboard will find it ideal.</p><p>The key feature is waterfall enrichment—Apollo now automatically cross-references multiple data providers to ensure &lt;3% bounce rates on "Verified" emails. Combined with 275M+ contacts and AI-driven search, it's a complete sales intelligence engine.</p><p>Free tier available; paid plans from $49/mo (annual). Apollo fits SDRs and founders who need prospecting and outreach in one place. Integrations with CRMs, email tools, and LinkedIn make it easy to plug into existing workflows.</p><p>If you're scaling outbound and want verified data with minimal bounce, Apollo is worth a close look. Start with the free tier to test enrichment quality, then upgrade when you're ready to scale sequences.</p>`,
   }),
   base({
@@ -1168,6 +1184,8 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://www.gohighlevel.com",
     websiteUrl: "https://www.gohighlevel.com",
     cardAccent: "#6366F1",
+    metaTitle: "GoHighLevel Review 2026: Pricing & AI OS",
+    metaDescription: "All-in-one CRM, funnels, automation. Pricing from $97/mo, actionable for agencies. Compare vs. ActiveCampaign—start today.",
   }),
   base({
     id: "zapier-central",
@@ -1187,6 +1205,8 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://zapier.com/central",
     websiteUrl: "https://zapier.com",
     cardAccent: "#FF4A00",
+    metaTitle: "Zapier Central Review 2026: AI Agents & Pricing",
+    metaDescription: "6,000+ apps, natural language Zaps. Free tier, actionable automation. Compare Zapier vs. Make—start connecting today.",
   }),
 ].map((item) => ({
   ...item,
@@ -1231,6 +1251,7 @@ export const contentRelations: ContentRelation[] = [
   { id: "elevenlabs-pricing-2026-pro-roi", title: "ElevenLabs Pricing 2026: Is the Pro Plan Worth the ROI for Marketers?", type: "blog", slug: "elevenlabs-pricing-2026-is-the-pro-plan-worth-the-roi-for-marketers", relatedToolIds: ["elevenlabs", "heygen"] },
   { id: "best-ai-video-tools-international-growth", title: "The Best AI Video Tools for International Growth (HeyGen, ElevenLabs, and DeepSeek)", type: "blog", slug: "best-ai-video-tools-for-international-growth-heygen-elevenlabs-deepseek", relatedToolIds: ["heygen", "elevenlabs", "synthesia"] },
   { id: "surfer-seo-jasper-content-automation", title: "Why Surfer SEO + Jasper is Still the Gold Standard for Content Automation", type: "blog", slug: "why-surfer-seo-jasper-is-still-the-gold-standard-for-content-automation", relatedToolIds: ["surfer-seo", "jasper"] },
+  { id: "ultimate-geo-seo-guide", title: "The Ultimate Guide to GEO: Ranking in the Era of AI Search (2026)", type: "blog", slug: "ultimate-geo-seo-guide", relatedToolIds: ["surfer-seo", "jasper", "browse-ai"] },
   { id: "geo-generative-engine-optimization-2026", title: "GEO (Generative Engine Optimization): The 2026 Playbook for AI Visibility", type: "blog", slug: "geo-generative-engine-optimization-the-2026-playbook-for-ai-visibility", relatedToolIds: ["perplexity-pro", "search-atlas", "surfer-seo"] },
   { id: "get-cited-perplexity-chatgpt-fact-density", title: "How to Get Cited by Perplexity and ChatGPT Search: Fact-Density for Marketers", type: "blog", slug: "how-to-get-cited-by-perplexity-and-chatgpt-search-fact-density-for-marketers", relatedToolIds: ["perplexity-pro", "surfer-seo", "frase"] },
   { id: "ai-seo-workflows-entity-authority", title: "AI SEO Workflows: Moving from Keyword Stuffing to Entity Authority", type: "blog", slug: "ai-seo-workflows-moving-from-keyword-stuffing-to-entity-authority", relatedToolIds: ["surfer-seo", "frase", "jasper"] },

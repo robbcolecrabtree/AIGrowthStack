@@ -19,7 +19,8 @@ export function SEO({
   schema 
 }: SEOProps) {
   const siteUrl = CLONE_CONFIG.siteUrl;
-  const fullTitle = `${title} | ${CLONE_CONFIG.siteName}`;
+  const siteSuffix = ` | ${CLONE_CONFIG.siteName}`;
+  const fullTitle = title.endsWith(siteSuffix) ? title : `${title}${siteSuffix}`;
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
 
   return (
