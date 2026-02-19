@@ -125,6 +125,95 @@ export const BLOG_POSTS: BlogPost[] = [
     `,
   },
   {
+    id: "activepieces-review-2026",
+    slug: "activepieces-review-2026",
+    title: "Activepieces Review 2026: The Open-Source \"Zapier Killer\" for SMEs",
+    excerpt:
+      "Task-based pricing is out. Activepieces brings open-source workflow automation with a drag-and-drop builder and B2B-grade security. Time-to-value for SMEs in 2026.",
+    category: "Data & Automation",
+    author: "AI Growth Stack Team",
+    publishDate: "February 19, 2026",
+    lastUpdated: "Feb 2026",
+    readTime: "7 min read",
+    featuredToolIds: ["activepieces", "make", "zapier-central"],
+    metaTitle: "Activepieces Review 2026: Open-Source Automation for SMEs",
+    metaDescription:
+      "The open-source Zapier alternative. No task-based pricing, drag-and-drop builder, B2B security. Compare Activepieces vs. Make—start free.",
+    content: `
+      <h2>The Shift Away From Task-Based Pricing</h2>
+      <p>Most automation platforms charge per task. That model punishes growth—the more you automate, the more you pay. <a href="/go/activepieces" target="_blank" rel="noopener sponsored">Activepieces</a> flips that: open-source, self-host or cloud, with pricing that scales with your team, not your volume. For SMEs building an <strong>Actionable AI</strong> stack in 2026, it's the automation layer that doesn't punish success.</p>
+
+      <h3>Open-Source Flexibility</h3>
+      <p>Activepieces is open-source. You can self-host for full data control, run on their cloud for zero-ops, or hybrid. The drag-and-drop builder connects 300+ apps—CRM, ads, content, support—without code. <strong>Time-to-value:</strong> First workflow live in under an hour. <strong>ROI:</strong> No per-task tax as you scale.</p>
+
+      <h3>Security Guardrails for B2B Data</h3>
+      <p>B2B teams move sensitive data: leads, contracts, customer records. Activepieces offers audit logs, role-based access, and encryption at rest. Self-hosting keeps data in your infra. For compliance-conscious teams, that's table stakes—not an upsell.</p>
+
+      <h3>When to Choose Activepieces</h3>
+      <p>Best for: SMEs that want automation without the Zapier bill, teams that need self-host options, and builders who prefer visual workflows over natural language. Compare <a href="/go/activepieces" target="_blank" rel="noopener sponsored">Activepieces</a> with <a href="https://www.make.com/en/register?pc=aigrowthstack" target="_blank" rel="noopener sponsored">Make.com</a> and <a href="/go/zapier-central" target="_blank" rel="noopener sponsored">Zapier Central</a> in our directory.</p>
+    `,
+  },
+  {
+    id: "laxis-sales-productivity-guide",
+    slug: "laxis-sales-productivity-guide",
+    title: "Automate Your Revenue Engine: How Laxis AI Replaces 80% of Sales Admin",
+    excerpt:
+      "Laxis is the AI Sales Copilot that automates lead research, meeting transcription, and CRM updates. The Prospect-to-CRM workflow in 15 minutes.",
+    category: "Sales",
+    author: "AI Growth Stack Team",
+    publishDate: "February 19, 2026",
+    lastUpdated: "Feb 2026",
+    readTime: "8 min read",
+    featuredToolIds: ["laxis", "apollo", "activecampaign"],
+    metaTitle: "Laxis AI Review 2026: Sales Copilot & CRM Automation",
+    metaDescription:
+      "Replace 80% of sales admin. Automated lead research, live transcription, 1-click CRM updates. Laxis Prospect-to-CRM workflow—actionable in 15 min.",
+    content: `
+      <h2>The AI Sales Copilot</h2>
+      <p>Sales reps spend hours on admin: researching leads, transcribing calls, updating CRM. <a href="/go/laxis" target="_blank" rel="noopener sponsored">Laxis</a> is the AI Sales Copilot that automates that work. Live meeting transcription, automated lead research, and 1-click CRM updates. <strong>Time-to-value:</strong> First Prospect-to-CRM flow in 15 minutes. <strong>ROI:</strong> 80% less admin, more time selling.</p>
+
+      <h3>The Prospect-to-CRM Workflow</h3>
+      <p><strong>Automated lead research</strong> — Before the call, Laxis pulls company intel, recent news, and social signals. No manual digging. <strong>Live meeting transcription</strong> — Real-time capture with speaker IDs, action items, and follow-ups. <strong>1-click CRM updates</strong> — Push notes, next steps, and deal stages to Salesforce, HubSpot, or Pipedrive. One click. No copy-paste.</p>
+
+      <h3>Actionable AI for Revenue Teams</h3>
+      <p>Laxis fits the <strong>Actionable AI</strong> stack: it ships outcomes, not demos. Reps get prep in seconds, transcripts in minutes, and CRM that stays current. The value compounds when you pair it with <a href="/go/apollo" target="_blank" rel="noopener sponsored">Apollo</a> for prospecting and <a href="/go/activecampaign" target="_blank" rel="noopener sponsored">ActiveCampaign</a> for nurture.</p>
+
+      <p><strong>Ready to automate sales admin?</strong> <a href="/go/laxis" target="_blank" rel="noopener sponsored">Try Laxis</a> and compare with Fireflies and Otter in our directory.</p>
+    `,
+  },
+  {
+    id: "mindstudio-agent-builder-tutorial",
+    slug: "mindstudio-agent-builder-tutorial",
+    title: "Build Your Own AI Staff: A 15-Minute Guide to No-Code Agents with MindStudio",
+    excerpt:
+      "Tutorial: Use MindStudio's visual builder to connect Gemini, Claude, and GPT-4 into a custom Research Agent. No code. 15 minutes. Actionable AI.",
+    category: "Data & Automation",
+    author: "AI Growth Stack Team",
+    publishDate: "February 19, 2026",
+    lastUpdated: "Feb 2026",
+    readTime: "9 min read",
+    featuredToolIds: ["mindstudio", "zapier-central", "make"],
+    metaTitle: "MindStudio Tutorial 2026: Build No-Code AI Agents in 15 Minutes",
+    metaDescription:
+      "Connect 200+ models into custom agents. Visual builder, no code. Build a Research Agent with Gemini, Claude, GPT-4. MindStudio tutorial—start free.",
+    content: `
+      <h2>No-Code AI Agents in 15 Minutes</h2>
+      <p>You don't need to hire AI engineers to build custom agents. <a href="/go/mindstudio" target="_blank" rel="noopener sponsored">MindStudio</a> lets you wire 200+ models—Gemini, Claude, GPT-4, Llama—into workflows with a visual builder. No code. This tutorial walks you through building a <strong>Research Agent</strong> in 15 minutes.</p>
+
+      <h3>Step 1: Create a New Agent</h3>
+      <p>Log in, create a new agent, and name it "Research Agent." MindStudio's canvas is drag-and-drop: add blocks for prompts, models, and outputs. Start with a single prompt block that accepts a topic.</p>
+
+      <h3>Step 2: Connect Your Models</h3>
+      <p>Add model blocks for Gemini, Claude, or GPT-4. Chain them: first model does broad research, second synthesizes. Or run in parallel and merge. The visual builder makes the flow obvious—no YAML, no API calls.</p>
+
+      <h3>Step 3: Add Tools and Outputs</h3>
+      <p>Connect web search, file upload, or custom APIs. Your Research Agent can pull live data, summarize docs, and output structured JSON. Deploy as a chat interface, API, or embed.</p>
+
+      <h3>Actionable AI: Ship in Minutes</h3>
+      <p>MindStudio fits the <strong>Actionable AI</strong> stack: you're building agents that ship, not demos that sit. Compare <a href="/go/mindstudio" target="_blank" rel="noopener sponsored">MindStudio</a> with <a href="/go/zapier-central" target="_blank" rel="noopener sponsored">Zapier Central</a> and <a href="https://www.make.com/en/register?pc=aigrowthstack" target="_blank" rel="noopener sponsored">Make.com</a> in our directory.</p>
+    `,
+  },
+  {
     id: "gohighlevel-vs-activecampaign-2026",
     slug: "gohighlevel-vs-activecampaign-why-the-ai-os-is-winning-in-2026",
     title: "GoHighLevel vs. ActiveCampaign: Why the AI OS is Winning in 2026",
@@ -349,7 +438,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
 
       <h3>Fast Social and Ad Video</h3>
-      <p>When you need a steady stream of short-form, platform-native video, <a href="/go/invideo" rel="sponsored nofollow">InVideo AI</a> delivers. Prompt-to-video plus templates and brand presets means your team can ship social and ad creative without a full post-production pipeline. Great for demand gen and brand campaigns where volume and consistency beat one-off polish.</p>
+      <p>When you need a steady stream of short-form, platform-native video, <a href="/go/invideo" target="_blank" rel="noopener sponsored">InVideo AI</a> delivers. Prompt-to-video plus templates and brand presets means your team can ship social and ad creative without a full post-production pipeline. Great for demand gen and brand campaigns where volume and consistency beat one-off polish.</p>
       <ul>
         <li>Prompt-to-video for quick ideation and testing</li>
         <li>Aspect-ratio and format presets for each platform</li>
@@ -360,7 +449,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>AI video shines for: training, onboarding, localized demos, and high-volume social. It’s less ideal when you need a specific executive or celebrity on camera, or when the message is highly sensitive and demands a human face. For most B2B use cases—especially internal and mid-funnel—AI-generated video is already the new standard.</p>
 
       <h3>Get Started With the Right Tool</h3>
-      <p>Choose by use case: <a href="https://www.synthesia.io/?via=aigrowthstack" target="_blank" rel="noopener sponsored">Synthesia</a> for training and explainers, <a href="/go/heygen" rel="sponsored nofollow">HeyGen</a> for translation and repurposing, <a href="/go/invideo" rel="sponsored nofollow">InVideo AI</a> for social and ads. Compare all three in our directory and try the one that matches your biggest video bottleneck.</p>
+      <p>Choose by use case: <a href="https://www.synthesia.io/?via=aigrowthstack" target="_blank" rel="noopener sponsored">Synthesia</a> for training and explainers, <a href="/go/heygen" rel="sponsored nofollow">HeyGen</a> for translation and repurposing, <a href="/go/invideo" target="_blank" rel="noopener sponsored">InVideo AI</a> for social and ads. Compare all three in our directory and try the one that matches your biggest video bottleneck.</p>
     `,
   },
   {
