@@ -4,7 +4,7 @@ import path from 'path';
 
 /**
  * Vite plugin that updates og:image and twitter:image meta tags
- * to point to the app's opengraph image with the correct Replit domain.
+ * to point to the app's logo/opengraph image with the correct Replit domain.
  */
 export function metaImagesPlugin(): Plugin {
   return {
@@ -16,27 +16,30 @@ export function metaImagesPlugin(): Plugin {
         return html;
       }
 
-      // Check if opengraph image exists in public directory
+      // Check if logo or opengraph image exists in public directory (prefer logo.png)
       const publicDir = path.resolve(process.cwd(), 'client', 'public');
+      const logoPngPath = path.join(publicDir, 'logo.png');
       const opengraphPngPath = path.join(publicDir, 'opengraph.png');
       const opengraphJpgPath = path.join(publicDir, 'opengraph.jpg');
       const opengraphJpegPath = path.join(publicDir, 'opengraph.jpeg');
 
-      let imageExt: string | null = null;
-      if (fs.existsSync(opengraphPngPath)) {
-        imageExt = 'png';
+      let imagePath: string | null = null;
+      if (fs.existsSync(logoPngPath)) {
+        imagePath = '/logo.png';
+      } else if (fs.existsSync(opengraphPngPath)) {
+        imagePath = '/opengraph.png';
       } else if (fs.existsSync(opengraphJpgPath)) {
-        imageExt = 'jpg';
+        imagePath = '/opengraph.jpg';
       } else if (fs.existsSync(opengraphJpegPath)) {
-        imageExt = 'jpeg';
+        imagePath = '/opengraph.jpeg';
       }
 
-      if (!imageExt) {
-        log('[meta-images] OpenGraph image not found, skipping meta tag updates');
+      if (!imagePath) {
+        log('[meta-images] Logo/OpenGraph image not found, skipping meta tag updates');
         return html;
       }
 
-      const imageUrl = `${baseUrl}/opengraph.${imageExt}`;
+      const imageUrl = `${baseUrl}${imagePath}`;
 
       log('[meta-images] updating meta image tags to:', imageUrl);
 

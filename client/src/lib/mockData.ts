@@ -1295,7 +1295,7 @@ export const mockSoftware: Software[] = [
     tagline: "No-code AI agent builder.",
     proTip: "Start with templates, then customize for your workflow.",
     shortReview: "MindStudio lets you build and deploy custom AI agents without code.",
-    affiliateLink: "https://mindstudio.ai",
+    affiliateLink: "https://get.mindstudio.ai/d0d8j31ooeuv",
     websiteUrl: "https://mindstudio.ai",
   }),
   base({

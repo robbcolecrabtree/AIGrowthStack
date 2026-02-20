@@ -15,7 +15,7 @@ export function SEO({
   description, 
   canonical, 
   ogType = "website", 
-  ogImage = "/og-image.png",
+  ogImage = "/logo.png",
   schema 
 }: SEOProps) {
   const siteUrl = CLONE_CONFIG.siteUrl;
