@@ -144,7 +144,7 @@ export const mockSoftware: Software[] = [
     deploymentTime: "Instant",
     supportLevel: "Priority",
     automationScore: 92,
-    affiliateLink: "https://adcreative.ai",
+    affiliateLink: "https://free-trial.adcreative.ai/volk5d5gyu57",
     websiteUrl: "https://adcreative.ai",
     cardAccent: "#F32D51",
     badge: "Editor's Choice",
@@ -1250,7 +1250,7 @@ export const mockSoftware: Software[] = [
     tagline: "AI-powered sales intelligence and outreach.",
     proTip: "Leverage intent signals to prioritize high-fit accounts.",
     shortReview: "Amplemarket combines intent data with AI to prioritize and personalize outbound.",
-    affiliateLink: "https://amplemarket.com",
+    affiliateLink: "https://grow.amplemarket.com/mr390kpzrwyd",
     websiteUrl: "https://amplemarket.com",
   }),
   base({
