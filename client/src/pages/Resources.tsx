@@ -37,15 +37,23 @@ export default function Resources() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {blueprints.map((blueprint) => {
                 const Icon = blueprint.icon;
+                const isNewFeb2026 = blueprint.id === "automated-sales-machine";
                 return (
                   <Link
                     key={blueprint.id}
                     href={blueprint.ctaHref}
-                    className="group flex flex-col bg-card rounded-2xl border border-border overflow-hidden hover:shadow-lg hover:shadow-primary/5 hover:border-primary/50 transition-all duration-200 hover:-translate-y-1 no-underline"
+                    className={`group flex flex-col bg-card rounded-2xl border overflow-hidden hover:shadow-lg hover:shadow-primary/5 hover:border-primary/50 transition-all duration-200 hover:-translate-y-1 no-underline ${isNewFeb2026 ? "border-primary/40 ring-1 ring-primary/20" : "border-border"}`}
                   >
                     <div className="p-6 flex-grow flex flex-col">
-                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                        <Icon className="w-6 h-6 text-primary" />
+                      <div className="flex items-center gap-2 mb-4">
+                        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                          <Icon className="w-6 h-6 text-primary" />
+                        </div>
+                        {isNewFeb2026 && (
+                          <span className="px-2.5 py-0.5 rounded-full bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide">
+                            New for February 2026
+                          </span>
+                        )}
                       </div>
                       <span className="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wide w-fit mb-3">
                         {blueprint.type}

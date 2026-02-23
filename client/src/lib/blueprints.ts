@@ -1,4 +1,4 @@
-import { Database, Presentation, CalendarCheck } from "lucide-react";
+import { Database, Presentation, CalendarCheck, Zap } from "lucide-react";
 
 export type BlueprintType = "Blueprint / JSON Config" | "Template / Prompt Guide" | "Guide / Checklist";
 
@@ -6,6 +6,7 @@ export interface HowToUseStep {
   step: number;
   title: string;
   body: string;
+  bodyHtml?: string;
 }
 
 export interface Blueprint {
@@ -25,6 +26,49 @@ export interface Blueprint {
 }
 
 export const blueprints: Blueprint[] = [
+  {
+    id: "automated-sales-machine",
+    slug: "automated-sales-machine",
+    title: "The Automated Sales Machine: Signal-Based Outreach with AI in 2026",
+    type: "Guide / Checklist",
+    description: "How to combine AI Scraping, ElevenLabs v3, and Amplemarket to build a high-conversion outbound engine.",
+    ctaLabel: "Open Guide",
+    ctaHref: "/resources/automated-sales-machine",
+    affiliateUrl: "/go/amplemarket",
+    toolName: "Amplemarket",
+    icon: Zap,
+    copyableLabel: "Copy Checklist",
+    copyableContent: `□ Step 1: Data Sourcing — Use Browse AI, Apollo, or Clay for intent-based lead lists
+□ Step 2: Personalized Content — ElevenLabs v3 for voiceovers (see our v3 Audio Tags guide)
+□ Step 3: Visual Generation — AdCreative.ai for matching ad creatives
+□ Step 4: Execution — Amplemarket for AI-powered outreach sequences`,
+    howToUseSteps: [
+      {
+        step: 1,
+        title: "Data Sourcing",
+        body: "Use AI scraping tools to build your lead list from intent signals.",
+        bodyHtml: "Use AI scraping tools to build your lead list from intent signals. Our top picks: <a href=\"/go/browse-ai\" target=\"_blank\" rel=\"noopener sponsored\">Browse AI</a> for no-code extraction from directories and job boards, <a href=\"/go/apollo\" target=\"_blank\" rel=\"noopener sponsored\">Apollo</a> for 275M+ contacts with waterfall enrichment, and <a href=\"/go/clay\" target=\"_blank\" rel=\"noopener sponsored\">Clay</a> for hyper-targeted lists at scale.",
+      },
+      {
+        step: 2,
+        title: "Personalized Content",
+        body: "Generate voiceovers with ElevenLabs v3.",
+        bodyHtml: "Generate voiceovers and narration with ElevenLabs v3. Use audio tags for character direction and emotional nuance. See our <a href=\"/blog/mastering-eleven-v3-audio-tags-character-direction-2026\" target=\"_blank\" rel=\"noopener\">Eleven v3 Audio Tags & Character Direction Guide</a> for the full cheat sheet.",
+      },
+      {
+        step: 3,
+        title: "Visual Generation",
+        body: "Create matching ad creatives.",
+        bodyHtml: "Create matching ad creatives with <a href=\"/go/adcreative\" target=\"_blank\" rel=\"noopener sponsored\">AdCreative.ai</a>. Generate on-brand images and copy in minutes for rapid A/B testing across Meta and Google.",
+      },
+      {
+        step: 4,
+        title: "Execution",
+        body: "Run your sequences with Amplemarket.",
+        bodyHtml: "Run your sequences with <a href=\"/go/amplemarket\" target=\"_blank\" rel=\"noopener sponsored\">Amplemarket</a>. AI-powered sales intelligence and outreach to deliver personalized campaigns at scale.",
+      },
+    ],
+  },
   {
     id: "browse-ai-lead-scraper",
     slug: "browse-ai-recipe",

@@ -82,18 +82,15 @@ export default function BlueprintDetail() {
             <div className="p-8 md:p-12 space-y-10">
               {/* Copy to Clipboard */}
               <section>
-                <h2 className="font-heading font-bold text-xl text-foreground mb-3">
-                  {blueprint.copyableLabel}
-                </h2>
-                <div className="relative rounded-xl border border-border bg-secondary/30 overflow-hidden">
-                  <pre className="p-4 md:p-6 text-sm text-muted-foreground overflow-x-auto font-mono whitespace-pre-wrap">
-                    {blueprint.copyableContent}
-                  </pre>
+                <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
+                  <h2 className="font-heading font-bold text-xl text-foreground">
+                    {blueprint.copyableLabel}
+                  </h2>
                   <Button
                     variant="outline"
                     size="sm"
                     onClick={handleCopy}
-                    className="absolute top-3 right-3 gap-2"
+                    className="flex-shrink-0 gap-2"
                   >
                     {copied ? (
                       <>
@@ -105,6 +102,11 @@ export default function BlueprintDetail() {
                       </>
                     )}
                   </Button>
+                </div>
+                <div className="rounded-xl border border-border bg-secondary/30 overflow-hidden">
+                  <pre className="p-4 md:p-6 text-sm text-muted-foreground overflow-x-auto font-mono whitespace-pre-wrap">
+                    {blueprint.copyableContent}
+                  </pre>
                 </div>
               </section>
 
@@ -121,7 +123,13 @@ export default function BlueprintDetail() {
                       </span>
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">{step.title}</h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">{step.body}</p>
+                        <div className="text-muted-foreground text-sm leading-relaxed [&_a]:text-primary [&_a]:hover:underline [&_a]:font-medium">
+                          {step.bodyHtml ? (
+                            <span dangerouslySetInnerHTML={{ __html: step.bodyHtml }} />
+                          ) : (
+                            step.body
+                          )}
+                        </div>
                       </div>
                     </li>
                   ))}

@@ -41,6 +41,7 @@ const articleSlugs = [
   "browse-ai-recipe",
   "gamma-gtm-slide-master",
   "founders-time-blocking-protocol",
+  "automated-sales-machine",
 ];
 
 const blogSlugs = [
@@ -71,6 +72,7 @@ const blogSlugs = [
   "geo-generative-engine-optimization-the-2026-playbook-for-ai-visibility",
   "how-to-get-cited-by-perplexity-and-chatgpt-search-fact-density-for-marketers",
   "ai-seo-workflows-moving-from-keyword-stuffing-to-entity-authority",
+  "mastering-eleven-v3-audio-tags-character-direction-2026",
 ];
 
 function escapeXml(s) {
