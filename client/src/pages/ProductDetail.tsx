@@ -227,61 +227,33 @@ export default function ProductDetail() {
 
               {software.id === "elevenlabs" && (
                 <>
-                  <h3 className="font-heading font-bold text-lg mt-8 mb-4 text-foreground">2026 Pricing Summary</h3>
-                  <div className="overflow-x-auto rounded-lg border border-border mb-6">
-                    <table className="w-full text-sm">
-                      <thead>
-                        <tr className="bg-secondary/50 border-b border-border">
-                          <th className="text-left px-4 py-3 font-semibold text-foreground">Plan</th>
-                          <th className="text-left px-4 py-3 font-semibold text-foreground">Price</th>
-                          <th className="text-left px-4 py-3 font-semibold text-foreground">Key Features</th>
-                        </tr>
-                      </thead>
-                      <tbody className="text-muted-foreground">
-                        <tr className="border-b border-border">
-                          <td className="px-4 py-3 font-medium text-foreground">Free</td>
-                          <td className="px-4 py-3">$0</td>
-                          <td className="px-4 py-3">10k characters/mo, 3 custom voices</td>
-                        </tr>
-                        <tr className="border-b border-border">
-                          <td className="px-4 py-3 font-medium text-foreground">Starter</td>
-                          <td className="px-4 py-3">$5/mo</td>
-                          <td className="px-4 py-3">30k characters, Instant Voice Cloning</td>
-                        </tr>
-                        <tr>
-                          <td className="px-4 py-3 font-medium text-foreground">Creator</td>
-                          <td className="px-4 py-3">$22/mo</td>
-                          <td className="px-4 py-3">100k characters, Professional Voice Cloning</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  <h3 className="font-heading font-bold text-lg mt-8 mb-4 text-foreground">2026 Pricing Quick-Look</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground mb-6">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
+                      <span><strong className="text-foreground font-medium">Free Plan ($0):</strong> 10,000 monthly characters (best for testing v3 models).</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
+                      <span><strong className="text-foreground font-medium">Starter Plan ($5):</strong> 30,000 characters + Instant Voice Cloning.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
+                      <span><strong className="text-foreground font-medium">Creator Plan ($11/mo deal):</strong> 100,000 characters + Professional Voice Cloning.</span>
+                    </li>
+                  </ul>
 
-                  <div className="rounded-lg border border-accent/30 bg-accent/5 p-6 mb-6">
-                    <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <div className="rounded-lg border-2 border-accent/50 bg-accent/10 p-6 mb-6">
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
                       <Lightbulb className="w-4 h-4 text-accent" />
-                      Pro Tip: Maximize Your Credits
+                      PRO TIP
                     </h4>
-                    <ul className="space-y-3 text-sm text-muted-foreground">
-                      <li className="flex gap-3">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
-                        <span className="flex-1 min-w-0 leading-relaxed">
-                          Use the <strong className="text-foreground font-medium">Flash v2.5</strong> model for draft exports to save 50% on character costs.
-                        </span>
-                      </li>
-                      <li className="flex gap-3">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
-                        <span className="flex-1 min-w-0 leading-relaxed">
-                          New users should start with the <strong className="text-foreground font-medium">Creator</strong> plan to get the 50% first-month discount ($11 instead of $22) to unlock Professional Voice Cloning immediately.
-                        </span>
-                      </li>
-                      <li className="flex gap-3">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
-                        <span className="flex-1 min-w-0 leading-relaxed">
-                          The <strong className="text-foreground font-medium">Free</strong> tier (10,000 characters) does NOT include a commercial license, so the $5 <strong className="text-foreground font-medium">Starter</strong> plan is the minimum for YouTubers and Agencies.
-                        </span>
-                      </li>
-                    </ul>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-2">
+                      Use the Flash v2.5 model in your dashboard. It costs 0.5 credits per character instead of 1.0, effectively giving you 20,000 characters on the Free Plan.
+                    </p>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-0">
+                      New users should start with the Creator plan for the 50% first-month discount ($11 instead of $22). The Free tier does NOT include a commercial license—the $5 Starter plan is the minimum for YouTubers and Agencies.
+                    </p>
                   </div>
 
                   <p className="text-sm text-muted-foreground mb-6">
@@ -302,6 +274,22 @@ export default function ProductDetail() {
                     </a>
                   </div>
                 </>
+              )}
+
+              {software.id === "tidio" && (
+                <div className="mt-8">
+                  <h3 className="font-heading font-bold text-lg mb-4 text-foreground">Why Lyro AI is the 2026 Move</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
+                      <span><strong className="text-foreground font-medium">Automate Sales:</strong> Use Lyro to engage visitors coming from your AI Scraping and Amplemarket outreach.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
+                      <span><strong className="text-foreground font-medium">Scalable Pricing:</strong> Starter plans begin at $29/mo, with Lyro AI available as a high-performance add-on.</span>
+                    </li>
+                  </ul>
+                </div>
               )}
             </div>
 

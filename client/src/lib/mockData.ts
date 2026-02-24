@@ -224,7 +224,7 @@ export const mockSoftware: Software[] = [
     badge: "Top Rated",
     featured: true,
     metaTitle: "ElevenLabs Pricing & Review (February 2026) - Is the Creator Plan Worth It?",
-    metaDescription: "Compare ElevenLabs 2026 pricing plans from Free to Business. Learn about Eleven v3 expressive mode, voice cloning costs, and how to save 50% on your first month.",
+    metaDescription: "Updated Feb 2026: Get the $11 Creator Plan deal (50% off), learn the new Free Tier limits, and use the 'Flash v2.5' hack to double your character credits.",
     reviewContent: `<p>ElevenLabs has set the bar for AI voice quality in 2026. Whether you need text-to-speech for videos, voice cloning for brand consistency, or multilingual narration at scale, the platform delivers remarkably natural output that stands up to close listening. Growth teams use it for product demos, training content, and ads without booking studio time.</p><p>The voice library covers a wide range of styles and languages, and the fine-grained controls let you adjust pacing, stability, and clarity so the result matches your brand. For creators and marketers who need a consistent "voice" across many assets, ElevenLabs' cloning feature is among the best we've tested—with clear guidelines on responsible use.</p><p>API access makes it easy to integrate into existing workflows: CMS, video tools, and custom apps can all pull from ElevenLabs. Usage-based pricing means you pay for what you use, which is ideal for teams that scale production up and down. Support is responsive, and the roadmap stays focused on quality and new languages rather than feature bloat.</p><p>If your bottleneck is voiceover volume or localization, ElevenLabs should be at the top of your list. Try it for a high-traffic asset first, then roll it out across the rest of your content pipeline.</p>`,
   }),
   base({
@@ -1327,6 +1327,21 @@ export const mockSoftware: Software[] = [
     shortReview: "Tidio combines live chat with AI chatbots for customer engagement and support.",
     affiliateLink: "https://affiliate.tidio.com/o3bcohoft1l6",
     websiteUrl: "https://tidio.com",
+    metaTitle: "Tidio Lyro AI Review 2026: Automate Support & Qualify Leads",
+    metaDescription: "Tidio Lyro AI Review 2026: Automate 70% of your support and qualify leads from AI scraping workflows. Get started for $29/mo with our affiliate deal.",
+    pros: [
+      "Lyro AI: Resolves up to 70% of queries automatically using your site's content.",
+      "30-Minute Setup: Quick integration with Shopify, WordPress, and Wix.",
+      "Unified Multichannel Inbox: Manage WhatsApp, Instagram, and Web Chat in one place.",
+      "Visual Flow Builder: No-code drag-and-drop automation for lead qualification.",
+      "Live Visitor Tracking: See real-time browsing data to proactively engage leads.",
+    ],
+    cons: [
+      "Complex Pricing: 'Billable Conversation' limits can be difficult to predict.",
+      "Branding Removal Fee: Paid add-on required to remove the Tidio logo.",
+      "Notification Latency: Occasional sync delays between mobile and desktop apps.",
+      "Basic CRM Depth: Lacks the enterprise-level integration found in high-end helpdesks.",
+    ],
   }),
   base({
     id: "unbounce",
