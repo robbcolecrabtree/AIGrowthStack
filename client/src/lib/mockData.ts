@@ -1325,7 +1325,7 @@ export const mockSoftware: Software[] = [
     tagline: "Live chat and chatbot platform.",
     proTip: "Combine live chat with AI for 24/7 coverage.",
     shortReview: "Tidio combines live chat with AI chatbots for customer engagement and support.",
-    affiliateLink: "https://tidio.com",
+    affiliateLink: "https://affiliate.tidio.com/o3bcohoft1l6",
     websiteUrl: "https://tidio.com",
   }),
   base({
