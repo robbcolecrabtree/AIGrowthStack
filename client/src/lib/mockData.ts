@@ -834,7 +834,7 @@ export const mockSoftware: Software[] = [
     ],
     supportLevel: "Priority",
     automationScore: 88,
-    affiliateLink: "https://descript.com",
+    affiliateLink: "https://get.descript.com/r3q3tipqqz3g",
     websiteUrl: "https://descript.com",
     cardAccent: "#000000",
   }),
