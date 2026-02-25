@@ -1,8 +1,23 @@
+import { useState, useEffect } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FilterSidebar } from "@/components/ui/FilterSidebar";
 import { SoftwareCard } from "@/components/ui/SoftwareCard";
 import { ToolCard } from "@/components/ui/ToolCard";
+import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import {
   mockSoftware,
   featuredTools,
@@ -10,7 +25,7 @@ import {
   toolsByCategory,
 } from "@/lib/mockData";
 import { Button } from "@/components/ui/button";
-import { ArrowUpDown, Sparkles, LayoutGrid, BookOpen, ArrowRight, FileText, Zap } from "lucide-react";
+import { ArrowUpDown, Sparkles, LayoutGrid, BookOpen, ArrowRight, FileText, Zap, Search, Mic, Video, Database, Megaphone, Calendar, Code, Headphones, Building2 } from "lucide-react";
 import { Link, useSearchParams } from "wouter";
 import { SEO } from "@/components/layout/SEO";
 import { CLONE_CONFIG } from "@/lib/config";
@@ -21,6 +36,19 @@ import type { BlogPost } from "@/lib/blogPosts";
 const categorySlug = (c: string) => encodeURIComponent(c);
 
 const latestInsights = BLOG_POSTS.slice(-5);
+
+const CATEGORY_ICONS: Record<string, typeof Mic> = {
+  "Audio & Voice": Mic,
+  "Video & Image": Video,
+  "Data & Automation": Database,
+  "Sales": Megaphone,
+  "Marketing & Ads": Megaphone,
+  "SEO & Writing": FileText,
+  "Productivity & Work": Calendar,
+  "Development": Code,
+  "Customer Support": Headphones,
+  "Enterprise": Building2,
+};
 
 function LatestInsightCard({ post }: { post: BlogPost }) {
   return (
@@ -48,23 +76,51 @@ export default function Home() {
   const categoryParam = params.get("category") || "";
   const searchParam = params.get("search") || "";
 
-  let filteredSoftware = categoryParam
-    ? mockSoftware.filter((s) => s.categories.includes(categoryParam as any))
-    : mockSoftware;
+  const [searchQuery, setSearchQuery] = useState(searchParam);
+  const [selectedCategory, setSelectedCategory] = useState(categoryParam || "All");
+  const [sortBy, setSortBy] = useState<"recommended" | "name-asc" | "name-desc" | "rating" | "price">("recommended");
 
-  if (searchParam.trim()) {
-    const q = searchParam.trim().toLowerCase();
-    filteredSoftware = filteredSoftware.filter(
-      (s) =>
-        s.name.toLowerCase().includes(q) ||
-        (s.tagline && s.tagline.toLowerCase().includes(q)) ||
-        (s.description && s.description.toLowerCase().includes(q)) ||
-        s.categories.some((c) => c.toLowerCase().includes(q))
-    );
-  }
+  useEffect(() => {
+    setSelectedCategory(categoryParam || "All");
+  }, [categoryParam]);
 
-  const metaTitle = categoryParam
-    ? `Best ${categoryParam} AI Tools 2026`
+  useEffect(() => {
+    setSearchQuery(searchParam);
+  }, [searchParam]);
+
+  const filteredProducts = mockSoftware
+    .filter((s) => {
+      const matchesSearch = !searchQuery.trim() ||
+        s.name.toLowerCase().includes(searchQuery.trim().toLowerCase()) ||
+        (s.description && s.description.toLowerCase().includes(searchQuery.trim().toLowerCase())) ||
+        (s.tagline && s.tagline.toLowerCase().includes(searchQuery.trim().toLowerCase())) ||
+        s.categories.some((c) => c.toLowerCase().includes(searchQuery.trim().toLowerCase()));
+      const matchesCategory = selectedCategory === "All" || s.categories.includes(selectedCategory);
+      return matchesSearch && matchesCategory;
+    })
+    .slice()
+    .sort((a, b) => {
+      switch (sortBy) {
+        case "recommended":
+          if (a.featured && !b.featured) return -1;
+          if (!a.featured && b.featured) return 1;
+          return (b.rating ?? 0) - (a.rating ?? 0);
+        case "name-asc":
+          return a.name.localeCompare(b.name);
+        case "name-desc":
+          return b.name.localeCompare(a.name);
+        case "rating":
+          return (b.rating ?? 0) - (a.rating ?? 0);
+        case "price":
+          return (a.startingPrice ?? 0) - (b.startingPrice ?? 0);
+        default:
+          return 0;
+      }
+    });
+
+  const effectiveCategory = selectedCategory !== "All" ? selectedCategory : categoryParam;
+  const metaTitle = effectiveCategory
+    ? `Best ${effectiveCategory} AI Tools 2026`
     : "Best AI Tools for Business 2026: Pricing & Reviews";
   const metaDescription =
     "Compare actionable AI tools: pricing, vs. reviews, ROI. HeyGen, ElevenLabs, Surfer, Jasper. Vetted for B2B growth—start comparing today.";
@@ -173,34 +229,108 @@ export default function Home() {
           </aside>
 
           <div className="col-span-1 lg:col-span-3">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-              <h2 className="font-heading font-bold text-2xl text-foreground">
-                {searchParam
-                  ? `Search results${categoryParam ? ` in ${categoryParam}` : ""}`
-                  : categoryParam
-                    ? `${categoryParam} Tools`
-                    : "All Tools"}
-              </h2>
-              <div className="flex items-center gap-2">
-                <span className="text-sm text-muted-foreground">Sort by:</span>
-                <Button variant="outline" size="sm" className="h-8 gap-2">
-                  Recommended <ArrowUpDown className="w-3 h-3" />
-                </Button>
+            {/* Search and Filter - Sticky row */}
+            <div className="sticky top-16 z-10 -mx-4 px-4 py-4 mb-6 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <div className="relative flex-1">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                  <Input
+                    type="search"
+                    placeholder="Search tools by name, description..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="pl-9 h-10"
+                  />
+                </div>
+                <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+                  <SelectTrigger className="w-full sm:w-[220px] h-10">
+                    <SelectValue placeholder="Category" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="All">
+                      <span className="flex items-center gap-2">
+                        <LayoutGrid className="w-4 h-4" />
+                        All Categories
+                      </span>
+                    </SelectItem>
+                    {CATEGORIES.map((category) => {
+                      const Icon = CATEGORY_ICONS[category] ?? LayoutGrid;
+                      return (
+                        <SelectItem key={category} value={category}>
+                          <span className="flex items-center gap-2">
+                            <Icon className="w-4 h-4" />
+                            {category}
+                          </span>
+                        </SelectItem>
+                      );
+                    })}
+                  </SelectContent>
+                </Select>
+                <div className="flex items-center gap-2 sm:border-l sm:pl-4">
+                  <span className="text-sm text-muted-foreground whitespace-nowrap">
+                    Showing {filteredProducts.length} {filteredProducts.length === 1 ? "product" : "products"}.
+                  </span>
+                  <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                      <Button variant="outline" size="sm" className="h-8 gap-2 shrink-0">
+                        {sortBy === "recommended" && "Recommended"}
+                        {sortBy === "name-asc" && "Name A–Z"}
+                        {sortBy === "name-desc" && "Name Z–A"}
+                        {sortBy === "rating" && "Rating"}
+                        {sortBy === "price" && "Price"}
+                        <ArrowUpDown className="w-3 h-3" />
+                      </Button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent align="end">
+                      <DropdownMenuItem onClick={() => setSortBy("recommended")}>
+                        Recommended
+                      </DropdownMenuItem>
+                      <DropdownMenuItem onClick={() => setSortBy("name-asc")}>
+                        Name A–Z
+                      </DropdownMenuItem>
+                      <DropdownMenuItem onClick={() => setSortBy("name-desc")}>
+                        Name Z–A
+                      </DropdownMenuItem>
+                      <DropdownMenuItem onClick={() => setSortBy("rating")}>
+                        Rating (high to low)
+                      </DropdownMenuItem>
+                      <DropdownMenuItem onClick={() => setSortBy("price")}>
+                        Price (low to high)
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                </div>
               </div>
             </div>
 
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+              <h2 className="font-heading font-bold text-2xl text-foreground">
+                {searchQuery
+                  ? `Search results${selectedCategory !== "All" ? ` in ${selectedCategory}` : ""}`
+                  : selectedCategory !== "All"
+                    ? `${selectedCategory} Tools`
+                    : "All Tools"}
+              </h2>
+            </div>
+
             <div className="space-y-6">
-              {filteredSoftware.length > 0 ? (
-                filteredSoftware.map((software) => (
+              {filteredProducts.length > 0 ? (
+                filteredProducts.map((software) => (
                   <SoftwareCard key={software.id} software={software} />
                 ))
               ) : (
                 <div className="p-12 text-center bg-card rounded-xl border border-dashed border-border">
-                  <p className="text-muted-foreground">
-                    {searchParam ? "No tools match your search." : "No tools in this category yet."}
+                  <p className="text-muted-foreground mb-4">
+                    No tools found. Try a different search.
                   </p>
-                  <Button variant="link" onClick={() => (window.location.href = "/")}>
-                    View all tools
+                  <Button
+                    variant="outline"
+                    onClick={() => {
+                      setSearchQuery("");
+                      setSelectedCategory("All");
+                    }}
+                  >
+                    Clear filters
                   </Button>
                 </div>
               )}
@@ -231,17 +361,25 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {CATEGORIES.map((category) => {
             const count = toolsByCategory(category).length;
+            const Icon = CATEGORY_ICONS[category] ?? LayoutGrid;
             return (
               <Link
                 key={category}
                 href={`/?category=${categorySlug(category)}`}
                 className="group p-6 bg-card border border-border rounded-xl hover:border-primary/40 hover:shadow-lg transition-all flex items-center justify-between no-underline"
               >
-                <span className="font-bold text-lg text-foreground group-hover:text-primary transition-colors">
-                  {category}
+                <span className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <Icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="font-bold text-lg text-foreground group-hover:text-primary transition-colors">
+                    {category}
+                  </span>
                 </span>
-                <span className="text-sm text-muted-foreground">{count} tools</span>
-                <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                <span className="flex items-center gap-2">
+                  <span className="text-sm text-muted-foreground">{count} tools</span>
+                  <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                </span>
               </Link>
             );
           })}
