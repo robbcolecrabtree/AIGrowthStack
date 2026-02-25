@@ -224,7 +224,7 @@ export const mockSoftware: Software[] = [
     badge: "Top Rated",
     featured: true,
     metaTitle: "ElevenLabs Pricing & Review (February 2026) - Is the Creator Plan Worth It?",
-    metaDescription: "Updated Feb 2026: Get the $11 Creator Plan deal (50% off), learn the new Free Tier limits, and use the 'Flash v2.5' hack to double your character credits.",
+    metaDescription: "Feb 2026 Price Guide: Free (10k chars), Starter ($5), Creator ($11 - 50% off). Learn the 0.5 credit/char hack using Flash v2.5 to double your monthly limit. Updated Today.",
     reviewContent: `<p>ElevenLabs has set the bar for AI voice quality in 2026. Whether you need text-to-speech for videos, voice cloning for brand consistency, or multilingual narration at scale, the platform delivers remarkably natural output that stands up to close listening. Growth teams use it for product demos, training content, and ads without booking studio time.</p><p>The voice library covers a wide range of styles and languages, and the fine-grained controls let you adjust pacing, stability, and clarity so the result matches your brand. For creators and marketers who need a consistent "voice" across many assets, ElevenLabs' cloning feature is among the best we've tested—with clear guidelines on responsible use.</p><p>API access makes it easy to integrate into existing workflows: CMS, video tools, and custom apps can all pull from ElevenLabs. Usage-based pricing means you pay for what you use, which is ideal for teams that scale production up and down. Support is responsive, and the roadmap stays focused on quality and new languages rather than feature bloat.</p><p>If your bottleneck is voiceover volume or localization, ElevenLabs should be at the top of your list. Try it for a high-traffic asset first, then roll it out across the rest of your content pipeline.</p>`,
   }),
   base({
@@ -1431,7 +1431,7 @@ export const contentRelations: ContentRelation[] = [
   { id: "browse-ai-lead-scraper", title: "The Browse AI Lead Scraper Recipe", type: "blueprint", slug: "browse-ai-recipe", relatedToolIds: ["browse-ai"] },
   { id: "gamma-gtm-slide-master", title: "The Gamma GTM Slide Master", type: "blueprint", slug: "gamma-gtm-slide-master", relatedToolIds: ["gamma"] },
   { id: "founders-time-blocking-protocol", title: "The Founder's Time-Blocking Protocol", type: "blueprint", slug: "founders-time-blocking-protocol", relatedToolIds: ["reclaim"] },
-  { id: "automated-sales-machine", title: "The Automated Sales Machine: Signal-Based Outreach with AI in 2026", type: "blueprint", slug: "automated-sales-machine", relatedToolIds: ["browse-ai", "elevenlabs", "adcreative", "amplemarket"] },
+  { id: "automated-sales-machine", title: "The Automated Sales Machine: Signal-Based Outreach with AI in 2026", type: "blueprint", slug: "automated-sales-machine", relatedToolIds: ["browse-ai", "elevenlabs", "adcreative", "amplemarket", "mindstudio", "apollo", "descript"] },
 ];
 
 export function getRelatedContentForTool(toolId: string): ContentRelation[] {

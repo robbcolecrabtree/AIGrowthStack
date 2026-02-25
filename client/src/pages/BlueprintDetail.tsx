@@ -136,6 +136,38 @@ export default function BlueprintDetail() {
                 </ol>
               </section>
 
+              {blueprint.workflowSection && (
+                <section className="rounded-xl border border-primary/30 bg-primary/5 p-6">
+                  <h2 className="font-heading font-bold text-xl text-foreground mb-4">
+                    {blueprint.workflowSection.title}
+                  </h2>
+                  <ol className="space-y-4 mb-4">
+                    {blueprint.workflowSection.steps.map((step, i) => (
+                      <li key={i} className="flex gap-3">
+                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 text-primary font-bold text-xs flex items-center justify-center">
+                          {i + 1}
+                        </span>
+                        <div
+                          className="text-muted-foreground text-sm leading-relaxed [&_a]:text-primary [&_a]:hover:underline [&_a]:font-medium"
+                          dangerouslySetInnerHTML={{ __html: step.bodyHtml }}
+                        />
+                      </li>
+                    ))}
+                  </ol>
+                  <p className="text-sm font-semibold text-foreground mb-4">
+                    Goal: {blueprint.workflowSection.goal}
+                  </p>
+                  <a
+                    href={blueprint.workflowSection.ctaHref}
+                    target="_blank"
+                    rel="noopener sponsored"
+                    className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+                  >
+                    {blueprint.workflowSection.ctaLabel} <ExternalLink className="w-4 h-4" />
+                  </a>
+                </section>
+              )}
+
               {/* Primary Action */}
               <section className="pt-6 border-t border-border">
                 <p className="text-sm text-muted-foreground mb-4">

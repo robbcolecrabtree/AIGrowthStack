@@ -39,6 +39,50 @@ export default function ProductDetail() {
     }
   };
 
+  const elevenLabsFaqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the current ElevenLabs Creator Plan price?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Current Creator Plan: $11 (50% discount applied)"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the ElevenLabs character rate for Flash v2.5?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "0.5 credits per character via the Flash v2.5 model"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the ElevenLabs API latency for v3 Turbo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Less than 200ms for v3 Turbo"
+        }
+      }
+    ]
+  };
+
+  const schema = software.id === "elevenlabs"
+    ? {
+        "@context": "https://schema.org",
+        "@graph": [productSchema, elevenLabsFaqSchema]
+      }
+    : productSchema;
+
+  const lastVerifiedDate = new Date().toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric"
+  });
+
   return (
     <div key={id} className="min-h-screen flex flex-col bg-background font-sans">
       <SEO 
@@ -46,7 +90,7 @@ export default function ProductDetail() {
         description={software.metaDescription}
         canonical={`/product/${software.id}`}
         ogType="product"
-        schema={productSchema}
+        schema={schema}
       />
       <Navbar />
 
@@ -227,7 +271,24 @@ export default function ProductDetail() {
 
               {software.id === "elevenlabs" && (
                 <>
-                  <h3 className="font-heading font-bold text-lg mt-8 mb-4 text-foreground">2026 Pricing Quick-Look</h3>
+                  <h3 className="font-heading font-bold text-lg mt-8 mb-4 text-foreground">Live February 2026 Pricing Data</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
+                      <span><strong className="text-foreground font-medium">Current Creator Plan:</strong> $11 (50% Discount applied)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
+                      <span><strong className="text-foreground font-medium">Character Rate:</strong> 0.5 credits/char (via Flash v2.5 model)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
+                      <span><strong className="text-foreground font-medium">API Latency:</strong> &lt;200ms (v3 Turbo)</span>
+                    </li>
+                  </ul>
+                  <p className="text-xs text-muted-foreground mb-6">Last Verified: {lastVerifiedDate}</p>
+
+                  <h3 className="font-heading font-bold text-lg mb-4 text-foreground">2026 Pricing Quick-Look</h3>
                   <ul className="space-y-2 text-sm text-muted-foreground mb-6">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
@@ -264,13 +325,23 @@ export default function ProductDetail() {
                     .
                   </p>
 
-                  <div className="rounded-lg border border-primary/30 bg-primary/5 p-6">
+                  <div className="rounded-lg border border-primary/30 bg-primary/5 p-6 mb-6">
                     <h4 className="font-semibold text-foreground mb-2">Automation Synergy</h4>
                     <p className="text-sm text-muted-foreground mb-4">
                       Scaling your content? Use ElevenLabs for the voice and AdCreative.ai to generate the matching video ads in seconds.
                     </p>
                     <a href="/go/adcreative" target="_blank" rel="noopener sponsored">
                       <Button size="sm">Try AdCreative.ai for Free</Button>
+                    </a>
+                  </div>
+
+                  <div className="rounded-lg border border-border bg-secondary/30 p-6">
+                    <h4 className="font-semibold text-foreground mb-2">Turn Audio into Content</h4>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      Once you've generated your voiceover, drop the file into Descript. It will automatically transcribe your audio and allow you to edit the video by just editing the text. It's the fastest way to build faceless YouTube channels in 2026.
+                    </p>
+                    <a href="/go/descript" target="_blank" rel="noopener sponsored">
+                      <Button size="sm" variant="outline">Try Descript for Free</Button>
                     </a>
                   </div>
                 </>

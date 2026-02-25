@@ -9,6 +9,14 @@ export interface HowToUseStep {
   bodyHtml?: string;
 }
 
+export interface WorkflowSection {
+  title: string;
+  steps: { bodyHtml: string }[];
+  goal: string;
+  ctaLabel: string;
+  ctaHref: string;
+}
+
 export interface Blueprint {
   id: string;
   slug: string;
@@ -23,6 +31,7 @@ export interface Blueprint {
   copyableContent: string;
   copyableLabel: string;
   howToUseSteps: HowToUseStep[];
+  workflowSection?: WorkflowSection;
 }
 
 export const blueprints: Blueprint[] = [
@@ -40,7 +49,7 @@ export const blueprints: Blueprint[] = [
     copyableLabel: "Copy Checklist",
     copyableContent: `□ Step 1: Data Sourcing — Use Browse AI, Apollo, or Clay for intent-based lead lists
 □ Step 2: Personalized Content — ElevenLabs v3 for voiceovers (see our v3 Audio Tags guide)
-□ Step 3: Visual Generation — AdCreative.ai for matching ad creatives
+□ Step 3: Content Creation — AdCreative.ai for creatives, Descript for audio post-production
 □ Step 4: Execution — Amplemarket for AI-powered outreach sequences`,
     howToUseSteps: [
       {
@@ -57,9 +66,9 @@ export const blueprints: Blueprint[] = [
       },
       {
         step: 3,
-        title: "Visual Generation",
-        body: "Create matching ad creatives.",
-        bodyHtml: "Create matching ad creatives with <a href=\"/go/adcreative\" target=\"_blank\" rel=\"noopener sponsored\">AdCreative.ai</a>. Generate on-brand images and copy in minutes for rapid A/B testing across Meta and Google.",
+        title: "Content Creation",
+        body: "Create visuals and post-produce audio.",
+        bodyHtml: "Create matching ad creatives with <a href=\"/go/adcreative\" target=\"_blank\" rel=\"noopener sponsored\">AdCreative.ai</a>. Generate on-brand images and copy in minutes for rapid A/B testing across Meta and Google. <strong>Post-Production:</strong> Use <a href=\"/go/descript\" target=\"_blank\" rel=\"noopener sponsored\">Descript</a> to sync your ElevenLabs audio with b-roll. Use the 'Studio Sound' feature to ensure your AI-generated voice sounds like it was recorded in a $10k booth.",
       },
       {
         step: 4,
@@ -68,6 +77,20 @@ export const blueprints: Blueprint[] = [
         bodyHtml: "Run your sequences with <a href=\"/go/amplemarket\" target=\"_blank\" rel=\"noopener sponsored\">Amplemarket</a>. AI-powered sales intelligence and outreach to deliver personalized campaigns at scale.",
       },
     ],
+    workflowSection: {
+      title: "The 2026 Video Agent Workflow",
+      steps: [
+        {
+          bodyHtml: "Use <a href=\"/go/mindstudio\" target=\"_blank\" rel=\"noopener sponsored\">MindStudio</a> to generate a personalized video script based on <a href=\"/go/apollo\" target=\"_blank\" rel=\"noopener sponsored\">Apollo.io</a> lead data.",
+        },
+        {
+          bodyHtml: "Import the script into <a href=\"/go/descript\" target=\"_blank\" rel=\"noopener sponsored\">Descript</a>. Use the 'Underdub' feature to voice the script using your <a href=\"/go/elevenlabs\" target=\"_blank\" rel=\"noopener sponsored\">ElevenLabs</a> clone.",
+        },
+      ],
+      goal: "Create 100 personalized sales videos in 10 minutes.",
+      ctaLabel: "Download the 'Video Agent' MindStudio template here",
+      ctaHref: "/go/mindstudio",
+    },
   },
   {
     id: "browse-ai-lead-scraper",

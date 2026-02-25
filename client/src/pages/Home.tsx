@@ -10,7 +10,7 @@ import {
   toolsByCategory,
 } from "@/lib/mockData";
 import { Button } from "@/components/ui/button";
-import { ArrowUpDown, Sparkles, LayoutGrid, BookOpen, ArrowRight, FileText } from "lucide-react";
+import { ArrowUpDown, Sparkles, LayoutGrid, BookOpen, ArrowRight, FileText, Zap } from "lucide-react";
 import { Link, useSearchParams } from "wouter";
 import { SEO } from "@/components/layout/SEO";
 import { CLONE_CONFIG } from "@/lib/config";
@@ -120,6 +120,45 @@ export default function Home() {
             {latestInsights.map((post) => (
               <LatestInsightCard key={post.id} post={post} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* The 2026 Sales Stack */}
+      <section className="border-b border-border py-8 md:py-10">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center gap-2 mb-4">
+            <Zap className="w-5 h-5 text-primary" />
+            <h2 className="font-heading font-bold text-xl md:text-2xl text-foreground">The 2026 Sales Stack</h2>
+          </div>
+          <p className="text-muted-foreground mb-6 max-w-2xl">
+            The exact scraping and outreach workflow used to generate 100+ B2B leads per week.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="/go/browse-ai"
+              target="_blank"
+              rel="noopener sponsored"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-card border border-border hover:border-primary/50 hover:bg-primary/5 transition-all text-foreground font-medium no-underline"
+            >
+              Browse AI for Data Extraction <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="/go/amplemarket"
+              target="_blank"
+              rel="noopener sponsored"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-card border border-border hover:border-primary/50 hover:bg-primary/5 transition-all text-foreground font-medium no-underline"
+            >
+              Amplemarket for AI Outbound <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="/go/tidio"
+              target="_blank"
+              rel="noopener sponsored"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-card border border-border hover:border-primary/50 hover:bg-primary/5 transition-all text-foreground font-medium no-underline"
+            >
+              Tidio Lyro for Live Conversion <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </div>
       </section>
