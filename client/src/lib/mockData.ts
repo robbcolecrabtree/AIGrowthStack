@@ -1432,6 +1432,8 @@ export const contentRelations: ContentRelation[] = [
   { id: "gamma-gtm-slide-master", title: "The Gamma GTM Slide Master", type: "blueprint", slug: "gamma-gtm-slide-master", relatedToolIds: ["gamma"] },
   { id: "founders-time-blocking-protocol", title: "The Founder's Time-Blocking Protocol", type: "blueprint", slug: "founders-time-blocking-protocol", relatedToolIds: ["reclaim"] },
   { id: "automated-sales-machine", title: "The Automated Sales Machine: Signal-Based Outreach with AI in 2026", type: "blueprint", slug: "automated-sales-machine", relatedToolIds: ["browse-ai", "elevenlabs", "adcreative", "amplemarket", "mindstudio", "apollo", "descript"] },
+  { id: "elevenlabs-vs-descript-vs-murf-2026", title: "ElevenLabs vs Descript vs Murf: Which is the Best AI Voice Tool in 2026?", type: "blog", slug: "elevenlabs-vs-descript-vs-murf-best-ai-voice-tool-2026", relatedToolIds: ["elevenlabs", "descript", "murf"] },
+  { id: "automated-outbound-mindstudio-apollo", title: "Automated Outbound: Integrating MindStudio with Apollo.io Lead Data", type: "blog", slug: "automated-outbound-mindstudio-apollo-lead-data", relatedToolIds: ["mindstudio", "apollo", "amplemarket"] },
 ];
 
 export function getRelatedContentForTool(toolId: string): ContentRelation[] {
