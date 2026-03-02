@@ -1,17 +1,21 @@
 /**
- * Generates client/public/sitemap.xml from hardcoded slugs.
- * No TS/Node resolution — run with: node scripts/generate-sitemap.js
- * When you add products or articles, update the arrays below and re-run.
+ * Generates dist/public/sitemap.xml from mockData + hardcoded slugs.
+ * Run with: npx tsx scripts/generate-sitemap.js (as final build step after prerender)
+ * lastmod uses current system date at build time.
  */
 
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { mockSoftware } from "../client/src/lib/mockData";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const BASE_URL = "https://aigrowthstack.io";
-const LAST_MOD = "2026-02-19";
+
+// Use current system date at build time (YYYY-MM-DD)
+const now = new Date();
+const LAST_MOD = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
 
 const staticPaths = [
   { path: "/", priority: "1.0" },
@@ -23,16 +27,7 @@ const staticPaths = [
   { path: "/terms", priority: "0.5" },
 ];
 
-const productSlugs = [
-  "adcreative",
-  "jasper",
-  "elevenlabs",
-  "synthesia",
-  "gamma",
-  "surfer-seo",
-  "heygen",
-  "writesonic",
-];
+const productSlugs = mockSoftware.map((s) => s.id);
 
 const articleSlugs = [
   "how-to-scale-your-ad-creative-with-ai",
@@ -107,6 +102,7 @@ blogSlugs.forEach((slug) => {
 
 xml += "</urlset>\n";
 
-const outPath = path.resolve(__dirname, "..", "client/public/sitemap.xml");
+const outPath = path.resolve(__dirname, "..", "dist/public/sitemap.xml");
+fs.mkdirSync(path.dirname(outPath), { recursive: true });
 fs.writeFileSync(outPath, xml);
 console.log("Sitemap written:", outPath);
