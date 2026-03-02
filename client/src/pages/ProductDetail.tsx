@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { mockSoftware } from "@/lib/mockData";
 import { RelatedContent } from "@/components/ui/RelatedContent";
+import { FAQSection } from "@/components/ui/FAQSection";
 import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -39,42 +40,20 @@ export default function ProductDetail() {
     }
   };
 
-  const elevenLabsFaqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is the current ElevenLabs Creator Plan price?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Current Creator Plan: $11 (50% discount applied)"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the ElevenLabs character rate for Flash v2.5?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "0.5 credits per character via the Flash v2.5 model"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the ElevenLabs API latency for v3 Turbo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Less than 200ms for v3 Turbo"
-        }
-      }
-    ]
-  };
-
-  const schema = software.id === "elevenlabs"
+  const faqSchema = software.faqs?.length
     ? {
         "@context": "https://schema.org",
-        "@graph": [productSchema, elevenLabsFaqSchema]
+        "@type": "FAQPage",
+        mainEntity: software.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
       }
+    : null;
+
+  const schema = faqSchema
+    ? { "@context": "https://schema.org", "@graph": [productSchema, faqSchema] }
     : productSchema;
 
   const lastVerifiedDate = new Date().toLocaleDateString("en-US", {
@@ -395,6 +374,10 @@ export default function ProductDetail() {
                 ))}
               </div>
             </div>
+
+            {software.faqs?.length ? (
+              <FAQSection faqs={software.faqs} />
+            ) : null}
 
             <RelatedContent currentToolId={software.id} />
           </div>
