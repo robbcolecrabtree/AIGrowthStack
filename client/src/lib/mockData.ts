@@ -223,8 +223,8 @@ export const mockSoftware: Software[] = [
     cardAccent: "#CF6BFF",
     badge: "Top Rated",
     featured: true,
-    metaTitle: "ElevenLabs Pricing & Review (February 2026) - Is the Creator Plan Worth It?",
-    metaDescription: "Feb 2026 Price Guide: Free (10k chars), Starter ($5), Creator ($11 - 50% off). Learn the 0.5 credit/char hack using Flash v2.5 to double your monthly limit. Updated Today.",
+    metaTitle: "ElevenLabs Pricing & Review (March 2026) - Is the Creator Plan Worth It?",
+    metaDescription: "March 2026 Price Guide: Free (10k chars), Starter ($5), Creator ($11 - 50% off). Learn the 0.5 credit/char hack using Flash v2.5 to double your monthly limit. Updated Today.",
     reviewContent: `<p>ElevenLabs has set the bar for AI voice quality in 2026. Whether you need text-to-speech for videos, voice cloning for brand consistency, or multilingual narration at scale, the platform delivers remarkably natural output that stands up to close listening. Growth teams use it for product demos, training content, and ads without booking studio time.</p><p>The voice library covers a wide range of styles and languages, and the fine-grained controls let you adjust pacing, stability, and clarity so the result matches your brand. For creators and marketers who need a consistent "voice" across many assets, ElevenLabs' cloning feature is among the best we've tested—with clear guidelines on responsible use.</p><p>API access makes it easy to integrate into existing workflows: CMS, video tools, and custom apps can all pull from ElevenLabs. Usage-based pricing means you pay for what you use, which is ideal for teams that scale production up and down. Support is responsive, and the roadmap stays focused on quality and new languages rather than feature bloat.</p><p>If your bottleneck is voiceover volume or localization, ElevenLabs should be at the top of your list. Try it for a high-traffic asset first, then roll it out across the rest of your content pipeline.</p>`,
   }),
   base({

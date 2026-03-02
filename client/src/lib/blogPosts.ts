@@ -1514,18 +1514,18 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "elevenlabs-vs-descript-vs-murf-2026",
     slug: "elevenlabs-vs-descript-vs-murf-best-ai-voice-tool-2026",
-    title: "ElevenLabs vs Descript vs Murf: Which is the Best AI Voice Tool in 2026?",
+    title: "ElevenLabs vs Descript vs Murf: Which is the Best AI Voice Tool in 2026? (Updated March 2026)",
     excerpt:
       "A head-to-head comparison of the top AI voice tools. ElevenLabs' emotional range, Descript's text-based video editing, and Murf's professional templates—plus the 2026 pro workflow that combines them.",
     category: "Audio & Voice",
     author: "AI Growth Stack Team",
     publishDate: "February 23, 2026",
-    lastUpdated: "Feb 2026",
+    lastUpdated: "Mar 2026",
     readTime: "10 min read",
     featuredToolIds: ["elevenlabs", "descript", "murf"],
-    metaTitle: "ElevenLabs vs Descript vs Murf 2026: Best AI Voice Tool",
+    metaTitle: "ElevenLabs vs Descript vs Murf (Updated March 2026): Best AI Voice Tool",
     metaDescription:
-      "Compare ElevenLabs, Descript, and Murf for AI voice in 2026. Emotional range, text-based editing, professional templates. The 2026 pro workflow: Generate in ElevenLabs → Polish in Descript.",
+      "Compare ElevenLabs, Descript, and Murf for AI voice—updated March 2026. Emotional range, text-based editing, professional templates. The 2026 pro workflow: Generate in ElevenLabs → Polish in Descript.",
     featured: true,
     content: `
       <h2>The AI Voice Landscape in 2026</h2>
@@ -1567,18 +1567,18 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "automated-outbound-mindstudio-apollo",
     slug: "automated-outbound-mindstudio-apollo-lead-data",
-    title: "Automated Outbound: Integrating MindStudio with Apollo.io Lead Data",
+    title: "Automated Outbound: Integrating MindStudio with Apollo.io Lead Data (Updated March 2026)",
     excerpt:
       "A step-by-step guide on using MindStudio AI Agents to process Apollo.io CSV exports for hyper-personalized outreach. Plus how Amplemarket's Duo AI closes the loop.",
     category: "Sales",
     author: "AI Growth Stack Team",
     publishDate: "February 23, 2026",
-    lastUpdated: "Feb 2026",
+    lastUpdated: "Mar 2026",
     readTime: "9 min read",
     featuredToolIds: ["mindstudio", "apollo", "amplemarket"],
-    metaTitle: "Automated Outbound: MindStudio + Apollo.io for Personalized Outreach",
+    metaTitle: "Automated Outbound: MindStudio + Apollo.io (Updated March 2026) for Personalized Outreach",
     metaDescription:
-      "Use MindStudio AI Agents with Apollo.io CSV exports for hyper-personalized outreach. Step-by-step guide. Amplemarket Duo AI for closing. Personalization at scale is the 2026 baseline.",
+      "Use MindStudio AI Agents with Apollo.io CSV exports for hyper-personalized outreach—updated March 2026. Step-by-step guide. Amplemarket Duo AI for closing. Personalization at scale is the 2026 baseline.",
     featured: true,
     content: `
       <h2>Personalization at Scale: The 2026 Baseline</h2>

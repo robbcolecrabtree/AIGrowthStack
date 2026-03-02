@@ -45,7 +45,7 @@ export default function UltimateGeoSeoGuide() {
                   SEO
                 </span>
                 <span className="flex items-center gap-1 text-muted-foreground">
-                  <Calendar className="w-4 h-4" /> February 20, 2026
+                  <Calendar className="w-4 h-4" /> March 20, 2026
                 </span>
                 <span className="flex items-center gap-1 text-muted-foreground">
                   <User className="w-4 h-4" /> AI Growth Stack Team

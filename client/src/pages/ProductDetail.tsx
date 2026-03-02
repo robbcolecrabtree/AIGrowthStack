@@ -158,7 +158,7 @@ export default function ProductDetail() {
                     )}
                   </div>
                   <p className="text-lg text-muted-foreground mb-2">{software.tagline}</p>
-                  <p className="text-xs text-muted-foreground mb-4">Last updated: Feb 2026</p>
+                  <p className="text-xs text-muted-foreground mb-4">Last updated: March 2026</p>
 
                   <div className="flex flex-wrap items-center gap-4 mb-6">
                     <div className="flex items-center gap-1 bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
@@ -271,7 +271,7 @@ export default function ProductDetail() {
 
               {software.id === "elevenlabs" && (
                 <>
-                  <h3 className="font-heading font-bold text-lg mt-8 mb-4 text-foreground">Live February 2026 Pricing Data</h3>
+                  <h3 className="font-heading font-bold text-lg mt-8 mb-4 text-foreground">Live March 2026 Pricing Data</h3>
                   <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />
