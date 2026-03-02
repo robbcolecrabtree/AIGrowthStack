@@ -40,21 +40,7 @@ export default function ProductDetail() {
     }
   };
 
-  const faqSchema = software.faqs?.length
-    ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: software.faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: { "@type": "Answer", text: faq.answer },
-        })),
-      }
-    : null;
-
-  const schema = faqSchema
-    ? { "@context": "https://schema.org", "@graph": [productSchema, faqSchema] }
-    : productSchema;
+  const schema = productSchema;
 
   const lastVerifiedDate = new Date().toLocaleDateString("en-US", {
     month: "long",

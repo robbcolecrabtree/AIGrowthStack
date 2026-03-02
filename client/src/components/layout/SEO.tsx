@@ -48,9 +48,10 @@ export function SEO({
 
       {/* Structured Data */}
       {schema && (
-        <script type="application/ld+json">
-          {JSON.stringify(schema)}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
       )}
     </Helmet>
   );

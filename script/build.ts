@@ -1,8 +1,12 @@
 import { build as esbuild } from "esbuild";
 import { build as viteBuild } from "vite";
+import { spawnSync } from "node:child_process";
 import { rm, readFile } from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const projectRoot = path.resolve(__dirname, "..");
 
 // server deps to bundle to reduce openat(2) syscalls
 // which helps cold start times
@@ -40,10 +44,17 @@ async function buildAll() {
   console.log("building client...");
   await viteBuild();
 
+  console.log("prerendering product pages...");
+  const prerenderRes = spawnSync("npx", ["-y", "tsx", "scripts/prerender.ts"], {
+    stdio: "inherit",
+    cwd: projectRoot,
+    shell: true,
+  });
+  if (prerenderRes.status !== 0) {
+    throw new Error("Prerender failed");
+  }
+
   console.log("generating sitemap...");
-  const { spawnSync } = await import("node:child_process");
-  const __dirname = path.dirname(fileURLToPath(import.meta.url));
-  const projectRoot = path.resolve(__dirname, "..");
   const res = spawnSync("npx", ["-y", "tsx", "scripts/generate-sitemap.js"], {
     stdio: "inherit",
     cwd: projectRoot,
