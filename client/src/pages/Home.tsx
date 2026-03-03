@@ -163,6 +163,57 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Daily Pulse - News Desk intelligence feed */}
+      <div
+        role="region"
+        aria-label="Daily stack updates"
+        className="bg-zinc-950 border-y border-white/10 py-4 shadow-[inset_0_2px_4px_rgba(0,0,0,0.3)]"
+      >
+        <div className="container mx-auto px-6">
+          {/* Desktop: full horizontal bar */}
+          <div className="hidden md:flex items-center justify-center gap-x-0">
+            <span className="inline-flex items-center gap-1.5 shrink-0">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-green-500/10 text-green-500 border border-green-500/20 text-[10px] font-heading font-semibold uppercase tracking-wider">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_8px_2px_rgba(34,197,94,0.6)]" aria-hidden />
+                LATEST UPDATES
+              </span>
+            </span>
+            <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground pr-5">March 3, 2026</span>
+            <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground px-4">
+              <a href="/product/elevenlabs" className="text-primary font-bold hover:underline transition-colors">ElevenLabs</a>
+              <span> x Google Cloud integration live</span>
+            </span>
+            <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground px-4">
+              <a href="/product/mindstudio" className="text-primary font-bold hover:underline transition-colors">MindStudio</a>
+              <span> March L3 Bootcamp active</span>
+            </span>
+            <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground px-4">
+              <a href="/product/apollo" className="text-primary font-bold hover:underline transition-colors">Apollo.io</a>
+              <span> Waterfall Enrichment rollout</span>
+            </span>
+          </div>
+          {/* Mobile: badge + date + first item + ellipsis */}
+          <div className="md:hidden flex items-center justify-center gap-x-2 text-sm font-heading font-medium text-muted-foreground">
+            <span className="inline-flex items-center gap-1.5 shrink-0 px-2.5 py-1 rounded-md bg-green-500/10 text-green-500 border border-green-500/20 text-[10px] font-semibold uppercase tracking-wider">
+              <span className="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_8px_2px_rgba(34,197,94,0.6)]" aria-hidden />
+              LATEST UPDATES
+            </span>
+            <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
+            <span className="text-xs text-muted-foreground shrink-0">March 3, 2026</span>
+            <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
+            <span className="truncate">
+              <a href="/product/elevenlabs" className="text-primary font-bold hover:underline transition-colors">ElevenLabs</a>
+              <span> x Google Cloud integration live</span>
+            </span>
+            <span className="text-muted-foreground/60 shrink-0">…</span>
+          </div>
+        </div>
+      </div>
+
       {/* Latest Insights */}
       <section className="border-b border-border py-8 md:py-10">
         <div className="container mx-auto px-4 mb-4">

@@ -42,11 +42,7 @@ export default function ProductDetail() {
 
   const schema = productSchema;
 
-  const lastVerifiedDate = new Date().toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric"
-  });
+  const lastVerifiedDate = "March 3, 2026";
 
   return (
     <div key={id} className="min-h-screen flex flex-col bg-background font-sans">
@@ -123,7 +119,7 @@ export default function ProductDetail() {
                     )}
                   </div>
                   <p className="text-lg text-muted-foreground mb-2">{software.tagline}</p>
-                  <p className="text-xs text-muted-foreground mb-4">Last updated: March 2026</p>
+                  <p className="text-xs text-muted-foreground mb-4">Last updated: March 3, 2026</p>
 
                   <div className="flex flex-wrap items-center gap-4 mb-6">
                     <div className="flex items-center gap-1 bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
