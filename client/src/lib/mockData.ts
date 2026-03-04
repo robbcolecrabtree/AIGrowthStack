@@ -58,6 +58,8 @@ export interface Software {
   cardAccentSecondary?: string;
   /** Optional FAQs for product page and FAQPage schema */
   faqs?: { question: string; answer: string }[];
+  /** Optional latest news/update callout (e.g. March 4 Update) */
+  latestNews?: string;
 }
 
 // Backwards compatibility alias
@@ -114,6 +116,7 @@ const base = (overrides: Partial<Software>): Software => {
     cardAccent: overrides.cardAccent,
     cardAccentSecondary: overrides.cardAccentSecondary,
     faqs: overrides.faqs,
+    latestNews: overrides.latestNews,
   };
 };
 
@@ -234,6 +237,7 @@ export const mockSoftware: Software[] = [
     cardAccent: "#CF6BFF",
     badge: "Top Rated",
     featured: true,
+    latestNews: "March 4 Update: Deutsche Telekom has integrated ElevenLabs' voice AI directly into its German carrier network. This is the first carrier-scale deployment of real-time voice AI, allowing AI assistants to join phone calls natively without an app. Also, ElevenLabs is reportedly seeking a new funding round at an $11 billion valuation.",
     metaTitle: "ElevenLabs Pricing & Review (March 2026) - Is the Creator Plan Worth It?",
     metaDescription: "March 2026 Price Guide: Free (10k chars), Starter ($5), Creator ($11 - 50% off). Learn the 0.5 credit/char hack using Flash v2.5 to double your monthly limit. Updated Today.",
     faqs: [
@@ -727,6 +731,7 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://perplexity.ai",
     websiteUrl: "https://perplexity.ai",
     cardAccent: "#20B2AA",
+    latestNews: "March 4 Update: Perplexity has entered a multi-year strategic partnership with CoreWeave to power its Sonar and Search API models on dedicated NVIDIA GB200 NVL72 clusters. This infrastructure shift is designed to handle over 1.5 billion monthly queries with a significant reduction in latency for Enterprise Max users.",
     faqs: [
       { question: "What does Perplexity Pro cost in 2026?", answer: "It remains $20/month, offering unlimited Pro searches and access to Deep Research modes." },
     ],

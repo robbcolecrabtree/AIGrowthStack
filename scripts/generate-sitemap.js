@@ -13,9 +13,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const BASE_URL = "https://aigrowthstack.io";
 
-// Use current system date at build time (YYYY-MM-DD)
-const now = new Date();
-const LAST_MOD = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+// Use fixed freshness date for GSC (YYYY-MM-DD). Override via SITEMAP_LASTMOD env.
+const LAST_MOD = process.env.SITEMAP_LASTMOD || "2026-03-04";
 
 const staticPaths = [
   { path: "/", priority: "1.0" },

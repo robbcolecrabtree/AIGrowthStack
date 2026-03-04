@@ -179,35 +179,37 @@ export default function Home() {
               </span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
-            <span className="text-sm font-heading font-medium text-muted-foreground pr-5">March 3, 2026</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground pr-2">March 4, 2026</span>
+            <span className="text-white/20 font-medium select-none px-1 text-sm" aria-hidden>•</span>
+            <span className="text-[10px] font-semibold uppercase tracking-wider text-green-500 pr-5">LIVE</span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <a href="/product/elevenlabs" className="text-primary font-bold hover:underline transition-colors">ElevenLabs</a>
-              <span> x Google Cloud integration live</span>
+              <span className="text-primary font-bold">OpenAI</span>
+              <span>: GPT-5.3 Instant released; Frontier Enterprise Agent platform now live.</span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <a href="/product/mindstudio" className="text-primary font-bold hover:underline transition-colors">MindStudio</a>
-              <span> March L3 Bootcamp active</span>
+              <a href="/product/claude-35-sonnet" className="text-primary font-bold hover:underline transition-colors">Anthropic</a>
+              <span>: Claude Opus 4.6 launched with 1M token context window and &apos;Claude Code&apos; integration.</span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <a href="/product/apollo" className="text-primary font-bold hover:underline transition-colors">Apollo.io</a>
-              <span> Waterfall Enrichment rollout</span>
+              <a href="/product/perplexity-pro" className="text-primary font-bold hover:underline transition-colors">Perplexity</a>
+              <span>: Multi-year deal with CoreWeave live; moving inference to NVIDIA GB200 clusters for 10x faster Search API response.</span>
             </span>
           </div>
-          {/* Mobile: badge + date + first item + ellipsis */}
+          {/* Mobile: badge + date + LIVE + first item + ellipsis */}
           <div className="md:hidden flex items-center justify-center gap-x-2 text-sm font-heading font-medium text-muted-foreground">
             <span className="inline-flex items-center gap-1.5 shrink-0 px-2.5 py-1 rounded-md bg-green-500/10 text-green-500 border border-green-500/20 text-[10px] font-semibold uppercase tracking-wider">
               <span className="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_8px_2px_rgba(34,197,94,0.6)]" aria-hidden />
               LATEST UPDATES
             </span>
             <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
-            <span className="text-xs text-muted-foreground shrink-0">March 3, 2026</span>
+            <span className="text-xs text-muted-foreground shrink-0">March 4, 2026 • LIVE</span>
             <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
             <span className="truncate">
-              <a href="/product/elevenlabs" className="text-primary font-bold hover:underline transition-colors">ElevenLabs</a>
-              <span> x Google Cloud integration live</span>
+              <span className="text-primary font-bold">OpenAI</span>
+              <span>: GPT-5.3 Instant released…</span>
             </span>
             <span className="text-muted-foreground/60 shrink-0">…</span>
           </div>

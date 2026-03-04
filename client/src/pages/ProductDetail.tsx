@@ -42,7 +42,7 @@ export default function ProductDetail() {
 
   const schema = productSchema;
 
-  const lastVerifiedDate = "March 3, 2026";
+  const lastVerifiedDate = "March 4, 2026";
 
   return (
     <div key={id} className="min-h-screen flex flex-col bg-background font-sans">
@@ -119,7 +119,7 @@ export default function ProductDetail() {
                     )}
                   </div>
                   <p className="text-lg text-muted-foreground mb-2">{software.tagline}</p>
-                  <p className="text-xs text-muted-foreground mb-4">Last updated: March 3, 2026</p>
+                  <p className="text-xs text-muted-foreground mb-4">Last updated: March 4, 2026</p>
 
                   <div className="flex flex-wrap items-center gap-4 mb-6">
                     <div className="flex items-center gap-1 bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
@@ -151,6 +151,12 @@ export default function ProductDetail() {
                 <Building2 className="w-5 h-5 text-primary" />
                 Expert Analysis
               </h2>
+              {software.latestNews && (
+                <div className="rounded-lg border-2 border-primary/30 bg-primary/5 p-6 mb-6">
+                  <h3 className="font-semibold text-foreground mb-2">Latest Update</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{software.latestNews}</p>
+                </div>
+              )}
               <div className="prose prose-invert max-w-none mb-8">
                 {software.reviewContent ? (
                   <div className="text-muted-foreground leading-relaxed [&>p]:mb-4" dangerouslySetInnerHTML={{ __html: software.reviewContent }} />
