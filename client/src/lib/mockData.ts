@@ -237,7 +237,7 @@ export const mockSoftware: Software[] = [
     cardAccent: "#CF6BFF",
     badge: "Top Rated",
     featured: true,
-    latestNews: "March 4 Update: Deutsche Telekom has integrated ElevenLabs' voice AI directly into its German carrier network. This is the first carrier-scale deployment of real-time voice AI, allowing AI assistants to join phone calls natively without an app. Also, ElevenLabs is reportedly seeking a new funding round at an $11 billion valuation.",
+    latestNews: "March 5 Update: Partnered with Deutsche Telekom to embed AI voice directly into phone networks (no app needed). Integration with Google Blackwell GPUs is now live.",
     metaTitle: "ElevenLabs Pricing & Review (March 2026) - Is the Creator Plan Worth It?",
     metaDescription: "March 2026 Price Guide: Free (10k chars), Starter ($5), Creator ($11 - 50% off). Learn the 0.5 credit/char hack using Flash v2.5 to double your monthly limit. Updated Today.",
     faqs: [
@@ -731,7 +731,7 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://perplexity.ai",
     websiteUrl: "https://perplexity.ai",
     cardAccent: "#20B2AA",
-    latestNews: "March 4 Update: Perplexity has entered a multi-year strategic partnership with CoreWeave to power its Sonar and Search API models on dedicated NVIDIA GB200 NVL72 clusters. This infrastructure shift is designed to handle over 1.5 billion monthly queries with a significant reduction in latency for Enterprise Max users.",
+    latestNews: "March 5 Update: Introduced Voice Mode for real-time interaction. Now powered by CoreWeave NVIDIA GB200 clusters for significantly lower search latency.",
     faqs: [
       { question: "What does Perplexity Pro cost in 2026?", answer: "It remains $20/month, offering unlimited Pro searches and access to Deep Research modes." },
     ],
@@ -1041,6 +1041,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://anthropic.com",
     cardAccent: "#D4A574",
     badge: "Top Rated",
+    latestNews: "March 5 Update: Memory is now free for all users. The new native Analysis Tool allows Sonnet to execute JavaScript in real-time for data visualization.",
     faqs: [
       { question: "What does Claude 3.5 Sonnet cost in March 2026?", answer: "Claude Pro is $20/mo; API pricing varies by usage and model tier." },
       { question: "What is Claude's context window size?", answer: "Claude 3.5 Sonnet supports a 200K token context window for long documents." },
@@ -1261,6 +1262,7 @@ export const mockSoftware: Software[] = [
     cardAccentSecondary: "#FF8C00",
     metaTitle: "Apollo Review 2026: Pricing & 275M Contacts",
     metaDescription: "Verified emails, AI search, $0 CAC outbound. Pricing from $49/mo, actionable prospecting. Compare vs. Clay—start free.",
+    latestNews: "March 5 Update: Apollo.io has officially moved out of beta with its AI Assistant, transforming the platform into a fully agentic GTM operating system. It now executes end-to-end workflows (prospecting to engagement) via natural language. Early data shows a 2.3x increase in meetings booked for users utilizing the new agentic layer.",
     faqs: [
       { question: "How accurate is Apollo.io lead data in 2026?", answer: "As of March 2026, Apollo uses waterfall enrichment—cross-referencing multiple data providers—to achieve less than 3% bounce rates on Verified emails. The AI assistant leverages 250+ data points per lead for personalized outreach sequences. Enrichment quality has improved significantly for intent and technographic accuracy." },
       { question: "Which CRM integrations does Apollo.io support in March 2026?", answer: "Apollo.io integrates with Salesforce, HubSpot, Pipedrive, Outreach, and most major CRMs. March 2026 features include bidirectional sync, custom field mapping, and automated lead scoring. The platform also connects to email tools, LinkedIn, and enrichment partners like Clearbit." },

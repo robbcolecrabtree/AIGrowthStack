@@ -179,23 +179,23 @@ export default function Home() {
               </span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
-            <span className="text-sm font-heading font-medium text-muted-foreground pr-2">March 4, 2026</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground pr-2">March 5, 2026</span>
             <span className="text-white/20 font-medium select-none px-1 text-sm" aria-hidden>•</span>
             <span className="text-[10px] font-semibold uppercase tracking-wider text-green-500 pr-5">LIVE</span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <span className="text-primary font-bold">OpenAI</span>
-              <span>: GPT-5.3 Instant released; Frontier Enterprise Agent platform now live.</span>
-            </span>
-            <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
-            <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <a href="/product/claude-35-sonnet" className="text-primary font-bold hover:underline transition-colors">Anthropic</a>
-              <span>: Claude Opus 4.6 launched with 1M token context window and &apos;Claude Code&apos; integration.</span>
+              <a href="/product/claude-35-sonnet" className="text-primary font-bold hover:underline transition-colors">Claude 3.5 Sonnet</a>
+              <span>: &apos;Memory&apos; feature now free for all users; native JS &apos;Analysis Tool&apos; live.</span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
               <a href="/product/perplexity-pro" className="text-primary font-bold hover:underline transition-colors">Perplexity</a>
-              <span>: Multi-year deal with CoreWeave live; moving inference to NVIDIA GB200 clusters for 10x faster Search API response.</span>
+              <span>: Voice Mode launched for Perplexity Computer; GB200 infrastructure deal live.</span>
+            </span>
+            <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground px-4">
+              <a href="/product/elevenlabs" className="text-primary font-bold hover:underline transition-colors">ElevenLabs</a>
+              <span>: Partnered with Deutsche Telekom for network-level AI phone calls.</span>
             </span>
           </div>
           {/* Mobile: badge + date + LIVE + first item + ellipsis */}
@@ -205,11 +205,11 @@ export default function Home() {
               LATEST UPDATES
             </span>
             <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
-            <span className="text-xs text-muted-foreground shrink-0">March 4, 2026 • LIVE</span>
+            <span className="text-xs text-muted-foreground shrink-0">March 5, 2026 • LIVE</span>
             <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
             <span className="truncate">
-              <span className="text-primary font-bold">OpenAI</span>
-              <span>: GPT-5.3 Instant released…</span>
+              <a href="/product/claude-35-sonnet" className="text-primary font-bold hover:underline">Claude 3.5 Sonnet</a>
+              <span>: &apos;Memory&apos; feature now free…</span>
             </span>
             <span className="text-muted-foreground/60 shrink-0">…</span>
           </div>
