@@ -179,23 +179,23 @@ export default function Home() {
               </span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
-            <span className="text-sm font-heading font-medium text-muted-foreground pr-2">March 5, 2026</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground pr-2">March 6, 2026</span>
             <span className="text-white/20 font-medium select-none px-1 text-sm" aria-hidden>•</span>
             <span className="text-[10px] font-semibold uppercase tracking-wider text-green-500 pr-5">LIVE</span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
+              <a href="/product/mindstudio" className="text-primary font-bold hover:underline transition-colors">MindStudio</a>
+              <span>: March L3 Bootcamp live; new &apos;Data Sources&apos; blocks for automated URL scraping launched.</span>
+            </span>
+            <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground px-4">
+              <a href="/product/apollo" className="text-primary font-bold hover:underline transition-colors">Apollo.io</a>
+              <span>: Agentic GTM AI Assistant officially launched; moves platform to execution-first OS.</span>
+            </span>
+            <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground px-4">
               <a href="/product/claude-35-sonnet" className="text-primary font-bold hover:underline transition-colors">Claude 3.5 Sonnet</a>
-              <span>: &apos;Memory&apos; feature now free for all users; native JS &apos;Analysis Tool&apos; live.</span>
-            </span>
-            <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
-            <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <a href="/product/perplexity-pro" className="text-primary font-bold hover:underline transition-colors">Perplexity</a>
-              <span>: Voice Mode launched for Perplexity Computer; GB200 infrastructure deal live.</span>
-            </span>
-            <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
-            <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <a href="/product/elevenlabs" className="text-primary font-bold hover:underline transition-colors">ElevenLabs</a>
-              <span>: Partnered with Deutsche Telekom for network-level AI phone calls.</span>
+              <span>: Native &apos;Analysis Tool&apos; (JS execution) now standard for all Pro/Team users.</span>
             </span>
           </div>
           {/* Mobile: badge + date + LIVE + first item + ellipsis */}
@@ -205,11 +205,11 @@ export default function Home() {
               LATEST UPDATES
             </span>
             <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
-            <span className="text-xs text-muted-foreground shrink-0">March 5, 2026 • LIVE</span>
+            <span className="text-xs text-muted-foreground shrink-0">March 6, 2026 • LIVE</span>
             <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
             <span className="truncate">
-              <a href="/product/claude-35-sonnet" className="text-primary font-bold hover:underline">Claude 3.5 Sonnet</a>
-              <span>: &apos;Memory&apos; feature now free…</span>
+              <a href="/product/mindstudio" className="text-primary font-bold hover:underline">MindStudio</a>
+              <span>: March L3 Bootcamp live; Data Sources blocks…</span>
             </span>
             <span className="text-muted-foreground/60 shrink-0">…</span>
           </div>

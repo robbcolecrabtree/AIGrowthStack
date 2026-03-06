@@ -1041,7 +1041,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://anthropic.com",
     cardAccent: "#D4A574",
     badge: "Top Rated",
-    latestNews: "March 5 Update: Memory is now free for all users. The new native Analysis Tool allows Sonnet to execute JavaScript in real-time for data visualization.",
+    latestNews: "March 6 Update: The native Analysis Tool is fully rolled out, allowing Sonnet to execute code for data processing and visualization natively.",
     faqs: [
       { question: "What does Claude 3.5 Sonnet cost in March 2026?", answer: "Claude Pro is $20/mo; API pricing varies by usage and model tier." },
       { question: "What is Claude's context window size?", answer: "Claude 3.5 Sonnet supports a 200K token context window for long documents." },
@@ -1543,6 +1543,7 @@ export const mockSoftware: Software[] = [
       "Credits and usage can add up at scale",
       "Best for teams with clear automation use cases",
     ],
+    latestNews: "March 6 Update: Bootcamp now live. Added native 'Data Sources' blocks to manage documents and scrape heavy URLs directly into workflows without manual uploads.",
     reviewContent: `<p>MindStudio lets you build and deploy custom AI agents without code, wiring 200+ models into workflows with a visual builder. These agents act as the logic layer, connecting <a href="/product/apollo">Apollo.io</a> lead data to <a href="/product/amplemarket">Amplemarket</a> for high-conversion closing sequences.</p>`,
     faqs: [
       { question: "How do you deploy AI agents built in MindStudio?", answer: "As of March 2026, MindStudio agents deploy as web apps, API endpoints, or embeddable widgets. Use the visual builder to wire models (Claude, GPT-4, Gemini, Llama) into workflows, then publish with one click. Agents run in the cloud—no self-hosting required. Common use: personalized outreach from Apollo CSV exports, research assistants, and custom chatbots." },

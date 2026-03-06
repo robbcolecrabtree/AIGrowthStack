@@ -75,7 +75,7 @@ export default function ArticleDetail() {
                 <span className="flex items-center gap-1 text-muted-foreground">
                   <User className="w-4 h-4" /> {article.author}
                 </span>
-                <span className="text-muted-foreground text-xs">Last updated: March 5, 2026</span>
+                <span className="text-muted-foreground text-xs">Last updated: March 6, 2026</span>
               </div>
               <h1 className="font-heading font-bold text-3xl md:text-5xl text-foreground mb-6 leading-tight">
                 {article.title}
