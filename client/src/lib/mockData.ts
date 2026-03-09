@@ -1262,7 +1262,7 @@ export const mockSoftware: Software[] = [
     cardAccentSecondary: "#FF8C00",
     metaTitle: "Apollo Review 2026: Pricing & 275M Contacts",
     metaDescription: "Verified emails, AI search, $0 CAC outbound. Pricing from $49/mo, actionable prospecting. Compare vs. Clay—start free.",
-    latestNews: "March 5 Update: Apollo.io has officially moved out of beta with its AI Assistant, transforming the platform into a fully agentic GTM operating system. It now executes end-to-end workflows (prospecting to engagement) via natural language. Early data shows a 2.3x increase in meetings booked for users utilizing the new agentic layer.",
+    latestNews: "March 9 Update: AI Assistant officially out of beta. Now serving 20,000 users with a verified 36% increase in booked meetings.",
     faqs: [
       { question: "How accurate is Apollo.io lead data in 2026?", answer: "As of March 2026, Apollo uses waterfall enrichment—cross-referencing multiple data providers—to achieve less than 3% bounce rates on Verified emails. The AI assistant leverages 250+ data points per lead for personalized outreach sequences. Enrichment quality has improved significantly for intent and technographic accuracy." },
       { question: "Which CRM integrations does Apollo.io support in March 2026?", answer: "Apollo.io integrates with Salesforce, HubSpot, Pipedrive, Outreach, and most major CRMs. March 2026 features include bidirectional sync, custom field mapping, and automated lead scoring. The platform also connects to email tools, LinkedIn, and enrichment partners like Clearbit." },
@@ -1543,7 +1543,7 @@ export const mockSoftware: Software[] = [
       "Credits and usage can add up at scale",
       "Best for teams with clear automation use cases",
     ],
-    latestNews: "March 6 Update: Bootcamp now live. Added native 'Data Sources' blocks to manage documents and scrape heavy URLs directly into workflows without manual uploads.",
+    latestNews: "March 9 Update: March L3 Bootcamp Week 2 is live; new 'Debugger Breakpoints' launched for agents.",
     reviewContent: `<p>MindStudio lets you build and deploy custom AI agents without code, wiring 200+ models into workflows with a visual builder. These agents act as the logic layer, connecting <a href="/product/apollo">Apollo.io</a> lead data to <a href="/product/amplemarket">Amplemarket</a> for high-conversion closing sequences.</p>`,
     faqs: [
       { question: "How do you deploy AI agents built in MindStudio?", answer: "As of March 2026, MindStudio agents deploy as web apps, API endpoints, or embeddable widgets. Use the visual builder to wire models (Claude, GPT-4, Gemini, Llama) into workflows, then publish with one click. Agents run in the cloud—no self-hosting required. Common use: personalized outreach from Apollo CSV exports, research assistants, and custom chatbots." },
@@ -1638,8 +1638,9 @@ export const mockSoftware: Software[] = [
       "Less flexible than full website builders",
       "Best for landing pages, not full sites",
     ],
-    affiliateLink: "https://unbounce.com",
+    affiliateLink: "https://unbounce.partnerlinks.io/agwgu4nleflf",
     websiteUrl: "https://unbounce.com",
+    latestNews: "March 9 Update: Partnership Approved. Exclusive offer live: 35% off annual or 20% off 3-month plans. Smart Builder now features real-time 'Conversion Benchmarks' from 57M+ data points.",
     faqs: [
       { question: "What does Unbounce cost in March 2026?", answer: "Essential from $74/mo; Optimize and Scale add Smart Traffic and AI features." },
       { question: "Does Unbounce use AI for landing pages?", answer: "Yes, Smart Traffic and AI Copy tools optimize landing pages and conversion." },
