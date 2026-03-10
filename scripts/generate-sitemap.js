@@ -14,7 +14,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const BASE_URL = "https://aigrowthstack.io";
 
 // Use fixed freshness date for GSC (YYYY-MM-DD). Override via SITEMAP_LASTMOD env.
-const LAST_MOD = process.env.SITEMAP_LASTMOD || "2026-03-09";
+const LAST_MOD = process.env.SITEMAP_LASTMOD || "2026-03-10";
 
 const staticPaths = [
   { path: "/", priority: "1.0" },

@@ -1041,7 +1041,9 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://anthropic.com",
     cardAccent: "#D4A574",
     badge: "Top Rated",
-    latestNews: "March 6 Update: The native Analysis Tool is fully rolled out, allowing Sonnet to execute code for data processing and visualization natively.",
+    metaTitle: "Claude 3.5 Sonnet: Computer Use Beta & 14.9% OSWorld Lead (Mar 10)",
+    metaDescription: "Claude 3.5 Sonnet now leads the OSWorld benchmark for browser automation. Latest March 10 update on 'Computer Use' beta and agentic search performance.",
+    latestNews: "March 10 Update: Computer Use beta expanded; model hits 14.9% on OSWorld benchmark for browser automation and agentic search.",
     faqs: [
       { question: "What does Claude 3.5 Sonnet cost in March 2026?", answer: "Claude Pro is $20/mo; API pricing varies by usage and model tier." },
       { question: "What is Claude's context window size?", answer: "Claude 3.5 Sonnet supports a 200K token context window for long documents." },
@@ -1640,7 +1642,9 @@ export const mockSoftware: Software[] = [
     ],
     affiliateLink: "https://unbounce.partnerlinks.io/agwgu4nleflf",
     websiteUrl: "https://unbounce.com",
-    latestNews: "March 9 Update: Partnership Approved. Exclusive offer live: 35% off annual or 20% off 3-month plans. Smart Builder now features real-time 'Conversion Benchmarks' from 57M+ data points.",
+    metaTitle: "Unbounce Discount: 35% Off Annual Plan (Verified Mar 10, 2026)",
+    metaDescription: "Get an exclusive 35% discount on Unbounce annual plans or 20% off 3 months. Verified partner deal updated for March 10. Start building high-converting pages now.",
+    latestNews: "March 10 Update: Verified partner link live. 35% off annual or 20% off 3-month plans. Smart Builder now features real-time 'Conversion Benchmarks' from 57M+ data points.",
     faqs: [
       { question: "What does Unbounce cost in March 2026?", answer: "Essential from $74/mo; Optimize and Scale add Smart Traffic and AI features." },
       { question: "Does Unbounce use AI for landing pages?", answer: "Yes, Smart Traffic and AI Copy tools optimize landing pages and conversion." },

@@ -42,7 +42,7 @@ export default function ProductDetail() {
 
   const schema = productSchema;
 
-  const lastVerifiedDate = "March 9, 2026";
+  const lastVerifiedDate = "March 10, 2026";
 
   return (
     <div key={id} className="min-h-screen flex flex-col bg-background font-sans">

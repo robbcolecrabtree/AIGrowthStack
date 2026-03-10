@@ -179,23 +179,23 @@ export default function Home() {
               </span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
-            <span className="text-sm font-heading font-medium text-muted-foreground pr-2">March 9, 2026</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground pr-2">March 10, 2026</span>
             <span className="text-white/20 font-medium select-none px-1 text-sm" aria-hidden>•</span>
             <span className="text-[10px] font-semibold uppercase tracking-wider text-green-500 pr-5">LIVE</span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <a href="/product/unbounce" className="text-primary font-bold hover:underline transition-colors">Unbounce Partner Deal</a>
-              <span>: Get 35% off annual or 20% off 3-month plans via our new verified link.</span>
+              <a href="/product/unbounce" className="text-primary font-bold hover:underline transition-colors">Unbounce Deal</a>
+              <span>: Verified partner link live; 35% off annual or 20% off 3-month plans.</span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <a href="/product/apollo" className="text-primary font-bold hover:underline transition-colors">Apollo.io</a>
-              <span>: Agentic GTM Assistant moves out of beta with 36% lift in meetings for 20k users.</span>
+              <a href="/product/claude-35-sonnet" className="text-primary font-bold hover:underline transition-colors">Claude 3.5 Sonnet</a>
+              <span>: Computer Use beta expanded; model hits 14.9% on OSWorld benchmark.</span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
               <a href="/product/mindstudio" className="text-primary font-bold hover:underline transition-colors">MindStudio</a>
-              <span>: March L3 Bootcamp Week 2 is live; new &apos;Debugger Breakpoints&apos; launched for agents.</span>
+              <span>: Debugger &apos;State Snapshots&apos; live for Week 2 of the L3 Bootcamp.</span>
             </span>
           </div>
           {/* Mobile: badge + date + LIVE + first item + ellipsis */}
@@ -205,10 +205,10 @@ export default function Home() {
               LATEST UPDATES
             </span>
             <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
-            <span className="text-xs text-muted-foreground shrink-0">March 9, 2026 • LIVE</span>
+            <span className="text-xs text-muted-foreground shrink-0">March 10, 2026 • LIVE</span>
             <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
             <span className="truncate">
-              <a href="/product/unbounce" className="text-primary font-bold hover:underline">Unbounce Partner Deal</a>
+              <a href="/product/unbounce" className="text-primary font-bold hover:underline">Unbounce Deal</a>
               <span>: 35% off annual, 20% off 3-month…</span>
             </span>
             <span className="text-muted-foreground/60 shrink-0">…</span>
