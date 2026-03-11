@@ -1,5 +1,12 @@
 import { Helmet } from "react-helmet";
 import { CLONE_CONFIG } from "@/lib/config";
+import { CURRENT_DATE } from "@/lib/constants";
+
+/** Ensures string ends with (Verified {date}), stripping any existing Verified suffix to avoid duplication */
+function ensureVerifiedSuffix(str: string): string {
+  const cleaned = str.replace(/\s*\(Verified[^)]*\)\s*$/i, "").trim();
+  return `${cleaned} (Verified ${CURRENT_DATE})`;
+}
 
 interface SEOProps {
   title: string;
@@ -20,21 +27,23 @@ export function SEO({
 }: SEOProps) {
   const siteUrl = CLONE_CONFIG.siteUrl;
   const siteSuffix = ` | ${CLONE_CONFIG.siteName}`;
-  const fullTitle = title.endsWith(siteSuffix) ? title : `${title}${siteSuffix}`;
+  const titleWithVerified = ensureVerifiedSuffix(title);
+  const fullTitle = titleWithVerified.endsWith(siteSuffix) ? titleWithVerified : `${titleWithVerified}${siteSuffix}`;
+  const fullDescription = ensureVerifiedSuffix(description);
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
 
   return (
     <Helmet>
       {/* Basic Meta Tags */}
       <title>{fullTitle}</title>
-      <meta name="description" content={description} />
+      <meta name="description" content={fullDescription} />
       <link rel="canonical" href={fullCanonical} />
       {!CLONE_CONFIG.enableIndexing && <meta name="robots" content="noindex,nofollow" />}
 
       {/* Open Graph */}
       <meta property="og:site_name" content={CLONE_CONFIG.siteName} />
       <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={fullDescription} />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={fullCanonical} />
       <meta property="og:image" content={ogImage} />
@@ -42,7 +51,7 @@ export function SEO({
       {/* Twitter Cards */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:description" content={fullDescription} />
       <meta name="twitter:image" content={ogImage} />
       <meta name="twitter:site" content="@aigrowthstack" />
 

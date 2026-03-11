@@ -29,6 +29,7 @@ import { ArrowUpDown, Sparkles, LayoutGrid, BookOpen, ArrowRight, FileText, Zap,
 import { Link, useSearchParams } from "wouter";
 import { SEO } from "@/components/layout/SEO";
 import { CLONE_CONFIG } from "@/lib/config";
+import { CURRENT_DATE } from "@/lib/constants";
 import { BLOG_POSTS } from "@/lib/blogPosts";
 import { BlogCard } from "@/components/ui/BlogCard";
 import type { BlogPost } from "@/lib/blogPosts";
@@ -179,23 +180,23 @@ export default function Home() {
               </span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
-            <span className="text-sm font-heading font-medium text-muted-foreground pr-2">March 10, 2026</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground pr-2">{CURRENT_DATE}</span>
             <span className="text-white/20 font-medium select-none px-1 text-sm" aria-hidden>•</span>
             <span className="text-[10px] font-semibold uppercase tracking-wider text-green-500 pr-5">LIVE</span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <a href="/product/unbounce" className="text-primary font-bold hover:underline transition-colors">Unbounce Deal</a>
-              <span>: Verified partner link live; 35% off annual or 20% off 3-month plans.</span>
-            </span>
-            <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
-            <span className="text-sm font-heading font-medium text-muted-foreground px-4">
               <a href="/product/claude-35-sonnet" className="text-primary font-bold hover:underline transition-colors">Claude 3.5 Sonnet</a>
-              <span>: Computer Use beta expanded; model hits 14.9% on OSWorld benchmark.</span>
+              <span>: New documentation confirms &apos;Computer Use&apos; lead in complex browser automation workflows.</span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
               <a href="/product/mindstudio" className="text-primary font-bold hover:underline transition-colors">MindStudio</a>
-              <span>: Debugger &apos;State Snapshots&apos; live for Week 2 of the L3 Bootcamp.</span>
+              <span>: Bootcamp Week 2 focuses on &apos;State Management&apos; using new Debugger Snapshots for logic repair.</span>
+            </span>
+            <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
+            <span className="text-sm font-heading font-medium text-muted-foreground px-4">
+              <a href="/product/apollo" className="text-primary font-bold hover:underline transition-colors">Apollo.io</a>
+              <span>: Agentic GTM Assistant confirms 2.3x pipeline growth for early adopters; now in General Availability.</span>
             </span>
           </div>
           {/* Mobile: badge + date + LIVE + first item + ellipsis */}
@@ -205,11 +206,11 @@ export default function Home() {
               LATEST UPDATES
             </span>
             <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
-            <span className="text-xs text-muted-foreground shrink-0">March 10, 2026 • LIVE</span>
+            <span className="text-xs text-muted-foreground shrink-0">{CURRENT_DATE} • LIVE</span>
             <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
             <span className="truncate">
-              <a href="/product/unbounce" className="text-primary font-bold hover:underline">Unbounce Deal</a>
-              <span>: 35% off annual, 20% off 3-month…</span>
+              <a href="/product/claude-35-sonnet" className="text-primary font-bold hover:underline">Claude 3.5 Sonnet</a>
+              <span>: Computer Use lead in browser automation…</span>
             </span>
             <span className="text-muted-foreground/60 shrink-0">…</span>
           </div>

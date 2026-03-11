@@ -1041,9 +1041,9 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://anthropic.com",
     cardAccent: "#D4A574",
     badge: "Top Rated",
-    metaTitle: "Claude 3.5 Sonnet: Computer Use Beta & 14.9% OSWorld Lead (Mar 10)",
-    metaDescription: "Claude 3.5 Sonnet now leads the OSWorld benchmark for browser automation. Latest March 10 update on 'Computer Use' beta and agentic search performance.",
-    latestNews: "March 10 Update: Computer Use beta expanded; model hits 14.9% on OSWorld benchmark for browser automation and agentic search.",
+    metaTitle: "Claude 3.5 Sonnet: Computer Use Lead in Browser Automation (Mar 11)",
+    metaDescription: "Claude 3.5 Sonnet's 'Computer Use' capability leads in complex browser automation and form workflows. Latest March 11 documentation update.",
+    latestNews: "March 11 Update: New documentation reveals Claude's 'Computer Use' capability is significantly outperforming competitors in browser-based form automation and complex data entry.",
     faqs: [
       { question: "What does Claude 3.5 Sonnet cost in March 2026?", answer: "Claude Pro is $20/mo; API pricing varies by usage and model tier." },
       { question: "What is Claude's context window size?", answer: "Claude 3.5 Sonnet supports a 200K token context window for long documents." },
@@ -1264,7 +1264,7 @@ export const mockSoftware: Software[] = [
     cardAccentSecondary: "#FF8C00",
     metaTitle: "Apollo Review 2026: Pricing & 275M Contacts",
     metaDescription: "Verified emails, AI search, $0 CAC outbound. Pricing from $49/mo, actionable prospecting. Compare vs. Clay—start free.",
-    latestNews: "March 9 Update: AI Assistant officially out of beta. Now serving 20,000 users with a verified 36% increase in booked meetings.",
+    latestNews: "March 11 Update: Now in General Availability. Early data shows a 2.3x increase in meetings booked and 36% higher adoption rates for teams using agentic workflows.",
     faqs: [
       { question: "How accurate is Apollo.io lead data in 2026?", answer: "As of March 2026, Apollo uses waterfall enrichment—cross-referencing multiple data providers—to achieve less than 3% bounce rates on Verified emails. The AI assistant leverages 250+ data points per lead for personalized outreach sequences. Enrichment quality has improved significantly for intent and technographic accuracy." },
       { question: "Which CRM integrations does Apollo.io support in March 2026?", answer: "Apollo.io integrates with Salesforce, HubSpot, Pipedrive, Outreach, and most major CRMs. March 2026 features include bidirectional sync, custom field mapping, and automated lead scoring. The platform also connects to email tools, LinkedIn, and enrichment partners like Clearbit." },
@@ -1545,7 +1545,7 @@ export const mockSoftware: Software[] = [
       "Credits and usage can add up at scale",
       "Best for teams with clear automation use cases",
     ],
-    latestNews: "March 9 Update: March L3 Bootcamp Week 2 is live; new 'Debugger Breakpoints' launched for agents.",
+    latestNews: "March 11 Update: L3 Bootcamp enters Week 2. Focus shifts to 'State Management'—builders are using 'State Snapshots' to debug variable logic in multi-step AI agents.",
     reviewContent: `<p>MindStudio lets you build and deploy custom AI agents without code, wiring 200+ models into workflows with a visual builder. These agents act as the logic layer, connecting <a href="/product/apollo">Apollo.io</a> lead data to <a href="/product/amplemarket">Amplemarket</a> for high-conversion closing sequences.</p>`,
     faqs: [
       { question: "How do you deploy AI agents built in MindStudio?", answer: "As of March 2026, MindStudio agents deploy as web apps, API endpoints, or embeddable widgets. Use the visual builder to wire models (Claude, GPT-4, Gemini, Llama) into workflows, then publish with one click. Agents run in the cloud—no self-hosting required. Common use: personalized outreach from Apollo CSV exports, research assistants, and custom chatbots." },

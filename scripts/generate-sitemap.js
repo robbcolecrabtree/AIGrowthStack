@@ -8,13 +8,14 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { mockSoftware } from "../client/src/lib/mockData";
+import { CURRENT_DATE_ISO } from "../client/src/lib/constants";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const BASE_URL = "https://aigrowthstack.io";
 
-// Use fixed freshness date for GSC (YYYY-MM-DD). Override via SITEMAP_LASTMOD env.
-const LAST_MOD = process.env.SITEMAP_LASTMOD || "2026-03-10";
+// Build-time date for sitemap lastmod (YYYY-MM-DD). Override via SITEMAP_LASTMOD env.
+const LAST_MOD = process.env.SITEMAP_LASTMOD || CURRENT_DATE_ISO;
 
 const staticPaths = [
   { path: "/", priority: "1.0" },
