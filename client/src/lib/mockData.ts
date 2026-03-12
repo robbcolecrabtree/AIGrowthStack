@@ -237,9 +237,10 @@ export const mockSoftware: Software[] = [
     cardAccent: "#CF6BFF",
     badge: "Top Rated",
     featured: true,
-    latestNews: "March 5 Update: Partnered with Deutsche Telekom to embed AI voice directly into phone networks (no app needed). Integration with Google Blackwell GPUs is now live.",
-    metaTitle: "ElevenLabs Pricing & Review (March 2026) - Is the Creator Plan Worth It?",
-    metaDescription: "March 2026 Price Guide: Free (10k chars), Starter ($5), Creator ($11 - 50% off). Learn the 0.5 credit/char hack using Flash v2.5 to double your monthly limit. Updated Today.",
+    description: "The definitive guide to ElevenLabs pricing and tier limits. The 2026 pricing structure includes a robust Free Tier (10,000 characters/month) and a popular Creator Plan ($11/month for 100,000 characters). Designed for creators who need to know exactly when they will hit their voice generation caps.",
+    latestNews: "March Update: Free tier limits remain strict at 10k characters, but the Creator Plan now offers expanded access to Voice Design v3 and 30 custom voices.",
+    metaTitle: "ElevenLabs Pricing 2026: Free Tier & Creator Plan Limits",
+    metaDescription: "Complete March 2026 breakdown of ElevenLabs pricing tiers. Discover exact character limits for the Free Tier, Creator Plan ($11/mo), and Pro subscriptions.",
     faqs: [
       { question: "What is ElevenLabs March 2026 Pricing?", answer: "As of March 2026, ElevenLabs offers: Free ($0) with 10,000 monthly characters; Starter at $5/mo with 30,000 characters and Instant Voice Cloning; Creator at $11/mo (50% first-month discount) with 100,000 characters and Professional Voice Cloning. Use Flash v2.5 for 0.5 credits per character to effectively double your limit." },
       { question: "What are ElevenLabs free tier limits in March 2026?", answer: "The March 2026 free tier includes 10,000 characters per month—best for testing v3 models. It does NOT include voice cloning or commercial rights. For YouTubers and agencies, the minimum paid plan is Starter ($5/mo), which adds Instant Voice Cloning and commercial use." },

@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { mockSoftware } from "@/lib/mockData";
 import { RelatedContent } from "@/components/ui/RelatedContent";
 import { FAQSection } from "@/components/ui/FAQSection";
+import { ElevenLabsPricingTable } from "@/components/ElevenLabsPricingTable";
 import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -170,7 +171,7 @@ export default function ProductDetail() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
           {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-8 min-w-0">
             
             {/* Header Card */}
             <div
@@ -243,6 +244,9 @@ export default function ProductDetail() {
                 </div>
               </div>
             </div>
+
+            {/* ElevenLabs pricing table - high-intent pricing search */}
+            {software.id === "elevenlabs" && <ElevenLabsPricingTable />}
 
             {/* Overview */}
             <div className="bg-card rounded-xl border border-border p-8 shadow-sm">
