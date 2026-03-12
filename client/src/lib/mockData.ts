@@ -586,8 +586,8 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://heygen.com",
     websiteUrl: "https://heygen.com",
     cardAccent: "#6366F1",
-    metaTitle: "HeyGen Review 2026: Pricing & Lip-Sync Video",
-    metaDescription: "40+ languages, avatars, lip-sync. Pricing from $29/mo, actionable localization. Compare HeyGen vs. Synthesia—start today.",
+    metaTitle: "Sub-1s Latency: HeyGen Interactive AI Avatars Tested",
+    metaDescription: "Deploy Interactive Digital Twins with sub-1s latency. Learn how HeyGen's new Streaming API enables real-time 1-on-1 video sales conversations at scale.",
     faqs: [
       { question: "What does HeyGen cost in March 2026?", answer: "Creator from $29/mo; Business from $89/mo with more minutes and team features." },
       { question: "How many languages does HeyGen support?", answer: "HeyGen supports 40+ languages with lip-synced translation for avatar videos." },
@@ -731,6 +731,8 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://perplexity.ai",
     websiteUrl: "https://perplexity.ai",
     cardAccent: "#20B2AA",
+    metaTitle: "Personal Computer Launch: Perplexity Pro 2026 Review",
+    metaDescription: "Discover Perplexity's 'Personal Computer' agent. Runs 24/7 on local hardware to process 100+ documents autonomously without hallucinating. Waitlist details inside.",
     latestNews: "March 5 Update: Introduced Voice Mode for real-time interaction. Now powered by CoreWeave NVIDIA GB200 clusters for significantly lower search latency.",
     faqs: [
       { question: "What does Perplexity Pro cost in 2026?", answer: "It remains $20/month, offering unlimited Pro searches and access to Deep Research modes." },
@@ -1041,8 +1043,8 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://anthropic.com",
     cardAccent: "#D4A574",
     badge: "Top Rated",
-    metaTitle: "Claude 3.5 Sonnet: Computer Use Lead in Browser Automation (Mar 11)",
-    metaDescription: "Claude 3.5 Sonnet's 'Computer Use' capability leads in complex browser automation and form workflows. Latest March 11 documentation update.",
+    metaTitle: "14.9% OSWorld Lead: Claude 3.5 'Computer Use' Tested",
+    metaDescription: "Claude 3.5 Sonnet dominates the OSWorld benchmark at 14.9%. Discover how the new 'Computer Use' beta automates complex browser workflows better than GPT-4o.",
     latestNews: "March 11 Update: New documentation reveals Claude's 'Computer Use' capability is significantly outperforming competitors in browser-based form automation and complex data entry.",
     faqs: [
       { question: "What does Claude 3.5 Sonnet cost in March 2026?", answer: "Claude Pro is $20/mo; API pricing varies by usage and model tier." },
@@ -1262,8 +1264,8 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://apollo.io",
     cardAccent: "#1B2F4A",
     cardAccentSecondary: "#FF8C00",
-    metaTitle: "Apollo Review 2026: Pricing & 275M Contacts",
-    metaDescription: "Verified emails, AI search, $0 CAC outbound. Pricing from $49/mo, actionable prospecting. Compare vs. Clay—start free.",
+    metaTitle: "2.3x Meetings: Apollo.io AI SDR Assistant Review (2026)",
+    metaDescription: "Stop manual prospecting. The new Apollo AI Assistant is officially in GA, delivering a verified 2.3x lift in meetings booked for early adopters. Read the 2026 review.",
     latestNews: "March 11 Update: Now in General Availability. Early data shows a 2.3x increase in meetings booked and 36% higher adoption rates for teams using agentic workflows.",
     faqs: [
       { question: "How accurate is Apollo.io lead data in 2026?", answer: "As of March 2026, Apollo uses waterfall enrichment—cross-referencing multiple data providers—to achieve less than 3% bounce rates on Verified emails. The AI assistant leverages 250+ data points per lead for personalized outreach sequences. Enrichment quality has improved significantly for intent and technographic accuracy." },
@@ -1545,6 +1547,8 @@ export const mockSoftware: Software[] = [
       "Credits and usage can add up at scale",
       "Best for teams with clear automation use cases",
     ],
+    metaTitle: "Pass the 10-Agent Cert: MindStudio L3 Bootcamp Guide",
+    metaDescription: "Get your 10-Agent Certification. Learn how to use the new Debugger and State Snapshots to fix logic loops and master the L3 Bootcamp.",
     latestNews: "March 11 Update: L3 Bootcamp enters Week 2. Focus shifts to 'State Management'—builders are using 'State Snapshots' to debug variable logic in multi-step AI agents.",
     reviewContent: `<p>MindStudio lets you build and deploy custom AI agents without code, wiring 200+ models into workflows with a visual builder. These agents act as the logic layer, connecting <a href="/product/apollo">Apollo.io</a> lead data to <a href="/product/amplemarket">Amplemarket</a> for high-conversion closing sequences.</p>`,
     faqs: [
@@ -1642,8 +1646,8 @@ export const mockSoftware: Software[] = [
     ],
     affiliateLink: "https://unbounce.partnerlinks.io/agwgu4nleflf",
     websiteUrl: "https://unbounce.com",
-    metaTitle: "Unbounce Discount: 35% Off Annual Plan (Verified Mar 10, 2026)",
-    metaDescription: "Get an exclusive 35% discount on Unbounce annual plans or 20% off 3 months. Verified partner deal updated for March 10. Start building high-converting pages now.",
+    metaTitle: "35% OFF Unbounce | 2026 AI Landing Page Benchmarks",
+    metaDescription: "Claim your exclusive 35% annual discount (saves ~$415/yr). See how the new Smart Builder uses 57M+ conversion data points to guarantee landing page ROI.",
     latestNews: "March 10 Update: Verified partner link live. 35% off annual or 20% off 3-month plans. Smart Builder now features real-time 'Conversion Benchmarks' from 57M+ data points.",
     faqs: [
       { question: "What does Unbounce cost in March 2026?", answer: "Essential from $74/mo; Optimize and Scale add Smart Traffic and AI features." },
