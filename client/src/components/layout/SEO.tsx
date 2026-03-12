@@ -30,7 +30,10 @@ export function SEO({
   const titleWithVerified = ensureVerifiedSuffix(title);
   const fullTitle = titleWithVerified.endsWith(siteSuffix) ? titleWithVerified : `${titleWithVerified}${siteSuffix}`;
   const fullDescription = ensureVerifiedSuffix(description);
-  const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
+  const baseCanonical = canonical ? `${siteUrl}${canonical.startsWith("/") ? canonical : "/" + canonical}` : siteUrl;
+  const [pathPart, queryPart] = baseCanonical.split("?");
+  const pathWithSlash = pathPart.endsWith("/") ? pathPart : `${pathPart}/`;
+  const fullCanonical = queryPart ? `${pathWithSlash}?${queryPart}` : pathWithSlash;
 
   return (
     <Helmet>

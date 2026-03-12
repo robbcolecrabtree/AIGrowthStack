@@ -56,7 +56,7 @@ export const blueprints: Blueprint[] = [
         step: 1,
         title: "Data Sourcing",
         body: "Use AI scraping tools to build your lead list from intent signals.",
-        bodyHtml: "Use AI scraping tools to build your lead list from intent signals. Our top picks: <a href=\"/go/browse-ai\" target=\"_blank\" rel=\"noopener sponsored\">Browse AI</a> for no-code extraction from directories and job boards, <a href=\"/product/apollo\">Apollo.io</a> for 275M+ contacts with waterfall enrichment, and <a href=\"/go/clay\" target=\"_blank\" rel=\"noopener sponsored\">Clay</a> for hyper-targeted lists at scale.",
+        bodyHtml: "Use AI scraping tools to build your lead list from intent signals. Our top picks: <a href=\"/go/browse-ai\" target=\"_blank\" rel=\"noopener sponsored\">Browse AI</a> for no-code extraction from directories and job boards, <a href=\"/product/apollo/\">Apollo.io</a> for 275M+ contacts with waterfall enrichment, and <a href=\"/go/clay\" target=\"_blank\" rel=\"noopener sponsored\">Clay</a> for hyper-targeted lists at scale.",
       },
       {
         step: 2,
@@ -81,7 +81,7 @@ export const blueprints: Blueprint[] = [
       title: "The 2026 Video Agent Workflow",
       steps: [
         {
-          bodyHtml: "Use <a href=\"/product/mindstudio\">MindStudio</a> to generate a personalized video script based on <a href=\"/product/apollo\">Apollo.io</a> lead data.",
+          bodyHtml: "Use <a href=\"/product/mindstudio/\">MindStudio</a> to generate a personalized video script based on <a href=\"/product/apollo/\">Apollo.io</a> lead data.",
         },
         {
           bodyHtml: "Import the script into <a href=\"/go/descript\" target=\"_blank\" rel=\"noopener sponsored\">Descript</a>. Use the 'Underdub' feature to voice the script using your <a href=\"/go/elevenlabs\" target=\"_blank\" rel=\"noopener sponsored\">ElevenLabs</a> clone.",

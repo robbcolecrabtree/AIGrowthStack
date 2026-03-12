@@ -157,7 +157,7 @@ export default function BlogPost() {
                             </div>
                           </div>
                           <div className="flex gap-2">
-                            <Link href={`/product/${tool.id}`} className="flex-1">
+                            <Link href={`/product/${tool.id}/`} className="flex-1">
                               <Button
                                 size="sm"
                                 variant="outline"

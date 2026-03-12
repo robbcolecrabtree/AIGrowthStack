@@ -80,7 +80,9 @@ function escapeXml(s) {
 }
 
 function urlEntry(pathname, priority) {
-  const loc = pathname.startsWith("http") ? pathname : `${BASE_URL}${pathname.startsWith("/") ? pathname : "/" + pathname}`;
+  const p = pathname.startsWith("/") ? pathname : "/" + pathname;
+  const pathWithSlash = p === "/" ? p : p.endsWith("/") ? p : p + "/";
+  const loc = pathname.startsWith("http") ? pathname : `${BASE_URL}${pathWithSlash}`;
   return `  <url><loc>${escapeXml(loc)}</loc><lastmod>${LAST_MOD}</lastmod><priority>${priority}</priority></url>\n`;
 }
 

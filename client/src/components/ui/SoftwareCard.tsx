@@ -69,7 +69,7 @@ export function SoftwareCard({ software }: SoftwareCardProps) {
               <div>
                 <div className="flex items-center gap-2 flex-wrap">
                   <Link
-                    href={`/product/${software.id}`}
+                    href={`/product/${software.id}/`}
                     className="font-heading font-bold text-xl text-foreground hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-primary/50 underline-offset-4"
                   >
                     {software.name}
@@ -116,7 +116,7 @@ export function SoftwareCard({ software }: SoftwareCardProps) {
 
       <div className="bg-secondary/30 border-t border-border px-6 py-3 flex flex-col sm:flex-row justify-between items-center gap-3">
         <Link
-          href={`/product/${software.id}`}
+          href={`/product/${software.id}/`}
           className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
         >
           Read Full Review <ArrowRight className="w-3 h-3" />

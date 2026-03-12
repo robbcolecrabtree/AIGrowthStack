@@ -57,7 +57,7 @@ export function ToolCard({ tool }: ToolCardProps) {
           <div className="flex-1">
             <div className="flex items-center gap-1.5 mb-1">
               <Link
-                href={`/product/${tool.id}`}
+                href={`/product/${tool.id}/`}
                 className="font-heading font-semibold text-sm text-foreground hover:text-primary transition-colors"
               >
                 {tool.name}
@@ -96,7 +96,7 @@ export function ToolCard({ tool }: ToolCardProps) {
 
       <div className="px-4 pb-4 pt-2 flex items-center justify-between gap-2 border-t border-border/60 bg-secondary/40">
         <Link
-          href={`/product/${tool.id}`}
+          href={`/product/${tool.id}/`}
           className="text-[11px] font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
         >
           Review <ArrowRight className="w-3 h-3" />

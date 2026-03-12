@@ -145,7 +145,7 @@ export default function ProductDetail() {
       <SEO 
         title={software.metaTitle}
         description={software.metaDescription}
-        canonical={`/product/${software.id}`}
+        canonical={`/product/${software.id}/`}
         ogType="product"
         schema={schema}
       />

@@ -139,9 +139,9 @@ export default function UltimateGeoSeoGuide() {
                   The right tools support the GEO workflow: SERP-backed optimization, content generation, and data extraction. Here are three we recommend:
                 </p>
                 <ul>
-                  <li><Link href="/product/surfer-seo">Surfer SEO</Link> — Content Editor ties to live SERP data; aim for 90+ on money pages. Supports fact-dense, entity-focused optimization.</li>
-                  <li><Link href="/product/jasper">Jasper</Link> — Boss Mode for outline-to-draft workflows. Brand voice + SERP briefs = content that ranks and gets cited.</li>
-                  <li><Link href="/product/browse-ai">Browse AI</Link> — Extract competitor and market data for fact-dense content. No-code scraping for benchmarks and research.</li>
+                  <li><Link href="/product/surfer-seo/">Surfer SEO</Link> — Content Editor ties to live SERP data; aim for 90+ on money pages. Supports fact-dense, entity-focused optimization.</li>
+                  <li><Link href="/product/jasper/">Jasper</Link> — Boss Mode for outline-to-draft workflows. Brand voice + SERP briefs = content that ranks and gets cited.</li>
+                  <li><Link href="/product/browse-ai/">Browse AI</Link> — Extract competitor and market data for fact-dense content. No-code scraping for benchmarks and research.</li>
                 </ul>
                 <p>
                   Compare <a href="/go/surfer-seo" target="_blank" rel="noopener sponsored">Surfer SEO</a>, <a href="/go/jasper" target="_blank" rel="noopener sponsored">Jasper</a>, and <a href="/go/browse-ai" target="_blank" rel="noopener sponsored">Browse AI</a> in our directory.

@@ -141,7 +141,7 @@ export default function ArticleDetail() {
                             </div>
                           </div>
                           <div className="flex gap-2">
-                            <Link href={`/product/${software.id}`} className="flex-1">
+                            <Link href={`/product/${software.id}/`} className="flex-1">
                               <Button size="sm" variant="outline" className="w-full text-xs">View Profile</Button>
                             </Link>
                             <a href={`/go/${software.id}`} target="_blank" rel="noopener sponsored">

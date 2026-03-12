@@ -23,7 +23,7 @@ export function RelatedTools({ relatedToolIds }: RelatedToolsProps) {
         {tools.map((tool) => (
           <Link
             key={tool.id}
-            href={`/product/${tool.id}`}
+            href={`/product/${tool.id}/`}
             className="group flex items-center gap-4 p-4 rounded-xl border border-border bg-card hover:border-primary/40 hover:shadow-md transition-all duration-200 no-underline"
           >
             <img

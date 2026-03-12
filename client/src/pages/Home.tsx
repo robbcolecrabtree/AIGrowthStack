@@ -185,17 +185,17 @@ export default function Home() {
             <span className="text-[10px] font-semibold uppercase tracking-wider text-green-500 pr-5">LIVE</span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <a href="/product/claude-35-sonnet" className="text-primary font-bold hover:underline transition-colors">Claude 3.5 Sonnet</a>
+              <a href="/product/claude-35-sonnet/" className="text-primary font-bold hover:underline transition-colors">Claude 3.5 Sonnet</a>
               <span>: New documentation confirms &apos;Computer Use&apos; lead in complex browser automation workflows.</span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <a href="/product/mindstudio" className="text-primary font-bold hover:underline transition-colors">MindStudio</a>
+              <a href="/product/mindstudio/" className="text-primary font-bold hover:underline transition-colors">MindStudio</a>
               <span>: Bootcamp Week 2 focuses on &apos;State Management&apos; using new Debugger Snapshots for logic repair.</span>
             </span>
             <span className="text-white/20 font-medium select-none px-4 text-sm" aria-hidden>|</span>
             <span className="text-sm font-heading font-medium text-muted-foreground px-4">
-              <a href="/product/apollo" className="text-primary font-bold hover:underline transition-colors">Apollo.io</a>
+              <a href="/product/apollo/" className="text-primary font-bold hover:underline transition-colors">Apollo.io</a>
               <span>: Agentic GTM Assistant confirms 2.3x pipeline growth for early adopters; now in General Availability.</span>
             </span>
           </div>
@@ -209,7 +209,7 @@ export default function Home() {
             <span className="text-xs text-muted-foreground shrink-0">{CURRENT_DATE} • LIVE</span>
             <span className="text-white/20 font-medium select-none text-sm" aria-hidden>|</span>
             <span className="truncate">
-              <a href="/product/claude-35-sonnet" className="text-primary font-bold hover:underline">Claude 3.5 Sonnet</a>
+              <a href="/product/claude-35-sonnet/" className="text-primary font-bold hover:underline">Claude 3.5 Sonnet</a>
               <span>: Computer Use lead in browser automation…</span>
             </span>
             <span className="text-muted-foreground/60 shrink-0">…</span>

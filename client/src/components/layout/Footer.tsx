@@ -35,10 +35,10 @@ export function Footer() {
             <h4 className="font-bold text-foreground mb-4">Directory</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/" className="hover:text-primary transition-colors">Browse All</Link></li>
-              <li><Link href="/categories" className="hover:text-primary transition-colors">Categories</Link></li>
-              <li><Link href="/compare" className="hover:text-primary transition-colors">Compare Tools</Link></li>
+              <li><Link href="/categories/" className="hover:text-primary transition-colors">Categories</Link></li>
+              <li><Link href="/compare/" className="hover:text-primary transition-colors">Compare Tools</Link></li>
               <li><Link href="/blog" className="hover:text-primary transition-colors">Blog</Link></li>
-              <li><Link href="/resources" className="hover:text-primary transition-colors">Resources</Link></li>
+              <li><Link href="/resources/" className="hover:text-primary transition-colors">Resources</Link></li>
             </ul>
           </div>
 
@@ -60,9 +60,9 @@ export function Footer() {
             <span className="mx-2">|</span>
             <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <span className="mx-2">|</span>
-            <Link href="/terms" className="hover:text-primary transition-colors">Terms</Link>
+            <Link href="/terms/" className="hover:text-primary transition-colors">Terms</Link>
             <span className="mx-2">|</span>
-            <Link href="/disclosure" className="hover:text-primary transition-colors">Affiliate Disclosure</Link>
+            <Link href="/disclosure/" className="hover:text-primary transition-colors">Affiliate Disclosure</Link>
           </p>
         </div>
       </div>

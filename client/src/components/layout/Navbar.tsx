@@ -8,9 +8,9 @@ const MOBILE_ACTIVE_BORDER = "#A855F7";
 
 const mobileNavLinks = [
   { href: "/", label: "Home" },
-  { href: "/blog", label: "Blog" },
-  { href: "/categories", label: "Categories" },
-  { href: "/resources", label: "Resources" },
+  { href: "/blog/", label: "Blog" },
+  { href: "/categories/", label: "Categories" },
+  { href: "/resources/", label: "Resources" },
 ];
 
 function isActive(href: string, location: string) {
@@ -77,16 +77,16 @@ export function Navbar() {
             <Link href="/" className={`text-sm font-semibold transition-all hover:text-primary relative py-1 ${location === '/' ? 'text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full' : 'text-muted-foreground'}`}>
               Directory
             </Link>
-            <Link href="/compare" className={`text-sm font-semibold transition-all hover:text-primary relative py-1 ${location === '/compare' ? 'text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full' : 'text-muted-foreground'}`}>
+            <Link href="/compare/" className={`text-sm font-semibold transition-all hover:text-primary relative py-1 ${location === '/compare' ? 'text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full' : 'text-muted-foreground'}`}>
               Compare
             </Link>
-            <Link href="/categories" className={`text-sm font-semibold transition-all hover:text-primary relative py-1 ${location === '/categories' ? 'text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full' : 'text-muted-foreground'}`}>
+            <Link href="/categories/" className={`text-sm font-semibold transition-all hover:text-primary relative py-1 ${location === '/categories' ? 'text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full' : 'text-muted-foreground'}`}>
               Categories
             </Link>
-            <Link href="/blog" className={`text-sm font-semibold transition-all hover:text-primary relative py-1 ${location.startsWith('/blog') ? 'text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full' : 'text-muted-foreground'}`}>
+            <Link href="/blog/" className={`text-sm font-semibold transition-all hover:text-primary relative py-1 ${location.startsWith('/blog') ? 'text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full' : 'text-muted-foreground'}`}>
               Blog
             </Link>
-            <Link href="/resources" className={`text-sm font-semibold transition-all hover:text-primary relative py-1 ${location.startsWith('/resources') ? 'text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full' : 'text-muted-foreground'}`}>
+            <Link href="/resources/" className={`text-sm font-semibold transition-all hover:text-primary relative py-1 ${location.startsWith('/resources') ? 'text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full' : 'text-muted-foreground'}`}>
               Resources
             </Link>
           </div>
