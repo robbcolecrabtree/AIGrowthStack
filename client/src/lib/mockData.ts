@@ -197,8 +197,9 @@ export const mockSoftware: Software[] = [
     cardAccent: "#811BFF",
     badge: "Top Rated",
     featured: true,
-    metaTitle: "Jasper Review 2026: Pricing & Boss Mode",
-    metaDescription: "Long-form content that ranks. Pricing, brand voice, actionable workflows. Compare Jasper vs. alternatives—start free.",
+    metaTitle: "Jasper AI + Surfer SEO Integration (2026 Review)",
+    metaDescription: "Maximize content ranking in 2026 by generating and scoring SEO-optimized articles at scale. Jasper + Surfer integration for teams that need to rank.",
+    latestNews: "March 2026 Update: The Jasper + Surfer SEO integration now supports one-click competitive content audits and real-time semantic keyword scoring directly within the Jasper command center.",
     faqs: [
       { question: "What is the Jasper AI Creator plan price in 2026?", answer: "It is $39/mo billed annually or $49/mo month-to-month." },
       { question: "Does Jasper have a plagiarism checker?", answer: "Yes, it integrates with Copyscape on all paid plans." },
@@ -1367,8 +1368,9 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://zapier.com/central",
     websiteUrl: "https://zapier.com",
     cardAccent: "#FF4A00",
-    metaTitle: "Zapier Central Review 2026: AI Agents & Pricing",
-    metaDescription: "6,000+ apps, natural language Zaps. Free tier, actionable automation. Compare Zapier vs. Make—start connecting today.",
+    metaTitle: "Zapier Central AI Agents: 2026 Features & Pricing",
+    metaDescription: "2026 features for automating complex workflows and training bots on live data directly from chat. Natural language Zaps across 6,000+ apps—no traditional setup required.",
+    latestNews: "March 2026 Update: Zapier Central now supports multi-step reasoning and persistent memory across 5,000+ app integrations without requiring traditional Zap setups.",
     faqs: [
       { question: "Is Zapier Central free in March 2026?", answer: "Yes, a free tier exists; paid plans add more AI agent tasks and app connections." },
       { question: "How does Zapier Central differ from classic Zapier?", answer: "Zapier Central uses natural language to build automations; classic Zapier is trigger-action based." },
