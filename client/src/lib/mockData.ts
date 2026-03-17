@@ -155,8 +155,9 @@ export const mockSoftware: Software[] = [
     cardAccent: "#F32D51",
     badge: "Editor's Choice",
     featured: true,
-    metaTitle: "AdCreative.ai Review 2026: Pricing & ROI",
-    metaDescription: "Ship ad creative in minutes. Pricing from $29/mo, CTR scoring, actionable A/B tests. Compare and start scaling creatives today.",
+    metaTitle: "AdCreative.ai V7: 2026 Storytelling Ads & Pricing",
+    metaDescription: "Version 7 features: Fashion Photoshoot AI for professional e-commerce imagery and auto-generated video ads. Scale conversion-focused creatives across Meta and Google.",
+    latestNews: "March 2026 Update: AdCreative.ai rolls out Version 7, introducing Fashion Photoshoot AI for professional e-commerce imagery and Storytelling Ads that auto-generate conversion-focused videos from a simple URL.",
     faqs: [
       { question: "What are the AdCreative.ai pricing plans in 2026?", answer: "Starter is $39/mo, Professional is $249/mo, and Ultimate is $599/mo." },
       { question: "Does it offer a free trial?", answer: "Yes, there is a 7-day free trial, but users are automatically enrolled in a paid plan if not cancelled." },
@@ -553,6 +554,9 @@ export const mockSoftware: Software[] = [
     automationScore: 84,
     affiliateLink: "https://get.murf.ai/3pgqoi4aiz8w",
     websiteUrl: "https://murf.ai",
+    metaTitle: "Murf AI Review: Falcon TTS & 2026 Voice Features",
+    metaDescription: "New Falcon TTS API with sub-130ms latency for voice agents. 200+ realistic voices, studio-quality output for video and podcasts. Murf in 2026.",
+    latestNews: "March 2026 Update: Murf introduces the Falcon TTS API, enabling sub-130ms latency for real-time AI voice agents, plus expanded multilingual capabilities across 35+ languages.",
     faqs: [
       { question: "What is Murf AI pricing in March 2026?", answer: "Starter from $19/mo; Pro from $39/mo with commercial rights and advanced voice features." },
       { question: "Does Murf support voice cloning?", answer: "Yes, voice cloning and custom voices are available on Pro and Enterprise plans." },
