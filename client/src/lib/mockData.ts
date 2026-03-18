@@ -281,6 +281,9 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://synthesia.io",
     cardAccent: "#FF0050",
     featured: true,
+    metaTitle: "Synthesia AI Video: 2026 Expressive Avatars & Pricing",
+    metaDescription: "Version 3.0 Expressive Avatars with automated lip-syncing and multi-language video generation. Create professional AI avatar videos in 120+ languages—no actors, no studio.",
+    latestNews: "March 2026 Update: Synthesia releases Version 3.0 of their Expressive Avatars, introducing micro-expressions and real-time voice emotion matching across 120+ languages.",
     faqs: [
       { question: "How much is Synthesia in March 2026?", answer: "Starter is $18/mo (10 min video/mo); Creator is $64/mo (30 min video/mo) billed annually." },
       { question: "Can I create a personal AI avatar?", answer: "Yes, custom personal avatars are available starting on the Creator plan." },
@@ -630,6 +633,9 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://notion.so",
     websiteUrl: "https://notion.so",
     cardAccent: "#000000",
+    metaTitle: "Notion AI 2026: Q&A, Writing & Workspace Pricing",
+    metaDescription: "2026 Q&A features, automated workspace organization, and writing assistance. AI built into your team's knowledge base—summarize, draft, and find answers across connected tools.",
+    latestNews: "March 2026 Update: Notion AI expands its Q&A capabilities, now allowing the AI to search and retrieve context not just from Notion pages, but from connected integrations like Google Drive and Slack.",
     faqs: [
       { question: "What does Notion AI cost in March 2026?", answer: "Notion AI add-on is $10/user/mo; included in Plus and Business plans." },
       { question: "What can Notion AI do in 2026?", answer: "Summarize pages, rewrite text, brainstorm ideas, and generate action items from notes." },
