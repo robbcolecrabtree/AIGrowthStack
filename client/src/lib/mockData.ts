@@ -322,6 +322,9 @@ export const mockSoftware: Software[] = [
     cardAccent: "#9333EA",
     badge: "Best Value",
     featured: true,
+    metaTitle: "Gamma AI Presentations: 2026 Templates & Pro Pricing",
+    metaDescription: "Generate entire slide decks, webpages, and docs from a single text prompt in under 30 seconds. AI presentations for founders and growth teams—no design skills required.",
+    latestNews: "March 2026 Update: Gamma introduces advanced brand kits and continuous document-to-deck syncing, allowing teams to instantly convert live Google Docs into fully designed, presentation-ready slides.",
     faqs: [
       { question: "How do Gamma AI credits work in 2026?", answer: "Credits reset monthly. Pro users get 4,000 credits/mo, while Ultra users get 20,000." },
       { question: "Can I use custom domains?", answer: "Yes, custom domain publishing is available on Pro (up to 10) and Ultra (up to 100)." },
@@ -947,6 +950,9 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://get.descript.com/r3q3tipqqz3g",
     websiteUrl: "https://descript.com",
     cardAccent: "#000000",
+    metaTitle: "Descript AI Video Editor: 2026 Studio Sound & Pricing",
+    metaDescription: "2026 AI text-based editing, automated multicam switching, and advanced Studio Sound voice cloning. Edit video like a document—transcribe, cut, and overdub in one workflow.",
+    latestNews: "March 2026 Update: Descript rolls out their next-gen AI video engine, featuring instant automated multicam editing and enhanced Studio Sound that clones your voice for seamless audio corrections.",
     reviewContent: `<p>Descript lets you edit audio and video like a document—transcribe, then edit by editing text. Overdub, Underdub, and Studio Sound round out the workflow for podcasts, screencasts, and talking-head content.</p><p>Power users pair the editor with <a href="/product/elevenlabs/">ElevenLabs</a> for high-fidelity voice cloning, creating a seamless 'Edit-by-Text' production environment.</p>`,
     faqs: [
       { question: "How does Descript's audio-to-video workflow work in March 2026?", answer: "Descript lets you edit audio and video like a document. Import audio or video—it auto-transcribes. Edit by editing the text: cut, paste, and rearrange. Overdub and Underdub add or replace voiceover using AI clones. Studio Sound cleans room noise. As of March 2026, the workflow supports seamless sync of ElevenLabs or other AI voice with b-roll for faceless YouTube and product demos." },
