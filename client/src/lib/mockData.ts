@@ -599,8 +599,9 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://heygen.com",
     websiteUrl: "https://heygen.com",
     cardAccent: "#6366F1",
-    metaTitle: "Sub-1s Latency: HeyGen Interactive AI Avatars Tested",
-    metaDescription: "Deploy Interactive Digital Twins with sub-1s latency. Learn how HeyGen's new Streaming API enables real-time 1-on-1 video sales conversations at scale.",
+    metaTitle: "HeyGen AI Video 2026: Lip-Sync Translation & Avatar Pricing",
+    metaDescription: "HeyGen in 2026: sharper voice translation for lip-synced multilingual video, faster rendering, and AI avatars—scale localized demos, ads, and training without reshoots.",
+    latestNews: "March 2026 Update: HeyGen improves voice translation accuracy for more natural localized audio and delivers faster video rendering speeds across avatar and translation workflows.",
     faqs: [
       { question: "What does HeyGen cost in March 2026?", answer: "Creator from $29/mo; Business from $89/mo with more minutes and team features." },
       { question: "How many languages does HeyGen support?", answer: "HeyGen supports 40+ languages with lip-synced translation for avatar videos." },
@@ -712,6 +713,9 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://invideo.sjv.io/AIGrowthStack",
     websiteUrl: "https://invideo.io",
     cardAccent: "#0066FF",
+    metaTitle: "InVideo AI 2026: Prompt-to-Video, Stock Media & Pricing",
+    metaDescription: "InVideo in 2026: prompt-to-video for social and ads, an expanded stock media library, and improved AI script generation—ship platform-native shorts and campaigns faster.",
+    latestNews: "March 2026 Update: InVideo expands its stock media library and improves AI script generation so marketers can draft stronger narratives and pair them with more footage options.",
     faqs: [
       { question: "What does InVideo AI cost in March 2026?", answer: "Plans from $20/mo; Plus and Max tiers offer more credits and premium templates." },
       { question: "Can InVideo AI generate video from text prompts?", answer: "Yes, prompt-to-video and templates support social, ads, and shorts workflows." },
