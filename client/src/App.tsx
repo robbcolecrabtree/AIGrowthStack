@@ -19,6 +19,7 @@ import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import UltimateGeoSeoGuide from "@/pages/blog/ultimate-geo-seo-guide";
 import GoRedirect from "@/pages/GoRedirect";
+import { CLONE_CONFIG } from "@/lib/config";
 
 function Router() {
   return (
@@ -49,8 +50,8 @@ function App() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "AI Growth Stack",
-    url: "https://aigrowthstack.com",
-    logo: "https://aigrowthstack.com/favicon.ico",
+    url: CLONE_CONFIG.siteUrl,
+    logo: `${CLONE_CONFIG.siteUrl}/favicon.ico`,
   };
 
   return (

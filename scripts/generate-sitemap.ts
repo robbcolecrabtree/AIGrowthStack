@@ -66,7 +66,8 @@ blogSlugs.forEach((slug) => {
 
 xml += "</urlset>\n";
 
-const outPath = path.resolve(__dirname, "..", "dist/public/sitemap.xml");
+/** Portable: resolved from this script’s location, not cwd (CI-safe). */
+const outPath = path.resolve(__dirname, "..", "dist", "public", "sitemap.xml");
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 fs.writeFileSync(outPath, xml);
 

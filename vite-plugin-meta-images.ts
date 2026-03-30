@@ -1,6 +1,10 @@
 import type { Plugin } from 'vite';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+/** Repo root (this file lives next to vite.config.ts), not process.cwd() — avoids CI cwd mismatches */
+const pluginDir = path.dirname(fileURLToPath(import.meta.url));
 
 /**
  * Vite plugin that updates og:image and twitter:image meta tags
@@ -17,7 +21,7 @@ export function metaImagesPlugin(): Plugin {
       }
 
       // Check if logo or opengraph image exists in public directory (prefer logo.png)
-      const publicDir = path.resolve(process.cwd(), 'client', 'public');
+      const publicDir = path.resolve(pluginDir, 'client', 'public');
       const logoPngPath = path.join(publicDir, 'logo.png');
       const opengraphPngPath = path.join(publicDir, 'opengraph.png');
       const opengraphJpgPath = path.join(publicDir, 'opengraph.jpg');

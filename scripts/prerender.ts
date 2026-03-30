@@ -51,7 +51,15 @@ async function main() {
   const port = (server.address() as { port: number }).port;
   const baseUrl = `http://127.0.0.1:${port}`;
 
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-gpu",
+    ],
+  });
   const page = await browser.newPage();
 
   for (const route of prerenderRoutes) {

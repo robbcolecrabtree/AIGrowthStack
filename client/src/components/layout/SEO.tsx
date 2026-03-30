@@ -40,6 +40,9 @@ export function SEO({
   const pathWithSlash = pathPart.endsWith("/") ? pathPart : `${pathPart}/`;
   const fullCanonical = queryPart ? `${pathWithSlash}?${queryPart}` : pathWithSlash;
 
+  const absoluteOgImage =
+    ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage.startsWith("/") ? ogImage : `/${ogImage}`}`;
+
   return (
     <Helmet>
       {/* Basic Meta Tags */}
@@ -54,13 +57,13 @@ export function SEO({
       <meta property="og:description" content={fullDescription} />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={fullCanonical} />
-      <meta property="og:image" content={ogImage} />
+      <meta property="og:image" content={absoluteOgImage} />
 
       {/* Twitter Cards */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={fullDescription} />
-      <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:image" content={absoluteOgImage} />
       <meta name="twitter:site" content="@aigrowthstack" />
 
       {/* Structured Data */}
