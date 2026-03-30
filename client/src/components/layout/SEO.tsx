@@ -17,6 +17,11 @@ interface SEOProps {
   schema?: object;
 }
 
+/** Force apex (non-www) canonical host to match Cloudflare redirect rules */
+function canonicalSiteUrl(url: string): string {
+  return url.replace(/^https:\/\/www\./i, "https://");
+}
+
 export function SEO({ 
   title, 
   description, 
@@ -25,7 +30,7 @@ export function SEO({
   ogImage = "/logo.png",
   schema 
 }: SEOProps) {
-  const siteUrl = CLONE_CONFIG.siteUrl;
+  const siteUrl = canonicalSiteUrl(CLONE_CONFIG.siteUrl);
   const siteSuffix = ` | ${CLONE_CONFIG.siteName}`;
   const titleWithVerified = ensureVerifiedSuffix(title);
   const fullTitle = titleWithVerified.endsWith(siteSuffix) ? titleWithVerified : `${titleWithVerified}${siteSuffix}`;

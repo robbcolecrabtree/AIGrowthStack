@@ -9,6 +9,7 @@ export default function Disclosure() {
       <SEO
         title={`Affiliate Disclosure | ${CLONE_CONFIG.siteName}`}
         description="How AIGrowthStack.io is funded and how compensation may affect our reviews. We keep our analysis independent."
+        canonical="/disclosure"
       />
       <Navbar />
       <main className="container mx-auto px-4 py-12 flex-grow max-w-4xl">

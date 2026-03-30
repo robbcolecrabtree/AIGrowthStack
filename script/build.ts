@@ -5,6 +5,9 @@ import { rm, readFile } from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 
+/** Sitemap: static paths + generate-sitemap.ts assembles products, /blog/*, /resources/* */
+export { SITEMAP_BASE_URL, SITEMAP_STATIC_PATHS } from "./sitemap-routes";
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, "..");
 
@@ -55,7 +58,7 @@ async function buildAll() {
   }
 
   console.log("generating sitemap...");
-  const res = spawnSync("npx", ["-y", "tsx", "scripts/generate-sitemap.js"], {
+  const res = spawnSync("npx", ["-y", "tsx", "scripts/generate-sitemap.ts"], {
     stdio: "inherit",
     cwd: projectRoot,
     shell: true, // required for npx on Windows
