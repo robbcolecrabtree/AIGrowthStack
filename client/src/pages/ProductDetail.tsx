@@ -12,7 +12,7 @@ import { useRoute, useParams, Link } from "wouter";
 import NotFound from "./not-found";
 import { SEO } from "@/components/layout/SEO";
 import { CLONE_CONFIG } from "@/lib/config";
-import { CURRENT_DATE } from "@/lib/constants";
+import { CURRENT_DATE, CURRENT_DATE_ISO } from "@/lib/constants";
 import type { Software } from "@/lib/mockData";
 
 /** Strip HTML tags for text extraction */
@@ -126,6 +126,7 @@ export default function ProductDetail() {
     "name": software.name,
     "operatingSystem": "Web-based",
     "applicationCategory": "BusinessApplication",
+    "dateModified": software.lastUpdated ?? CURRENT_DATE_ISO,
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": software.rating,

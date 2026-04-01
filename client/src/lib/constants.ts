@@ -1,16 +1,14 @@
 /**
- * Build-time date constants.
- * Evaluated when the module is first loaded (at build during prerender or sitemap generation).
- * Every build captures the current date for freshness signals across the site.
+ * Editorial freshness anchor (CTR & freshness campaigns).
+ * Bump when doing site-wide freshness passes; drives Verified copy, sitemap lastmod, and social titles.
  */
-const now = new Date();
+export const CONTENT_LAST_UPDATED_ISO = "2026-04-01";
 
-/** Human-readable format: "March 11, 2026" */
-export const CURRENT_DATE = now.toLocaleDateString("en-US", {
-  month: "long",
-  day: "numeric",
-  year: "numeric",
-});
+/** Human-readable format for on-page "Verified" and meta suffixes */
+export const CURRENT_DATE = "April 1, 2026";
 
-/** ISO format for sitemap lastmod: "2026-03-11" */
-export const CURRENT_DATE_ISO = now.toISOString().slice(0, 10);
+/** ISO format for sitemap lastmod and structured data */
+export const CURRENT_DATE_ISO = CONTENT_LAST_UPDATED_ISO;
+
+/** Shown in Open Graph / Twitter titles for SERP & share relevance */
+export const SOCIAL_FRESHNESS_LABEL = "April 2026";

@@ -7,6 +7,8 @@ export interface Article {
   category: string;
   author: string;
   publishDate: string;
+  /** ISO date for freshness (resources / schema) */
+  lastUpdated: string;
   readTime: string;
   relatedProducts?: string[]; // IDs of related products
 }
@@ -20,6 +22,7 @@ export const articles: Article[] = [
     category: "Marketing & Ads",
     author: "AI Growth Stack Team",
     publishDate: "February 1, 2026",
+    lastUpdated: "2026-04-01",
     readTime: "6 min read",
     relatedProducts: ["adcreative", "jasper", "copy-ai"],
     content: `
@@ -39,6 +42,7 @@ export const articles: Article[] = [
     category: "SEO & Writing",
     author: "AI Growth Stack Team",
     publishDate: "February 5, 2026",
+    lastUpdated: "2026-04-01",
     readTime: "10 min read",
     relatedProducts: ["surfer-seo", "jasper", "semrush"],
     content: `
@@ -58,6 +62,7 @@ export const articles: Article[] = [
     category: "Audio & Voice",
     author: "AI Growth Stack Team",
     publishDate: "February 8, 2026",
+    lastUpdated: "2026-04-01",
     readTime: "7 min read",
     relatedProducts: ["elevenlabs", "descript", "synthesia"],
     content: `

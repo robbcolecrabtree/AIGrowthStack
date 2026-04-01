@@ -60,6 +60,8 @@ export interface Software {
   faqs?: { question: string; answer: string }[];
   /** Optional latest news/update callout (e.g. March 4 Update) */
   latestNews?: string;
+  /** ISO date for freshness signals (product schema, audits) */
+  lastUpdated?: string;
 }
 
 // Backwards compatibility alias
@@ -117,6 +119,7 @@ const base = (overrides: Partial<Software>): Software => {
     cardAccentSecondary: overrides.cardAccentSecondary,
     faqs: overrides.faqs,
     latestNews: overrides.latestNews,
+    lastUpdated: overrides.lastUpdated ?? "2026-04-01",
   };
 };
 
@@ -240,13 +243,14 @@ export const mockSoftware: Software[] = [
     badge: "Top Rated",
     featured: true,
     description: "The definitive guide to ElevenLabs pricing and tier limits. The 2026 pricing structure includes a robust Free Tier (10,000 characters/month) and a popular Creator Plan ($11/month for 100,000 characters). Designed for creators who need to know exactly when they will hit their voice generation caps.",
-    latestNews: "March Update: Free tier limits remain strict at 10k characters, but the Creator Plan now offers expanded access to Voice Design v3 and 30 custom voices.",
+    latestNews: "April 2026 Update: Pricing and tier limits refreshed—compare Free, Starter, and Creator before you burn character credits on the wrong plan.",
     metaTitle: "ElevenLabs Pricing 2026: Free Tier & Creator Plan Limits",
-    metaDescription: "Complete March 2026 breakdown of ElevenLabs pricing tiers. Discover exact character limits for the Free Tier, Creator Plan ($11/mo), and Pro subscriptions.",
+    metaDescription:
+      "Stop wasting credits—see the 2026 breakdown. Updated for April 2026: Free vs Starter vs Creator character caps, cloning rights, and which tier matches your volume.",
     faqs: [
-      { question: "What is ElevenLabs March 2026 Pricing?", answer: "As of March 2026, ElevenLabs offers: Free ($0) with 10,000 monthly characters; Starter at $5/mo with 30,000 characters and Instant Voice Cloning; Creator at $11/mo (50% first-month discount) with 100,000 characters and Professional Voice Cloning. Use Flash v2.5 for 0.5 credits per character to effectively double your limit." },
-      { question: "What are ElevenLabs free tier limits in March 2026?", answer: "The March 2026 free tier includes 10,000 characters per month—best for testing v3 models. It does NOT include voice cloning or commercial rights. For YouTubers and agencies, the minimum paid plan is Starter ($5/mo), which adds Instant Voice Cloning and commercial use." },
-      { question: "Does ElevenLabs offer commercial rights for AI voice in March 2026?", answer: "Yes. As of March 2026, commercial rights start with the Starter plan ($5/mo). The free tier is for personal, non-commercial use only. Creator and above include full commercial rights and Professional Voice Cloning for brand and paid content." },
+      { question: "What is ElevenLabs April 2026 Pricing?", answer: "As of April 2026, ElevenLabs offers: Free ($0) with 10,000 monthly characters; Starter at $5/mo with 30,000 characters and Instant Voice Cloning; Creator at $11/mo (50% first-month discount) with 100,000 characters and Professional Voice Cloning. Use Flash v2.5 for 0.5 credits per character to effectively double your limit." },
+      { question: "What are ElevenLabs free tier limits in April 2026?", answer: "The April 2026 free tier includes 10,000 characters per month—best for testing v3 models. It does NOT include voice cloning or commercial rights. For YouTubers and agencies, the minimum paid plan is Starter ($5/mo), which adds Instant Voice Cloning and commercial use." },
+      { question: "Does ElevenLabs offer commercial rights for AI voice in April 2026?", answer: "Yes. As of April 2026, commercial rights start with the Starter plan ($5/mo). The free tier is for personal, non-commercial use only. Creator and above include full commercial rights and Professional Voice Cloning for brand and paid content." },
     ],
     reviewContent: `<p>ElevenLabs has set the bar for AI voice quality in 2026. Whether you need text-to-speech for videos, voice cloning for brand consistency, or multilingual narration at scale, the platform delivers remarkably natural output that stands up to close listening. Growth teams use it for product demos, training content, and ads without booking studio time.</p><p>The voice library covers a wide range of styles and languages, and the fine-grained controls let you adjust pacing, stability, and clarity so the result matches your brand. For creators and marketers who need a consistent "voice" across many assets, ElevenLabs' cloning feature is among the best we've tested—with clear guidelines on responsible use.</p><p>API access makes it easy to integrate into existing workflows: CMS, video tools, and custom apps can all pull from ElevenLabs. Usage-based pricing means you pay for what you use, which is ideal for teams that scale production up and down. Support is responsive, and the roadmap stays focused on quality and new languages rather than feature bloat.</p><p>If your bottleneck is voiceover volume or localization, ElevenLabs should be at the top of your list. Try it for a high-traffic asset first, then roll it out across the rest of your content pipeline. Raw output is best imported into <a href="/product/descript">Descript</a> for text-based surgical editing and Studio Sound mastering—see our <a href="/blog/elevenlabs-vs-descript-vs-murf-best-ai-voice-tool-2026">ElevenLabs vs Descript vs Murf comparison</a>.</p>`,
   }),

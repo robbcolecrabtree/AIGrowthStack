@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { CLONE_CONFIG } from "@/lib/config";
-import { CURRENT_DATE } from "@/lib/constants";
+import { CURRENT_DATE, SOCIAL_FRESHNESS_LABEL } from "@/lib/constants";
 
 /** Ensures string ends with (Verified {date}), stripping any existing Verified suffix to avoid duplication */
 function ensureVerifiedSuffix(str: string): string {
@@ -43,6 +43,9 @@ export function SEO({
   const absoluteOgImage =
     ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage.startsWith("/") ? ogImage : `/${ogImage}`}`;
 
+  const titleTrim = title.trim();
+  const socialShareTitle = `${titleTrim} | ${SOCIAL_FRESHNESS_LABEL}${siteSuffix}`;
+
   return (
     <Helmet>
       {/* Basic Meta Tags */}
@@ -51,9 +54,9 @@ export function SEO({
       <link rel="canonical" href={fullCanonical} />
       {!CLONE_CONFIG.enableIndexing && <meta name="robots" content="noindex,nofollow" />}
 
-      {/* Open Graph */}
+      {/* Open Graph — freshness label for CTR on social / some surfaces */}
       <meta property="og:site_name" content={CLONE_CONFIG.siteName} />
-      <meta property="og:title" content={fullTitle} />
+      <meta property="og:title" content={socialShareTitle} />
       <meta property="og:description" content={fullDescription} />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={fullCanonical} />
@@ -61,7 +64,7 @@ export function SEO({
 
       {/* Twitter Cards */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={fullTitle} />
+      <meta name="twitter:title" content={socialShareTitle} />
       <meta name="twitter:description" content={fullDescription} />
       <meta name="twitter:image" content={absoluteOgImage} />
       <meta name="twitter:site" content="@aigrowthstack" />
