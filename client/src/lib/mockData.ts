@@ -160,7 +160,7 @@ export const mockSoftware: Software[] = [
     featured: true,
     metaTitle: "AdCreative.ai V7: 2026 Storytelling Ads & Pricing",
     metaDescription: "Version 7 features: Fashion Photoshoot AI for professional e-commerce imagery and auto-generated video ads. Scale conversion-focused creatives across Meta and Google.",
-    latestNews: "March 2026 Update: AdCreative.ai rolls out Version 7, introducing Fashion Photoshoot AI for professional e-commerce imagery and Storytelling Ads that auto-generate conversion-focused videos from a simple URL.",
+    latestNews: "April 2026 Update: AdCreative.ai rolls out Version 7, introducing Fashion Photoshoot AI for professional e-commerce imagery and Storytelling Ads that auto-generate conversion-focused videos from a simple URL.",
     faqs: [
       { question: "What are the AdCreative.ai pricing plans in 2026?", answer: "Starter is $39/mo, Professional is $249/mo, and Ultimate is $599/mo." },
       { question: "Does it offer a free trial?", answer: "Yes, there is a 7-day free trial, but users are automatically enrolled in a paid plan if not cancelled." },
@@ -203,7 +203,7 @@ export const mockSoftware: Software[] = [
     featured: true,
     metaTitle: "Jasper AI + Surfer SEO Integration (2026 Review)",
     metaDescription: "Maximize content ranking in 2026 by generating and scoring SEO-optimized articles at scale. Jasper + Surfer integration for teams that need to rank.",
-    latestNews: "March 2026 Update: The Jasper + Surfer SEO integration now supports one-click competitive content audits and real-time semantic keyword scoring directly within the Jasper command center.",
+    latestNews: "April 2026 Update: The Jasper + Surfer SEO integration now supports one-click competitive content audits and real-time semantic keyword scoring directly within the Jasper command center.",
     faqs: [
       { question: "What is the Jasper AI Creator plan price in 2026?", answer: "It is $39/mo billed annually or $49/mo month-to-month." },
       { question: "Does Jasper have a plagiarism checker?", answer: "Yes, it integrates with Copyscape on all paid plans." },
@@ -287,9 +287,9 @@ export const mockSoftware: Software[] = [
     featured: true,
     metaTitle: "Synthesia AI Video: 2026 Ultra-Realistic Avatars & Pricing",
     metaDescription: "In 2026, Synthesia delivers ultra-realistic AI avatars, faster video rendering, and multi-language generation—training, onboarding, and explainers without a studio.",
-    latestNews: "March 2026 Update: Synthesia releases new ultra-realistic Avatars and significantly faster rendering times, so teams can ship polished presenter-style video even quicker.",
+    latestNews: "April 2026 Update: Synthesia releases new ultra-realistic Avatars and significantly faster rendering times, so teams can ship polished presenter-style video even quicker.",
     faqs: [
-      { question: "How much is Synthesia in March 2026?", answer: "Starter is $18/mo (10 min video/mo); Creator is $64/mo (30 min video/mo) billed annually." },
+      { question: "How much is Synthesia in April 2026?", answer: "Starter is $18/mo (10 min video/mo); Creator is $64/mo (30 min video/mo) billed annually." },
       { question: "Can I create a personal AI avatar?", answer: "Yes, custom personal avatars are available starting on the Creator plan." },
     ],
     reviewContent: `<p>Synthesia is the leading choice for AI avatar video in 2026. Turn a script and a few clicks into a professional presenter-style video in 140+ languages—no actors, no studio, no lengthy post-production. For B2B marketing, training, and internal comms, it has become the go-to when you need volume and consistency.</p><p>The platform offers a library of diverse avatars and templates, so you can match the look and tone to your brand. Screen and slide recording are built in, which makes it easy to combine talking-head segments with product demos or decks. Updates are simple: change the script and re-render instead of reshooting.</p><p>Enterprise teams use Synthesia for onboarding, compliance training, and localized sales enablement. The time and cost savings versus traditional video production are substantial, and the output is good enough for most non-cinematic use cases. Custom avatars are available if you need a specific spokesperson.</p><p>If you're scaling video across regions or use cases and don't want to scale headcount, Synthesia is worth a close look. Start with one high-impact use case—e.g. product explainers or training—then expand from there.</p>`,
@@ -328,7 +328,7 @@ export const mockSoftware: Software[] = [
     featured: true,
     metaTitle: "Gamma AI Presentations: 2026 Brand Templates & Pro Pricing",
     metaDescription: "In 2026, Gamma pairs custom brand templates with faster AI presentation generation—slide decks, docs, and webpages from a prompt. Founders and growth teams ship polished decks in minutes.",
-    latestNews: "March 2026 Update: Gamma adds new custom brand templates and improves AI presentation generation speed so teams get on-brand decks and docs even faster.",
+    latestNews: "April 2026 Update: Gamma adds new custom brand templates and improves AI presentation generation speed so teams get on-brand decks and docs even faster.",
     faqs: [
       { question: "How do Gamma AI credits work in 2026?", answer: "Credits reset monthly. Pro users get 4,000 credits/mo, while Ultra users get 20,000." },
       { question: "Can I use custom domains?", answer: "Yes, custom domain publishing is available on Pro (up to 10) and Ultra (up to 100)." },
@@ -407,9 +407,9 @@ export const mockSoftware: Software[] = [
     cardAccent: "#5B21B6",
     metaTitle: "Browse AI Web Scraping: 2026 Auto-Adapting Agents & Pricing",
     metaDescription: "2026 auto-healing scrapers that adapt to website UI changes instantly without breaking. No-code web data extraction—competitor pricing, leads, and monitoring.",
-    latestNews: "March 2026 Update: Browse AI launches Auto-Healing Agents, allowing scrapers to dynamically adjust to website redesigns and layout shifts without requiring manual retraining.",
+    latestNews: "April 2026 Update: Browse AI launches Auto-Healing Agents, allowing scrapers to dynamically adjust to website redesigns and layout shifts without requiring manual retraining.",
     faqs: [
-      { question: "What is the cost of Browse AI in March 2026?", answer: "Personal starts at $48/mo; Professional is $87/mo (usage-based)." },
+      { question: "What is the cost of Browse AI in April 2026?", answer: "Personal starts at $48/mo; Professional is $87/mo (usage-based)." },
       { question: "Can it solve CAPTCHAs?", answer: "Yes, the 2026 AI robots include built-in CAPTCHA solving and self-healing for site changes." },
     ],
   }),
@@ -434,7 +434,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://airtable.com",
     cardAccent: "#18BFFF",
     faqs: [
-      { question: "What does Airtable cost in March 2026?", answer: "Free tier available; Plus from $20/user/mo; Pro from $45/user/mo with AI fields and advanced automations." },
+      { question: "What does Airtable cost in April 2026?", answer: "Free tier available; Plus from $20/user/mo; Pro from $45/user/mo with AI fields and advanced automations." },
       { question: "Does Airtable offer AI features in 2026?", answer: "Yes, AI fields and AI-powered automations are available on Pro and Enterprise plans." },
     ],
   }),
@@ -459,7 +459,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://originality.ai",
     cardAccent: "#FF5C00",
     faqs: [
-      { question: "What does Originality.ai cost in March 2026?", answer: "Pay-as-you-go from $14 for 2,000 credits; bulk plans available for teams." },
+      { question: "What does Originality.ai cost in April 2026?", answer: "Pay-as-you-go from $14 for 2,000 credits; bulk plans available for teams." },
       { question: "Can it detect AI-written content?", answer: "Yes, it detects AI-generated text and plagiarism with accuracy suitable for editors and publishers." },
     ],
   }),
@@ -496,7 +496,7 @@ export const mockSoftware: Software[] = [
     cardAccent: "#A359FF",
     badge: "Editor's Choice",
     faqs: [
-      { question: "Is Make.com still free in March 2026?", answer: "Yes, the Free plan offers 1,000 operations/month and a 15-minute run interval." },
+      { question: "Is Make.com still free in April 2026?", answer: "Yes, the Free plan offers 1,000 operations/month and a 15-minute run interval." },
       { question: "How much is the Core plan?", answer: "The Core plan is $10.59/mo for 10,000 operations and 1-minute run intervals." },
     ],
   }),
@@ -531,7 +531,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://reclaim.ai",
     cardAccent: "#4F46E5",
     faqs: [
-      { question: "What is the pricing for Reclaim.ai in March 2026?", answer: "Lite is free, Starter is $10/mo (8-week scheduling), and Business is $15/mo (12-week scheduling)." },
+      { question: "What is the pricing for Reclaim.ai in April 2026?", answer: "Lite is free, Starter is $10/mo (8-week scheduling), and Business is $15/mo (12-week scheduling)." },
       { question: "Does it support team analytics?", answer: "Yes, anonymous team-level productivity and work-life balance tracking are available on all paid plans." },
     ],
   }),
@@ -567,9 +567,9 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://murf.ai",
     metaTitle: "Murf AI 2026: Hyper-Realistic Voiceovers & TTS Pricing",
     metaDescription: "Murf in 2026: hyper-realistic AI voiceovers for video and podcasts, Falcon-class latency for agents, and advanced pronunciation controls—studio-quality TTS at scale.",
-    latestNews: "March 2026 Update: Murf adds 20 new hyper-realistic voiceover styles and improves advanced pronunciation controls for clearer, more natural reads on technical and branded terms.",
+    latestNews: "April 2026 Update: Murf adds 20 new hyper-realistic voiceover styles and improves advanced pronunciation controls for clearer, more natural reads on technical and branded terms.",
     faqs: [
-      { question: "What is Murf AI pricing in March 2026?", answer: "Starter from $19/mo; Pro from $39/mo with commercial rights and advanced voice features." },
+      { question: "What is Murf AI pricing in April 2026?", answer: "Starter from $19/mo; Pro from $39/mo with commercial rights and advanced voice features." },
       { question: "Does Murf support voice cloning?", answer: "Yes, voice cloning and custom voices are available on Pro and Enterprise plans." },
     ],
   }),
@@ -605,9 +605,9 @@ export const mockSoftware: Software[] = [
     cardAccent: "#6366F1",
     metaTitle: "HeyGen AI Video 2026: Lip-Sync Translation & Avatar Pricing",
     metaDescription: "HeyGen in 2026: sharper voice translation for lip-synced multilingual video, faster rendering, and AI avatars—scale localized demos, ads, and training without reshoots.",
-    latestNews: "March 2026 Update: HeyGen improves voice translation accuracy for more natural localized audio and delivers faster video rendering speeds across avatar and translation workflows.",
+    latestNews: "April 2026 Update: HeyGen improves voice translation accuracy for more natural localized audio and delivers faster video rendering speeds across avatar and translation workflows.",
     faqs: [
-      { question: "What does HeyGen cost in March 2026?", answer: "Creator from $29/mo; Business from $89/mo with more minutes and team features." },
+      { question: "What does HeyGen cost in April 2026?", answer: "Creator from $29/mo; Business from $89/mo with more minutes and team features." },
       { question: "How many languages does HeyGen support?", answer: "HeyGen supports 40+ languages with lip-synced translation for avatar videos." },
     ],
     reviewContent: `<p>HeyGen leads the market in AI video translation and avatar-based content. If you have existing talking-head or spokesperson video and need to repurpose it for new languages or regions, HeyGen's lip-synced translation is the most convincing we've seen in 2026. The result looks and sounds natural, which is critical for trust in sales and support content.</p><p>Beyond translation, HeyGen offers AI avatars and templates for creating new video from scripts—similar in spirit to Synthesia but with a distinct strength in the translation workflow. The platform is built for marketing and enablement teams that need to scale video across markets without multiplying production cost.</p><p>Use cases include localized product demos, training in multiple languages, and repurposing thought leadership for different audiences. Pricing scales with usage, so it's worth planning which assets you'll translate or generate to avoid surprise bills. Brand and legal review is still recommended for sensitive or high-stakes content.</p><p>If you're sitting on a library of English (or other) video and want to activate it globally, HeyGen should be on your shortlist. Run a pilot with one high-value piece of content and evaluate quality and cost before rolling out more broadly.</p>`,
@@ -644,9 +644,9 @@ export const mockSoftware: Software[] = [
     cardAccent: "#000000",
     metaTitle: "Notion AI 2026: Document Q&A, Databases & Workspace Pricing",
     metaDescription: "Notion AI in 2026: smarter Q&A over your documents, enhanced database autofill, and writing help inside your workspace—summaries, drafts, and answers where your team already works.",
-    latestNews: "March 2026 Update: Notion AI improves Q&A document querying for faster, more accurate answers from your pages, plus enhanced database autofill to populate properties from context.",
+    latestNews: "April 2026 Update: Notion AI improves Q&A document querying for faster, more accurate answers from your pages, plus enhanced database autofill to populate properties from context.",
     faqs: [
-      { question: "What does Notion AI cost in March 2026?", answer: "Notion AI add-on is $10/user/mo; included in Plus and Business plans." },
+      { question: "What does Notion AI cost in April 2026?", answer: "Notion AI add-on is $10/user/mo; included in Plus and Business plans." },
       { question: "What can Notion AI do in 2026?", answer: "Summarize pages, rewrite text, brainstorm ideas, and generate action items from notes." },
     ],
   }),
@@ -683,7 +683,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://hubspot.com",
     cardAccent: "#FF7A59",
     faqs: [
-      { question: "Is HubSpot AI included in HubSpot in March 2026?", answer: "Yes, AI features are built into CRM, Marketing, and Sales hubs; availability varies by plan." },
+      { question: "Is HubSpot AI included in HubSpot in April 2026?", answer: "Yes, AI features are built into CRM, Marketing, and Sales hubs; availability varies by plan." },
       { question: "What does HubSpot AI offer?", answer: "Lead scoring, email suggestions, report generation, and chat assistance across the platform." },
     ],
   }),
@@ -719,9 +719,9 @@ export const mockSoftware: Software[] = [
     cardAccent: "#0066FF",
     metaTitle: "InVideo AI 2026: Prompt-to-Video, Stock Media & Pricing",
     metaDescription: "InVideo in 2026: prompt-to-video for social and ads, an expanded stock media library, and improved AI script generation—ship platform-native shorts and campaigns faster.",
-    latestNews: "March 2026 Update: InVideo expands its stock media library and improves AI script generation so marketers can draft stronger narratives and pair them with more footage options.",
+    latestNews: "April 2026 Update: InVideo expands its stock media library and improves AI script generation so marketers can draft stronger narratives and pair them with more footage options.",
     faqs: [
-      { question: "What does InVideo AI cost in March 2026?", answer: "Plans from $20/mo; Plus and Max tiers offer more credits and premium templates." },
+      { question: "What does InVideo AI cost in April 2026?", answer: "Plans from $20/mo; Plus and Max tiers offer more credits and premium templates." },
       { question: "Can InVideo AI generate video from text prompts?", answer: "Yes, prompt-to-video and templates support social, ads, and shorts workflows." },
     ],
   }),
@@ -783,7 +783,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://copy.ai",
     cardAccent: "#22C55E",
     faqs: [
-      { question: "Is Copy.ai free in March 2026?", answer: "Yes, a free tier exists; Pro from $49/mo for unlimited words and team features." },
+      { question: "Is Copy.ai free in April 2026?", answer: "Yes, a free tier exists; Pro from $49/mo for unlimited words and team features." },
       { question: "What does Copy.ai generate?", answer: "Ads, emails, landing pages, and social copy with brand voice and workflow automation." },
     ],
   }),
@@ -818,7 +818,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://fireflies.ai",
     cardAccent: "#10B981",
     faqs: [
-      { question: "What does Fireflies.ai cost in March 2026?", answer: "Free tier available; Pro from $10/user/mo; Business adds CRM sync and team analytics." },
+      { question: "What does Fireflies.ai cost in April 2026?", answer: "Free tier available; Pro from $10/user/mo; Business adds CRM sync and team analytics." },
       { question: "Does Fireflies work with Zoom and Google Meet?", answer: "Yes, it integrates with Zoom, Meet, Teams, and 40+ platforms for automatic recording." },
     ],
   }),
@@ -853,7 +853,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://canva.com",
     cardAccent: "#00C4CC",
     faqs: [
-      { question: "What does Canva Magic cost in March 2026?", answer: "Canva Pro from $12.99/mo includes Magic Design, text-to-image, and AI editing tools." },
+      { question: "What does Canva Magic cost in April 2026?", answer: "Canva Pro from $12.99/mo includes Magic Design, text-to-image, and AI editing tools." },
       { question: "Can Canva Magic generate videos?", answer: "Yes, Magic Design and the AI video editor help create short-form social and ad video." },
     ],
   }),
@@ -888,7 +888,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://writesonic.com",
     cardAccent: "#111827",
     faqs: [
-      { question: "What does Writesonic cost in March 2026?", answer: "Plans from $13/mo; Unlimited and Enterprise tiers for higher volume." },
+      { question: "What does Writesonic cost in April 2026?", answer: "Plans from $13/mo; Unlimited and Enterprise tiers for higher volume." },
       { question: "Does Writesonic support Google Ads copy?", answer: "Yes, it generates ad headlines, descriptions, and landing page copy from prompts." },
     ],
     reviewContent: `<p>Writesonic is a practical AI writing tool for marketers who need SEO content and performance ad copy without a steep learning curve. Articles, landing pages, and Google Ads variants can be generated from prompts and templates, with a chat-style assistant for quick iterations. In 2026 it remains a solid value for small teams and solo operators who want to move faster without enterprise pricing.</p><p>Templates are tuned for common growth tasks: product descriptions, ad headlines, meta descriptions, and blog outlines. The interface is straightforward, so you can get value quickly. Output still benefits from human editing for tone and accuracy, but Writesonic reduces the blank-page problem and speeds up first drafts.</p><p>Pricing is reasonable for the feature set, making it a good fit for startups and SMBs. Brand control is less advanced than in tools like Jasper, so if you need strict voice guidelines across many assets, you may need to enforce those in your process. For many use cases—landing pages, ad tests, and blog support—Writesonic hits the sweet spot between capability and cost.</p><p>If you need more SEO and ad copy output without adding headcount or breaking the budget, Writesonic is a strong option. Use it to accelerate landing pages and paid creative first, then expand to blogs and other assets.</p>`,
@@ -924,7 +924,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://midjourney.com",
     cardAccent: "#2D2D2D",
     faqs: [
-      { question: "What are the Midjourney pricing tiers in March 2026?", answer: "Basic is $10/mo; Standard is $30/mo (includes Relax Mode); Pro is $60/mo (includes Stealth Mode)." },
+      { question: "What are the Midjourney pricing tiers in April 2026?", answer: "Basic is $10/mo; Standard is $30/mo (includes Relax Mode); Pro is $60/mo (includes Stealth Mode)." },
       { question: "Can I use Midjourney on the web?", answer: "Yes, the web-based editor is now the primary interface, moving away from Discord." },
     ],
   }),
@@ -961,12 +961,12 @@ export const mockSoftware: Software[] = [
     cardAccent: "#000000",
     metaTitle: "Descript AI Video Editor: 2026 Studio Sound & Pricing",
     metaDescription: "2026 AI text-based editing, automated multicam switching, and advanced Studio Sound voice cloning. Edit video like a document—transcribe, cut, and overdub in one workflow.",
-    latestNews: "March 2026 Update: Descript rolls out their next-gen AI video engine, featuring instant automated multicam editing and enhanced Studio Sound that clones your voice for seamless audio corrections.",
+    latestNews: "April 2026 Update: Descript rolls out their next-gen AI video engine, featuring instant automated multicam editing and enhanced Studio Sound that clones your voice for seamless audio corrections.",
     reviewContent: `<p>Descript lets you edit audio and video like a document—transcribe, then edit by editing text. Overdub, Underdub, and Studio Sound round out the workflow for podcasts, screencasts, and talking-head content.</p><p>Power users pair the editor with <a href="/product/elevenlabs/">ElevenLabs</a> for high-fidelity voice cloning, creating a seamless 'Edit-by-Text' production environment.</p>`,
     faqs: [
-      { question: "How does Descript's audio-to-video workflow work in March 2026?", answer: "Descript lets you edit audio and video like a document. Import audio or video—it auto-transcribes. Edit by editing the text: cut, paste, and rearrange. Overdub and Underdub add or replace voiceover using AI clones. Studio Sound cleans room noise. As of March 2026, the workflow supports seamless sync of ElevenLabs or other AI voice with b-roll for faceless YouTube and product demos." },
-      { question: "What does Descript Overdub cost in March 2026?", answer: "As of March 2026, Overdub is included in Creator ($12/user/mo) and above. Creator adds 10 hours of Overdub per year; higher tiers offer more. There's no separate Overdub add-on—it's bundled with the transcription, text-based editing, and Studio Sound features. Check the current pricing page for the latest limits." },
-      { question: "What are the March 2026 updates to Descript?", answer: "March 2026 Descript updates include improved Studio Sound for AI-generated voice, faster transcription for long files, and tighter Overdub/Underdub sync with external AI voice tools like ElevenLabs. The text-based editor remains the fastest way to build faceless YouTube and podcast content—edit by editing text, no timeline wrestling." },
+      { question: "How does Descript's audio-to-video workflow work in April 2026?", answer: "Descript lets you edit audio and video like a document. Import audio or video—it auto-transcribes. Edit by editing the text: cut, paste, and rearrange. Overdub and Underdub add or replace voiceover using AI clones. Studio Sound cleans room noise. As of April 2026, the workflow supports seamless sync of ElevenLabs or other AI voice with b-roll for faceless YouTube and product demos." },
+      { question: "What does Descript Overdub cost in April 2026?", answer: "As of April 2026, Overdub is included in Creator ($12/user/mo) and above. Creator adds 10 hours of Overdub per year; higher tiers offer more. There's no separate Overdub add-on—it's bundled with the transcription, text-based editing, and Studio Sound features. Check the current pricing page for the latest limits." },
+      { question: "What are the April 2026 updates to Descript?", answer: "April 2026 Descript updates include improved Studio Sound for AI-generated voice, faster transcription for long files, and tighter Overdub/Underdub sync with external AI voice tools like ElevenLabs. The text-based editor remains the fastest way to build faceless YouTube and podcast content—edit by editing text, no timeline wrestling." },
     ],
   }),
   base({
@@ -1000,7 +1000,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://frase.io",
     cardAccent: "#6366F1",
     faqs: [
-      { question: "What does Frase cost in March 2026?", answer: "Solo from $15/mo; Basic from $45/mo; Team plans for collaboration." },
+      { question: "What does Frase cost in April 2026?", answer: "Solo from $15/mo; Basic from $45/mo; Team plans for collaboration." },
       { question: "Does Frase include AI writing?", answer: "Yes, SERP analysis, content briefs, and AI writing assistant are bundled." },
     ],
   }),
@@ -1035,7 +1035,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://otter.ai",
     cardAccent: "#20B2AA",
     faqs: [
-      { question: "What does Otter.ai cost in March 2026?", answer: "Pro from $10/user/mo; Business adds team features and integrations." },
+      { question: "What does Otter.ai cost in April 2026?", answer: "Pro from $10/user/mo; Business adds team features and integrations." },
       { question: "Does Otter.ai do real-time transcription?", answer: "Yes, live transcription with speaker detection for meetings and lectures." },
     ],
   }),
@@ -1074,7 +1074,7 @@ export const mockSoftware: Software[] = [
     metaDescription: "Claude 3.5 Sonnet dominates the OSWorld benchmark at 14.9%. Discover how the new 'Computer Use' beta automates complex browser workflows better than GPT-4o.",
     latestNews: "March 11 Update: New documentation reveals Claude's 'Computer Use' capability is significantly outperforming competitors in browser-based form automation and complex data entry.",
     faqs: [
-      { question: "What does Claude 3.5 Sonnet cost in March 2026?", answer: "Claude Pro is $20/mo; API pricing varies by usage and model tier." },
+      { question: "What does Claude 3.5 Sonnet cost in April 2026?", answer: "Claude Pro is $20/mo; API pricing varies by usage and model tier." },
       { question: "What is Claude's context window size?", answer: "Claude 3.5 Sonnet supports a 200K token context window for long documents." },
     ],
   }),
@@ -1109,7 +1109,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://runwayml.com",
     cardAccent: "#00D4FF",
     faqs: [
-      { question: "What does Runway Gen-3 cost in March 2026?", answer: "Standard from $15/mo; Pro and Unlimited tiers add more credits and advanced features." },
+      { question: "What does Runway Gen-3 cost in April 2026?", answer: "Standard from $15/mo; Pro and Unlimited tiers add more credits and advanced features." },
       { question: "Can Runway generate video from text?", answer: "Yes, text-to-video and image-to-video with cinematic motion and editing tools." },
     ],
   }),
@@ -1144,7 +1144,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://clay.run",
     cardAccent: "#6366F1",
     faqs: [
-      { question: "What does Clay cost in March 2026?", answer: "Clay starts at $149/mo; scale plans for higher enrichment and AI agent usage." },
+      { question: "What does Clay cost in April 2026?", answer: "Clay starts at $149/mo; scale plans for higher enrichment and AI agent usage." },
       { question: "Does Clay integrate with Apollo?", answer: "Yes, Clay pairs with Apollo for waterfall enrichment and hyper-targeted lead lists." },
     ],
   }),
@@ -1169,7 +1169,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://v0.dev",
     cardAccent: "#000000",
     faqs: [
-      { question: "Is v0 free in March 2026?", answer: "v0 offers a free tier; Pro adds more generations and commercial usage." },
+      { question: "Is v0 free in April 2026?", answer: "v0 offers a free tier; Pro adds more generations and commercial usage." },
       { question: "What frameworks does v0 support?", answer: "v0 generates React/Next.js components with Shadcn UI integration." },
     ],
   }),
@@ -1194,7 +1194,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://firecrawl.dev",
     cardAccent: "#FA5D19",
     faqs: [
-      { question: "What does Firecrawl cost in March 2026?", answer: "Hobby from $19/mo; Standard and Scale for higher crawl volume and API usage." },
+      { question: "What does Firecrawl cost in April 2026?", answer: "Hobby from $19/mo; Standard and Scale for higher crawl volume and API usage." },
       { question: "What does Firecrawl output?", answer: "Firecrawl converts any URL to clean Markdown or JSON for RAG and AI pipelines." },
     ],
   }),
@@ -1219,7 +1219,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://chatbase.co",
     cardAccent: "#3B82F6",
     faqs: [
-      { question: "What does Chatbase cost in March 2026?", answer: "Free tier available; Starter from $19/mo; Growth and Scale for higher limits." },
+      { question: "What does Chatbase cost in April 2026?", answer: "Free tier available; Starter from $19/mo; Growth and Scale for higher limits." },
       { question: "Can I train Chatbase on my own docs?", answer: "Yes, upload documents, paste text, or add URLs to train custom AI chatbots." },
     ],
   }),
@@ -1256,7 +1256,7 @@ export const mockSoftware: Software[] = [
     metaTitle: "ActiveCampaign Review 2026: Pricing & AI Agents",
     metaDescription: "AI-Suggested Segments, 13 hrs saved weekly. Pricing from $15/mo, actionable nurture. Compare vs. GoHighLevel—start today.",
     faqs: [
-      { question: "What does ActiveCampaign cost in March 2026?", answer: "Lite from $15/mo; Plus and Pro add AI agents, predictive sending, and CRM." },
+      { question: "What does ActiveCampaign cost in April 2026?", answer: "Lite from $15/mo; Plus and Pro add AI agents, predictive sending, and CRM." },
       { question: "What is Active Intelligence?", answer: "Autonomous AI Agents that optimize campaigns, predict sends, and personalize 1:1 content at scale." },
     ],
     reviewContent: `<p>ActiveCampaign has evolved beyond email into a full-scale "Active Intelligence" hub. It uses autonomous AI Agents to manage campaign optimization, predictive sending, and 1:1 content personalization at scale. Professional builders and GTM teams who need a central nervous system for their marketing stack will find it ideal.</p><p>The key feature is AI-powered autonomous workflows that identify customer segments and trigger actions without manual intervention. Campaign optimization, predictive sending, and personalized content at scale run with minimal manual setup once configured.</p><p>From $15/mo, ActiveCampaign fits growing teams that need sophisticated automation without enterprise pricing. The platform integrates with major CRMs, e-commerce, and ad platforms so it can sit at the center of your marketing stack.</p><p>If you're scaling GTM and want a single hub for automation, segmentation, and personalized outreach, ActiveCampaign is worth a close look. Start with one high-impact workflow—e.g. lead scoring and nurture—then expand from there.</p>`,
@@ -1295,11 +1295,11 @@ export const mockSoftware: Software[] = [
     metaDescription: "Stop manual prospecting. The new Apollo AI Assistant is officially in GA, delivering a verified 2.3x lift in meetings booked for early adopters. Read the 2026 review.",
     latestNews: "March 11 Update: Now in General Availability. Early data shows a 2.3x increase in meetings booked and 36% higher adoption rates for teams using agentic workflows.",
     faqs: [
-      { question: "How accurate is Apollo.io lead data in 2026?", answer: "As of March 2026, Apollo uses waterfall enrichment—cross-referencing multiple data providers—to achieve less than 3% bounce rates on Verified emails. The AI assistant leverages 250+ data points per lead for personalized outreach sequences. Enrichment quality has improved significantly for intent and technographic accuracy." },
-      { question: "Which CRM integrations does Apollo.io support in March 2026?", answer: "Apollo.io integrates with Salesforce, HubSpot, Pipedrive, Outreach, and most major CRMs. March 2026 features include bidirectional sync, custom field mapping, and automated lead scoring. The platform also connects to email tools, LinkedIn, and enrichment partners like Clearbit." },
+      { question: "How accurate is Apollo.io lead data in 2026?", answer: "As of April 2026, Apollo uses waterfall enrichment—cross-referencing multiple data providers—to achieve less than 3% bounce rates on Verified emails. The AI assistant leverages 250+ data points per lead for personalized outreach sequences. Enrichment quality has improved significantly for intent and technographic accuracy." },
+      { question: "Which CRM integrations does Apollo.io support in April 2026?", answer: "Apollo.io integrates with Salesforce, HubSpot, Pipedrive, Outreach, and most major CRMs. April 2026 features include bidirectional sync, custom field mapping, and automated lead scoring. The platform also connects to email tools, LinkedIn, and enrichment partners like Clearbit." },
       { question: "What is Apollo Duo AI and how does it work?", answer: "Duo AI (available via Amplemarket, which pairs with Apollo data) combines human reps with AI for reply handling, suggested next steps, and deal closing. It reads responses, drafts replies, and surfaces the right moment for a human handoff. For Apollo-native sequences, the built-in AI assistant writes personalized outreach based on 250+ lead attributes." },
     ],
-    reviewContent: `<p>The gold standard for all-in-one prospecting. In 2026, Apollo's AI assistant now automates complex search logic and writes highly personalized outreach sequences based on 250+ data points per lead. Early-stage founders and high-volume SDR teams who want list-building and outreach in a single dashboard will find it ideal. Top-tier outbound teams in March 2026 use Apollo's waterfall enrichment to feed high-intent lead data directly into <a href="/product/mindstudio/">MindStudio</a> for automated, AI-personalized outreach.</p><p>The key feature is waterfall enrichment—Apollo now automatically cross-references multiple data providers to ensure &lt;3% bounce rates on "Verified" emails. Combined with 275M+ contacts and AI-driven search, it's a complete sales intelligence engine.</p><p>Free tier available; paid plans from $49/mo (annual). Apollo fits SDRs and founders who need prospecting and outreach in one place. Integrations with CRMs, email tools, and LinkedIn make it easy to plug into existing workflows.</p><p>If you're scaling outbound and want verified data with minimal bounce, Apollo is worth a close look. Start with the free tier to test enrichment quality, then upgrade when you're ready to scale sequences.</p>`,
+    reviewContent: `<p>The gold standard for all-in-one prospecting. In 2026, Apollo's AI assistant now automates complex search logic and writes highly personalized outreach sequences based on 250+ data points per lead. Early-stage founders and high-volume SDR teams who want list-building and outreach in a single dashboard will find it ideal. Top-tier outbound teams in April 2026 use Apollo's waterfall enrichment to feed high-intent lead data directly into <a href="/product/mindstudio/">MindStudio</a> for automated, AI-personalized outreach.</p><p>The key feature is waterfall enrichment—Apollo now automatically cross-references multiple data providers to ensure &lt;3% bounce rates on "Verified" emails. Combined with 275M+ contacts and AI-driven search, it's a complete sales intelligence engine.</p><p>Free tier available; paid plans from $49/mo (annual). Apollo fits SDRs and founders who need prospecting and outreach in one place. Integrations with CRMs, email tools, and LinkedIn make it easy to plug into existing workflows.</p><p>If you're scaling outbound and want verified data with minimal bounce, Apollo is worth a close look. Start with the free tier to test enrichment quality, then upgrade when you're ready to scale sequences.</p>`,
   }),
   base({
     id: "lindy",
@@ -1320,7 +1320,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://lindy.ai",
     cardAccent: "#6366F1",
     faqs: [
-      { question: "What does Lindy.ai cost in March 2026?", answer: "Free tier available; Pro from $19/mo per agent; scale plans for teams." },
+      { question: "What does Lindy.ai cost in April 2026?", answer: "Free tier available; Pro from $19/mo per agent; scale plans for teams." },
       { question: "What can Lindy AI agents do?", answer: "Email triage, meeting prep, research, and task automation across Gmail, Slack, and calendar." },
     ],
   }),
@@ -1343,7 +1343,7 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://searchatlas.com",
     cardAccent: "#6366F1",
     faqs: [
-      { question: "What does Search Atlas cost in March 2026?", answer: "Plans from $99/mo; includes OTTO SEO automation and LLM Visibility tracking." },
+      { question: "What does Search Atlas cost in April 2026?", answer: "Plans from $99/mo; includes OTTO SEO automation and LLM Visibility tracking." },
       { question: "Does Search Atlas track AI search visibility?", answer: "Yes, LLM Visibility tracks your brand's citations in Perplexity, ChatGPT, and AI Overviews." },
     ],
   }),
@@ -1371,7 +1371,7 @@ export const mockSoftware: Software[] = [
     metaTitle: "GoHighLevel Review 2026: Pricing & AI OS",
     metaDescription: "All-in-one CRM, funnels, automation. Pricing from $97/mo, actionable for agencies. Compare vs. ActiveCampaign—start today.",
     faqs: [
-      { question: "What does GoHighLevel cost in March 2026?", answer: "Agency Starter from $97/mo; unlimited sub-accounts for white-label agencies." },
+      { question: "What does GoHighLevel cost in April 2026?", answer: "Agency Starter from $97/mo; unlimited sub-accounts for white-label agencies." },
       { question: "Is GoHighLevel an all-in-one platform?", answer: "Yes, CRM, marketing automation, funnels, and sales in one platform—ideal for agencies." },
     ],
   }),
@@ -1395,9 +1395,9 @@ export const mockSoftware: Software[] = [
     cardAccent: "#FF4A00",
     metaTitle: "Zapier Central AI Agents: 2026 Features & Pricing",
     metaDescription: "2026 features for automating complex workflows and training bots on live data directly from chat. Natural language Zaps across 6,000+ apps—no traditional setup required.",
-    latestNews: "March 2026 Update: Zapier Central now supports multi-step reasoning and persistent memory across 5,000+ app integrations without requiring traditional Zap setups.",
+    latestNews: "April 2026 Update: Zapier Central now supports multi-step reasoning and persistent memory across 5,000+ app integrations without requiring traditional Zap setups.",
     faqs: [
-      { question: "Is Zapier Central free in March 2026?", answer: "Yes, a free tier exists; paid plans add more AI agent tasks and app connections." },
+      { question: "Is Zapier Central free in April 2026?", answer: "Yes, a free tier exists; paid plans add more AI agent tasks and app connections." },
       { question: "How does Zapier Central differ from classic Zapier?", answer: "Zapier Central uses natural language to build automations; classic Zapier is trigger-action based." },
     ],
   }),
@@ -1427,7 +1427,7 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://activepieces.com",
     websiteUrl: "https://activepieces.com",
     faqs: [
-      { question: "Is Activepieces free in March 2026?", answer: "Yes, open-source with a generous cloud free tier; no per-task pricing." },
+      { question: "Is Activepieces free in April 2026?", answer: "Yes, open-source with a generous cloud free tier; no per-task pricing." },
       { question: "Can I self-host Activepieces?", answer: "Yes, Activepieces is open-source and supports self-hosting for full data control." },
     ],
   }),
@@ -1457,7 +1457,7 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://aisdr.com",
     websiteUrl: "https://aisdr.com",
     faqs: [
-      { question: "What does AiSDR cost in March 2026?", answer: "Plans scale with contacts and sequences; tailored for SDR-style outbound volume." },
+      { question: "What does AiSDR cost in April 2026?", answer: "Plans scale with contacts and sequences; tailored for SDR-style outbound volume." },
       { question: "Does AiSDR write personalized emails?", answer: "Yes, AI-generated sequences with personalization based on lead data." },
     ],
   }),
@@ -1484,7 +1484,7 @@ export const mockSoftware: Software[] = [
       "Pricing scales with team and volume",
       "Learning curve for advanced Duo AI workflows",
     ],
-    reviewContent: `<p>Amplemarket sits at the end of the March 2026 sales stack, closing the loop on leads generated by <a href="/product/apollo/">Apollo</a> and personalized via <a href="/product/mindstudio/">MindStudio</a>. Duo AI pairs human reps with AI for reply handling and high-conversion closing sequences.</p>`,
+    reviewContent: `<p>Amplemarket sits at the end of the April 2026 sales stack, closing the loop on leads generated by <a href="/product/apollo/">Apollo</a> and personalized via <a href="/product/mindstudio/">MindStudio</a>. Duo AI pairs human reps with AI for reply handling and high-conversion closing sequences.</p>`,
     affiliateLink: "https://grow.amplemarket.com/mr390kpzrwyd",
     websiteUrl: "https://amplemarket.com",
     faqs: [
@@ -1518,7 +1518,7 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://consensus.app",
     websiteUrl: "https://consensus.app",
     faqs: [
-      { question: "What does Consensus cost in March 2026?", answer: "Free tier available; Premium adds unlimited searches and export; plans scale for teams." },
+      { question: "What does Consensus cost in April 2026?", answer: "Free tier available; Premium adds unlimited searches and export; plans scale for teams." },
       { question: "Does Consensus cite peer-reviewed sources?", answer: "Yes, Consensus surfaces peer-reviewed research and academic citations for evidence-based answers." },
     ],
   }),
@@ -1548,7 +1548,7 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://laxis.com",
     websiteUrl: "https://laxis.com",
     faqs: [
-      { question: "What does Laxis cost in March 2026?", answer: "Plans from $8/user/mo; Business adds CRM sync and team analytics." },
+      { question: "What does Laxis cost in April 2026?", answer: "Plans from $8/user/mo; Business adds CRM sync and team analytics." },
       { question: "Does Laxis integrate with CRM?", answer: "Yes, Laxis syncs meeting insights and action items to Salesforce, HubSpot, and other CRMs." },
     ],
   }),
@@ -1580,8 +1580,8 @@ export const mockSoftware: Software[] = [
     latestNews: "March 11 Update: L3 Bootcamp enters Week 2. Focus shifts to 'State Management'—builders are using 'State Snapshots' to debug variable logic in multi-step AI agents.",
     reviewContent: `<p>MindStudio lets you build and deploy custom AI agents without code, wiring 200+ models into workflows with a visual builder. These agents act as the logic layer, connecting <a href="/product/apollo/">Apollo.io</a> lead data to <a href="/product/amplemarket/">Amplemarket</a> for high-conversion closing sequences.</p>`,
     faqs: [
-      { question: "How do you deploy AI agents built in MindStudio?", answer: "As of March 2026, MindStudio agents deploy as web apps, API endpoints, or embeddable widgets. Use the visual builder to wire models (Claude, GPT-4, Gemini, Llama) into workflows, then publish with one click. Agents run in the cloud—no self-hosting required. Common use: personalized outreach from Apollo CSV exports, research assistants, and custom chatbots." },
-      { question: "Does MindStudio support custom LLMs in March 2026?", answer: "Yes. March 2026 MindStudio supports 200+ models including OpenAI, Anthropic, Google, Meta, and open-source options. You can wire custom or fine-tuned models via API. The platform lets you build agents that chain multiple models—e.g. Claude for script generation, GPT-4 for summarization—without code." },
+      { question: "How do you deploy AI agents built in MindStudio?", answer: "As of April 2026, MindStudio agents deploy as web apps, API endpoints, or embeddable widgets. Use the visual builder to wire models (Claude, GPT-4, Gemini, Llama) into workflows, then publish with one click. Agents run in the cloud—no self-hosting required. Common use: personalized outreach from Apollo CSV exports, research assistants, and custom chatbots." },
+      { question: "Does MindStudio support custom LLMs in April 2026?", answer: "Yes. April 2026 MindStudio supports 200+ models including OpenAI, Anthropic, Google, Meta, and open-source options. You can wire custom or fine-tuned models via API. The platform lets you build agents that chain multiple models—e.g. Claude for script generation, GPT-4 for summarization—without code." },
     ],
   }),
   base({
@@ -1610,7 +1610,7 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://quillbot.com",
     websiteUrl: "https://quillbot.com",
     faqs: [
-      { question: "What does QuillBot cost in March 2026?", answer: "Free tier available; Premium from $4.95/mo adds plagiarism checker and unlimited paraphrasing." },
+      { question: "What does QuillBot cost in April 2026?", answer: "Free tier available; Premium from $4.95/mo adds plagiarism checker and unlimited paraphrasing." },
       { question: "Does QuillBot have a plagiarism checker?", answer: "Yes, Premium includes plagiarism detection and grammar improvements." },
     ],
   }),
@@ -1645,7 +1645,7 @@ export const mockSoftware: Software[] = [
       "Basic CRM Depth: Lacks the enterprise-level integration found in high-end helpdesks.",
     ],
     faqs: [
-      { question: "How much is Tidio Lyro AI in March 2026?", answer: "Lyro AI starts at $39/mo as an add-on for 100 conversations." },
+      { question: "How much is Tidio Lyro AI in April 2026?", answer: "Lyro AI starts at $39/mo as an add-on for 100 conversations." },
       { question: "Can I remove the Tidio branding?", answer: "Yes, removing 'Powered by Tidio' costs an extra $20/mo on the Growth plan but is included in Plus." },
     ],
   }),
@@ -1676,9 +1676,9 @@ export const mockSoftware: Software[] = [
     websiteUrl: "https://unbounce.com",
     metaTitle: "Unbounce Landing Pages: 2026 AI Generation & Pricing",
     metaDescription: "Generative UI capabilities and real-time predictive conversion scoring. AI-powered landing pages—create, test, and optimize high-converting pages at scale.",
-    latestNews: "March 2026 Update: Unbounce rolls out Generative UI, allowing marketers to instantly spawn fully designed, brand-compliant landing page variants from a single text prompt.",
+    latestNews: "April 2026 Update: Unbounce rolls out Generative UI, allowing marketers to instantly spawn fully designed, brand-compliant landing page variants from a single text prompt.",
     faqs: [
-      { question: "What does Unbounce cost in March 2026?", answer: "Essential from $74/mo; Optimize and Scale add Smart Traffic and AI features." },
+      { question: "What does Unbounce cost in April 2026?", answer: "Essential from $74/mo; Optimize and Scale add Smart Traffic and AI features." },
       { question: "Does Unbounce use AI for landing pages?", answer: "Yes, Smart Traffic and AI Copy tools optimize landing pages and conversion." },
     ],
   }),
@@ -1708,7 +1708,7 @@ export const mockSoftware: Software[] = [
     affiliateLink: "https://useblackbox.io",
     websiteUrl: "https://useblackbox.io",
     faqs: [
-      { question: "What does Blackbox AI cost in March 2026?", answer: "Free tier available; Pro adds unlimited autocomplete and code search in IDE." },
+      { question: "What does Blackbox AI cost in April 2026?", answer: "Free tier available; Pro adds unlimited autocomplete and code search in IDE." },
       { question: "What IDE extensions does Blackbox support?", answer: "Blackbox integrates with VS Code, JetBrains, and other popular code editors." },
     ],
   }),

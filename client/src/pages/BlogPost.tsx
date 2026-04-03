@@ -85,9 +85,23 @@ export default function BlogPost() {
                   Last updated: {post.lastUpdated}
                 </span>
               </div>
-              <h1 className="font-heading font-bold text-5xl text-foreground mb-12 leading-tight tracking-tight">
+              <h1 className="font-heading font-bold text-5xl text-foreground mb-8 leading-tight tracking-tight">
                 {post.title}
               </h1>
+              {post.slug === "elevenlabs-pricing-2026-is-the-pro-plan-worth-the-roi-for-marketers" && (
+                <div
+                  className="mb-8 rounded-lg border border-border bg-secondary/40 dark:bg-secondary/20 px-5 py-4 shadow-sm"
+                  role="note"
+                  aria-label="Quick Verdict"
+                >
+                  <p className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
+                    Quick Verdict
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    April 2026 Update: For most growth engineers, the Creator Plan remains the &apos;Sweet Spot&apos; for API access and commercial rights. Skip the Pro plan unless you are processing 2M+ characters monthly.
+                  </p>
+                </div>
+              )}
               <p className="text-sm italic text-muted-foreground mb-6">
                 Disclosure: This post contains affiliate links. If you click and make a purchase, I may earn a small commission at no extra cost to you.
               </p>

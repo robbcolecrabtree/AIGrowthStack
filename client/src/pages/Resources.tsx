@@ -51,7 +51,7 @@ export default function Resources() {
                         </div>
                         {isNewMar2026 && (
                           <span className="px-2.5 py-0.5 rounded-full bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide">
-                            New for March 2026
+                            New for April 2026
                           </span>
                         )}
                       </div>
