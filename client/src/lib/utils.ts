@@ -19,3 +19,10 @@ const BRIGHT_ACCENT_IDS = ["firecrawl", "chatbase", "adcreative", "hubspot-ai", 
 export function getAccentTintOpacity(id: string): number {
   return BRIGHT_ACCENT_IDS.includes(id) ? 0.1 : 0.15;
 }
+
+/** Format YYYY-MM-DD for on-page "Last updated" (US long date). */
+export function formatIsoDateUs(iso: string): string {
+  const d = new Date(`${iso}T12:00:00`);
+  if (Number.isNaN(d.getTime())) return iso;
+  return d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+}

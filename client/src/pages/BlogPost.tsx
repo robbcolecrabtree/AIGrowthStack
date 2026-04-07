@@ -5,11 +5,11 @@ import { Footer } from "@/components/layout/Footer";
 import { getBlogPostBySlug } from "@/lib/blogPosts";
 import { mockSoftware } from "@/lib/mockData";
 import { RelatedContent } from "@/components/ui/RelatedContent";
-import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
+import { hexToRgba, getAccentTintOpacity, formatIsoDateUs } from "@/lib/utils";
 import { Link, useRoute } from "wouter";
 import NotFound from "./not-found";
 import { SEO } from "@/components/layout/SEO";
-import { ArrowLeft, User, Calendar, Tag, Sparkles } from "lucide-react";
+import { ArrowLeft, User, Calendar, Tag, Sparkles, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const PROGRESS_BAR_COLOR = "#E4FE65";
@@ -81,8 +81,9 @@ export default function BlogPost() {
                 <span className="flex items-center gap-1 text-muted-foreground">
                   <User className="w-4 h-4" /> {post.author}
                 </span>
-                <span className="text-muted-foreground text-xs">
-                  Last updated: {post.lastUpdated}
+                <span className="inline-flex items-center gap-2 rounded-lg border-2 border-primary/35 bg-primary/10 px-3 py-1.5 text-sm font-semibold text-foreground">
+                  <RefreshCw className="w-4 h-4 shrink-0 text-primary" aria-hidden />
+                  Last updated: {formatIsoDateUs(post.lastUpdated)}
                 </span>
               </div>
               <h1 className="font-heading font-bold text-5xl text-foreground mb-8 leading-tight tracking-tight">
@@ -98,7 +99,7 @@ export default function BlogPost() {
                     Quick Verdict
                   </p>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    April 2026 Update: For most growth engineers, the Creator Plan remains the &apos;Sweet Spot&apos; for API access and commercial rights. Skip the Pro plan unless you are processing 2M+ characters monthly.
+                    Updated April 7, 2026: For most growth teams, Creator stays the sweet spot for commercial rights, Pro-level cloning, and API access—move to Pro only when you consistently clear high six-figure monthly characters or need priority throughput.
                   </p>
                 </div>
               )}

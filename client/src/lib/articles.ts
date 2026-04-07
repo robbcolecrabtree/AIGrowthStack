@@ -21,8 +21,8 @@ export const articles: Article[] = [
     excerpt: "AI is transforming how teams produce ad creatives at scale. Learn which tools and workflows help you generate on-brand variations without burning budget or time.",
     category: "Marketing & Ads",
     author: "AI Growth Stack Team",
-    publishDate: "February 1, 2026",
-    lastUpdated: "2026-04-01",
+    publishDate: "April 7, 2026",
+    lastUpdated: "2026-04-07",
     readTime: "6 min read",
     relatedProducts: ["adcreative", "jasper", "copy-ai"],
     content: `
@@ -41,8 +41,8 @@ export const articles: Article[] = [
     excerpt: "SEO in 2026 is a mix of data, intent, and AI-assisted content. This guide walks through the tools and strategies that actually move the needle.",
     category: "SEO & Writing",
     author: "AI Growth Stack Team",
-    publishDate: "February 5, 2026",
-    lastUpdated: "2026-04-01",
+    publishDate: "April 7, 2026",
+    lastUpdated: "2026-04-07",
     readTime: "10 min read",
     relatedProducts: ["surfer-seo", "jasper", "semrush"],
     content: `
@@ -61,8 +61,8 @@ export const articles: Article[] = [
     excerpt: "From explainer videos to training and ads, synthetic voice has reached a quality bar that makes it a real alternative to studio recordings for many use cases.",
     category: "Audio & Voice",
     author: "AI Growth Stack Team",
-    publishDate: "February 8, 2026",
-    lastUpdated: "2026-04-01",
+    publishDate: "April 7, 2026",
+    lastUpdated: "2026-04-07",
     readTime: "7 min read",
     relatedProducts: ["elevenlabs", "descript", "synthesia"],
     content: `

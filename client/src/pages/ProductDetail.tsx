@@ -4,10 +4,10 @@ import { mockSoftware } from "@/lib/mockData";
 import { RelatedContent } from "@/components/ui/RelatedContent";
 import { FAQSection } from "@/components/ui/FAQSection";
 import { ElevenLabsPricingTable } from "@/components/ElevenLabsPricingTable";
-import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
+import { hexToRgba, getAccentTintOpacity, formatIsoDateUs } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Star, Check, X, Building2, Wallet, Users, BadgeCheck, Lightbulb, CheckCircle } from "lucide-react";
+import { ExternalLink, Star, Check, X, Building2, Wallet, Users, BadgeCheck, Lightbulb, CheckCircle, Calendar } from "lucide-react";
 import { useRoute, useParams, Link } from "wouter";
 import NotFound from "./not-found";
 import { SEO } from "@/components/layout/SEO";
@@ -120,6 +120,8 @@ export default function ProductDetail() {
   const software = mockSoftware.find((p) => p.id.toLowerCase() === id);
   if (!software) return <NotFound />;
 
+  const lastUpdatedDisplay = formatIsoDateUs(software.lastUpdated ?? CURRENT_DATE_ISO);
+
   const productSchema = {
     "@context": "https://schema.org/",
     "@type": "SoftwareApplication",
@@ -220,7 +222,13 @@ export default function ProductDetail() {
                   <AISummary software={software} />
 
                   <p className="text-lg text-muted-foreground mb-2">{software.tagline}</p>
-                  <p className="text-xs text-muted-foreground mb-4">Last updated: {CURRENT_DATE}</p>
+                  <p
+                    className="inline-flex items-center gap-2 rounded-lg border-2 border-primary/35 bg-primary/10 px-3 py-2 text-sm font-semibold text-foreground mb-4"
+                    title="Editorial freshness — pricing and features rechecked against the vendor"
+                  >
+                    <Calendar className="w-4 h-4 shrink-0 text-primary" aria-hidden />
+                    Last updated: {lastUpdatedDisplay}
+                  </p>
 
                   <div className="flex flex-wrap items-center gap-4 mb-6">
                     <div className="flex items-center gap-1 bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
@@ -248,6 +256,16 @@ export default function ProductDetail() {
 
             {/* ElevenLabs pricing table - high-intent pricing search */}
             {software.id === "elevenlabs" && <ElevenLabsPricingTable />}
+
+            {software.creatorPlanHighlight && (
+              <div className="rounded-xl border-2 border-primary/40 bg-primary/5 p-6 shadow-sm">
+                <h2 className="font-heading font-bold text-lg text-foreground mb-2 flex items-center gap-2">
+                  <Lightbulb className="w-5 h-5 text-primary shrink-0" aria-hidden />
+                  Creator Plan Highlight
+                </h2>
+                <p className="text-sm text-muted-foreground leading-relaxed">{software.creatorPlanHighlight}</p>
+              </div>
+            )}
 
             {/* Overview */}
             <div className="bg-card rounded-xl border border-border p-8 shadow-sm">

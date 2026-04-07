@@ -2,12 +2,12 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { articles } from "@/lib/articles";
 import { mockSoftware } from "@/lib/mockData";
-import { hexToRgba, getAccentTintOpacity } from "@/lib/utils";
+import { hexToRgba, getAccentTintOpacity, formatIsoDateUs } from "@/lib/utils";
 import { Link, useRoute } from "wouter";
 import NotFound from "./not-found";
 import { SEO } from "@/components/layout/SEO";
 import { CLONE_CONFIG } from "@/lib/config";
-import { ArrowLeft, User, Calendar, Tag, ShieldCheck } from "lucide-react";
+import { ArrowLeft, User, Calendar, Tag, ShieldCheck, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 function stripHtmlToSnippet(html: string, maxLen = 150) {
@@ -76,7 +76,10 @@ export default function ArticleDetail() {
                 <span className="flex items-center gap-1 text-muted-foreground">
                   <User className="w-4 h-4" /> {article.author}
                 </span>
-                <span className="text-muted-foreground text-xs">Last updated: {article.lastUpdated}</span>
+                <span className="inline-flex items-center gap-2 rounded-lg border-2 border-primary/35 bg-primary/10 px-3 py-1.5 text-sm font-semibold text-foreground">
+                  <RefreshCw className="w-4 h-4 shrink-0 text-primary" aria-hidden />
+                  Last updated: {formatIsoDateUs(article.lastUpdated)}
+                </span>
               </div>
               <h1 className="font-heading font-bold text-3xl md:text-5xl text-foreground mb-6 leading-tight">
                 {article.title}
