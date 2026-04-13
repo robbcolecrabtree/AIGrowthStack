@@ -22,7 +22,7 @@ export const articles: Article[] = [
     category: "Marketing & Ads",
     author: "AI Growth Stack Team",
     publishDate: "April 7, 2026",
-    lastUpdated: "2026-04-07",
+    lastUpdated: "2026-04-13",
     readTime: "6 min read",
     relatedProducts: ["adcreative", "jasper", "copy-ai"],
     content: `
@@ -42,7 +42,7 @@ export const articles: Article[] = [
     category: "SEO & Writing",
     author: "AI Growth Stack Team",
     publishDate: "April 7, 2026",
-    lastUpdated: "2026-04-07",
+    lastUpdated: "2026-04-13",
     readTime: "10 min read",
     relatedProducts: ["surfer-seo", "jasper", "semrush"],
     content: `
@@ -62,7 +62,7 @@ export const articles: Article[] = [
     category: "Audio & Voice",
     author: "AI Growth Stack Team",
     publishDate: "April 7, 2026",
-    lastUpdated: "2026-04-07",
+    lastUpdated: "2026-04-13",
     readTime: "7 min read",
     relatedProducts: ["elevenlabs", "descript", "synthesia"],
     content: `
