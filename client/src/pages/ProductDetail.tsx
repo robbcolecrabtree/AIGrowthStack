@@ -360,7 +360,7 @@ export default function ProductDetail() {
 
               {software.id === "elevenlabs" && (
                 <>
-                  <h3 className="font-heading font-bold text-lg mt-8 mb-4 text-foreground">Live April 2026 Pricing Data</h3>
+                  <h3 className="font-heading font-bold text-lg mt-8 mb-4 text-foreground">Live Late April 2026 Pricing Data (April 23)</h3>
                   <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden />

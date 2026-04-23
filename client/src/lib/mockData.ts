@@ -121,7 +121,7 @@ const base = (overrides: Partial<Software>): Software => {
     cardAccentSecondary: overrides.cardAccentSecondary,
     faqs: overrides.faqs,
     latestNews: overrides.latestNews,
-    lastUpdated: overrides.lastUpdated ?? "2026-04-13",
+    lastUpdated: overrides.lastUpdated ?? "2026-04-23",
     creatorPlanHighlight: overrides.creatorPlanHighlight,
   };
 };
@@ -246,20 +246,20 @@ export const mockSoftware: Software[] = [
     badge: "Top Rated",
     featured: true,
     description:
-      "Creator Plan highlight: 100,000 characters/month, Professional Voice Cloning, full commercial rights, and API access at the tier most marketers outgrow Free/Starter on—without paying for Pro volume you may not need. The 2026 stack also includes Free (10K chars) and Starter ($5) for tests and light use; we break down every cap so you never burn credits blind.",
+      "Creator Plan ROI focus: 100,000 characters/month, Professional Voice Cloning, full commercial rights, and API access—the tier most marketers pick after Free/Starter without paying for Pro volume they may not need. The 2026 stack also includes Free (10K chars) and Starter ($5) for tests and light use; we break down every cap so you never burn credits blind.",
     latestNews:
-      "April 13th, 2026: Creator Plan remains the default pick for growth teams—100K chars/mo, Pro-level cloning, commercial license, and API. Step up to Pro only when you consistently clear ~400K+ characters or need priority throughput.",
+      "April 23rd, 2026: Creator Plan remains the default pick for growth teams—100K chars/mo, Pro-level cloning, commercial license, and API. Step up to Pro only when you consistently clear ~400K+ characters or need priority throughput.",
     creatorPlanHighlight:
-      "The Creator Plan is where most teams land: 100,000 characters per month, Professional Voice Cloning, full commercial rights, and API access—enough runway for ads, explainers, and localization without Pro’s 500K price jump. Flash v2.5 halves per-character cost when you need extra headroom. Updated April 13th, 2026.",
-    metaTitle: "ElevenLabs Pricing 2026: Free Tier & Creator Plan Limits",
+      "The Creator Plan is where most teams land: 100,000 characters per month, Professional Voice Cloning, full commercial rights, and API access—enough runway for ads, explainers, and localization without Pro’s 500K price jump. Flash v2.5 halves per-character cost when you need extra headroom. Updated April 23rd, 2026.",
+    metaTitle: "ElevenLabs Pricing 2026: Is the Creator Plan Worth It? (April 23 Update)",
     metaDescription:
-      "Does the Creator Plan cover your 2026 volume? Updated April 13th: Free vs Starter vs Creator caps, cloning rights, credit math, and when Pro actually pays off—stop leaking spend on the wrong tier.",
+      "Is the ElevenLabs Creator Plan worth the ROI in April 2026? We break down pricing tiers, credit limits, and hidden costs so you don't overpay for your growth stack.",
     faqs: [
-      { question: "What is ElevenLabs pricing as of April 13th, 2026?", answer: "As of April 13th, 2026, ElevenLabs offers: Free ($0) with 10,000 monthly characters; Starter at $5/mo with 30,000 characters and Instant Voice Cloning; Creator at $11/mo (50% first-month discount) with 100,000 characters and Professional Voice Cloning. Use Flash v2.5 for 0.5 credits per character to effectively double your limit." },
-      { question: "What are ElevenLabs free tier limits as of April 13th, 2026?", answer: "The free tier includes 10,000 characters per month—best for testing v3 models. It does NOT include voice cloning or commercial rights. For YouTubers and agencies, the minimum paid plan is Starter ($5/mo), which adds Instant Voice Cloning and commercial use." },
+      { question: "What is ElevenLabs pricing as of April 23rd, 2026?", answer: "As of April 23rd, 2026, ElevenLabs offers: Free ($0) with 10,000 monthly characters; Starter at $5/mo with 30,000 characters and Instant Voice Cloning; Creator at $11/mo (50% first-month discount) with 100,000 characters and Professional Voice Cloning. Use Flash v2.5 for 0.5 credits per character to effectively double your limit." },
+      { question: "What are ElevenLabs free tier limits as of April 23rd, 2026?", answer: "The free tier includes 10,000 characters per month—best for testing v3 models. It does NOT include voice cloning or commercial rights. For YouTubers and agencies, the minimum paid plan is Starter ($5/mo), which adds Instant Voice Cloning and commercial use." },
       { question: "Does ElevenLabs offer commercial rights for AI voice on the Creator plan?", answer: "Yes. Creator and above include full commercial rights and Professional Voice Cloning for brand and paid content. Commercial rights start with Starter ($5/mo); the free tier is personal, non-commercial use only." },
     ],
-    lastUpdated: "2026-04-13",
+    lastUpdated: "2026-04-23",
     reviewContent: `<p>ElevenLabs has set the bar for AI voice quality in 2026. Whether you need text-to-speech for videos, voice cloning for brand consistency, or multilingual narration at scale, the platform delivers remarkably natural output that stands up to close listening. Growth teams use it for product demos, training content, and ads without booking studio time.</p><p>The voice library covers a wide range of styles and languages, and the fine-grained controls let you adjust pacing, stability, and clarity so the result matches your brand. For creators and marketers who need a consistent "voice" across many assets, ElevenLabs' cloning feature is among the best we've tested—with clear guidelines on responsible use.</p><p>API access makes it easy to integrate into existing workflows: CMS, video tools, and custom apps can all pull from ElevenLabs. Usage-based pricing means you pay for what you use, which is ideal for teams that scale production up and down. Support is responsive, and the roadmap stays focused on quality and new languages rather than feature bloat.</p><p>If your bottleneck is voiceover volume or localization, ElevenLabs should be at the top of your list. Try it for a high-traffic asset first, then roll it out across the rest of your content pipeline. Raw output is best imported into <a href="/product/descript">Descript</a> for text-based surgical editing and Studio Sound mastering—see our <a href="/blog/elevenlabs-vs-descript-vs-murf-best-ai-voice-tool-2026">ElevenLabs vs Descript vs Murf comparison</a>.</p>`,
   }),
   base({
@@ -1403,12 +1403,12 @@ export const mockSoftware: Software[] = [
     cardAccent: "#FF4A00",
     metaTitle: "Zapier Central AI Agents: 2026 Features & Pricing",
     metaDescription: "2026 features for automating complex workflows and training bots on live data directly from chat. Natural language Zaps across 6,000+ apps—no traditional setup required.",
-    latestNews: "April 13th, 2026 update: Zapier Central now supports multi-step reasoning and persistent memory across 5,000+ app integrations without requiring traditional Zap setups.",
+    latestNews: "April 23rd, 2026 update: Zapier Central now supports multi-step reasoning and persistent memory across 5,000+ app integrations without requiring traditional Zap setups.",
     faqs: [
-      { question: "Is Zapier Central free as of April 13th, 2026?", answer: "Yes, a free tier exists; paid plans add more AI agent tasks and app connections." },
+      { question: "Is Zapier Central free as of April 23rd, 2026?", answer: "Yes, a free tier exists; paid plans add more AI agent tasks and app connections." },
       { question: "How does Zapier Central differ from classic Zapier?", answer: "Zapier Central uses natural language to build automations; classic Zapier is trigger-action based." },
     ],
-    lastUpdated: "2026-04-13",
+    lastUpdated: "2026-04-23",
   }),
   base({
     id: "activepieces",
