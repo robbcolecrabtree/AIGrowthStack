@@ -11,7 +11,7 @@ export default function UltimateGeoSeoGuide() {
     headline: "The Ultimate Guide to GEO: Ranking in the Era of AI Search (2026)",
     author: { "@type": "Person", name: "AI Growth Stack Team" },
     datePublished: "2026-02-20",
-    dateModified: "2026-02-20",
+    dateModified: "2026-05-01",
     description: "Master Generative Engine Optimization. Learn how to get cited in AI Overviews, Perplexity, and ChatGPT. The 2026 playbook for actionable AI marketers.",
   };
 

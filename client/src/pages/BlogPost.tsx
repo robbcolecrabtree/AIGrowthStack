@@ -99,7 +99,7 @@ export default function BlogPost() {
                     Quick Verdict
                   </p>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    April 23, 2026 data sync: For most growth teams, the Creator Plan stays the sweet spot for ROI—commercial rights, Pro-level cloning, and API access—move to Pro only when you consistently clear high six-figure monthly characters or need priority throughput.
+                    May 1, 2026 data sync: For most growth teams, the Creator Plan stays the sweet spot for ROI—commercial rights, Pro-level cloning, and API access—move to Pro only when you consistently clear high six-figure monthly characters or need priority throughput.
                   </p>
                 </div>
               )}

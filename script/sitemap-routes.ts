@@ -1,5 +1,5 @@
 /**
- * Canonical static paths for sitemap generation (March 30, 2026 build).
+ * Canonical static paths for sitemap generation (May 1, 2026 build).
  * Product URLs are /product/{id} for each mockSoftware entry (47 as of this build).
  * Blog and resource URLs are derived in scripts/generate-sitemap.ts from blogPosts, articles, and blueprints.
  * Total sitemap URLs are logged at build time (static + products + resources + blog).

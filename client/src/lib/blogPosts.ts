@@ -28,7 +28,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "SEO",
     author: "AI Growth Stack Team",
     publishDate: "March 20, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "12 min read",
     featuredToolIds: ["surfer-seo", "jasper", "browse-ai"],
     metaTitle: "GEO SEO Guide 2026: Rank in ChatGPT & Perplexity",
@@ -47,7 +47,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Growth",
     author: "AI Growth Stack Team",
     publishDate: "March 19, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "10 min read",
     featuredToolIds: ["adcreative", "jasper", "make", "heygen", "elevenlabs", "surfer-seo", "activecampaign", "apollo", "browse-ai", "zapier-central"],
     metaTitle: "Top 10 AI Tools 2026: Beyond ChatGPT for Growth",
@@ -101,7 +101,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Data & Automation",
     author: "AI Growth Stack Team",
     publishDate: "March 19, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["browse-ai", "apollo", "clay"],
     metaTitle: "Browse AI Review 2026: B2B Lead Gen Without Code",
@@ -133,7 +133,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Data & Automation",
     author: "AI Growth Stack Team",
     publishDate: "March 19, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "7 min read",
     featuredToolIds: ["activepieces", "make", "zapier-central"],
     metaTitle: "Activepieces Review 2026: Open-Source Automation for SMEs",
@@ -162,7 +162,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Sales",
     author: "AI Growth Stack Team",
     publishDate: "March 19, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["laxis", "apollo", "activecampaign"],
     metaTitle: "Laxis AI Review 2026: Sales Copilot & CRM Automation",
@@ -190,12 +190,12 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Data & Automation",
     author: "AI Growth Stack Team",
     publishDate: "March 19, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "9 min read",
     featuredToolIds: ["mindstudio", "zapier-central", "make"],
     metaTitle: "MindStudio Tutorial 2026: Build No-Code AI Agents in 15 Minutes",
     metaDescription:
-      "Ship a real agent in 15 minutes—not a slide deck. Updated for April 2026: no-code MindStudio walkthrough, 200+ models, and when to pair it with Zapier/Make.",
+      "Ship a real agent in 15 minutes—not a slide deck. Updated for May 1, 2026: no-code MindStudio walkthrough, 200+ models, and when to pair it with Zapier/Make.",
     content: `
       <h2>No-Code AI Agents in 15 Minutes</h2>
       <p>You don't need to hire AI engineers to build custom agents. <a href="/go/mindstudio" target="_blank" rel="noopener sponsored">MindStudio</a> lets you wire 200+ models—Gemini, Claude, GPT-4, Llama—into workflows with a visual builder. No code. This tutorial walks you through building a <strong>Research Agent</strong> in 15 minutes.</p>
@@ -222,7 +222,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Marketing",
     author: "AI Growth Stack Team",
     publishDate: "March 19, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "9 min read",
     featuredToolIds: ["gohighlevel", "activecampaign"],
     metaTitle: "GoHighLevel vs. ActiveCampaign 2026: Pricing & ROI",
@@ -271,12 +271,12 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Productivity",
     author: "AI Growth Stack Team",
     publishDate: "March 19, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["zapier-central", "make", "lindy"],
-    metaTitle: "Automating With Zapier AI Agents: A Growth Engineer's Guide (April 2026)",
+    metaTitle: "Automating With Zapier AI Agents: A Growth Engineer's Guide (May 1, 2026)",
     metaDescription:
-      "Stop the manual grind. Learn to deploy Zapier AI Agents to automate your growth stack in April 2026. Scale operations without adding headcount.",
+      "Stop the manual grind. Learn to deploy Zapier AI Agents to automate your growth stack in May 1, 2026. Scale operations without adding headcount.",
     featured: true,
     content: `
       <h2>From Manual Zaps to AI Agents</h2>
@@ -317,7 +317,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Audio & Voice",
     author: "AI Growth Stack Team",
     publishDate: "March 20, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "7 min read",
     featuredToolIds: ["elevenlabs", "heygen"],
     metaTitle: "ElevenLabs Review 2026: Actionable AI Voice",
@@ -360,7 +360,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Growth",
     author: "AI Growth Stack Team",
     publishDate: "March 1, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["adcreative", "jasper", "make"],
     metaTitle: "AI Growth Stack 2026: 7 Tools That Ship",
@@ -411,7 +411,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Video",
     author: "AI Growth Stack Team",
     publishDate: "March 5, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "7 min read",
     featuredToolIds: ["synthesia", "heygen", "invideo"],
     metaTitle: "AI Video for B2B 2026: Synthesia vs. HeyGen",
@@ -461,7 +461,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Audio",
     author: "AI Growth Stack Team",
     publishDate: "March 8, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["elevenlabs", "murf"],
     metaTitle: "ElevenLabs vs. Murf 2026: Voice Cloning ROI",
@@ -506,7 +506,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "SEO",
     author: "AI Growth Stack Team",
     publishDate: "March 11, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["surfer-seo", "perplexity-pro", "frase", "gamma"],
     metaTitle: "AI Content Audits 2026: Surfer vs. Frase",
@@ -559,7 +559,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Productivity",
     author: "AI Growth Stack Team",
     publishDate: "March 12, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "7 min read",
     featuredToolIds: ["reclaim", "browse-ai", "fireflies"],
     metaTitle: "AI Agents for Small Teams 2026: Reclaim vs. Fireflies",
@@ -609,7 +609,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Marketing",
     author: "AI Growth Stack Team",
     publishDate: "March 11, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "10 min read",
     featuredToolIds: ["apollo", "clay", "activecampaign"],
     metaTitle: "Apollo vs. Clay 2026: Pricing & Hybrid Workflow",
@@ -680,7 +680,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Marketing",
     author: "AI Growth Stack Team",
     publishDate: "March 12, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["activecampaign", "lindy", "zapier-central"],
     metaTitle: "Marketing Agents 2026: ActiveCampaign vs. Lindy",
@@ -759,7 +759,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "SEO",
     author: "AI Growth Stack Team",
     publishDate: "March 13, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "6 min read",
     featuredToolIds: ["perplexity-pro", "search-atlas", "claude-35-sonnet"],
     metaTitle: "GEO 2026: Get Cited by Perplexity & ChatGPT",
@@ -811,7 +811,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Marketing",
     author: "AI Growth Stack Team",
     publishDate: "March 14, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["apollo", "clay", "activecampaign"],
     metaTitle: "$0 CAC Stack 2026: Apollo + Clay + ActiveCampaign",
@@ -882,7 +882,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Growth",
     author: "AI Growth Stack Team",
     publishDate: "March 15, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "10 min read",
     featuredToolIds: ["browse-ai", "apollo", "gamma", "reclaim"],
     metaTitle: "Growth Engineer Stack 2026: Browse AI to Reclaim",
@@ -938,7 +938,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Sales",
     author: "AI Growth Stack Team",
     publishDate: "March 16, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["apollo"],
     metaTitle: "Apollo Review 2026: Data Layer & Pricing",
@@ -981,7 +981,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Data & Automation",
     author: "AI Growth Stack Team",
     publishDate: "March 17, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "7 min read",
     featuredToolIds: ["browse-ai"],
     metaTitle: "Browse AI Review 2026: No-Code Scraping",
@@ -1024,7 +1024,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Productivity",
     author: "AI Growth Stack Team",
     publishDate: "March 18, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "6 min read",
     featuredToolIds: ["gamma"],
     metaTitle: "Gamma Review 2026: AI Presentations That Ship",
@@ -1067,7 +1067,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Productivity",
     author: "AI Growth Stack Team",
     publishDate: "March 19, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "7 min read",
     featuredToolIds: ["reclaim"],
     metaTitle: "Reclaim.ai Review 2026: Defend Deep Work",
@@ -1110,7 +1110,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Video",
     author: "AI Growth Stack Team",
     publishDate: "March 17, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "9 min read",
     featuredToolIds: ["heygen", "synthesia", "invideo"],
     metaTitle: "HeyGen vs. Sora vs. Kling 2026: Actionable AI Video",
@@ -1167,15 +1167,15 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Audio & Voice",
     author: "AI Growth Stack Team",
     publishDate: "April 7, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["elevenlabs", "heygen"],
-    metaTitle: "ElevenLabs Pricing 2026: Is the Creator Plan Worth It? (April 23 Update)",
+    metaTitle: "ElevenLabs Pricing: Don't Buy the Wrong Plan (May 2026 Update)",
     metaDescription:
-      "Is the ElevenLabs Creator Plan worth the ROI in April 2026? We break down pricing tiers, credit limits, and hidden costs so you don't overpay for your growth stack.",
+      "Updated May 1, 2026. I break down the ROI on the ElevenLabs Creator vs Pro plans. Stop wasting credits and see the exact math on which plan you actually need.",
     content: `
       <h2>Pricing That Matches Production Volume</h2>
-      <p><em>Pricing and tier caps synced April 23, 2026.</em> <a href="/go/elevenlabs" target="_blank" rel="noopener sponsored">ElevenLabs</a> has become the voice engine for teams building <strong>Actionable AI for Marketers</strong>. But which plan actually delivers ROI? The free tier is for testing. The Creator plan works for light production. The Pro plan is where serious marketing teams see the payoff.</p>
+      <p><em>Pricing and tier caps synced May 1, 2026.</em> <a href="/go/elevenlabs" target="_blank" rel="noopener sponsored">ElevenLabs</a> has become the voice engine for teams building <strong>Actionable AI for Marketers</strong>. But which plan actually delivers ROI? The free tier is for testing. The Creator plan works for light production. The Pro plan is where serious marketing teams see the payoff.</p>
 
       <h3>Creator vs. Pro: The Key Differences</h3>
       <p>Creator ($22/mo) gives you voice cloning, 100K characters/month, and commercial rights. Pro ($99/mo) bumps you to 500K characters, priority support, and API access that scales. For a single marketer doing a few videos a month, Creator is enough. For teams shipping ads, training content, and localized narration at volume, Pro pays for itself in time saved and output quality.</p>
@@ -1209,7 +1209,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>ElevenLabs + <a href="/go/heygen" target="_blank" rel="noopener sponsored">HeyGen</a> is the standard combo for <strong>Actionable AI</strong> video. Voice from ElevenLabs, visuals from HeyGen—localization and ad production in one workflow. If you're on Pro for ElevenLabs, you're likely also running HeyGen at scale. The combined ROI justifies both.</p>
 
       <h3>Verdict</h3>
-      <p><strong>April 23, 2026 data sync:</strong> For marketers doing &lt;100K characters/month, Creator is enough. For teams shipping ads, training, and localized content at volume, Pro pays for itself. Check our <a href="/resources">resources page</a> for voice and video blueprints that work with both plans.</p>
+      <p><strong>May 1, 2026 data sync:</strong> For marketers doing &lt;100K characters/month, Creator is enough. For teams shipping ads, training, and localized content at volume, Pro pays for itself. Check our <a href="/resources">resources page</a> for voice and video blueprints that work with both plans.</p>
       <p><strong>Ready to scale your voice workflow?</strong> Compare <a href="/go/elevenlabs" target="_blank" rel="noopener sponsored">ElevenLabs</a> and <a href="/go/heygen" target="_blank" rel="noopener sponsored">HeyGen</a> in our directory.</p>
     `,
   },
@@ -1222,7 +1222,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Video",
     author: "AI Growth Stack Team",
     publishDate: "March 17, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "9 min read",
     featuredToolIds: ["heygen", "elevenlabs", "synthesia"],
     metaTitle: "AI Video for International Growth 2026",
@@ -1280,7 +1280,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "SEO",
     author: "AI Growth Stack Team",
     publishDate: "March 17, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["surfer-seo", "jasper"],
     metaTitle: "Surfer vs. Jasper 2026: Content Automation ROI",
@@ -1345,7 +1345,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "SEO",
     author: "AI Growth Stack Team",
     publishDate: "March 18, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["perplexity-pro", "search-atlas", "surfer-seo"],
     metaTitle: "GEO 2026 Playbook: AI Visibility & Citations",
@@ -1387,7 +1387,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "SEO",
     author: "AI Growth Stack Team",
     publishDate: "March 18, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "7 min read",
     featuredToolIds: ["perplexity-pro", "surfer-seo", "frase"],
     metaTitle: "Get Cited by Perplexity 2026: Fact-Density",
@@ -1429,7 +1429,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "SEO",
     author: "AI Growth Stack Team",
     publishDate: "March 18, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "8 min read",
     featuredToolIds: ["surfer-seo", "frase", "jasper"],
     metaTitle: "AI SEO 2026: Entity Authority vs. Keywords",
@@ -1471,12 +1471,12 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Audio & Voice",
     author: "AI Growth Stack Team",
     publishDate: "March 23, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "6 min read",
     featuredToolIds: ["elevenlabs", "adcreative"],
     metaTitle: "Eleven v3 Audio Tags & Character Direction Guide 2026",
     metaDescription:
-      "Stop wasting credits on bad generations. Learn the exact V3 audio tags for character direction, emotion, and pacing—plus Instant vs Pro clones and the voice + ad workflow. Updated April 7.",
+      "Stop wasting credits on bad generations. Learn the exact V3 audio tags for character direction, emotion, and pacing—plus Instant vs Pro clones and the voice + ad workflow. Updated May 1, 2026.",
     content: `
       <h2>What is Eleven v3 Alpha?</h2>
       <p><a href="/go/elevenlabs" target="_blank" rel="noopener sponsored">ElevenLabs</a> Eleven v3 Alpha introduces the <strong>Situational Awareness</strong> model—a breakthrough in expressive AI voice that adapts tone, pacing, and emotion based on context. Unlike earlier models, v3 can interpret subtle cues in your script and deliver more natural, human-like performances with less manual direction.</p>
@@ -1514,25 +1514,25 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "elevenlabs-vs-descript-vs-murf-2026",
     slug: "elevenlabs-vs-descript-vs-murf-best-ai-voice-tool-2026",
-    title: "ElevenLabs vs Descript vs Murf: Which is the Best AI Voice Tool in 2026? (Updated April 2026)",
+    title: "ElevenLabs vs Descript vs Murf: Which is the Best AI Voice Tool in 2026? (Updated May 1, 2026)",
     excerpt:
       "A head-to-head comparison of the top AI voice tools. ElevenLabs' emotional range, Descript's text-based video editing, and Murf's professional templates—plus the 2026 pro workflow that combines them.",
     category: "Audio & Voice",
     author: "AI Growth Stack Team",
     publishDate: "March 23, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "10 min read",
     featuredToolIds: ["elevenlabs", "descript", "murf"],
-    metaTitle: "ElevenLabs vs Descript vs Murf (Updated April 2026): Best AI Voice Tool",
+    metaTitle: "ElevenLabs vs Descript vs Murf (Updated May 1, 2026): Best AI Voice Tool",
     metaDescription:
-      "Compare ElevenLabs, Descript, and Murf for AI voice—updated April 2026. Emotional range, text-based editing, professional templates. The 2026 pro workflow: Generate in ElevenLabs → Polish in Descript.",
+      "Compare ElevenLabs, Descript, and Murf for AI voice—updated May 1, 2026. Emotional range, text-based editing, professional templates. The 2026 pro workflow: Generate in ElevenLabs → Polish in Descript.",
     featured: true,
     content: `
       <h2>The AI Voice Landscape in 2026</h2>
       <p>Three tools dominate the AI voice and video-audio space in 2026: <a href="/go/elevenlabs" target="_blank" rel="noopener sponsored">ElevenLabs</a> for raw voice quality and emotional range, <a href="/go/descript" target="_blank" rel="noopener sponsored">Descript</a> for text-based video editing and post-production, and <a href="/go/murf" target="_blank" rel="noopener sponsored">Murf</a> for professional templates and studio-style workflows. Each excels in a different lane—and the best teams use more than one.</p>
 
       <h3>ElevenLabs: Emotional Range and Voice Cloning</h3>
-      <p>ElevenLabs—our <a href="/product/elevenlabs/">Top-Rated Choice for April 2026</a>—leads on voice quality and emotional nuance. Its neural models deliver prosody, pacing, and tone that pass the "human or AI?" test. Voice cloning lets you scale a brand voice across ads, explainers, and localized content without re-recording. For marketers who need the emotional layer—ads that convert, narration that holds attention—ElevenLabs is the default choice.</p>
+      <p>ElevenLabs—our <a href="/product/elevenlabs/">Top-Rated Choice for May 1, 2026</a>—leads on voice quality and emotional nuance. Its neural models deliver prosody, pacing, and tone that pass the "human or AI?" test. Voice cloning lets you scale a brand voice across ads, explainers, and localized content without re-recording. For marketers who need the emotional layer—ads that convert, narration that holds attention—ElevenLabs is the default choice.</p>
       <ul>
         <li>Industry-leading emotional range and natural prosody</li>
         <li>Voice cloning for brand consistency at scale</li>
@@ -1567,18 +1567,18 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "automated-outbound-mindstudio-apollo",
     slug: "automated-outbound-mindstudio-apollo-lead-data",
-    title: "Automated Outbound: Integrating MindStudio with Apollo.io Lead Data (Updated April 2026)",
+    title: "Automated Outbound: Integrating MindStudio with Apollo.io Lead Data (Updated May 1, 2026)",
     excerpt:
       "A step-by-step guide on using MindStudio AI Agents to process Apollo.io CSV exports for hyper-personalized outreach. Plus how Amplemarket's Duo AI closes the loop.",
     category: "Sales",
     author: "AI Growth Stack Team",
     publishDate: "March 23, 2026",
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-05-01",
     readTime: "9 min read",
     featuredToolIds: ["mindstudio", "apollo", "amplemarket"],
-    metaTitle: "Automated Outbound: MindStudio + Apollo.io (Updated April 2026) for Personalized Outreach",
+    metaTitle: "Automated Outbound: MindStudio + Apollo.io (Updated May 1, 2026) for Personalized Outreach",
     metaDescription:
-      "Use MindStudio AI Agents with Apollo.io CSV exports for hyper-personalized outreach—updated April 2026. Step-by-step guide. Amplemarket Duo AI for closing. Personalization at scale is the 2026 baseline.",
+      "Use MindStudio AI Agents with Apollo.io CSV exports for hyper-personalized outreach—updated May 1, 2026. Step-by-step guide. Amplemarket Duo AI for closing. Personalization at scale is the 2026 baseline.",
     featured: true,
     content: `
       <h2>Personalization at Scale: The 2026 Baseline</h2>
